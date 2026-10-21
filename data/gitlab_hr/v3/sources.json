@@ -1,0 +1,418 @@
+{
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "license_source": "https://handbook.gitlab.com/handbook/about/handbook-usage/",
+  "corpus_id": "gitlab_hr_v3",
+  "base_corpus_id": "gitlab_hr_v2",
+  "scope": "Medium-size public HR corpus; employee lifecycle, benefits, compensation and learning policies.",
+  "documents": [
+    {
+      "document_id": "hr_time_away_overview",
+      "title": "Time Off and Absence at GitLab",
+      "topic": "time_away",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/"
+    },
+    {
+      "document_id": "hr_time_away_philosophy",
+      "title": "Time Away Philosophy",
+      "topic": "time_away",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-away-philosophy/"
+    },
+    {
+      "document_id": "hr_time_off_types",
+      "title": "Time Off Types",
+      "topic": "time_away",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/"
+    },
+    {
+      "document_id": "hr_leave_types",
+      "title": "Leave Types",
+      "topic": "time_away",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/leave-types/"
+    },
+    {
+      "document_id": "hr_general_entity_benefits",
+      "title": "General & Entity Specific Benefits & Information",
+      "topic": "benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/"
+    },
+    {
+      "document_id": "hr_growth_development",
+      "title": "Growth and Development Fund",
+      "topic": "development",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/growth-and-development/"
+    },
+    {
+      "document_id": "hr_travel_expenses",
+      "title": "Global Travel and Expense Policy",
+      "topic": "expenses",
+      "source_url": "https://handbook.gitlab.com/handbook/finance/expenses/"
+    },
+    {
+      "document_id": "hr_canada_benefits",
+      "title": "GitLab Canada Corp",
+      "topic": "canada",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits/"
+    },
+    {
+      "document_id": "hr_us_benefits",
+      "title": "GitLab Inc (US) Benefits",
+      "topic": "us",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/"
+    },
+    {
+      "document_id": "hr_netherlands_benefits",
+      "title": "GitLab BV (Netherlands) Benefits",
+      "topic": "netherlands",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands/"
+    },
+    {
+      "document_id": "hr_germany_benefits",
+      "title": "GitLab GmbH (Germany) information & benefits",
+      "topic": "germany",
+      "source_url": "https://handbook.gitlab.com/handbook/entity/gmbh-germany/"
+    },
+    {
+      "document_id": "hr_france_remote_work",
+      "title": "GitLab France S.A.S. Remote Work Charter",
+      "topic": "france",
+      "source_url": "https://handbook.gitlab.com/handbook/people-policies/france-sas/remote-work-charter/"
+    },
+    {
+      "document_id": "hr_relocation",
+      "title": "Relocation",
+      "topic": "relocation",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/relocation/"
+    },
+    {
+      "document_id": "hr_development_tax",
+      "title": "Tax Impacts of Different Growth & Development Benefits",
+      "topic": "development_tax",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/growth-and-development/tax/"
+    },
+    {
+      "document_id": "hr_acceptable_use_policy",
+      "title": "GitLab Internal Acceptable Use Policy",
+      "topic": "people_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/acceptable-use-policy/"
+    },
+    {
+      "document_id": "hr_contracts_probation_periods",
+      "title": "Contracts, Background Screenings, Probation Periods & PIAA",
+      "topic": "people_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/contracts-probation-periods/"
+    },
+    {
+      "document_id": "hr_employment_solutions",
+      "title": "Employment Solutions - Overview",
+      "topic": "people_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/employment-solutions/"
+    },
+    {
+      "document_id": "hr_givelab_volunteer_initiatives",
+      "title": "GiveLab Volunteer Initiatives",
+      "topic": "people_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/givelab-volunteer-initiatives/"
+    },
+    {
+      "document_id": "hr_learning_and_development",
+      "title": "Talent Development",
+      "topic": "learning",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/"
+    },
+    {
+      "document_id": "hr_career_development",
+      "title": "Career Development and Mobility",
+      "topic": "learning",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/career-development/"
+    },
+    {
+      "document_id": "hr_elevate_programs",
+      "title": "Elevate Programs",
+      "topic": "learning",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/"
+    },
+    {
+      "document_id": "hr_internship_for_learning",
+      "title": "Internship for Learning",
+      "topic": "learning",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/internship-for-learning/"
+    },
+    {
+      "document_id": "hr_level_up",
+      "title": "LevelUp",
+      "topic": "learning",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/level-up/"
+    },
+    {
+      "document_id": "hr_manager_development",
+      "title": "Transitioning to a manager role",
+      "topic": "learning",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/manager-development/"
+    },
+    {
+      "document_id": "hr_self_paced_learning",
+      "title": "Self-Paced External Trainings",
+      "topic": "learning",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/self-paced-learning/"
+    },
+    {
+      "document_id": "hr_offboarding",
+      "title": "GitLab Offboarding",
+      "topic": "people_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/offboarding/"
+    },
+    {
+      "document_id": "hr_offboarding_standards",
+      "title": "GitLab Offboarding Standards",
+      "topic": "people_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/offboarding/offboarding_standards/"
+    },
+    {
+      "document_id": "hr_promotions_transfers",
+      "title": "Promotions and Transfers",
+      "topic": "people_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/promotions-transfers/"
+    },
+    {
+      "document_id": "hr_visas",
+      "title": "Visas",
+      "topic": "people_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/visas/"
+    },
+    {
+      "document_id": "hr_right_to_disconnect_charter",
+      "title": "GitLab France S.A.S. Right to Disconnect Charter",
+      "topic": "people_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/people-policies/france-sas/right-to-disconnect-charter/"
+    },
+    {
+      "document_id": "hr_inc_usa",
+      "title": "People Policies - GitLab Inc (USA)",
+      "topic": "people_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/people-policies/inc-usa/"
+    },
+    {
+      "document_id": "hr_leave_of_absence",
+      "title": "Leave of Absence",
+      "topic": "people_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/people-policies/leave-of-absence/"
+    },
+    {
+      "document_id": "hr_us",
+      "title": "United States Leave of Absence Policies",
+      "topic": "people_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/people-policies/leave-of-absence/us/"
+    },
+    {
+      "document_id": "hr_benefits",
+      "title": "Benefits",
+      "topic": "people_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/"
+    },
+    {
+      "document_id": "hr_bv_benefits_belgium",
+      "title": "GitLab BV (Belgium) Benefits",
+      "topic": "regional_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium/"
+    },
+    {
+      "document_id": "hr_financial_wellness",
+      "title": "Financial Wellness",
+      "topic": "regional_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/financial-wellness/"
+    },
+    {
+      "document_id": "hr_france_sas",
+      "title": "GitLab France S.A.S.",
+      "topic": "regional_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/france-sas/"
+    },
+    {
+      "document_id": "hr_gitlab_gk",
+      "title": "GitLab GK (Japan) Benefits",
+      "topic": "regional_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-gk/"
+    },
+    {
+      "document_id": "hr_gitlab_ireland_ltd",
+      "title": "GitLab Ireland Ltd",
+      "topic": "regional_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd/"
+    },
+    {
+      "document_id": "hr_global_expansion",
+      "title": "Global Expansion",
+      "topic": "regional_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion/"
+    },
+    {
+      "document_id": "hr_korea_ltd_benefits",
+      "title": "GitLab Korea Limited Benefits",
+      "topic": "regional_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits/"
+    },
+    {
+      "document_id": "hr_ltd_benefits_uk",
+      "title": "GitLab LTD (UK) Benefits",
+      "topic": "regional_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk/"
+    },
+    {
+      "document_id": "hr_papaya_global_benefits",
+      "title": "Papaya Global Italy Dirigente",
+      "topic": "regional_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/papaya-global-benefits/"
+    },
+    {
+      "document_id": "hr_pty_benefits_australia",
+      "title": "PTY LTD Benefits",
+      "topic": "regional_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia/"
+    },
+    {
+      "document_id": "hr_pty_benefits_new_zealand",
+      "title": "GitLab PTY Ltd. Benefits - New Zealand",
+      "topic": "regional_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand/"
+    },
+    {
+      "document_id": "hr_singapore_pte_ltd",
+      "title": "GitLab Singapore Pte Ltd",
+      "topic": "regional_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd/"
+    },
+    {
+      "document_id": "hr_modern_health",
+      "title": "Modern Health",
+      "topic": "people_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/modern-health/"
+    },
+    {
+      "document_id": "hr_compensation",
+      "title": "Compensation at Gitlab",
+      "topic": "compensation",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/compensation/"
+    },
+    {
+      "document_id": "hr_compensation_review_cycle",
+      "title": "Annual Compensation Review Cycle",
+      "topic": "compensation",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/compensation/compensation-review-cycle/"
+    },
+    {
+      "document_id": "hr_incentives",
+      "title": "Incentives at GitLab",
+      "topic": "people_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/incentives/"
+    },
+    {
+      "document_id": "hr_stock_options",
+      "title": "Equity Compensation",
+      "topic": "people_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/stock-options/"
+    },
+    {
+      "document_id": "hr_guidance_on_feedback",
+      "title": "Guidance on Feedback",
+      "topic": "employee_lifecycle",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/guidance-on-feedback/"
+    },
+    {
+      "document_id": "hr_competencies",
+      "title": "Competencies",
+      "topic": "employee_lifecycle",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/competencies/"
+    },
+    {
+      "document_id": "hr_anti_harassment",
+      "title": "Anti-Harassment Policy",
+      "topic": "employee_lifecycle",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/anti-harassment/"
+    },
+    {
+      "document_id": "hr_incident_response",
+      "title": "Incident Response",
+      "topic": "employee_lifecycle",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/incident-response/"
+    },
+    {
+      "document_id": "hr_igp_guide",
+      "title": "Your Individual Growth Plan (IGP) Journey",
+      "topic": "employee_lifecycle",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/career-development/igp-guide/"
+    },
+    {
+      "document_id": "hr_mentor",
+      "title": "Mentoring at GitLab",
+      "topic": "employee_lifecycle",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/mentor/"
+    },
+    {
+      "document_id": "hr_hone",
+      "title": "Hone Partnership",
+      "topic": "employee_lifecycle",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/hone/"
+    },
+    {
+      "document_id": "hr_team_workshops",
+      "title": "Team Workshops",
+      "topic": "employee_lifecycle",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/team-workshops/"
+    },
+    {
+      "document_id": "hr_talent_assessment",
+      "title": "Talent Assessment",
+      "topic": "employee_lifecycle",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/talent-assessment/"
+    },
+    {
+      "document_id": "hr_promotion_document_style_guide",
+      "title": "Promotion Document Style Guide",
+      "topic": "employee_lifecycle",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/promotion-document-style-guide/"
+    },
+    {
+      "document_id": "hr_people_business_partners",
+      "title": "People Business Partner Team",
+      "topic": "employee_lifecycle",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/people-business-partners/"
+    },
+    {
+      "document_id": "hr_elevate_applied",
+      "title": "Elevate Applied",
+      "topic": "employee_lifecycle",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevate-applied/"
+    },
+    {
+      "document_id": "hr_remote_com",
+      "title": "Remote.com",
+      "topic": "benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com/"
+    },
+    {
+      "document_id": "hr_elevate_prep",
+      "title": "ElevatePrep",
+      "topic": "employee_lifecycle",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevate-prep/"
+    },
+    {
+      "document_id": "hr_parental_leave_toolkit",
+      "title": "Leave of Absence Toolkit for Team Members and Managers",
+      "topic": "benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/parental-leave-toolkit/"
+    },
+    {
+      "document_id": "hr_elevate",
+      "title": "Elevate",
+      "topic": "employee_lifecycle",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevate/"
+    },
+    {
+      "document_id": "hr_elevateplus",
+      "title": "Elevate+",
+      "topic": "employee_lifecycle",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevateplus/"
+    }
+  ]
+}

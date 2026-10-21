@@ -1,0 +1,3 @@
+# Offline corpus preparation; install separately from the API runtime.
+beautifulsoup4==4.15.0
+markdownify==1.2.3

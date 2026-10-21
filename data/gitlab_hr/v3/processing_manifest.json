@@ -1,0 +1,7394 @@
+{
+  "corpus_id": "gitlab_hr_v3",
+  "converter_version": "1",
+  "tools": {
+    "beautifulsoup4": "4.15.0",
+    "markdownify": "1.2.3"
+  },
+  "documents": [
+    {
+      "document_id": "hr_time_away_overview",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/",
+      "raw_sha256": "36b5a555740566900dd645b6e0885fc1c9784288ae100e154d462eb89351e364",
+      "cleaned_file": "cleaned/hr_time_away_overview.md",
+      "cleaned_sha256": "84c7a6241e0fa19dad0c9a561877416313be6fe4be2ab004ec5836e77bb2eab0",
+      "cleaned_bytes": 2369,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Time Off and Absence at GitLab"
+        },
+        {
+          "level": 3,
+          "text": "Understanding Time Away at GitLab"
+        },
+        {
+          "level": 3,
+          "text": "About Our Terminology"
+        },
+        {
+          "level": 5,
+          "text": "Leave Types"
+        },
+        {
+          "level": 5,
+          "text": "Time Away Philosophy"
+        },
+        {
+          "level": 5,
+          "text": "Time Off Types"
+        }
+      ],
+      "list_items": 2,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_time_away_philosophy",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-away-philosophy/",
+      "raw_sha256": "4bd93fabb31b0c7cd6ed4e89a5699b90b99e27dcbe27c0ea05a50ab4cbd31d5a",
+      "cleaned_file": "cleaned/hr_time_away_philosophy.md",
+      "cleaned_sha256": "aa561bb07b07797658e9029b0d34bd3d9477c986c0e5fc35bcf50e74c500ba66",
+      "cleaned_bytes": 17649,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Time Away Philosophy"
+        },
+        {
+          "level": 2,
+          "text": "GitLab’s Philosophy to Time Away from Work"
+        },
+        {
+          "level": 3,
+          "text": "Why Time Away Matters"
+        },
+        {
+          "level": 3,
+          "text": "A Culture of Results and Sustainability"
+        },
+        {
+          "level": 3,
+          "text": "Encouraging Meaningful Time Away"
+        },
+        {
+          "level": 3,
+          "text": "Transitioning Back Mindfully"
+        },
+        {
+          "level": 2,
+          "text": "Communicating (& Preparing for) Planned Time Away"
+        },
+        {
+          "level": 3,
+          "text": "Communication Essentials"
+        },
+        {
+          "level": 3,
+          "text": "Timely & Transparent Communication"
+        },
+        {
+          "level": 3,
+          "text": "Communication Checklist"
+        },
+        {
+          "level": 3,
+          "text": "Calendar and Meeting Management"
+        },
+        {
+          "level": 3,
+          "text": "Knowledge Transfer and Work Continuity"
+        },
+        {
+          "level": 3,
+          "text": "Documentation and Iteration"
+        },
+        {
+          "level": 3,
+          "text": "Documentation Tips"
+        },
+        {
+          "level": 3,
+          "text": "Work Transition"
+        },
+        {
+          "level": 3,
+          "text": "On-Call Coverage"
+        },
+        {
+          "level": 3,
+          "text": "Summary of Best Practices: Results-Focused Approach"
+        },
+        {
+          "level": 2,
+          "text": "Communicating Unplanned Time Away"
+        },
+        {
+          "level": 3,
+          "text": "Types of Unplanned Time Away"
+        },
+        {
+          "level": 3,
+          "text": "Manager Responsibilities"
+        },
+        {
+          "level": 2,
+          "text": "Workday: Single Source of Truth for Absence"
+        },
+        {
+          "level": 3,
+          "text": "Overview"
+        },
+        {
+          "level": 3,
+          "text": "Key Features"
+        },
+        {
+          "level": 3,
+          "text": "Workday to Time Off by Deel Integration"
+        },
+        {
+          "level": 3,
+          "text": "Time Off by Deel Features"
+        },
+        {
+          "level": 3,
+          "text": "Checking Team Availability"
+        },
+        {
+          "level": 3,
+          "text": "Additional Manager Requirements"
+        },
+        {
+          "level": 3,
+          "text": "Editing Time Off Entries"
+        },
+        {
+          "level": 3,
+          "text": "Submitting Feedback about Workday"
+        }
+      ],
+      "list_items": 68,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_time_off_types",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/",
+      "raw_sha256": "589002f30374a5ee0274b3040e967f7f58f1d1078340be4358143505256d3f62",
+      "cleaned_file": "cleaned/hr_time_off_types.md",
+      "cleaned_sha256": "7b83ede2a904763770fdb4c9862094e40ecdf50c24aa9f1cece6b6704a371d29",
+      "cleaned_bytes": 31019,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Time Off Types"
+        },
+        {
+          "level": 2,
+          "text": "Flexible Paid Time Off (PTO)"
+        },
+        {
+          "level": 3,
+          "text": "Overview"
+        },
+        {
+          "level": 3,
+          "text": "PTO Protocols (Planning and Coordination)"
+        },
+        {
+          "level": 3,
+          "text": "How to Enter PTO in Workday"
+        },
+        {
+          "level": 3,
+          "text": "How to Prepare for PTO"
+        },
+        {
+          "level": 3,
+          "text": "Global Statutory Requirements"
+        },
+        {
+          "level": 2,
+          "text": "Public Holiday"
+        },
+        {
+          "level": 3,
+          "text": "Overview"
+        },
+        {
+          "level": 3,
+          "text": "General List of Public Holidays"
+        },
+        {
+          "level": 3,
+          "text": "How to Enter Public Holidays in Workday"
+        },
+        {
+          "level": 3,
+          "text": "Frequently Asked Public Holiday Questions"
+        },
+        {
+          "level": 2,
+          "text": "Sick Time"
+        },
+        {
+          "level": 3,
+          "text": "Overview"
+        },
+        {
+          "level": 3,
+          "text": "Sick Time Eligibility and Coverage"
+        },
+        {
+          "level": 3,
+          "text": "Reporting Procedures"
+        },
+        {
+          "level": 3,
+          "text": "For Sick Absences 1-5 Consecutive Days"
+        },
+        {
+          "level": 3,
+          "text": "For Sick Absences that Exceed 6+ Consecutive Days"
+        },
+        {
+          "level": 3,
+          "text": "Pay While on Sick Leave of Absence"
+        },
+        {
+          "level": 3,
+          "text": "Communicating Illness-Related Leave"
+        },
+        {
+          "level": 2,
+          "text": "Caregiver Sick Time"
+        },
+        {
+          "level": 3,
+          "text": "Overview"
+        },
+        {
+          "level": 3,
+          "text": "Caregiver Sick Time Eligibility and Coverage"
+        },
+        {
+          "level": 3,
+          "text": "Reporting Procedures"
+        },
+        {
+          "level": 3,
+          "text": "For Caregiver Sick Absences 1-5 Consecutive Days"
+        },
+        {
+          "level": 3,
+          "text": "For Caregiver Sick Absences 6+ Consecutive Days"
+        },
+        {
+          "level": 3,
+          "text": "Pay While on Caregiver Sick Leave of Absence"
+        },
+        {
+          "level": 2,
+          "text": "Bereavement"
+        },
+        {
+          "level": 3,
+          "text": "Overview"
+        },
+        {
+          "level": 3,
+          "text": "Request Process"
+        },
+        {
+          "level": 3,
+          "text": "Pay and Benefits"
+        },
+        {
+          "level": 3,
+          "text": "Leave Extensions"
+        },
+        {
+          "level": 3,
+          "text": "Coordination with Other Leaves"
+        },
+        {
+          "level": 3,
+          "text": "Support Resources"
+        },
+        {
+          "level": 2,
+          "text": "Volunteer"
+        },
+        {
+          "level": 3,
+          "text": "Overview"
+        },
+        {
+          "level": 3,
+          "text": "Request Process"
+        },
+        {
+          "level": 3,
+          "text": "Discover GitLab’s Volunteering Opportunities with GiveLab"
+        },
+        {
+          "level": 2,
+          "text": "GitLab Legal Civic Obligations Policy"
+        },
+        {
+          "level": 3,
+          "text": "Overview"
+        },
+        {
+          "level": 3,
+          "text": "Eligibility & Entitlement"
+        },
+        {
+          "level": 3,
+          "text": "Request Process"
+        },
+        {
+          "level": 3,
+          "text": "Required Documentation"
+        },
+        {
+          "level": 3,
+          "text": "Pay while on Jury Duty"
+        },
+        {
+          "level": 3,
+          "text": "Coordination with other Leaves"
+        }
+      ],
+      "list_items": 85,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_leave_types",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/leave-types/",
+      "raw_sha256": "6d29d6fdd7a5eb91d825101e4f663999b5123bf3d110db6c54b705db8c1ecc33",
+      "cleaned_file": "cleaned/hr_leave_types.md",
+      "cleaned_sha256": "633d6a2864fd04b62329f30ca3a0f808f509dff69695b64a3f1a6b5ed50d4985",
+      "cleaned_bytes": 19335,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Leave Types"
+        },
+        {
+          "level": 2,
+          "text": "GitLab Parental Leave"
+        },
+        {
+          "level": 3,
+          "text": "Eligibility, Entitlement and Planning Your Leave"
+        },
+        {
+          "level": 3,
+          "text": "Supplement with Paid Time Off"
+        },
+        {
+          "level": 3,
+          "text": "How to Initiate Your Leave"
+        },
+        {
+          "level": 3,
+          "text": "Pay While on Parental Leave"
+        },
+        {
+          "level": 3,
+          "text": "Returning to Work"
+        },
+        {
+          "level": 3,
+          "text": "Returning to Work at 50% Capacity"
+        },
+        {
+          "level": 2,
+          "text": "Emergency Leave"
+        },
+        {
+          "level": 3,
+          "text": "Overview"
+        },
+        {
+          "level": 3,
+          "text": "How to Request"
+        },
+        {
+          "level": 2,
+          "text": "Military Leave"
+        },
+        {
+          "level": 3,
+          "text": "For leaves 31 days or less"
+        },
+        {
+          "level": 3,
+          "text": "For leaves greater than 31 days"
+        },
+        {
+          "level": 3,
+          "text": "Reinstatement"
+        },
+        {
+          "level": 3,
+          "text": "How to Apply for Military Leave"
+        },
+        {
+          "level": 2,
+          "text": "Sick Leave"
+        },
+        {
+          "level": 2,
+          "text": "Caregiving Sick Leave"
+        },
+        {
+          "level": 2,
+          "text": "Equity Vesting During Leave"
+        }
+      ],
+      "list_items": 46,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_general_entity_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/",
+      "raw_sha256": "74af1c6ed2933c95f174d2bc2eddeaeb699e3478238061ad4c262308aa6b07eb",
+      "cleaned_file": "cleaned/hr_general_entity_benefits.md",
+      "cleaned_sha256": "bc3fc73122458b325766fc1d2dcbb5ff0b3daff448e9ca05a0e4b7c52428a27d",
+      "cleaned_bytes": 30975,
+      "headings": [
+        {
+          "level": 1,
+          "text": "General & Entity Specific Benefits & Information"
+        },
+        {
+          "level": 2,
+          "text": "How Our Benefits Work"
+        },
+        {
+          "level": 2,
+          "text": "Entity-Specific Benefits"
+        },
+        {
+          "level": 2,
+          "text": "Company Wide Benefits - Available to All Team Members"
+        },
+        {
+          "level": 3,
+          "text": "Health & Wellness"
+        },
+        {
+          "level": 4,
+          "text": "Modern Health - Mental Health Support"
+        },
+        {
+          "level": 4,
+          "text": "HealthKick Well-being Platform"
+        },
+        {
+          "level": 3,
+          "text": "Family Benefits"
+        },
+        {
+          "level": 4,
+          "text": "Vivvi Caregiving Benefits"
+        },
+        {
+          "level": 4,
+          "text": "Parental Leave"
+        },
+        {
+          "level": 4,
+          "text": "Parental Leave Support: Parentaly"
+        },
+        {
+          "level": 4,
+          "text": "Fertility & Family Planning"
+        },
+        {
+          "level": 3,
+          "text": "Financial Security & Professional Growth"
+        },
+        {
+          "level": 4,
+          "text": "Equity Compensation"
+        },
+        {
+          "level": 4,
+          "text": "Incentives: Discretionary Performance & Referral Bonuses"
+        },
+        {
+          "level": 4,
+          "text": "Life Insurance Coverage"
+        },
+        {
+          "level": 4,
+          "text": "Vehicle Salary Sacrifice & Novated Leasing Programs"
+        },
+        {
+          "level": 4,
+          "text": "Growth and Development Fund"
+        },
+        {
+          "level": 3,
+          "text": "Time Off & Flexibility"
+        },
+        {
+          "level": 4,
+          "text": "Flexible Paid Time Off"
+        },
+        {
+          "level": 4,
+          "text": "All-Remote Work Environment"
+        },
+        {
+          "level": 3,
+          "text": "Leave of Absence Support with Tilt - 🇺🇸 & 🇨🇦 only"
+        },
+        {
+          "level": 3,
+          "text": "Travel, Community & Support"
+        },
+        {
+          "level": 4,
+          "text": "Business Travel Emergency Assistance & Accident Policy"
+        },
+        {
+          "level": 4,
+          "text": "Meal Train"
+        },
+        {
+          "level": 4,
+          "text": "GitLab Cares - Disaster Relief Program"
+        },
+        {
+          "level": 4,
+          "text": "Bereave Support Benefits"
+        },
+        {
+          "level": 2,
+          "text": "Contractor Benefits"
+        },
+        {
+          "level": 2,
+          "text": "Important Notes"
+        },
+        {
+          "level": 2,
+          "text": "GitLab Cares - Team Member Disaster Relief Program"
+        },
+        {
+          "level": 5,
+          "text": "Financial Wellness"
+        },
+        {
+          "level": 5,
+          "text": "GitLab BV (Belgium) Benefits"
+        },
+        {
+          "level": 5,
+          "text": "GitLab BV (Netherlands) Benefits"
+        },
+        {
+          "level": 5,
+          "text": "GitLab Canada Corp"
+        },
+        {
+          "level": 5,
+          "text": "GitLab France S.A.S."
+        },
+        {
+          "level": 5,
+          "text": "GitLab GK (Japan) Benefits"
+        },
+        {
+          "level": 5,
+          "text": "GitLab Inc (US) Benefits"
+        },
+        {
+          "level": 5,
+          "text": "GitLab Ireland Ltd"
+        },
+        {
+          "level": 5,
+          "text": "GitLab Korea Limited Benefits"
+        },
+        {
+          "level": 5,
+          "text": "GitLab LTD (UK) Benefits"
+        },
+        {
+          "level": 5,
+          "text": "GitLab PTY Ltd. Benefits - New Zealand"
+        },
+        {
+          "level": 5,
+          "text": "GitLab Singapore Pte Ltd"
+        },
+        {
+          "level": 5,
+          "text": "Global Expansion"
+        },
+        {
+          "level": 5,
+          "text": "Papaya Global Italy Dirigente"
+        },
+        {
+          "level": 5,
+          "text": "PTY LTD Benefits"
+        },
+        {
+          "level": 5,
+          "text": "Remote.com"
+        }
+      ],
+      "list_items": 78,
+      "tables": 1,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_growth_development",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/growth-and-development/",
+      "raw_sha256": "17d681b6e183a19197b21e6e5ec829c1094913e2a90a5430f800c2ad811ea2a2",
+      "cleaned_file": "cleaned/hr_growth_development.md",
+      "cleaned_sha256": "0412dd420b4bae04c4d2f188475d43a61d00d4e78fee9082150907193e55e358",
+      "cleaned_bytes": 12576,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Growth and Development Fund"
+        },
+        {
+          "level": 2,
+          "text": "Eligibility"
+        },
+        {
+          "level": 2,
+          "text": "Process"
+        },
+        {
+          "level": 3,
+          "text": "Step 1 - Have a growth conversation"
+        },
+        {
+          "level": 3,
+          "text": "Step 2 - Submit your request in Compass"
+        },
+        {
+          "level": 3,
+          "text": "Step 3 - Gain approval"
+        },
+        {
+          "level": 3,
+          "text": "Step 4 - Make your purchase and complete the opportunity"
+        },
+        {
+          "level": 3,
+          "text": "Step 5 - Submit for reimbursement in Navan"
+        },
+        {
+          "level": 4,
+          "text": "Travel expenses"
+        },
+        {
+          "level": 4,
+          "text": "50% upfront reimbursement"
+        },
+        {
+          "level": 3,
+          "text": "Step 6 - Close out and share feedback"
+        },
+        {
+          "level": 2,
+          "text": "Types of Growth and Development reimbursements"
+        },
+        {
+          "level": 3,
+          "text": "Conferences and live workshops"
+        },
+        {
+          "level": 3,
+          "text": "Academic study"
+        },
+        {
+          "level": 3,
+          "text": "Professional development, certifications, and courses"
+        },
+        {
+          "level": 3,
+          "text": "Self-service learning subscriptions"
+        },
+        {
+          "level": 3,
+          "text": "Language courses"
+        },
+        {
+          "level": 3,
+          "text": "Code-based learning"
+        },
+        {
+          "level": 3,
+          "text": "Programming books"
+        },
+        {
+          "level": 3,
+          "text": "Coaching"
+        },
+        {
+          "level": 3,
+          "text": "Professional dues and memberships"
+        },
+        {
+          "level": 3,
+          "text": "Parentaly"
+        },
+        {
+          "level": 3,
+          "text": "Wellbeing"
+        },
+        {
+          "level": 3,
+          "text": "Bulk applications"
+        },
+        {
+          "level": 3,
+          "text": "Company-directed learning opportunities"
+        },
+        {
+          "level": 2,
+          "text": "Recoupment policy"
+        },
+        {
+          "level": 2,
+          "text": "Tax implications"
+        },
+        {
+          "level": 2,
+          "text": "FAQ"
+        },
+        {
+          "level": 3,
+          "text": "Can I use the G&D Fund to arrange training for my entire team?"
+        },
+        {
+          "level": 3,
+          "text": "How can I track my G&D spend?"
+        },
+        {
+          "level": 3,
+          "text": "Does budget rollover?"
+        },
+        {
+          "level": 3,
+          "text": "Can spare budget be shared with other team members?"
+        },
+        {
+          "level": 3,
+          "text": "Can I pay for one opportunity over multiple years?"
+        },
+        {
+          "level": 2,
+          "text": "Links and resources"
+        },
+        {
+          "level": 5,
+          "text": "Tax Impacts of Different Growth & Development Benefits"
+        }
+      ],
+      "list_items": 27,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_travel_expenses",
+      "source_url": "https://handbook.gitlab.com/handbook/finance/expenses/",
+      "raw_sha256": "062364b7a12e73f8e06b0e9ddf50764557bece2f8023208cfd45a4a9c77dac88",
+      "cleaned_file": "cleaned/hr_travel_expenses.md",
+      "cleaned_sha256": "2e1562522a893e1df650dcfb3e2a8a8b45ce3fbccd35e1ccb9c86b3febc3e5ed",
+      "cleaned_bytes": 66613,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Global Travel and Expense Policy"
+        },
+        {
+          "level": 2,
+          "text": "1. POLICY"
+        },
+        {
+          "level": 2,
+          "text": "2. Responsibilities"
+        },
+        {
+          "level": 2,
+          "text": "3. General Guidelines"
+        },
+        {
+          "level": 3,
+          "text": "3.1 Out of Policy Transactions"
+        },
+        {
+          "level": 3,
+          "text": "3.2 Trip Purpose Guidance"
+        },
+        {
+          "level": 3,
+          "text": "3.3 Other"
+        },
+        {
+          "level": 2,
+          "text": "4. PROCEDURES"
+        },
+        {
+          "level": 3,
+          "text": "4.1 TRAVEL RELATED EXPENSES"
+        },
+        {
+          "level": 4,
+          "text": "Airfare"
+        },
+        {
+          "level": 4,
+          "text": "Advance Purchase"
+        },
+        {
+          "level": 4,
+          "text": "Class of Service"
+        },
+        {
+          "level": 4,
+          "text": "Domestic Flights"
+        },
+        {
+          "level": 4,
+          "text": "International Flights"
+        },
+        {
+          "level": 4,
+          "text": "Frequent Flyer Programs"
+        },
+        {
+          "level": 4,
+          "text": "Cancellations, Unused Tickets and Exchanges"
+        },
+        {
+          "level": 4,
+          "text": "Common Out-of-policy Airfare Flags in Navan"
+        },
+        {
+          "level": 3,
+          "text": "Car Rental"
+        },
+        {
+          "level": 4,
+          "text": "Additional Car Rental Guidelines"
+        },
+        {
+          "level": 3,
+          "text": "Hotels"
+        },
+        {
+          "level": 4,
+          "text": "Additional Hotel Guidelines"
+        },
+        {
+          "level": 4,
+          "text": "Booking accommodations through Airbnb"
+        },
+        {
+          "level": 4,
+          "text": "Self Stay Incentive Policy"
+        },
+        {
+          "level": 3,
+          "text": "Meals: Company Provided while Traveling"
+        },
+        {
+          "level": 3,
+          "text": "Traveling: Team Events and Meals"
+        },
+        {
+          "level": 3,
+          "text": "Mileage"
+        },
+        {
+          "level": 4,
+          "text": "How Mileage Rates are Based"
+        },
+        {
+          "level": 3,
+          "text": "Train"
+        },
+        {
+          "level": 3,
+          "text": "Transportation/Parking"
+        },
+        {
+          "level": 3,
+          "text": "Travel (Other)"
+        },
+        {
+          "level": 4,
+          "text": "Internal Conferences and Meetings"
+        },
+        {
+          "level": 4,
+          "text": "Travel Dates - Days before and after"
+        },
+        {
+          "level": 4,
+          "text": "Internet - Travelling"
+        },
+        {
+          "level": 3,
+          "text": "CRO Organization Guidelines"
+        },
+        {
+          "level": 4,
+          "text": "Supporting nursing mothers"
+        },
+        {
+          "level": 4,
+          "text": "Personal Bookings"
+        },
+        {
+          "level": 3,
+          "text": "4.1 NON-TRAVEL RELATED EXPENSES"
+        },
+        {
+          "level": 4,
+          "text": "Books (Audio/E-Books included)"
+        },
+        {
+          "level": 4,
+          "text": "Business Cards"
+        },
+        {
+          "level": 4,
+          "text": "Co-Working Space - Monthly"
+        },
+        {
+          "level": 4,
+          "text": "Co-Working Space - Daily Office Pass"
+        },
+        {
+          "level": 4,
+          "text": "Conferences"
+        },
+        {
+          "level": 4,
+          "text": "Equipment"
+        },
+        {
+          "level": 5,
+          "text": "New Hires- 1,500 USD (or equivalent local currency) Guidelines"
+        },
+        {
+          "level": 5,
+          "text": "Existing Team Members- 500 USD (or equivalent local currency) Refresh Guidelines"
+        },
+        {
+          "level": 2,
+          "text": "Approved WFH Equipment List"
+        },
+        {
+          "level": 3,
+          "text": "Computer Equipment/Other"
+        },
+        {
+          "level": 3,
+          "text": "Furniture"
+        },
+        {
+          "level": 3,
+          "text": "Lighting & Environmental"
+        },
+        {
+          "level": 3,
+          "text": "Other"
+        },
+        {
+          "level": 3,
+          "text": "Team Member Significant Life Events and Team Member Gifts"
+        },
+        {
+          "level": 3,
+          "text": "Internet"
+        },
+        {
+          "level": 3,
+          "text": "Laptops, insurance and repairs"
+        },
+        {
+          "level": 4,
+          "text": "Repairs to company issued equipment"
+        },
+        {
+          "level": 3,
+          "text": "Marketing- related expenses"
+        },
+        {
+          "level": 3,
+          "text": "Meals with Clients and Partners"
+        },
+        {
+          "level": 3,
+          "text": "Office Supplies & consumables"
+        },
+        {
+          "level": 2,
+          "text": "Approved Office Supplies List"
+        },
+        {
+          "level": 3,
+          "text": "Office Supplies"
+        },
+        {
+          "level": 3,
+          "text": "Phone Service"
+        },
+        {
+          "level": 3,
+          "text": "Postage/Shipping/Customs Fees"
+        },
+        {
+          "level": 3,
+          "text": "Professional dues, membership fees"
+        },
+        {
+          "level": 3,
+          "text": "Software"
+        },
+        {
+          "level": 3,
+          "text": "Swag"
+        },
+        {
+          "level": 3,
+          "text": "Team Building"
+        },
+        {
+          "level": 3,
+          "text": "Training/Tuition"
+        },
+        {
+          "level": 3,
+          "text": "VPN Subscription"
+        },
+        {
+          "level": 3,
+          "text": "Visas/Permits/Covid Tests"
+        },
+        {
+          "level": 3,
+          "text": "4.3 Missing Receipt Affidavit"
+        },
+        {
+          "level": 3,
+          "text": "4.4 Reimbursement Payout Timelines"
+        },
+        {
+          "level": 3,
+          "text": "Legal entities"
+        },
+        {
+          "level": 4,
+          "text": "PEO (Professional Employer Organization/ Employer of Record and not a GitLab entity or Branch)"
+        },
+        {
+          "level": 3,
+          "text": "4.5 Submitting Expenses on Behalf (or Requested By) Team Member’s Manager"
+        },
+        {
+          "level": 2,
+          "text": "5. Physical Cards"
+        },
+        {
+          "level": 2,
+          "text": "6. Purchase Cards"
+        },
+        {
+          "level": 2,
+          "text": "7. OTHER"
+        },
+        {
+          "level": 3,
+          "text": "Setting up your Navan Account"
+        },
+        {
+          "level": 3,
+          "text": "Navan End Users Guide"
+        },
+        {
+          "level": 3,
+          "text": "Navan Loyalty Program"
+        },
+        {
+          "level": 3,
+          "text": "Sustainable travel considerations"
+        },
+        {
+          "level": 3,
+          "text": "Domain Name Registration and Maintenance Policy"
+        },
+        {
+          "level": 4,
+          "text": "Scope and Purpose"
+        },
+        {
+          "level": 4,
+          "text": "Registration of new GitLab-related Domain Names"
+        },
+        {
+          "level": 4,
+          "text": "Transfer of existing GitLab-related Domain Names"
+        },
+        {
+          "level": 3,
+          "text": "Team Member Expense Temporary Advances"
+        },
+        {
+          "level": 3,
+          "text": "Expense Reimbursement for Terminated Team Members"
+        }
+      ],
+      "list_items": 370,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_canada_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits/",
+      "raw_sha256": "9336c2ad5b628730c339317ab85aebd07c527d7120f278cef2cc697df4da574b",
+      "cleaned_file": "cleaned/hr_canada_benefits.md",
+      "cleaned_sha256": "f5c263e8fda50a1c3f0893cd5cc2ca31a82693bf279f0914f9801bbd7d41b2d1",
+      "cleaned_bytes": 12955,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab Canada Corp"
+        },
+        {
+          "level": 2,
+          "text": "We’ve Got You Covered"
+        },
+        {
+          "level": 2,
+          "text": "Health & Wellbeing Coverage"
+        },
+        {
+          "level": 3,
+          "text": "Medical, Dental, and Vision Coverage"
+        },
+        {
+          "level": 4,
+          "text": "Eligibility"
+        },
+        {
+          "level": 4,
+          "text": "Key Features"
+        },
+        {
+          "level": 4,
+          "text": "How to Enroll"
+        },
+        {
+          "level": 4,
+          "text": "Resources"
+        },
+        {
+          "level": 4,
+          "text": "Questions?"
+        },
+        {
+          "level": 2,
+          "text": "Financial Security & Retirement"
+        },
+        {
+          "level": 3,
+          "text": "Registered Retirement Savings Plan (RRSP)"
+        },
+        {
+          "level": 4,
+          "text": "Eligibility"
+        },
+        {
+          "level": 4,
+          "text": "How to Enroll"
+        },
+        {
+          "level": 4,
+          "text": "Important Notes"
+        },
+        {
+          "level": 4,
+          "text": "Questions?"
+        },
+        {
+          "level": 3,
+          "text": "Canada Pension Plan (CPP)"
+        },
+        {
+          "level": 2,
+          "text": "Life & Family Protection"
+        },
+        {
+          "level": 3,
+          "text": "Life Insurance & AD&D"
+        },
+        {
+          "level": 3,
+          "text": "Long Term Disability"
+        },
+        {
+          "level": 2,
+          "text": "Parental Leave"
+        },
+        {
+          "level": 3,
+          "text": "Benefits"
+        },
+        {
+          "level": 2,
+          "text": "Time Away & Leave"
+        },
+        {
+          "level": 3,
+          "text": "Paid Time Off & Vacation"
+        },
+        {
+          "level": 3,
+          "text": "Sick Leave"
+        },
+        {
+          "level": 4,
+          "text": "How to Request"
+        },
+        {
+          "level": 2,
+          "text": "Personal Travel Assistance"
+        },
+        {
+          "level": 2,
+          "text": "Managing Life Changes"
+        },
+        {
+          "level": 3,
+          "text": "Process"
+        },
+        {
+          "level": 3,
+          "text": "Dependent Definition"
+        },
+        {
+          "level": 2,
+          "text": "Quick Reference"
+        },
+        {
+          "level": 3,
+          "text": "Key Contacts"
+        },
+        {
+          "level": 3,
+          "text": "Important Links"
+        },
+        {
+          "level": 3,
+          "text": "New Team Member Checklist"
+        }
+      ],
+      "list_items": 108,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_us_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/",
+      "raw_sha256": "ad65140af516c729ef1ae15a780c21158fc513a1fe416274e924d761aa63835b",
+      "cleaned_file": "cleaned/hr_us_benefits.md",
+      "cleaned_sha256": "7b0657ee58bde95be3469c99fe6b5f39e2bb68caa128c3376e0cf06662a904e3",
+      "cleaned_bytes": 38967,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab Inc (US) Benefits"
+        },
+        {
+          "level": 2,
+          "text": "We’ve Got You Covered"
+        },
+        {
+          "level": 2,
+          "text": "2026 Plan Year Information"
+        },
+        {
+          "level": 3,
+          "text": "Quick Start Resources"
+        },
+        {
+          "level": 4,
+          "text": "Important Documents, Archived Plans, Medicare Notices & Tax Documents"
+        },
+        {
+          "level": 2,
+          "text": "Getting Started with Your Benefits"
+        },
+        {
+          "level": 3,
+          "text": "Who Can Get Benefits?"
+        },
+        {
+          "level": 3,
+          "text": "How to Enroll"
+        },
+        {
+          "level": 3,
+          "text": "ID Cards & Access"
+        },
+        {
+          "level": 3,
+          "text": "Qualifying Life Events"
+        },
+        {
+          "level": 2,
+          "text": "Health & Wellbeing: Complete Wellness Support"
+        },
+        {
+          "level": 2,
+          "text": "Medical Coverage"
+        },
+        {
+          "level": 3,
+          "text": "Medical Waiver Allowance"
+        },
+        {
+          "level": 3,
+          "text": "Cigna Medical Plans"
+        },
+        {
+          "level": 4,
+          "text": "Cigna EPO"
+        },
+        {
+          "level": 4,
+          "text": "Cigna High Deductible Health Plan"
+        },
+        {
+          "level": 4,
+          "text": "Cigna PPO"
+        },
+        {
+          "level": 3,
+          "text": "Kaiser Medical Plans"
+        },
+        {
+          "level": 3,
+          "text": "Dental Coverage"
+        },
+        {
+          "level": 3,
+          "text": "Vision Coverage"
+        },
+        {
+          "level": 3,
+          "text": "Employee Assistance Program (EAP)"
+        },
+        {
+          "level": 2,
+          "text": "Financial Security: Security You Can Count On"
+        },
+        {
+          "level": 3,
+          "text": "Basic Life Insurance & AD&D"
+        },
+        {
+          "level": 3,
+          "text": "Supplemental Life Insurance"
+        },
+        {
+          "level": 3,
+          "text": "Disability Protection"
+        },
+        {
+          "level": 3,
+          "text": "401(k) Plan with Company Match"
+        },
+        {
+          "level": 3,
+          "text": "401(k) Plan Features"
+        },
+        {
+          "level": 2,
+          "text": "Supporting Life Transitions"
+        },
+        {
+          "level": 3,
+          "text": "Flexible Spending & Health Savings Accounts"
+        },
+        {
+          "level": 3,
+          "text": "Travel Health Reimbursement (HRA)"
+        },
+        {
+          "level": 2,
+          "text": "Additional Benefits & Resources"
+        },
+        {
+          "level": 3,
+          "text": "Legal Protection"
+        },
+        {
+          "level": 3,
+          "text": "Pet Insurance"
+        },
+        {
+          "level": 3,
+          "text": "Educational Support"
+        },
+        {
+          "level": 3,
+          "text": "Team Member Discounts"
+        },
+        {
+          "level": 3,
+          "text": "Commuter Benefits"
+        },
+        {
+          "level": 2,
+          "text": "Leave Policy & Accommodations"
+        },
+        {
+          "level": 2,
+          "text": "Important Documents & Legal Notices"
+        },
+        {
+          "level": 3,
+          "text": "COBRA Continuation Coverage"
+        },
+        {
+          "level": 3,
+          "text": "Medicare Information"
+        },
+        {
+          "level": 3,
+          "text": "Tax Information"
+        },
+        {
+          "level": 2,
+          "text": "Contact & Support"
+        }
+      ],
+      "list_items": 166,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_netherlands_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands/",
+      "raw_sha256": "33ac14d17fbe68226b42b579a955fa1bf17cfb16f8b095e4dc68242689ca4ab8",
+      "cleaned_file": "cleaned/hr_netherlands_benefits.md",
+      "cleaned_sha256": "d8adbe6ff93ff89df9ec843100b95f189565511c858f30ca1267b275f9769bd0",
+      "cleaned_bytes": 17806,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab BV (Netherlands) Benefits"
+        },
+        {
+          "level": 2,
+          "text": "We’ve Got You Covered"
+        },
+        {
+          "level": 2,
+          "text": "Getting Support When You Need It"
+        },
+        {
+          "level": 3,
+          "text": "Resources Available to You"
+        },
+        {
+          "level": 2,
+          "text": "Health & Wellbeing"
+        },
+        {
+          "level": 3,
+          "text": "Medical Allowance"
+        },
+        {
+          "level": 3,
+          "text": "CZ Collective Healthcare Policy"
+        },
+        {
+          "level": 3,
+          "text": "Vision Reimbursement"
+        },
+        {
+          "level": 3,
+          "text": "Occupational Health Support"
+        },
+        {
+          "level": 2,
+          "text": "Financial Security"
+        },
+        {
+          "level": 3,
+          "text": "Vacation Money (Vakantiegeld)"
+        },
+        {
+          "level": 3,
+          "text": "Retirement Plan"
+        },
+        {
+          "level": 3,
+          "text": "Financial Wellbeing Support"
+        },
+        {
+          "level": 2,
+          "text": "Family & Life Transitions"
+        },
+        {
+          "level": 3,
+          "text": "Group Accident Insurance"
+        },
+        {
+          "level": 3,
+          "text": "Life Insurance Through Pension"
+        },
+        {
+          "level": 2,
+          "text": "Additional Benefits and Programs"
+        },
+        {
+          "level": 3,
+          "text": "30% Tax Ruling"
+        },
+        {
+          "level": 3,
+          "text": "Bike to Work Scheme"
+        },
+        {
+          "level": 3,
+          "text": "Internet Support"
+        },
+        {
+          "level": 2,
+          "text": "Growing Families Leaves"
+        },
+        {
+          "level": 3,
+          "text": "Statutory Maternity Leave"
+        },
+        {
+          "level": 3,
+          "text": "Statutory Partner/Paternity Leave"
+        },
+        {
+          "level": 3,
+          "text": "Adoption and Foster Care Leave"
+        },
+        {
+          "level": 3,
+          "text": "Parental Leave Options"
+        },
+        {
+          "level": 3,
+          "text": "Short-Term Care Leave"
+        },
+        {
+          "level": 3,
+          "text": "Long-Term Care Leave"
+        },
+        {
+          "level": 2,
+          "text": "Time Off Policies"
+        },
+        {
+          "level": 3,
+          "text": "Sick Leave Support"
+        },
+        {
+          "level": 3,
+          "text": "Vacation Time"
+        },
+        {
+          "level": 2,
+          "text": "Questions?"
+        }
+      ],
+      "list_items": 136,
+      "tables": 1,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_germany_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/entity/gmbh-germany/",
+      "raw_sha256": "76621aca9415ce4c805e44c73d271722c49caf27135e11e5c457caef3821df4e",
+      "cleaned_file": "cleaned/hr_germany_benefits.md",
+      "cleaned_sha256": "727038bf92f6e0a9e1709a797d51f48c8e3fc523935d6c61a2bbe5b24885e760",
+      "cleaned_bytes": 26812,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab GmbH (Germany) information & benefits"
+        },
+        {
+          "level": 3,
+          "text": "Scope"
+        },
+        {
+          "level": 3,
+          "text": "Roles & Responsibilities"
+        },
+        {
+          "level": 2,
+          "text": "We’ve Got You Covered"
+        },
+        {
+          "level": 2,
+          "text": "Quick Links"
+        },
+        {
+          "level": 2,
+          "text": "Health & Well-Being"
+        },
+        {
+          "level": 3,
+          "text": "Eye Exam and Glasses Reimbursement"
+        },
+        {
+          "level": 3,
+          "text": "Mandatory Social Insurance"
+        },
+        {
+          "level": 2,
+          "text": "Financial Security"
+        },
+        {
+          "level": 3,
+          "text": "Retirement Planning - Support Fund & Direct Insurance Plan"
+        },
+        {
+          "level": 3,
+          "text": "Personal Accident Insurance"
+        },
+        {
+          "level": 3,
+          "text": "Personal Life Insurance"
+        },
+        {
+          "level": 2,
+          "text": "Family & Leave Transitions"
+        },
+        {
+          "level": 3,
+          "text": "Statutory Leave Protections (Gesetzlicher Schutz)"
+        },
+        {
+          "level": 4,
+          "text": "Important: Complete Work Cessation During Protected Leave"
+        },
+        {
+          "level": 4,
+          "text": "What This Means for Team Members"
+        },
+        {
+          "level": 4,
+          "text": "Prohibition of Disadvantage (Benachteiligungsverbot)"
+        },
+        {
+          "level": 3,
+          "text": "Maternity Protection (Mutterschutz)"
+        },
+        {
+          "level": 3,
+          "text": "Parental Leave (Elternzeit)"
+        },
+        {
+          "level": 3,
+          "text": "GitLab Family Leave Enhancement"
+        },
+        {
+          "level": 3,
+          "text": "Family Care Support"
+        },
+        {
+          "level": 2,
+          "text": "Part-Time Work Options (Teilzeitarbeit)"
+        },
+        {
+          "level": 3,
+          "text": "Statutory Part-Time Rights (§ 8 TzBfG)"
+        },
+        {
+          "level": 4,
+          "text": "Eligibility"
+        },
+        {
+          "level": 4,
+          "text": "How to Request"
+        },
+        {
+          "level": 4,
+          "text": "Important Notes"
+        },
+        {
+          "level": 3,
+          "text": "Temporary Part-Time / Brückenteilzeit (§ 9a TzBfG)"
+        },
+        {
+          "level": 4,
+          "text": "Eligibility"
+        },
+        {
+          "level": 4,
+          "text": "How to Request"
+        },
+        {
+          "level": 3,
+          "text": "Part-Time During Parental Leave / Elternteilzeit (§ 15 BEEG)"
+        },
+        {
+          "level": 4,
+          "text": "Eligibility"
+        },
+        {
+          "level": 4,
+          "text": "How to Apply"
+        },
+        {
+          "level": 4,
+          "text": "Notice Periods"
+        },
+        {
+          "level": 4,
+          "text": "Process"
+        },
+        {
+          "level": 3,
+          "text": "Works Council Involvement"
+        },
+        {
+          "level": 2,
+          "text": "Time Off Policies"
+        },
+        {
+          "level": 3,
+          "text": "Vacation Entitlement"
+        },
+        {
+          "level": 3,
+          "text": "Sick Leave Protection"
+        },
+        {
+          "level": 3,
+          "text": "Education Leave (Bildungsurlaub)"
+        },
+        {
+          "level": 2,
+          "text": "Resources Available to You"
+        },
+        {
+          "level": 3,
+          "text": "Key Contacts"
+        },
+        {
+          "level": 3,
+          "text": "Important Resources"
+        },
+        {
+          "level": 3,
+          "text": "Payslip provider"
+        }
+      ],
+      "list_items": 163,
+      "tables": 5,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_france_remote_work",
+      "source_url": "https://handbook.gitlab.com/handbook/people-policies/france-sas/remote-work-charter/",
+      "raw_sha256": "40ef58d2aa1e83bf52d7e39ac770f5e91880a36256dcc47173b72aa26d0f9f38",
+      "cleaned_file": "cleaned/hr_france_remote_work.md",
+      "cleaned_sha256": "f907ebeb37b4a0ffbe924fec8aef4d776de220a8b8460b77ee86d1fe657bc2f1",
+      "cleaned_bytes": 26535,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab France S.A.S. Remote Work Charter"
+        },
+        {
+          "level": 2,
+          "text": "Français: GITLAB FRANCE S.A.S. CHARTE SUR LE TÉLÉTRAVAIL"
+        },
+        {
+          "level": 3,
+          "text": "PRÉAMBULE"
+        },
+        {
+          "level": 4,
+          "text": "1. DÉFINITIONS ET CHAMP D’APPLICATION"
+        },
+        {
+          "level": 4,
+          "text": "2. LIEU DU TÉLÉTRAVAIL"
+        },
+        {
+          "level": 4,
+          "text": "3. AMÉNAGEMENT ET MISE EN CONFORMITE DES LOCAUX"
+        },
+        {
+          "level": 4,
+          "text": "4. ORGANISATION DU TEMPS DE TRAVAIL"
+        },
+        {
+          "level": 4,
+          "text": "5. TEMPS DE TRAVAIL ET CHARGE DE TRAVAIL"
+        },
+        {
+          "level": 4,
+          "text": "6. ÉQUIPEMENTS DE TRAVAIL"
+        },
+        {
+          "level": 4,
+          "text": "7. ASSURANCES"
+        },
+        {
+          "level": 4,
+          "text": "8. PROTECTION DES DONNÉES"
+        },
+        {
+          "level": 4,
+          "text": "9. FRAIS DE TÉLÉTRAVAIL ET FRAIS PROFESSIONNELS"
+        },
+        {
+          "level": 4,
+          "text": "10. ENTRETIEN ANNUEL"
+        },
+        {
+          "level": 4,
+          "text": "11. PROTECTION DE LA VIE PRIVÉE"
+        },
+        {
+          "level": 4,
+          "text": "12. FORMATION"
+        },
+        {
+          "level": 4,
+          "text": "13. SANTE ET SÉCURITÉ"
+        },
+        {
+          "level": 4,
+          "text": "14. TRADUCTION"
+        },
+        {
+          "level": 2,
+          "text": "English: GITLAB FRANCE S.A.S. REMOTE WORK CHARTER"
+        },
+        {
+          "level": 3,
+          "text": "PREAMBLE"
+        },
+        {
+          "level": 4,
+          "text": "1. DEFINITION AND SCOPE OF APPLICATION"
+        },
+        {
+          "level": 4,
+          "text": "2. PLACE OF REMOTE WORK"
+        },
+        {
+          "level": 4,
+          "text": "3. ADAPTATION AND COMPLIANCE OF THE PLACE OF WORK"
+        },
+        {
+          "level": 4,
+          "text": "4. ORGANISATION OF THE WORKING TIME"
+        },
+        {
+          "level": 4,
+          "text": "5. WORKING TIME AND WORKLOAD"
+        },
+        {
+          "level": 4,
+          "text": "6. WORK EQUIPMENT"
+        },
+        {
+          "level": 4,
+          "text": "7. INSURANCES"
+        },
+        {
+          "level": 4,
+          "text": "8. DATA PROTECTION"
+        },
+        {
+          "level": 4,
+          "text": "9. REMOTE WORK EXPENSES AND PROFESSIONAL EXPENSES"
+        },
+        {
+          "level": 4,
+          "text": "10. ANNUAL INTERVIEW"
+        },
+        {
+          "level": 4,
+          "text": "11. PROTECTION OF PRIVACY"
+        },
+        {
+          "level": 4,
+          "text": "12. TRAINING"
+        },
+        {
+          "level": 4,
+          "text": "13. HEALTH AND SECURITY"
+        },
+        {
+          "level": 4,
+          "text": "14. TRANSLATION"
+        },
+        {
+          "level": 2,
+          "text": "Current and Past Versions (accessible internally only)"
+        }
+      ],
+      "list_items": 29,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_relocation",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/relocation/",
+      "raw_sha256": "52310f880cfe491fd074be92d38bc4c6ff946563b2ae335437b8171ee0ec28dc",
+      "cleaned_file": "cleaned/hr_relocation.md",
+      "cleaned_sha256": "37852f65e0f94d8911cf38897c606fd20e23f599a98bf19daeece19de1f9d576",
+      "cleaned_bytes": 51020,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Relocation"
+        },
+        {
+          "level": 2,
+          "text": "Relocation / Address Change"
+        },
+        {
+          "level": 3,
+          "text": "Importance of Communicating Location"
+        },
+        {
+          "level": 3,
+          "text": "Digital Nomads"
+        },
+        {
+          "level": 3,
+          "text": "Short-Term Stay Definition"
+        },
+        {
+          "level": 4,
+          "text": "Considerations for Short-Term Travel"
+        },
+        {
+          "level": 3,
+          "text": "Long-Term Relocation"
+        },
+        {
+          "level": 4,
+          "text": "Long-Term Relocation Definition"
+        },
+        {
+          "level": 4,
+          "text": "Considerations and Eligibility"
+        },
+        {
+          "level": 4,
+          "text": "Eligibility to Work"
+        },
+        {
+          "level": 2,
+          "text": "How To Apply for a Long-Term Relocation"
+        },
+        {
+          "level": 3,
+          "text": "Team Member"
+        },
+        {
+          "level": 3,
+          "text": "Approvals Phase"
+        },
+        {
+          "level": 4,
+          "text": "Relocation Within Same Country and Same Location Factor"
+        },
+        {
+          "level": 4,
+          "text": "Relocations To New Country or Different Location Factor"
+        },
+        {
+          "level": 3,
+          "text": "Once Approved"
+        },
+        {
+          "level": 3,
+          "text": "Contract Phase"
+        },
+        {
+          "level": 4,
+          "text": "Relocation within the Same Country"
+        },
+        {
+          "level": 5,
+          "text": "Tasks for People Operations"
+        },
+        {
+          "level": 5,
+          "text": "Tasks for the Team Member"
+        },
+        {
+          "level": 4,
+          "text": "Relocation to a New Country"
+        },
+        {
+          "level": 5,
+          "text": "Tasks for People Operations"
+        },
+        {
+          "level": 5,
+          "text": "Tasks for Team Members - Relocation Approved"
+        },
+        {
+          "level": 3,
+          "text": "Country Specific Tasks"
+        },
+        {
+          "level": 4,
+          "text": "The United States of America"
+        },
+        {
+          "level": 5,
+          "text": "Relocating To The United States"
+        },
+        {
+          "level": 5,
+          "text": "Relocating From The United States"
+        },
+        {
+          "level": 4,
+          "text": "The Netherlands"
+        },
+        {
+          "level": 5,
+          "text": "Relocating To The Netherlands"
+        },
+        {
+          "level": 4,
+          "text": "India"
+        },
+        {
+          "level": 5,
+          "text": "Relocating to India"
+        },
+        {
+          "level": 5,
+          "text": "Relocating to or from India"
+        },
+        {
+          "level": 4,
+          "text": "Germany"
+        },
+        {
+          "level": 5,
+          "text": "Relocating to Germany"
+        },
+        {
+          "level": 5,
+          "text": "Relocating from Germany"
+        },
+        {
+          "level": 4,
+          "text": "Canada"
+        },
+        {
+          "level": 5,
+          "text": "Relocating between Quebec and Non-Quebec"
+        },
+        {
+          "level": 4,
+          "text": "Spain"
+        },
+        {
+          "level": 5,
+          "text": "Relocating to Spain"
+        },
+        {
+          "level": 4,
+          "text": "South Korea, France or Singapore"
+        },
+        {
+          "level": 5,
+          "text": "Relocating to South Korea"
+        },
+        {
+          "level": 5,
+          "text": "Relocating to France"
+        },
+        {
+          "level": 5,
+          "text": "Relocating from France"
+        },
+        {
+          "level": 2,
+          "text": "Reporting for Relocations"
+        },
+        {
+          "level": 3,
+          "text": "Steps for a Canceled Relocation Request"
+        }
+      ],
+      "list_items": 146,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_development_tax",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/growth-and-development/tax/",
+      "raw_sha256": "fc8ac9417c32749c4bc05757ef13b19e2af433667668236903eea83b1c30ddcd",
+      "cleaned_file": "cleaned/hr_development_tax.md",
+      "cleaned_sha256": "6d6e8fb3e8b46468791f4395cc3d93d1f1c79441d0e0949c4726c96bcd415871",
+      "cleaned_bytes": 11967,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Tax Impacts of Different Growth & Development Benefits"
+        },
+        {
+          "level": 2,
+          "text": "Introduction"
+        },
+        {
+          "level": 2,
+          "text": "Tax Impact Table"
+        }
+      ],
+      "list_items": 0,
+      "tables": 1,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_acceptable_use_policy",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/acceptable-use-policy/",
+      "raw_sha256": "752bbc383aaa0bffd2bed7f0c0d91fccabd46433ad1b4c4a65ce89396cae541e",
+      "cleaned_file": "cleaned/hr_acceptable_use_policy.md",
+      "cleaned_sha256": "85dbd949742a9a0958ee4326f1731586c61ca6261e5373080a920151e08f354b",
+      "cleaned_bytes": 22776,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab Internal Acceptable Use Policy"
+        },
+        {
+          "level": 4,
+          "text": "This is a Controlled Document"
+        },
+        {
+          "level": 2,
+          "text": "Purpose"
+        },
+        {
+          "level": 2,
+          "text": "Scope"
+        },
+        {
+          "level": 2,
+          "text": "Roles & Responsibilities"
+        },
+        {
+          "level": 2,
+          "text": "Procedure"
+        },
+        {
+          "level": 3,
+          "text": "Acceptable Use and Security Requirements of Computing Resources at GitLab"
+        },
+        {
+          "level": 3,
+          "text": "Security and Proprietary Information"
+        },
+        {
+          "level": 3,
+          "text": "Customer Support Data Exception"
+        },
+        {
+          "level": 3,
+          "text": "Open source libraries"
+        },
+        {
+          "level": 3,
+          "text": "Freeware, Browser Extensions, Add-ons, and Plugins"
+        },
+        {
+          "level": 3,
+          "text": "Unacceptable Use"
+        },
+        {
+          "level": 4,
+          "text": "Unacceptable System and Network Activities"
+        },
+        {
+          "level": 4,
+          "text": "Unacceptable Email and Communications Activities"
+        },
+        {
+          "level": 3,
+          "text": "Return of GitLab-Owned Assets"
+        },
+        {
+          "level": 3,
+          "text": "Bring-Your-Own-Device (BYOD)"
+        },
+        {
+          "level": 4,
+          "text": "Personal Mobile Phone and Tablet Usage"
+        },
+        {
+          "level": 4,
+          "text": "Unable to Use Company Laptop"
+        },
+        {
+          "level": 3,
+          "text": "Mobile Messaging"
+        },
+        {
+          "level": 3,
+          "text": "Use of External Media on Company Assets"
+        },
+        {
+          "level": 3,
+          "text": "Use of file sharing services other than GitLab’s Google Drive"
+        },
+        {
+          "level": 3,
+          "text": "Lost or Stolen Procedures"
+        },
+        {
+          "level": 3,
+          "text": "Policy Compliance"
+        },
+        {
+          "level": 3,
+          "text": "Consultations"
+        },
+        {
+          "level": 2,
+          "text": "Exceptions"
+        },
+        {
+          "level": 2,
+          "text": "References"
+        }
+      ],
+      "list_items": 34,
+      "tables": 1,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_contracts_probation_periods",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/contracts-probation-periods/",
+      "raw_sha256": "a58cc73a872eeb67f362ee020197835dcb6cb0afe88aa28f9135a7d3825a7fe6",
+      "cleaned_file": "cleaned/hr_contracts_probation_periods.md",
+      "cleaned_sha256": "28b61e98aa1ad406128e7c51eff8d70edbc6242d84d5be39b125159def2e7a09",
+      "cleaned_bytes": 45911,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Contracts, Background Screenings, Probation Periods & PIAA"
+        },
+        {
+          "level": 2,
+          "text": "Contract Templates"
+        },
+        {
+          "level": 2,
+          "text": "Team Member’s Individual Contracts"
+        },
+        {
+          "level": 2,
+          "text": "Correcting an error in an issued employment contract"
+        },
+        {
+          "level": 2,
+          "text": "Job Change Letter"
+        },
+        {
+          "level": 3,
+          "text": "Job Change Letter Inc to Fed Entity Change"
+        },
+        {
+          "level": 3,
+          "text": "Background Screenings"
+        },
+        {
+          "level": 4,
+          "text": "Contractors, Contingent Workers, & Temporary Service Providers"
+        },
+        {
+          "level": 4,
+          "text": "Disclosure and Authorization"
+        },
+        {
+          "level": 4,
+          "text": "Review Criteria for Candidates and Team Members"
+        },
+        {
+          "level": 2,
+          "text": "Probation Period"
+        },
+        {
+          "level": 3,
+          "text": "Important steps during the Probation Period"
+        },
+        {
+          "level": 3,
+          "text": "Current Locations With Probationary Periods"
+        },
+        {
+          "level": 3,
+          "text": "Locations without Probation Periods"
+        },
+        {
+          "level": 2,
+          "text": "PIAA (Proprietary Information and Assignment Agreement)"
+        },
+        {
+          "level": 3,
+          "text": "Outside Employment (Paid or Unpaid), Projects, and Potentially-Conflicting Activities"
+        },
+        {
+          "level": 3,
+          "text": "Approval for Outside Activities"
+        },
+        {
+          "level": 4,
+          "text": "Steps as a current candidate (actively engaged in the hiring process)"
+        },
+        {
+          "level": 4,
+          "text": "Steps as a current team member"
+        },
+        {
+          "level": 2,
+          "text": "Annual Code of Business Conduct & Ethics Administration Process"
+        },
+        {
+          "level": 2,
+          "text": "Contract Renewals"
+        },
+        {
+          "level": 2,
+          "text": "Netherlands Renewal Process"
+        },
+        {
+          "level": 3,
+          "text": "The Netherlands Contract Best Practices"
+        },
+        {
+          "level": 2,
+          "text": "CXC Contract Renewal"
+        },
+        {
+          "level": 2,
+          "text": "GitLab Inc Best Practices"
+        },
+        {
+          "level": 3,
+          "text": "GitLab, Inc with OTE"
+        }
+      ],
+      "list_items": 97,
+      "tables": 2,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_employment_solutions",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/employment-solutions/",
+      "raw_sha256": "0faba43ea515c1161516217557a1cf61a7d7a32b9c6673192972a87c472cb8c7",
+      "cleaned_file": "cleaned/hr_employment_solutions.md",
+      "cleaned_sha256": "7caeea387abdbc45de68db37af0c64efef0af0c850027b2840920e8cdb226966",
+      "cleaned_bytes": 7887,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Employment Solutions - Overview"
+        },
+        {
+          "level": 2,
+          "text": "Country Hiring Guidelines"
+        },
+        {
+          "level": 2,
+          "text": "Team Member Types at GitLab"
+        },
+        {
+          "level": 2,
+          "text": "Team Member Types by Country"
+        },
+        {
+          "level": 3,
+          "text": "GitLab Entities and Branches"
+        },
+        {
+          "level": 3,
+          "text": "Team Members Hired as Contractors via our GitLab Services Inc Entity"
+        },
+        {
+          "level": 2,
+          "text": "International Expansion"
+        },
+        {
+          "level": 3,
+          "text": "Country Conversions"
+        },
+        {
+          "level": 3,
+          "text": "Compensation Review for Country Conversions"
+        },
+        {
+          "level": 3,
+          "text": "WBSO (R&D tax credit) in the Netherlands"
+        },
+        {
+          "level": 4,
+          "text": "Organizing WBSO"
+        }
+      ],
+      "list_items": 6,
+      "tables": 2,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_givelab_volunteer_initiatives",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/givelab-volunteer-initiatives/",
+      "raw_sha256": "69923a04b2a367306c3bc74b4cb7dd3a68f8f9a65115882456018c06260c76db",
+      "cleaned_file": "cleaned/hr_givelab_volunteer_initiatives.md",
+      "cleaned_sha256": "1b950141551005fcee893dcc740a73ed5cdf8a8a7946d00df193aab0511469cf",
+      "cleaned_bytes": 4748,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GiveLab Volunteer Initiatives"
+        },
+        {
+          "level": 3,
+          "text": "About GiveLab"
+        },
+        {
+          "level": 3,
+          "text": "Historical GiveLab and Related Activities"
+        },
+        {
+          "level": 3,
+          "text": "GitLab Donation Drives"
+        },
+        {
+          "level": 3,
+          "text": "Upstream Diversity Working Group"
+        },
+        {
+          "level": 3,
+          "text": "Trusted Interns"
+        },
+        {
+          "level": 3,
+          "text": "Rails Girls"
+        },
+        {
+          "level": 3,
+          "text": "Recent Team Member Participation"
+        }
+      ],
+      "list_items": 0,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_learning_and_development",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/",
+      "raw_sha256": "e28aacf96452469236d0a3885148bde57376fbab909c9066f49d84cc36e169a3",
+      "cleaned_file": "cleaned/hr_learning_and_development.md",
+      "cleaned_sha256": "a39473f1c6b98c141eb0b9fd4600268a06ec9a9372e060ba79e9c735641c4aaa",
+      "cleaned_bytes": 14871,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Talent Development"
+        },
+        {
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "level": 3,
+          "text": "Purpose"
+        },
+        {
+          "level": 3,
+          "text": "Vision"
+        },
+        {
+          "level": 3,
+          "text": "Mission"
+        },
+        {
+          "level": 3,
+          "text": "Principles"
+        },
+        {
+          "level": 2,
+          "text": "Learning & Development Team"
+        },
+        {
+          "level": 2,
+          "text": "Team Member Resources"
+        },
+        {
+          "level": 2,
+          "text": "Contact Us"
+        },
+        {
+          "level": 3,
+          "text": "Work With Us"
+        },
+        {
+          "level": 2,
+          "text": "Available Learning and Development Support"
+        },
+        {
+          "level": 2,
+          "text": "How we work"
+        },
+        {
+          "level": 3,
+          "text": "GitLab Product Training"
+        },
+        {
+          "level": 3,
+          "text": "Tools"
+        },
+        {
+          "level": 4,
+          "text": "Rise 360"
+        },
+        {
+          "level": 2,
+          "text": "Developing Learning Content"
+        },
+        {
+          "level": 3,
+          "text": "Learning Content Accessibility Guidelines"
+        },
+        {
+          "level": 3,
+          "text": "Training Content Development Principles"
+        },
+        {
+          "level": 3,
+          "text": "Application of Adult Learning Theory"
+        },
+        {
+          "level": 3,
+          "text": "Learning Delivery Methods - Definitions"
+        },
+        {
+          "level": 3,
+          "text": "Leveraging Content Partner Resources"
+        },
+        {
+          "level": 5,
+          "text": "Career Development and Mobility"
+        },
+        {
+          "level": 5,
+          "text": "Elevate Programs"
+        },
+        {
+          "level": 5,
+          "text": "Growth and Development Fund"
+        },
+        {
+          "level": 5,
+          "text": "Hone Partnership"
+        },
+        {
+          "level": 5,
+          "text": "Internship for Learning"
+        },
+        {
+          "level": 5,
+          "text": "Learning Initiatives"
+        },
+        {
+          "level": 5,
+          "text": "LevelUp"
+        },
+        {
+          "level": 5,
+          "text": "Mentoring at GitLab"
+        },
+        {
+          "level": 5,
+          "text": "Self-Paced External Trainings"
+        },
+        {
+          "level": 5,
+          "text": "Team Workshops"
+        },
+        {
+          "level": 5,
+          "text": "Transitioning to a manager role"
+        }
+      ],
+      "list_items": 30,
+      "tables": 3,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_career_development",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/career-development/",
+      "raw_sha256": "6fb75711eed06a3af6a32e36d93625e0f675af7edf039eda859f1714137b0c8d",
+      "cleaned_file": "cleaned/hr_career_development.md",
+      "cleaned_sha256": "4008f9a225385668112e378e64c532179aa5dc32c48e5589d54c1d649e02fbc4",
+      "cleaned_bytes": 18283,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Career Development and Mobility"
+        },
+        {
+          "level": 2,
+          "text": "What is Career Development"
+        },
+        {
+          "level": 2,
+          "text": "Directory"
+        },
+        {
+          "level": 3,
+          "text": "Resources and Tools"
+        },
+        {
+          "level": 3,
+          "text": "Career Growth Opportunities"
+        },
+        {
+          "level": 3,
+          "text": "Manager Training"
+        },
+        {
+          "level": 3,
+          "text": "Job Shadow Programs"
+        },
+        {
+          "level": 2,
+          "text": "Roles and Responsibilities"
+        },
+        {
+          "level": 3,
+          "text": "70-20-10 Rule for Development"
+        },
+        {
+          "level": 3,
+          "text": "Career Development versus Career Mobility"
+        },
+        {
+          "level": 2,
+          "text": "Document your Career Development"
+        },
+        {
+          "level": 3,
+          "text": "Individual Growth Plan"
+        },
+        {
+          "level": 4,
+          "text": "Start your IGP"
+        },
+        {
+          "level": 3,
+          "text": "Tracking your Progress"
+        },
+        {
+          "level": 4,
+          "text": "Accomplishment Tracker"
+        },
+        {
+          "level": 4,
+          "text": "Health Tracker: Growth Plan"
+        },
+        {
+          "level": 4,
+          "text": "Use GitLab Epics to track your career development"
+        },
+        {
+          "level": 2,
+          "text": "Having Career Conversations"
+        },
+        {
+          "level": 3,
+          "text": "CREDIT and Career Conversations"
+        },
+        {
+          "level": 3,
+          "text": "Having Career Development Conversations with your Team"
+        },
+        {
+          "level": 4,
+          "text": "Manager responsibilities"
+        },
+        {
+          "level": 4,
+          "text": "Recommendations for Managers to support the learning of team members"
+        },
+        {
+          "level": 3,
+          "text": "Inclusive Growth"
+        },
+        {
+          "level": 4,
+          "text": "Career Mapping and Development"
+        },
+        {
+          "level": 4,
+          "text": "Resources"
+        },
+        {
+          "level": 4,
+          "text": "Practice"
+        },
+        {
+          "level": 5,
+          "text": "Your Individual Growth Plan (IGP) Journey"
+        }
+      ],
+      "list_items": 33,
+      "tables": 6,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_elevate_programs",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/",
+      "raw_sha256": "1148f05ad178d25c0ec33765c16b6f48f0c9e7a8812ce13fdf38ebe2d3dd10f5",
+      "cleaned_file": "cleaned/hr_elevate_programs.md",
+      "cleaned_sha256": "7baab347438fe33aea3640d0ff8500ad1290d4275bc36e7cff090febae556e27",
+      "cleaned_bytes": 2928,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Elevate Programs"
+        },
+        {
+          "level": 4,
+          "text": "Elevate Feedback Loop"
+        },
+        {
+          "level": 5,
+          "text": "Elevate"
+        },
+        {
+          "level": 5,
+          "text": "Elevate Applied"
+        },
+        {
+          "level": 5,
+          "text": "Elevate+"
+        },
+        {
+          "level": 5,
+          "text": "ElevatePrep"
+        }
+      ],
+      "list_items": 0,
+      "tables": 1,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_internship_for_learning",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/internship-for-learning/",
+      "raw_sha256": "e1354fa27cbd550e71d6866e690cd0558a19d3dd3482e036094faa541e4398dc",
+      "cleaned_file": "cleaned/hr_internship_for_learning.md",
+      "cleaned_sha256": "45c93c6f36f0c8cea657a2bc1ae2f2786a27c00c43e98a4f1cd1d88500332bfe",
+      "cleaned_bytes": 4626,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Internship for Learning"
+        },
+        {
+          "level": 2,
+          "text": "How does this work?"
+        },
+        {
+          "level": 2,
+          "text": "Starting Your New Internship"
+        },
+        {
+          "level": 2,
+          "text": "Recommendations"
+        }
+      ],
+      "list_items": 0,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_level_up",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/level-up/",
+      "raw_sha256": "d0deb2a58cdfe49dd4decb8e48a095bfcd918c5e28f088253f11b3ab5fe9ee03",
+      "cleaned_file": "cleaned/hr_level_up.md",
+      "cleaned_sha256": "637b1bbec9262319feb0fa3f108d15346dfb76901c38952dd7a7d784cbfa92f1",
+      "cleaned_bytes": 23413,
+      "headings": [
+        {
+          "level": 1,
+          "text": "LevelUp"
+        },
+        {
+          "level": 2,
+          "text": "What is LevelUp?"
+        },
+        {
+          "level": 2,
+          "text": "What’s the difference between LevelUp and GitLab University?"
+        },
+        {
+          "level": 2,
+          "text": "Benefits and Features"
+        },
+        {
+          "level": 2,
+          "text": "Getting Started with LevelUp"
+        },
+        {
+          "level": 3,
+          "text": "How to Access LevelUp"
+        },
+        {
+          "level": 3,
+          "text": "Mobile Access"
+        },
+        {
+          "level": 3,
+          "text": "Your Learning Dashboard"
+        },
+        {
+          "level": 2,
+          "text": "Content in LevelUp"
+        },
+        {
+          "level": 3,
+          "text": "Content Partners and Integrations"
+        },
+        {
+          "level": 3,
+          "text": "Finding Content"
+        },
+        {
+          "level": 2,
+          "text": "Creating Content in LevelUp"
+        },
+        {
+          "level": 3,
+          "text": "When to Use Each Approach"
+        },
+        {
+          "level": 2,
+          "text": "Creating content natively in LevelUp"
+        },
+        {
+          "level": 3,
+          "text": "SmartCards"
+        },
+        {
+          "level": 4,
+          "text": "How to Create a SmartCard"
+        },
+        {
+          "level": 3,
+          "text": "Pathways"
+        },
+        {
+          "level": 4,
+          "text": "How to Create a Pathway"
+        },
+        {
+          "level": 3,
+          "text": "Journeys"
+        },
+        {
+          "level": 4,
+          "text": "How to Create a Journey"
+        },
+        {
+          "level": 2,
+          "text": "Creating content with Articulate Rise"
+        },
+        {
+          "level": 2,
+          "text": "Third-Party Content in LevelUp"
+        },
+        {
+          "level": 2,
+          "text": "Understanding Your Learning"
+        },
+        {
+          "level": 3,
+          "text": "System Transcript"
+        },
+        {
+          "level": 3,
+          "text": "Progress Tracking"
+        },
+        {
+          "level": 2,
+          "text": "For Managers"
+        },
+        {
+          "level": 3,
+          "text": "Manager Dashboard"
+        },
+        {
+          "level": 2,
+          "text": "Compliance Training"
+        },
+        {
+          "level": 3,
+          "text": "Understanding Compliance Requirements"
+        },
+        {
+          "level": 3,
+          "text": "Compliance Notifications"
+        },
+        {
+          "level": 3,
+          "text": "Completing Compliance Training"
+        },
+        {
+          "level": 2,
+          "text": "Channels and Groups"
+        },
+        {
+          "level": 3,
+          "text": "Channels"
+        },
+        {
+          "level": 3,
+          "text": "Groups"
+        },
+        {
+          "level": 2,
+          "text": "Mobile Learning"
+        },
+        {
+          "level": 3,
+          "text": "Cornerstone Mobile App"
+        },
+        {
+          "level": 2,
+          "text": "FAQs"
+        },
+        {
+          "level": 3,
+          "text": "Getting Started"
+        },
+        {
+          "level": 3,
+          "text": "Learning History and Progress"
+        },
+        {
+          "level": 3,
+          "text": "Content and Access"
+        },
+        {
+          "level": 3,
+          "text": "Technical Issues"
+        },
+        {
+          "level": 3,
+          "text": "Content Creation"
+        },
+        {
+          "level": 2,
+          "text": "Getting Help"
+        }
+      ],
+      "list_items": 154,
+      "tables": 2,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_manager_development",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/manager-development/",
+      "raw_sha256": "8ab7631fa3e50e48a0f6ce3f3b718913c3dc71da07ce7473c70b3446a034e2a2",
+      "cleaned_file": "cleaned/hr_manager_development.md",
+      "cleaned_sha256": "f1b9b2732b2bb0d92c83bbadf720f06454326ab4b4278056ed19f9a43644ea58",
+      "cleaned_bytes": 8349,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Transitioning to a manager role"
+        },
+        {
+          "level": 4,
+          "text": "Finding the balance between contributing and managing"
+        },
+        {
+          "level": 4,
+          "text": "Navigating the complexity of managing your former peers"
+        },
+        {
+          "level": 4,
+          "text": "The “Becoming a GitLab Manager” issue, support, and resources"
+        },
+        {
+          "level": 3,
+          "text": "Coaching remote work practices"
+        },
+        {
+          "level": 3,
+          "text": "Participate in the Elevate program"
+        },
+        {
+          "level": 3,
+          "text": "Transitioning to a Manager Video"
+        }
+      ],
+      "list_items": 9,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_self_paced_learning",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/self-paced-learning/",
+      "raw_sha256": "d71464d804af404f2c5b62717638c819f61aab3d4ff2beb185eb4f99dadc681e",
+      "cleaned_file": "cleaned/hr_self_paced_learning.md",
+      "cleaned_sha256": "c1b59f8bd2a2fc33460c70ce8ea15c964fc3d9579cf2d74674bcaaacf42ff1d7",
+      "cleaned_bytes": 4357,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Self-Paced External Trainings"
+        },
+        {
+          "level": 2,
+          "text": "O’Reilly Learning"
+        },
+        {
+          "level": 3,
+          "text": "How to get an O’Reilly license"
+        },
+        {
+          "level": 3,
+          "text": "Accessing O’Reilly content"
+        },
+        {
+          "level": 2,
+          "text": "Google Cloud Skills Boost Learning"
+        },
+        {
+          "level": 2,
+          "text": "Hone Learning"
+        },
+        {
+          "level": 2,
+          "text": "MasterClass"
+        },
+        {
+          "level": 3,
+          "text": "Accessing MasterClass"
+        }
+      ],
+      "list_items": 2,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_offboarding",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/offboarding/",
+      "raw_sha256": "a7add8b5f7cc0ba90fef2be71f6eae6990258a33d8db3ffe3d3dcfb55422a27e",
+      "cleaned_file": "cleaned/hr_offboarding.md",
+      "cleaned_sha256": "37b8a41e8c265b7d51d50e9c7d693317cf1e6e6d524aebdeae0a5e2460a4ffec",
+      "cleaned_bytes": 42177,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab Offboarding"
+        },
+        {
+          "level": 2,
+          "text": "Offboarding Overview"
+        },
+        {
+          "level": 3,
+          "text": "Offboarding Support"
+        },
+        {
+          "level": 2,
+          "text": "Voluntary Terminations"
+        },
+        {
+          "level": 3,
+          "text": "Prior to Resignation"
+        },
+        {
+          "level": 3,
+          "text": "Resignation"
+        },
+        {
+          "level": 4,
+          "text": "Country Specific Requirements for Resignation"
+        },
+        {
+          "level": 4,
+          "text": "Belgium"
+        },
+        {
+          "level": 5,
+          "text": "France"
+        },
+        {
+          "level": 5,
+          "text": "Germany"
+        },
+        {
+          "level": 5,
+          "text": "Japan"
+        },
+        {
+          "level": 5,
+          "text": "Singapore"
+        },
+        {
+          "level": 5,
+          "text": "UAE"
+        },
+        {
+          "level": 3,
+          "text": "Termination"
+        },
+        {
+          "level": 3,
+          "text": "Offboarding"
+        },
+        {
+          "level": 2,
+          "text": "Involuntary Terminations"
+        },
+        {
+          "level": 3,
+          "text": "Involuntary Process"
+        },
+        {
+          "level": 3,
+          "text": "Facilitating the Call"
+        },
+        {
+          "level": 4,
+          "text": "Critical Points During Offboarding Call"
+        },
+        {
+          "level": 5,
+          "text": "All Team Members"
+        },
+        {
+          "level": 5,
+          "text": "US Team Members"
+        },
+        {
+          "level": 3,
+          "text": "Initiating an Involuntary Termination in Workday"
+        },
+        {
+          "level": 3,
+          "text": "Last Working Day"
+        },
+        {
+          "level": 4,
+          "text": "Last Working Day for US Team Members"
+        },
+        {
+          "level": 3,
+          "text": "Sample Offboarding Memo"
+        },
+        {
+          "level": 3,
+          "text": "Separation and Release of Claims Agreements"
+        },
+        {
+          "level": 3,
+          "text": "Severance Process for US-based Team Members"
+        },
+        {
+          "level": 3,
+          "text": "Team Member Leave during an Investigation"
+        },
+        {
+          "level": 3,
+          "text": "Offboarding Compliance"
+        },
+        {
+          "level": 2,
+          "text": "GitLab Alumni Program"
+        },
+        {
+          "level": 2,
+          "text": "Communicating Departures"
+        },
+        {
+          "level": 3,
+          "text": "Voluntary Terminations"
+        },
+        {
+          "level": 3,
+          "text": "1. Inform Direct Team"
+        },
+        {
+          "level": 3,
+          "text": "2. Inform Key Stakeholders"
+        },
+        {
+          "level": 3,
+          "text": "3. Announce In Appropriate Team Channels"
+        },
+        {
+          "level": 3,
+          "text": "Involuntary Terminations"
+        },
+        {
+          "level": 3,
+          "text": "1. Inform The Department/Stakeholders"
+        },
+        {
+          "level": 3,
+          "text": "What Do We Share?"
+        },
+        {
+          "level": 2,
+          "text": "Turnover Data"
+        },
+        {
+          "level": 2,
+          "text": "Managing the Offboarding Tasks"
+        },
+        {
+          "level": 3,
+          "text": "Offboarding Issue"
+        },
+        {
+          "level": 3,
+          "text": "Returning Property to GitLab"
+        },
+        {
+          "level": 3,
+          "text": "Navan Expense"
+        },
+        {
+          "level": 3,
+          "text": "Retrospective for Managers"
+        },
+        {
+          "level": 4,
+          "text": "Evaluation Framework"
+        },
+        {
+          "level": 2,
+          "text": "Unemployment Claims"
+        },
+        {
+          "level": 3,
+          "text": "Unemployment Claims in the US"
+        },
+        {
+          "level": 3,
+          "text": "Reporting a False Unemployment Claim"
+        },
+        {
+          "level": 5,
+          "text": "GitLab Offboarding FAQ"
+        },
+        {
+          "level": 5,
+          "text": "GitLab Offboarding Standards"
+        }
+      ],
+      "list_items": 97,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_offboarding_standards",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/offboarding/offboarding_standards/",
+      "raw_sha256": "6f1f7683bc5f1dde88b408c914050f66b855e25ce62c8ee54b753be8704e7c58",
+      "cleaned_file": "cleaned/hr_offboarding_standards.md",
+      "cleaned_sha256": "c949aa362269db62364893b5a453f4181503322b5cea8ba777fc892176a4045d",
+      "cleaned_bytes": 9686,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab Offboarding Standards"
+        },
+        {
+          "level": 4,
+          "text": "This is a Controlled Document"
+        },
+        {
+          "level": 2,
+          "text": "Purpose"
+        },
+        {
+          "level": 2,
+          "text": "Scope"
+        },
+        {
+          "level": 2,
+          "text": "Roles & Responsibilities"
+        },
+        {
+          "level": 2,
+          "text": "Offboarding Procedure"
+        },
+        {
+          "level": 3,
+          "text": "Notice of Offboarding"
+        },
+        {
+          "level": 3,
+          "text": "Offboarding Assignments"
+        },
+        {
+          "level": 3,
+          "text": "Creating the Offboarding Case"
+        },
+        {
+          "level": 4,
+          "text": "Creating the Offboarding Case Manually"
+        },
+        {
+          "level": 3,
+          "text": "Offboarding Tools"
+        },
+        {
+          "level": 4,
+          "text": "Google Workspace"
+        },
+        {
+          "level": 4,
+          "text": "Slack"
+        },
+        {
+          "level": 4,
+          "text": "Team Page"
+        },
+        {
+          "level": 3,
+          "text": "Offboarding Compliance"
+        },
+        {
+          "level": 2,
+          "text": "Exceptions"
+        },
+        {
+          "level": 2,
+          "text": "References"
+        }
+      ],
+      "list_items": 25,
+      "tables": 1,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_promotions_transfers",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/promotions-transfers/",
+      "raw_sha256": "2029364b046e4343b166bf367949aa133dfe7199031b1e499d866d9e61fad331",
+      "cleaned_file": "cleaned/hr_promotions_transfers.md",
+      "cleaned_sha256": "38768fc35187ad2f2ff064e9653edee04f8566e25f5bd80b89d8fd2bda0db307",
+      "cleaned_bytes": 112645,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Promotions and Transfers"
+        },
+        {
+          "level": 2,
+          "text": "This page is currently under review and construction"
+        },
+        {
+          "level": 2,
+          "text": "Definitions"
+        },
+        {
+          "level": 3,
+          "text": "Internal Mobility"
+        },
+        {
+          "level": 4,
+          "text": "Engineering Internal Mobility"
+        },
+        {
+          "level": 3,
+          "text": "Promotions"
+        },
+        {
+          "level": 2,
+          "text": "Types of Promotions"
+        },
+        {
+          "level": 2,
+          "text": "Promotion Philosophy"
+        },
+        {
+          "level": 3,
+          "text": "Pillars"
+        },
+        {
+          "level": 3,
+          "text": "Values Alignment"
+        },
+        {
+          "level": 3,
+          "text": "Processing a Promotion"
+        },
+        {
+          "level": 2,
+          "text": "Twice per Year Promotion Calibration Process & Timeline"
+        },
+        {
+          "level": 3,
+          "text": "Sales Development Process"
+        },
+        {
+          "level": 3,
+          "text": "Engineering Promotion Planning"
+        },
+        {
+          "level": 3,
+          "text": "Twice Annual Process"
+        },
+        {
+          "level": 3,
+          "text": "FY27-Q2 (May 1)"
+        },
+        {
+          "level": 3,
+          "text": "FY27-Q4 (Nov 1)"
+        },
+        {
+          "level": 2,
+          "text": "Planning"
+        },
+        {
+          "level": 3,
+          "text": "Promotion Document"
+        },
+        {
+          "level": 4,
+          "text": "Promotion Summary"
+        },
+        {
+          "level": 4,
+          "text": "Business Results"
+        },
+        {
+          "level": 4,
+          "text": "Business Justification"
+        },
+        {
+          "level": 4,
+          "text": "Values Alignment"
+        },
+        {
+          "level": 4,
+          "text": "Additional Tips"
+        },
+        {
+          "level": 2,
+          "text": "Calibration"
+        },
+        {
+          "level": 3,
+          "text": "Promotions to Senior Director+"
+        },
+        {
+          "level": 3,
+          "text": "Promotion Metrics"
+        },
+        {
+          "level": 4,
+          "text": "Internal Mobility"
+        },
+        {
+          "level": 4,
+          "text": "Average % Compensation Change"
+        },
+        {
+          "level": 3,
+          "text": "Budget Impact (see below)"
+        },
+        {
+          "level": 3,
+          "text": "Promotion Budget"
+        },
+        {
+          "level": 2,
+          "text": "Promotions Processed Outside of the Twice Per Year Promotion Calibration Process"
+        },
+        {
+          "level": 3,
+          "text": "How to Process an Exception: Submitting an out-of-cycle Promotion request in Workday"
+        },
+        {
+          "level": 4,
+          "text": "Exception Approvals"
+        },
+        {
+          "level": 3,
+          "text": "FY25 CTO Organization Promotion Guidance"
+        },
+        {
+          "level": 4,
+          "text": "CTO Timeline for FY25-Q3"
+        },
+        {
+          "level": 4,
+          "text": "Context Setting for Managers"
+        },
+        {
+          "level": 4,
+          "text": "Guiding Questions for FY25 Promotions"
+        },
+        {
+          "level": 3,
+          "text": "Security Promotion Process"
+        },
+        {
+          "level": 4,
+          "text": "Feedback Confidentiality"
+        },
+        {
+          "level": 4,
+          "text": "Resources"
+        },
+        {
+          "level": 2,
+          "text": "Hiring for VP+ Roles"
+        },
+        {
+          "level": 2,
+          "text": "Process for Managers: Requesting a Promotion"
+        },
+        {
+          "level": 2,
+          "text": "Recommending a Compensation Increase"
+        },
+        {
+          "level": 3,
+          "text": "Promotion Compensation Guidelines"
+        },
+        {
+          "level": 3,
+          "text": "Transfer Compensation Guidelines"
+        },
+        {
+          "level": 2,
+          "text": "Workday Out-of-Cycle Promotion Approval Process"
+        },
+        {
+          "level": 3,
+          "text": "For People Operations Team: Processing Promotions, Internal Transfers & Compensation Changes"
+        },
+        {
+          "level": 4,
+          "text": "Job Change Letter"
+        },
+        {
+          "level": 2,
+          "text": "Interim and Acting Roles"
+        },
+        {
+          "level": 3,
+          "text": "Interim"
+        },
+        {
+          "level": 4,
+          "text": "Beginning Interim Period"
+        },
+        {
+          "level": 4,
+          "text": "Ending Interim Period"
+        },
+        {
+          "level": 4,
+          "text": "Updating Interim Movements in Workday"
+        },
+        {
+          "level": 3,
+          "text": "Acting"
+        },
+        {
+          "level": 3,
+          "text": "Acting Roles and Internal Mobility"
+        },
+        {
+          "level": 2,
+          "text": "Demotions"
+        },
+        {
+          "level": 2,
+          "text": "Job Title Specialty Changes"
+        },
+        {
+          "level": 3,
+          "text": "Job Title Specialty Guidance For Managers"
+        },
+        {
+          "level": 4,
+          "text": "For Development and Infrastructure departments"
+        },
+        {
+          "level": 4,
+          "text": "For Customer Support department"
+        },
+        {
+          "level": 2,
+          "text": "Manager Self-Service in Workday: Job Information Change"
+        },
+        {
+          "level": 3,
+          "text": "For Current Manager: Processing Manager Changes"
+        },
+        {
+          "level": 3,
+          "text": "For People Operations: Processing Manager changes"
+        },
+        {
+          "level": 3,
+          "text": "For People Operations: Processing Job Information Change Requests"
+        },
+        {
+          "level": 2,
+          "text": "Department Transfers"
+        },
+        {
+          "level": 3,
+          "text": "For Internal Applicants"
+        },
+        {
+          "level": 4,
+          "text": "Different Job Family"
+        },
+        {
+          "level": 4,
+          "text": "Same Job Family, Different Department or Specialty"
+        },
+        {
+          "level": 3,
+          "text": "Internal Department Transfers"
+        },
+        {
+          "level": 2,
+          "text": "Internal Transfer Start Date"
+        },
+        {
+          "level": 2,
+          "text": "Department Transfers Manager Initiated"
+        },
+        {
+          "level": 3,
+          "text": "When promotion is a consideration - Within Same Job Family"
+        },
+        {
+          "level": 3,
+          "text": "For Internal Applicants - Different Job Family"
+        },
+        {
+          "level": 3,
+          "text": "Announcing Internal Promotions/Transfers"
+        },
+        {
+          "level": 3,
+          "text": "For People Success & Talent Acquisition Team"
+        },
+        {
+          "level": 2,
+          "text": "Organization Change Checklist"
+        },
+        {
+          "level": 2,
+          "text": "Organization Change Checklist Creation Process"
+        },
+        {
+          "level": 2,
+          "text": "Important Tasks once the Organization Change Checklist has been finalized"
+        },
+        {
+          "level": 2,
+          "text": "Promotions and Transfers of Employees in Commissionable Roles"
+        },
+        {
+          "level": 3,
+          "text": "For the Current Sales Managers"
+        },
+        {
+          "level": 3,
+          "text": "For Sales Recruiting"
+        },
+        {
+          "level": 3,
+          "text": "For Sales Finance"
+        },
+        {
+          "level": 3,
+          "text": "For Sales Commissions"
+        },
+        {
+          "level": 2,
+          "text": "For Team Members: Transitioning To A New Manager"
+        },
+        {
+          "level": 2,
+          "text": "For Managers : Moving a Team Member to your team"
+        },
+        {
+          "level": 2,
+          "text": "For Team Members: Updating Your Title After A Role Change"
+        },
+        {
+          "level": 2,
+          "text": "Footnotes"
+        }
+      ],
+      "list_items": 318,
+      "tables": 3,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_visas",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/visas/",
+      "raw_sha256": "77144ec322af497718a462270010b7cfd0e29c35a9dc2082a414305299b5a8e3",
+      "cleaned_file": "cleaned/hr_visas.md",
+      "cleaned_sha256": "cabd0af669fb675be3c3fcc9c154040ea2c8ee5a62010a47c2e320adff78b0c7",
+      "cleaned_bytes": 45145,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Visas"
+        },
+        {
+          "level": 2,
+          "text": "Visa and Sponsorship Policy"
+        },
+        {
+          "level": 3,
+          "text": "General Work Authorization Guidelines"
+        },
+        {
+          "level": 3,
+          "text": "Visas and work permits GitLab may be able to accept"
+        },
+        {
+          "level": 3,
+          "text": "Visas and work permits GitLab does not sponsor"
+        },
+        {
+          "level": 2,
+          "text": "Travel Visas"
+        },
+        {
+          "level": 2,
+          "text": "Expensing"
+        },
+        {
+          "level": 3,
+          "text": "Arranging a visa for travel"
+        },
+        {
+          "level": 4,
+          "text": "Tips & Tricks for visa arrangements"
+        },
+        {
+          "level": 5,
+          "text": "Timeline guide for visa applications"
+        },
+        {
+          "level": 2,
+          "text": "Dutch Work Permits"
+        },
+        {
+          "level": 3,
+          "text": "30% Ruling in the Netherlands"
+        },
+        {
+          "level": 3,
+          "text": "Transferring the 30% Ruling from a Previous Employer"
+        },
+        {
+          "level": 3,
+          "text": "BSN Number"
+        },
+        {
+          "level": 3,
+          "text": "Right to Immigrate to the Netherlands"
+        },
+        {
+          "level": 4,
+          "text": "Special considerations for team members in unsafe environments"
+        },
+        {
+          "level": 4,
+          "text": "Transferring a partner visa to a highly skilled migrant visa"
+        },
+        {
+          "level": 4,
+          "text": "Resources"
+        },
+        {
+          "level": 2,
+          "text": "Highly Skilled Candidates (Ireland and EU Blue Card processes)"
+        },
+        {
+          "level": 3,
+          "text": "Critical Skills Employment Permit Ireland"
+        },
+        {
+          "level": 4,
+          "text": "The eligibility criteria"
+        },
+        {
+          "level": 4,
+          "text": "Further criteria include"
+        },
+        {
+          "level": 4,
+          "text": "Application process"
+        },
+        {
+          "level": 4,
+          "text": "Fee"
+        },
+        {
+          "level": 3,
+          "text": "EU Blue Card"
+        },
+        {
+          "level": 3,
+          "text": "Other visas GitLab may be able to accept"
+        },
+        {
+          "level": 4,
+          "text": "Australia Employer Nomination Scheme visa (subclass 186)"
+        },
+        {
+          "level": 4,
+          "text": "India Employment Visa"
+        },
+        {
+          "level": 4,
+          "text": "Japan Engineer Visa"
+        },
+        {
+          "level": 4,
+          "text": "Netherlands Partner Visa"
+        },
+        {
+          "level": 4,
+          "text": "Korea F5 Permanent Resident Visa"
+        },
+        {
+          "level": 4,
+          "text": "Singapore Personalised Employment Pass"
+        },
+        {
+          "level": 4,
+          "text": "Singapore Employment Pass"
+        },
+        {
+          "level": 4,
+          "text": "UK Global Talent Visa"
+        },
+        {
+          "level": 4,
+          "text": "UK India Young Professionals Scheme Visa"
+        },
+        {
+          "level": 4,
+          "text": "UK Ancestry Visa/British National (Overseas) Visa"
+        },
+        {
+          "level": 4,
+          "text": "USA TN Visa (USMCA)"
+        },
+        {
+          "level": 4,
+          "text": "USA Green Card"
+        },
+        {
+          "level": 4,
+          "text": "USA H-4 EAD"
+        },
+        {
+          "level": 4,
+          "text": "USA F-1 CPT/OPT Student Visa"
+        },
+        {
+          "level": 4,
+          "text": "USA J-2 Visa"
+        },
+        {
+          "level": 2,
+          "text": "How to talk to candidates about work authorization"
+        }
+      ],
+      "list_items": 107,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_right_to_disconnect_charter",
+      "source_url": "https://handbook.gitlab.com/handbook/people-policies/france-sas/right-to-disconnect-charter/",
+      "raw_sha256": "bb20a34456183149f87e18a8db48573e5c1138d79ab175f6d8daa92d937290c1",
+      "cleaned_file": "cleaned/hr_right_to_disconnect_charter.md",
+      "cleaned_sha256": "fd28428afc262c925aad17316acb24c81006b5650e42772c98284be296281f39",
+      "cleaned_bytes": 33472,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab France S.A.S. Right to Disconnect Charter"
+        },
+        {
+          "level": 2,
+          "text": "Roles and Responsibilities"
+        },
+        {
+          "level": 2,
+          "text": "Français: GITLAB FRANCE S.A.S. CHARTE SUR LE DROIT À LA DÉCONNEXION"
+        },
+        {
+          "level": 3,
+          "text": "1. Objet"
+        },
+        {
+          "level": 3,
+          "text": "2. Champ d’application"
+        },
+        {
+          "level": 3,
+          "text": "3. Déconnexion du travail"
+        },
+        {
+          "level": 3,
+          "text": "4. Dérogations et flexibilités en cas d’urgence"
+        },
+        {
+          "level": 3,
+          "text": "5. Engagement et responsabilités"
+        },
+        {
+          "level": 3,
+          "text": "6. Comportements recommandés favorisant l’exercice du droit à la déconnexion"
+        },
+        {
+          "level": 3,
+          "text": "7. Communications"
+        },
+        {
+          "level": 3,
+          "text": "8. Réunions"
+        },
+        {
+          "level": 3,
+          "text": "9. Conseils"
+        },
+        {
+          "level": 3,
+          "text": "10. Engagements de la société en matière de sensibilisation et de formation au droit à la déconnexion"
+        },
+        {
+          "level": 3,
+          "text": "11. Signalements"
+        },
+        {
+          "level": 3,
+          "text": "12. Traduction"
+        },
+        {
+          "level": 3,
+          "text": "13. Entrée en vigueur de la Charte"
+        },
+        {
+          "level": 2,
+          "text": "English: GITLAB FRANCE S.A.S. RIGHT TO DISCONNECT CHARTER"
+        },
+        {
+          "level": 3,
+          "text": "1. Purpose"
+        },
+        {
+          "level": 3,
+          "text": "2. Applicability"
+        },
+        {
+          "level": 3,
+          "text": "3. Disconnecting from work"
+        },
+        {
+          "level": 3,
+          "text": "4. Exceptions and flexibility toward emergencies"
+        },
+        {
+          "level": 3,
+          "text": "5. Commitment and responsibilities"
+        },
+        {
+          "level": 3,
+          "text": "6. Recommended behaviours favouring the exercise of the right to disconnect"
+        },
+        {
+          "level": 3,
+          "text": "7. Communications"
+        },
+        {
+          "level": 3,
+          "text": "8. Meetings"
+        },
+        {
+          "level": 3,
+          "text": "9. Tips to help"
+        },
+        {
+          "level": 3,
+          "text": "10. Company’s undertakings regarding awareness and training on the right to disconnect"
+        },
+        {
+          "level": 3,
+          "text": "11. Raising concerns"
+        },
+        {
+          "level": 3,
+          "text": "12. Translation"
+        },
+        {
+          "level": 3,
+          "text": "13. Entry into force of the Charter"
+        },
+        {
+          "level": 2,
+          "text": "Current and Past Versions (accessible internally only)"
+        }
+      ],
+      "list_items": 45,
+      "tables": 1,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_inc_usa",
+      "source_url": "https://handbook.gitlab.com/handbook/people-policies/inc-usa/",
+      "raw_sha256": "2dddb7483c8fae504d65e1d2cb68ffd5787ce35b641c1724e4994a507a3ef5f0",
+      "cleaned_file": "cleaned/hr_inc_usa.md",
+      "cleaned_sha256": "607c0a1d1e9b1b49938e2cfb6c226b58ac68935421dc9977580efa4d8fb03889",
+      "cleaned_bytes": 34046,
+      "headings": [
+        {
+          "level": 1,
+          "text": "People Policies - GitLab Inc (USA)"
+        },
+        {
+          "level": 2,
+          "text": "Equal Employment Opportunity Policy"
+        },
+        {
+          "level": 3,
+          "text": "Scope"
+        },
+        {
+          "level": 3,
+          "text": "Dissemination and Implementation of Policy"
+        },
+        {
+          "level": 3,
+          "text": "Procedures"
+        },
+        {
+          "level": 3,
+          "text": "Remedies"
+        },
+        {
+          "level": 3,
+          "text": "Harassment"
+        },
+        {
+          "level": 2,
+          "text": "Individuals with Disabilities Policy"
+        },
+        {
+          "level": 3,
+          "text": "Our Commitment"
+        },
+        {
+          "level": 3,
+          "text": "Roles and Responsibilities"
+        },
+        {
+          "level": 3,
+          "text": "Qualified Individuals with Disabilities"
+        },
+        {
+          "level": 3,
+          "text": "Pregnancy Accommodation"
+        },
+        {
+          "level": 3,
+          "text": "Reasonable Accommodation"
+        },
+        {
+          "level": 3,
+          "text": "Determining Appropriate Accommodations"
+        },
+        {
+          "level": 2,
+          "text": "US Access to Personnel Records"
+        },
+        {
+          "level": 3,
+          "text": "Leave Policies"
+        },
+        {
+          "level": 2,
+          "text": "Pay Transparency Non-Discrimination Provision"
+        },
+        {
+          "level": 2,
+          "text": "Infectious Disease Policy"
+        },
+        {
+          "level": 3,
+          "text": "Communication"
+        },
+        {
+          "level": 3,
+          "text": "Safety and Health Measures"
+        },
+        {
+          "level": 4,
+          "text": "Health Monitoring"
+        },
+        {
+          "level": 4,
+          "text": "Rest When Sick"
+        },
+        {
+          "level": 4,
+          "text": "Business Travel Restrictions"
+        },
+        {
+          "level": 4,
+          "text": "Non-Essential Activities"
+        },
+        {
+          "level": 3,
+          "text": "Attendance and Leave"
+        },
+        {
+          "level": 3,
+          "text": "Compensation"
+        },
+        {
+          "level": 3,
+          "text": "Furloughs/Layoffs and Closings"
+        },
+        {
+          "level": 3,
+          "text": "On-Site Work Prohibited"
+        },
+        {
+          "level": 3,
+          "text": "Confidentiality"
+        },
+        {
+          "level": 3,
+          "text": "No Retaliation"
+        },
+        {
+          "level": 3,
+          "text": "Additional Information"
+        },
+        {
+          "level": 2,
+          "text": "Fair Credit Reporting Act (FCRA) and Related State Law Compliance"
+        },
+        {
+          "level": 3,
+          "text": "Record Retention"
+        },
+        {
+          "level": 3,
+          "text": "Financial Checks"
+        }
+      ],
+      "list_items": 20,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_leave_of_absence",
+      "source_url": "https://handbook.gitlab.com/handbook/people-policies/leave-of-absence/",
+      "raw_sha256": "9da053a452ef5fa012797ee708fdfdbe24954df6a09057d0732bb317ff147aaa",
+      "cleaned_file": "cleaned/hr_leave_of_absence.md",
+      "cleaned_sha256": "f89257de227fc963880ed5339a7e2b284d45671e6304fafcf1d98e9ef482967a",
+      "cleaned_bytes": 4325,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Leave of Absence"
+        },
+        {
+          "level": 2,
+          "text": "Company-Wide Leave of Absence Policies"
+        },
+        {
+          "level": 3,
+          "text": "Parental Leave"
+        },
+        {
+          "level": 3,
+          "text": "Military Leave"
+        },
+        {
+          "level": 5,
+          "text": "United States Leave of Absence Policies"
+        }
+      ],
+      "list_items": 16,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_us",
+      "source_url": "https://handbook.gitlab.com/handbook/people-policies/leave-of-absence/us/",
+      "raw_sha256": "42d390d8445534ba2e431be9ca4251235caf06019b82d705f3bc2fa49dbf01c4",
+      "cleaned_file": "cleaned/hr_us.md",
+      "cleaned_sha256": "6f8215ff70d16902558cdd1acbd97acd84d58469af5e50787d9561e466aefcd4",
+      "cleaned_bytes": 39432,
+      "headings": [
+        {
+          "level": 1,
+          "text": "United States Leave of Absence Policies"
+        },
+        {
+          "level": 2,
+          "text": "How to Request Leave (Effective 2026-02-02)"
+        },
+        {
+          "level": 2,
+          "text": "Which leave is right for me?"
+        },
+        {
+          "level": 3,
+          "text": "How Much Time Do I Get Off?  Is my Job Protected?"
+        },
+        {
+          "level": 3,
+          "text": "How Will My Pay Be Calculated?"
+        },
+        {
+          "level": 3,
+          "text": "State-Specific Leaves"
+        },
+        {
+          "level": 3,
+          "text": "The Family Medical Leave Act (FMLA)"
+        },
+        {
+          "level": 4,
+          "text": "How to Apply"
+        },
+        {
+          "level": 4,
+          "text": "Payroll Processing During FMLA"
+        },
+        {
+          "level": 3,
+          "text": "California Family Rights Act (CFRA)"
+        },
+        {
+          "level": 3,
+          "text": "New York Paid Family Leave (NYPFL)"
+        },
+        {
+          "level": 2,
+          "text": "Other Leave Types By State"
+        },
+        {
+          "level": 2,
+          "text": "U.S Military Leave"
+        }
+      ],
+      "list_items": 38,
+      "tables": 4,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/",
+      "raw_sha256": "d3eff7a46be015ac1cca0f590a3549f71d76235fc5d4dc9e4d60780451b61be0",
+      "cleaned_file": "cleaned/hr_benefits.md",
+      "cleaned_sha256": "1d19118806d08da24fe130578c48e65a7eb0b95516e6e3b7d2e6b78b7b4a0f3f",
+      "cleaned_bytes": 7174,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Benefits"
+        },
+        {
+          "level": 2,
+          "text": "Related Benefits Pages"
+        },
+        {
+          "level": 2,
+          "text": "We’ve Got You Covered: Our Benefits Philosophy"
+        },
+        {
+          "level": 3,
+          "text": "Clear Benefits, Real Support"
+        },
+        {
+          "level": 3,
+          "text": "Your Support Team and Resources"
+        },
+        {
+          "level": 3,
+          "text": "Our Global Approach"
+        },
+        {
+          "level": 4,
+          "text": "Globally Aligned, Locally Relevant"
+        },
+        {
+          "level": 3,
+          "text": "Our Guiding Principles"
+        },
+        {
+          "level": 4,
+          "text": "🔄 Continuous Improvement"
+        },
+        {
+          "level": 4,
+          "text": "🤝 Inclusive by Design"
+        },
+        {
+          "level": 4,
+          "text": "💡 Our CREDIT Values in Action"
+        },
+        {
+          "level": 3,
+          "text": "How We Continuously Improve Your Benefits"
+        },
+        {
+          "level": 4,
+          "text": "1. We Listen to You"
+        },
+        {
+          "level": 4,
+          "text": "2. We Research for You"
+        },
+        {
+          "level": 4,
+          "text": "3. We Plan with You in Mind"
+        },
+        {
+          "level": 4,
+          "text": "4. We Explore Every Option"
+        },
+        {
+          "level": 4,
+          "text": "5. We Make Informed Decisions"
+        },
+        {
+          "level": 4,
+          "text": "6. We Keep You Informed"
+        },
+        {
+          "level": 3,
+          "text": "7. We Celebrate Improvements Together"
+        },
+        {
+          "level": 5,
+          "text": "General & Entity Specific Benefits & Information"
+        },
+        {
+          "level": 5,
+          "text": "Leave of Absence Toolkit for Team Members and Managers"
+        },
+        {
+          "level": 5,
+          "text": "Modern Health"
+        }
+      ],
+      "list_items": 17,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_bv_benefits_belgium",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium/",
+      "raw_sha256": "1efcd59a118817704a3858ad1c4af921dcdef4bb202ab585c30919f4a76d2cc2",
+      "cleaned_file": "cleaned/hr_bv_benefits_belgium.md",
+      "cleaned_sha256": "024a34336d6394a6d0010c1725eaee1d9dd752c11025ca338036f99446cd0e23",
+      "cleaned_bytes": 9139,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab BV (Belgium) Benefits"
+        },
+        {
+          "level": 2,
+          "text": "We’ve Got You Covered"
+        },
+        {
+          "level": 2,
+          "text": "Healthcare Benefits"
+        },
+        {
+          "level": 3,
+          "text": "Healthcare Allowance"
+        },
+        {
+          "level": 2,
+          "text": "Financial Security"
+        },
+        {
+          "level": 3,
+          "text": "Mandatory Indexation"
+        },
+        {
+          "level": 3,
+          "text": "Ecocheques"
+        },
+        {
+          "level": 3,
+          "text": "Meal Vouchers"
+        },
+        {
+          "level": 2,
+          "text": "Work & Life Support"
+        },
+        {
+          "level": 3,
+          "text": "Mileage Reimbursement"
+        },
+        {
+          "level": 3,
+          "text": "First Aid Kit"
+        },
+        {
+          "level": 2,
+          "text": "Time Off & Leave Benefits"
+        },
+        {
+          "level": 3,
+          "text": "2026 Belgium Holiday Schedule"
+        },
+        {
+          "level": 3,
+          "text": "Sick Leave"
+        },
+        {
+          "level": 3,
+          "text": "Parental Leave"
+        },
+        {
+          "level": 3,
+          "text": "Vacation Leave"
+        },
+        {
+          "level": 3,
+          "text": "Circumstantial Leave (Klein Verlet)"
+        },
+        {
+          "level": 2,
+          "text": "Government Benefits Integration"
+        },
+        {
+          "level": 2,
+          "text": "Important Notes"
+        }
+      ],
+      "list_items": 52,
+      "tables": 1,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_financial_wellness",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/financial-wellness/",
+      "raw_sha256": "893ededfa5e4a61dc942807280ed4913a23d3b3a3e6706bba274de1c8b196854",
+      "cleaned_file": "cleaned/hr_financial_wellness.md",
+      "cleaned_sha256": "1e69485e2926b84e386e5a834d0819508d1aafaaabe90ba47fde88fe01bfc79d",
+      "cleaned_bytes": 7565,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Financial Wellness"
+        },
+        {
+          "level": 2,
+          "text": "Financial Wellness: We’ve Got You Covered"
+        },
+        {
+          "level": 2,
+          "text": "Modern Health Financial Coaching"
+        },
+        {
+          "level": 2,
+          "text": "SageView Financial Wellness Program"
+        },
+        {
+          "level": 2,
+          "text": "Total Rewards and Financial Wellness for Managers"
+        },
+        {
+          "level": 3,
+          "text": "Total Rewards Summary"
+        },
+        {
+          "level": 3,
+          "text": "Manager Talking Points"
+        },
+        {
+          "level": 2,
+          "text": "Additional Resources"
+        },
+        {
+          "level": 3,
+          "text": "Contact Information"
+        }
+      ],
+      "list_items": 40,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_france_sas",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/france-sas/",
+      "raw_sha256": "bd5a557be3bbfec9709e36dcb5de544d63b831bba76edde0d37836f4968f5a37",
+      "cleaned_file": "cleaned/hr_france_sas.md",
+      "cleaned_sha256": "38b361562dc83747f43b433b0d280aba935eeebe098a8b0e9b9b93de2225a23b",
+      "cleaned_bytes": 15453,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab France S.A.S."
+        },
+        {
+          "level": 2,
+          "text": "We’ve Got You Covered"
+        },
+        {
+          "level": 2,
+          "text": "Health & Wellbeing"
+        },
+        {
+          "level": 3,
+          "text": "Supplementary Medical Insurance"
+        },
+        {
+          "level": 3,
+          "text": "Life Insurance and Disability"
+        },
+        {
+          "level": 2,
+          "text": "Financial Security"
+        },
+        {
+          "level": 3,
+          "text": "Holiday Bonus"
+        },
+        {
+          "level": 3,
+          "text": "Retirement Planning"
+        },
+        {
+          "level": 2,
+          "text": "Growing Family Leaves"
+        },
+        {
+          "level": 3,
+          "text": "Maternity Leave"
+        },
+        {
+          "level": 3,
+          "text": "Paternity Leave"
+        },
+        {
+          "level": 3,
+          "text": "Additional Birth Leave (congé supplémentaire de naissance)"
+        },
+        {
+          "level": 3,
+          "text": "Family Care Leave"
+        },
+        {
+          "level": 2,
+          "text": "Time Off Policies"
+        },
+        {
+          "level": 3,
+          "text": "Paid Time Off (Vacation)"
+        },
+        {
+          "level": 3,
+          "text": "Sick Leave Policy"
+        },
+        {
+          "level": 2,
+          "text": "Working Hours Tracking"
+        },
+        {
+          "level": 2,
+          "text": "Questions?"
+        }
+      ],
+      "list_items": 112,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_gitlab_gk",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-gk/",
+      "raw_sha256": "456a0d109cd4a39f637a51b08f6668d679e20c5b27bbee2aeae3d1bd23ec4fe5",
+      "cleaned_file": "cleaned/hr_gitlab_gk.md",
+      "cleaned_sha256": "7018b029c0062e62c394a2a643d97aecef5cff42e595a8e84a3f74ef5bd660a1",
+      "cleaned_bytes": 7736,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab GK (Japan) Benefits"
+        },
+        {
+          "level": 2,
+          "text": "Health & Wellbeing Benefits"
+        },
+        {
+          "level": 2,
+          "text": "Financial Security Benefits"
+        },
+        {
+          "level": 2,
+          "text": "Family & Life Transition Support"
+        },
+        {
+          "level": 2,
+          "text": "Time Off & Leave Policies"
+        },
+        {
+          "level": 2,
+          "text": "Getting Started & Support"
+        }
+      ],
+      "list_items": 45,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_gitlab_ireland_ltd",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd/",
+      "raw_sha256": "7276dc06a4c71688257dfb9a1e7766dffe8a7d6a270b912d133cd8842bfc00e2",
+      "cleaned_file": "cleaned/hr_gitlab_ireland_ltd.md",
+      "cleaned_sha256": "aa3769d7a777f9e66dfea4a4df6e5a874a672717718f6e6d0d379d4ef1e7f19b",
+      "cleaned_bytes": 16068,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab Ireland Ltd"
+        },
+        {
+          "level": 2,
+          "text": "We’ve Got You Covered"
+        },
+        {
+          "level": 2,
+          "text": "Health & Wellbeing"
+        },
+        {
+          "level": 3,
+          "text": "Private Medical Insurance"
+        },
+        {
+          "level": 3,
+          "text": "Private Dental Insurance"
+        },
+        {
+          "level": 3,
+          "text": "Eye Care"
+        },
+        {
+          "level": 2,
+          "text": "Financial Security"
+        },
+        {
+          "level": 3,
+          "text": "Pension Plan"
+        },
+        {
+          "level": 3,
+          "text": "Life Insurance (Death in Service)"
+        },
+        {
+          "level": 3,
+          "text": "Income Protection (Disability Coverage)"
+        },
+        {
+          "level": 3,
+          "text": "Additional Aviva Benefits"
+        },
+        {
+          "level": 2,
+          "text": "Growing Family Leaves"
+        },
+        {
+          "level": 3,
+          "text": "Maternity Leave"
+        },
+        {
+          "level": 3,
+          "text": "Adoptive Leave"
+        },
+        {
+          "level": 3,
+          "text": "Paternity Leave"
+        },
+        {
+          "level": 3,
+          "text": "Parent’s Leave"
+        },
+        {
+          "level": 3,
+          "text": "Parental Leave"
+        },
+        {
+          "level": 3,
+          "text": "Midwife Support (for VHI Members)"
+        },
+        {
+          "level": 3,
+          "text": "Carer’s Leave"
+        },
+        {
+          "level": 2,
+          "text": "Time Off Policies"
+        },
+        {
+          "level": 2,
+          "text": "Commuter Benefits"
+        },
+        {
+          "level": 3,
+          "text": "Bike to Work & Tax Saver Schemes"
+        },
+        {
+          "level": 2,
+          "text": "Questions?"
+        },
+        {
+          "level": 2,
+          "text": "Gender Pay Gap Reporting"
+        }
+      ],
+      "list_items": 141,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_global_expansion",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion/",
+      "raw_sha256": "6060d0677b8c1934310bdec18fa21a22b1afe7f4715fcfa079aea1d4b32dfb52",
+      "cleaned_file": "cleaned/hr_global_expansion.md",
+      "cleaned_sha256": "8cc03cc221b83a70c359921af03effb5a96b20c8d0545b420708614a366e66f2",
+      "cleaned_bytes": 44163,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Global Expansion"
+        },
+        {
+          "level": 2,
+          "text": "Global Expansion Benefits"
+        },
+        {
+          "level": 2,
+          "text": "Clear benefits, real support"
+        },
+        {
+          "level": 2,
+          "text": "Austria 🇦🇹"
+        },
+        {
+          "level": 2,
+          "text": "Denmark 🇩🇰"
+        },
+        {
+          "level": 2,
+          "text": "Kenya 🇰🇪"
+        },
+        {
+          "level": 2,
+          "text": "Mexico 🇲🇽"
+        },
+        {
+          "level": 2,
+          "text": "Philippines 🇵🇭"
+        },
+        {
+          "level": 2,
+          "text": "Poland 🇵🇱"
+        },
+        {
+          "level": 2,
+          "text": "South Africa 🇿🇦"
+        },
+        {
+          "level": 2,
+          "text": "United Arab Emirates 🇦🇪"
+        }
+      ],
+      "list_items": 186,
+      "tables": 6,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_korea_ltd_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits/",
+      "raw_sha256": "b50b022471c797e1c4b27471cc74e44554f5766a6fea4bafb6153bd55f31642d",
+      "cleaned_file": "cleaned/hr_korea_ltd_benefits.md",
+      "cleaned_sha256": "0e6095b21aee530d1600918d5a4add83c912464aaa04472dfe658e8736fc8194",
+      "cleaned_bytes": 10381,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab Korea Limited Benefits"
+        },
+        {
+          "level": 2,
+          "text": "We’ve Got You Covered"
+        },
+        {
+          "level": 2,
+          "text": "Health & Wellbeing"
+        },
+        {
+          "level": 3,
+          "text": "Group Insurance Plan - Medical & Risk Benefits"
+        },
+        {
+          "level": 2,
+          "text": "Retirement Planning"
+        },
+        {
+          "level": 3,
+          "text": "National Pension Scheme"
+        },
+        {
+          "level": 2,
+          "text": "Growing Family Leaves"
+        },
+        {
+          "level": 3,
+          "text": "Maternity Leave"
+        },
+        {
+          "level": 3,
+          "text": "Paternity Leave"
+        },
+        {
+          "level": 3,
+          "text": "Extended Parental Leave (Child Care Leave)"
+        },
+        {
+          "level": 3,
+          "text": "Short-Term Child Care Leave - New as of August 2026"
+        },
+        {
+          "level": 3,
+          "text": "Fertility Treatment Leave"
+        },
+        {
+          "level": 3,
+          "text": "Family Care Leave"
+        },
+        {
+          "level": 2,
+          "text": "Time Off Policies"
+        },
+        {
+          "level": 3,
+          "text": "Statutory Vacation"
+        },
+        {
+          "level": 2,
+          "text": "Questions?"
+        }
+      ],
+      "list_items": 71,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_ltd_benefits_uk",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk/",
+      "raw_sha256": "39603dca0eb343c273e5ccdcd0494c20c63c1606dcb7b367d9ff25ad07f20ed1",
+      "cleaned_file": "cleaned/hr_ltd_benefits_uk.md",
+      "cleaned_sha256": "eefe1e1d8e03d110246bc698667960c5da0a44c6225bb247c93f46bda4f76224",
+      "cleaned_bytes": 34091,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab LTD (UK) Benefits"
+        },
+        {
+          "level": 2,
+          "text": "We’ve Got You Covered"
+        },
+        {
+          "level": 2,
+          "text": "Health & Wellbeing"
+        },
+        {
+          "level": 3,
+          "text": "AXA PPP Medical Insurance"
+        },
+        {
+          "level": 3,
+          "text": "Vision"
+        },
+        {
+          "level": 3,
+          "text": "Employee Assistance & Wellbeing Support"
+        },
+        {
+          "level": 2,
+          "text": "Financial Security"
+        },
+        {
+          "level": 3,
+          "text": "Life Insurance"
+        },
+        {
+          "level": 3,
+          "text": "Income Protection"
+        },
+        {
+          "level": 3,
+          "text": "Pension Scheme"
+        },
+        {
+          "level": 2,
+          "text": "Bike to Work/Tax Saver Commuter Scheme"
+        },
+        {
+          "level": 2,
+          "text": "Growing Family leaves"
+        },
+        {
+          "level": 3,
+          "text": "Maternity Leave"
+        },
+        {
+          "level": 3,
+          "text": "Paternity Leave"
+        },
+        {
+          "level": 3,
+          "text": "Adoption Leave"
+        },
+        {
+          "level": 3,
+          "text": "Neonatal Care Leave (New from April 2025)"
+        },
+        {
+          "level": 3,
+          "text": "Bereaved Partner’s Paternity Leave (New from April 2026)"
+        },
+        {
+          "level": 3,
+          "text": "Unpaid Parental Leave"
+        },
+        {
+          "level": 3,
+          "text": "Other Protected leaves"
+        },
+        {
+          "level": 2,
+          "text": "Time Off Policies"
+        },
+        {
+          "level": 3,
+          "text": "Annual Leave"
+        },
+        {
+          "level": 3,
+          "text": "Sick Leave"
+        },
+        {
+          "level": 2,
+          "text": "Employer’s Liability Insurance"
+        },
+        {
+          "level": 2,
+          "text": "Questions?"
+        }
+      ],
+      "list_items": 186,
+      "tables": 2,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_papaya_global_benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/papaya-global-benefits/",
+      "raw_sha256": "68552a444ab2205cdfedd7022c1c1ef419c07fe5720f723934d34fe879f139cb",
+      "cleaned_file": "cleaned/hr_papaya_global_benefits.md",
+      "cleaned_sha256": "adc87fcef996f0718d464b994b4766007420db7ce133a2c9851641cef291e9a7",
+      "cleaned_bytes": 3639,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Papaya Global Italy Dirigente"
+        },
+        {
+          "level": 2,
+          "text": "Clear benefits, real support"
+        },
+        {
+          "level": 2,
+          "text": "Italy - Dirigente 🇮🇹"
+        },
+        {
+          "level": 3,
+          "text": "Italy Dirigente Medical Coverage"
+        },
+        {
+          "level": 3,
+          "text": "Italy Dirigente Pension & Life Insurance"
+        },
+        {
+          "level": 3,
+          "text": "Annual Welfare Payment"
+        },
+        {
+          "level": 3,
+          "text": "TFR (Severance)"
+        },
+        {
+          "level": 3,
+          "text": "CFMT"
+        },
+        {
+          "level": 3,
+          "text": "Statutory Leave Policies"
+        }
+      ],
+      "list_items": 9,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_pty_benefits_australia",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia/",
+      "raw_sha256": "a4da1accb8a5f8354146ab3718c19ea95708ed7076f0a1b34b85447e9450e4b0",
+      "cleaned_file": "cleaned/hr_pty_benefits_australia.md",
+      "cleaned_sha256": "b2eda95a39795d33f9138efd4544d7260a347094a30cf64f0d46074d23b611df",
+      "cleaned_bytes": 28553,
+      "headings": [
+        {
+          "level": 1,
+          "text": "PTY LTD Benefits"
+        },
+        {
+          "level": 2,
+          "text": "We’ve Got You Covered:"
+        },
+        {
+          "level": 2,
+          "text": "Clear Benefits, Real Support"
+        },
+        {
+          "level": 2,
+          "text": "Essential Information"
+        },
+        {
+          "level": 2,
+          "text": "Health & Wellbeing"
+        },
+        {
+          "level": 3,
+          "text": "Medical Coverage"
+        },
+        {
+          "level": 2,
+          "text": "Financial Security"
+        },
+        {
+          "level": 3,
+          "text": "Superannuation (Retirement Savings)"
+        },
+        {
+          "level": 3,
+          "text": "Workers’ Compensation"
+        },
+        {
+          "level": 3,
+          "text": "Novated Leasing & Salary Packaging"
+        },
+        {
+          "level": 3,
+          "text": "Life Insurance"
+        },
+        {
+          "level": 2,
+          "text": "Engineering-Specific Benefits"
+        },
+        {
+          "level": 3,
+          "text": "On-Call Support (Engineering Only)"
+        },
+        {
+          "level": 2,
+          "text": "Time Away & Leave Policies"
+        },
+        {
+          "level": 3,
+          "text": "Annual Leave"
+        },
+        {
+          "level": 3,
+          "text": "Personal/Carer’s Leave"
+        },
+        {
+          "level": 3,
+          "text": "Long Service Leave"
+        },
+        {
+          "level": 3,
+          "text": "Other Leave Types"
+        },
+        {
+          "level": 3,
+          "text": "Parental Leave"
+        },
+        {
+          "level": 2,
+          "text": "Workplace Rights & Policies"
+        },
+        {
+          "level": 3,
+          "text": "Right to Disconnect"
+        },
+        {
+          "level": 2,
+          "text": "Getting Help & Support"
+        },
+        {
+          "level": 3,
+          "text": "Australia Support"
+        }
+      ],
+      "list_items": 166,
+      "tables": 1,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_pty_benefits_new_zealand",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand/",
+      "raw_sha256": "dffbed9f212f99f171428acb2ba4f41f5b7fcf6c62e85b818d9cb01c07cb24c6",
+      "cleaned_file": "cleaned/hr_pty_benefits_new_zealand.md",
+      "cleaned_sha256": "2bd61c0c18917614a2e5ce9f0c3280e22f302d55777599fd02725df652b4be8d",
+      "cleaned_bytes": 23125,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab PTY Ltd. Benefits - New Zealand"
+        },
+        {
+          "level": 2,
+          "text": "GitLab PTY Ltd. Benefits - New Zealand"
+        },
+        {
+          "level": 2,
+          "text": "We’ve Got You Covered:"
+        },
+        {
+          "level": 2,
+          "text": "Clear Benefits, Real Support"
+        },
+        {
+          "level": 2,
+          "text": "Health & Wellbeing"
+        },
+        {
+          "level": 3,
+          "text": "Medical Coverage"
+        },
+        {
+          "level": 2,
+          "text": "Financial Security"
+        },
+        {
+          "level": 3,
+          "text": "KiwiSaver (Pension)"
+        },
+        {
+          "level": 3,
+          "text": "Life Insurance Information"
+        },
+        {
+          "level": 2,
+          "text": "Engineering-Specific Benefits"
+        },
+        {
+          "level": 3,
+          "text": "On-Call Support (Engineering Only)"
+        },
+        {
+          "level": 2,
+          "text": "Time Away & Leave Policies"
+        },
+        {
+          "level": 3,
+          "text": "Annual Leave"
+        },
+        {
+          "level": 3,
+          "text": "Statutory Sick Leave"
+        },
+        {
+          "level": 3,
+          "text": "Injury Leave"
+        },
+        {
+          "level": 3,
+          "text": "Family Leave Support"
+        },
+        {
+          "level": 3,
+          "text": "Parental Leave"
+        },
+        {
+          "level": 3,
+          "text": "Additional Leave Types"
+        },
+        {
+          "level": 2,
+          "text": "Getting Help & Support"
+        },
+        {
+          "level": 3,
+          "text": "General Support"
+        }
+      ],
+      "list_items": 94,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_singapore_pte_ltd",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd/",
+      "raw_sha256": "fb26130a80b2e6bc26001cd6c7906ca503f767e2f2aaa64cb42ad24303ac32ab",
+      "cleaned_file": "cleaned/hr_singapore_pte_ltd.md",
+      "cleaned_sha256": "a1fa77f8ec48e78a3b5a116dfabd6d0a2e159d14158ee46313585d8857212054",
+      "cleaned_bytes": 11359,
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitLab Singapore Pte Ltd"
+        },
+        {
+          "level": 2,
+          "text": "We’ve Got You Covered"
+        },
+        {
+          "level": 2,
+          "text": "Health & Wellbeing"
+        },
+        {
+          "level": 3,
+          "text": "Medical Insurance"
+        },
+        {
+          "level": 3,
+          "text": "Annual Health Screening"
+        },
+        {
+          "level": 2,
+          "text": "Financial Security"
+        },
+        {
+          "level": 3,
+          "text": "Group Term Life Insurance"
+        },
+        {
+          "level": 3,
+          "text": "Personal Accident Insurance"
+        },
+        {
+          "level": 3,
+          "text": "Retirement Planning"
+        },
+        {
+          "level": 2,
+          "text": "Growing Family Leaves"
+        },
+        {
+          "level": 3,
+          "text": "Maternity Leave"
+        },
+        {
+          "level": 3,
+          "text": "Paternity Leave"
+        },
+        {
+          "level": 3,
+          "text": "Shared Parental Leave"
+        },
+        {
+          "level": 2,
+          "text": "Time off Policies"
+        },
+        {
+          "level": 3,
+          "text": "Annual Leave"
+        },
+        {
+          "level": 3,
+          "text": "Other Leave Entitlements"
+        },
+        {
+          "level": 2,
+          "text": "Questions?"
+        }
+      ],
+      "list_items": 88,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_modern_health",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/modern-health/",
+      "raw_sha256": "ae9805b24f778e253b8eef906567b05c65b15c3b3e18c20f5f382118ea4e1168",
+      "cleaned_file": "cleaned/hr_modern_health.md",
+      "cleaned_sha256": "58f642f41b3c45271aca925e9b067496e11ffd7a63cc4537c009d541fd91e955",
+      "cleaned_bytes": 7114,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Modern Health"
+        },
+        {
+          "level": 2,
+          "text": "Mental Wellness Support"
+        },
+        {
+          "level": 2,
+          "text": "Eligibility"
+        },
+        {
+          "level": 2,
+          "text": "Key Features"
+        },
+        {
+          "level": 2,
+          "text": "How to Get Started"
+        },
+        {
+          "level": 2,
+          "text": "Understanding Your Options"
+        },
+        {
+          "level": 2,
+          "text": "Important Details"
+        },
+        {
+          "level": 2,
+          "text": "Manager Resources"
+        },
+        {
+          "level": 2,
+          "text": "Crisis Support"
+        },
+        {
+          "level": 2,
+          "text": "Contact Information"
+        }
+      ],
+      "list_items": 46,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_compensation",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/compensation/",
+      "raw_sha256": "7c4587af410df4bc318e81f30f3144d4d56dd304fbc90e2c5c2fc7b8285801d0",
+      "cleaned_file": "cleaned/hr_compensation.md",
+      "cleaned_sha256": "e460e208bfd630dd60d0b6d18245c8b550e9bdc7ff96fe0aad2f4bf44102ade9",
+      "cleaned_bytes": 13483,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Compensation at Gitlab"
+        },
+        {
+          "level": 2,
+          "text": "Contact Total Rewards"
+        },
+        {
+          "level": 2,
+          "text": "Our Philosophy"
+        },
+        {
+          "level": 2,
+          "text": "Compensation Elements"
+        },
+        {
+          "level": 3,
+          "text": "Base Salary"
+        },
+        {
+          "level": 3,
+          "text": "Variable Pay"
+        },
+        {
+          "level": 4,
+          "text": "Director+Bonuses"
+        },
+        {
+          "level": 4,
+          "text": "Sales Commissions"
+        },
+        {
+          "level": 3,
+          "text": "Equity"
+        },
+        {
+          "level": 4,
+          "text": "When Team Members Are Eligible for Equity"
+        },
+        {
+          "level": 2,
+          "text": "When Compensation is Determined"
+        },
+        {
+          "level": 3,
+          "text": "Time of Hire"
+        },
+        {
+          "level": 3,
+          "text": "Annual Compensation Review (ACR)"
+        },
+        {
+          "level": 3,
+          "text": "Promotion Cycles"
+        },
+        {
+          "level": 4,
+          "text": "Cycle Timing"
+        },
+        {
+          "level": 3,
+          "text": "Internal Moves"
+        },
+        {
+          "level": 2,
+          "text": "Job Architecture"
+        },
+        {
+          "level": 3,
+          "text": "How it Works"
+        },
+        {
+          "level": 3,
+          "text": "Job Profile vs Business Title"
+        },
+        {
+          "level": 3,
+          "text": "Market-Aligned Compensation Ranges"
+        },
+        {
+          "level": 4,
+          "text": "How GitLab Benchmarks Roles"
+        },
+        {
+          "level": 4,
+          "text": "Market Data Segmentation"
+        },
+        {
+          "level": 4,
+          "text": "Understanding Compensation Ranges"
+        },
+        {
+          "level": 4,
+          "text": "What is Compa-Ratio?"
+        },
+        {
+          "level": 3,
+          "text": "Viewing Compensation Ranges"
+        },
+        {
+          "level": 2,
+          "text": "Exchange Rates"
+        },
+        {
+          "level": 3,
+          "text": "Exchange Rates for Bonus Processing"
+        },
+        {
+          "level": 2,
+          "text": "Questions and Support"
+        },
+        {
+          "level": 5,
+          "text": "Annual Compensation Review Cycle"
+        }
+      ],
+      "list_items": 39,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_compensation_review_cycle",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/compensation/compensation-review-cycle/",
+      "raw_sha256": "8065a854cf263cd98a5bdb5ea426fcf0ca635de2ed56302d4a9d9f716650bd01",
+      "cleaned_file": "cleaned/hr_compensation_review_cycle.md",
+      "cleaned_sha256": "be8e8bf90018324432e029d6d1b4644d55cfd4b0004050471f60e6332d3d9127",
+      "cleaned_bytes": 4569,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Annual Compensation Review Cycle"
+        },
+        {
+          "level": 2,
+          "text": "Introduction"
+        },
+        {
+          "level": 2,
+          "text": "Annual Compensation Review"
+        },
+        {
+          "level": 3,
+          "text": "Process overview"
+        },
+        {
+          "level": 3,
+          "text": "Eligibility"
+        },
+        {
+          "level": 3,
+          "text": "Budget"
+        },
+        {
+          "level": 4,
+          "text": "Merit"
+        },
+        {
+          "level": 4,
+          "text": "Equity"
+        },
+        {
+          "level": 3,
+          "text": "Annual Compensation Review Timeline"
+        }
+      ],
+      "list_items": 5,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_incentives",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/incentives/",
+      "raw_sha256": "80134796bdc2c41369872e45b1bb906fe2a238dc09b902beb7de495feb6a0c83",
+      "cleaned_file": "cleaned/hr_incentives.md",
+      "cleaned_sha256": "10d849eadd2b3b10a06c5800c6976907bb94af76e30e9c19e78dcaed7ef63021",
+      "cleaned_bytes": 41470,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Incentives at GitLab"
+        },
+        {
+          "level": 2,
+          "text": "Compensation for Acting and Interim Roles"
+        },
+        {
+          "level": 3,
+          "text": "Criteria for Eligibility"
+        },
+        {
+          "level": 3,
+          "text": "Calculation of Interim Bonus"
+        },
+        {
+          "level": 3,
+          "text": "Tracking and Submitting Interim Bonuses"
+        },
+        {
+          "level": 4,
+          "text": "Tracking"
+        },
+        {
+          "level": 4,
+          "text": "Submitting"
+        },
+        {
+          "level": 3,
+          "text": "Examples of the Interim Bonus Calculations below"
+        },
+        {
+          "level": 2,
+          "text": "Discretionary Bonuses"
+        },
+        {
+          "level": 3,
+          "text": "Discretionary Bonuses for Individuals"
+        },
+        {
+          "level": 4,
+          "text": "Purpose"
+        },
+        {
+          "level": 4,
+          "text": "Eligibility"
+        },
+        {
+          "level": 5,
+          "text": "Who Can Nominate"
+        },
+        {
+          "level": 5,
+          "text": "Who Can Be Nominated"
+        },
+        {
+          "level": 4,
+          "text": "What Qualifies"
+        },
+        {
+          "level": 5,
+          "text": "Examples by Value"
+        },
+        {
+          "level": 5,
+          "text": "✗ Invalid Criteria"
+        },
+        {
+          "level": 4,
+          "text": "Nomination Process"
+        },
+        {
+          "level": 3,
+          "text": "Distribution Guidance"
+        },
+        {
+          "level": 4,
+          "text": "Valid Nomination Examples"
+        },
+        {
+          "level": 4,
+          "text": "Invalid Nomination Examples"
+        },
+        {
+          "level": 3,
+          "text": "Process for Recommending a Team Member for a Discretionary Bonus"
+        },
+        {
+          "level": 4,
+          "text": "Nominator Bot Process"
+        },
+        {
+          "level": 5,
+          "text": "Any GitLab team member"
+        },
+        {
+          "level": 5,
+          "text": "Manager Process"
+        },
+        {
+          "level": 5,
+          "text": "Approval flow"
+        },
+        {
+          "level": 3,
+          "text": "Working Group Bonus"
+        },
+        {
+          "level": 3,
+          "text": "Process for Recommending Working Group Bonus in Workday"
+        },
+        {
+          "level": 3,
+          "text": "Communicating Discretionary Bonuses"
+        },
+        {
+          "level": 3,
+          "text": "Discretionary bonus reporting"
+        },
+        {
+          "level": 2,
+          "text": "GitLab Awards Program"
+        },
+        {
+          "level": 3,
+          "text": "The DZ Award"
+        },
+        {
+          "level": 4,
+          "text": "Criteria for The DZ Award"
+        },
+        {
+          "level": 3,
+          "text": "The Values Awards"
+        },
+        {
+          "level": 4,
+          "text": "Values Award Descriptions"
+        },
+        {
+          "level": 5,
+          "text": "Collaboration Award"
+        },
+        {
+          "level": 5,
+          "text": "Results Award"
+        },
+        {
+          "level": 5,
+          "text": "Efficiency Award"
+        },
+        {
+          "level": 5,
+          "text": "Diversity, Inclusion & Belonging Award"
+        },
+        {
+          "level": 5,
+          "text": "Iteration Award"
+        },
+        {
+          "level": 5,
+          "text": "Transparency Award"
+        },
+        {
+          "level": 4,
+          "text": "Criteria for value awards"
+        },
+        {
+          "level": 3,
+          "text": "Nomination process for awards"
+        },
+        {
+          "level": 4,
+          "text": "Overview of the nomination process"
+        },
+        {
+          "level": 2,
+          "text": "CTO DevSecOps Innovation Award"
+        },
+        {
+          "level": 2,
+          "text": "Referral Bonuses"
+        },
+        {
+          "level": 3,
+          "text": "Q4 Account Executive Referral Incentive (December 8, 2025 - February 23, 2026)"
+        },
+        {
+          "level": 3,
+          "text": "How to make a referral"
+        },
+        {
+          "level": 3,
+          "text": "Exceptions"
+        },
+        {
+          "level": 3,
+          "text": "Referral Bonus Processing"
+        },
+        {
+          "level": 3,
+          "text": "Temporary Add-on Campaign additional tracking for payout"
+        },
+        {
+          "level": 3,
+          "text": "GitLab Anniversaries"
+        },
+        {
+          "level": 2,
+          "text": "GitLab Ultimate with Duo Enterprise"
+        },
+        {
+          "level": 2,
+          "text": "Corporate Bonus Plan"
+        },
+        {
+          "level": 3,
+          "text": "What This Means"
+        },
+        {
+          "level": 3,
+          "text": "Who’s Eligible"
+        }
+      ],
+      "list_items": 138,
+      "tables": 2,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_stock_options",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/stock-options/",
+      "raw_sha256": "7cffd76335bfd644d4742508db0d81be7f34c129686103d8987ad4544b6ea01c",
+      "cleaned_file": "cleaned/hr_stock_options.md",
+      "cleaned_sha256": "6f94ee95013d41f9cfda785bdc632001edd91a0f63c241109844b55cd6083cfc",
+      "cleaned_bytes": 27458,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Equity Compensation"
+        },
+        {
+          "level": 2,
+          "text": "About Your Ownership in GitLab"
+        },
+        {
+          "level": 2,
+          "text": "Equity Incentive Plans"
+        },
+        {
+          "level": 2,
+          "text": "Stock Options"
+        },
+        {
+          "level": 3,
+          "text": "Restricted Stock Units (RSUs)"
+        },
+        {
+          "level": 3,
+          "text": "Restricted Stock Units (RSUs) Grant Cadence and Vesting"
+        },
+        {
+          "level": 3,
+          "text": "Sell-to-cover - RSUs"
+        },
+        {
+          "level": 2,
+          "text": "Employee Stock Purchase Plan (“ESPP”)"
+        },
+        {
+          "level": 3,
+          "text": "What is an ESPP?"
+        },
+        {
+          "level": 3,
+          "text": "E*TRADE ESPP Training Events from May 2026"
+        },
+        {
+          "level": 3,
+          "text": "Eligibility Requirements"
+        },
+        {
+          "level": 3,
+          "text": "Changing Contribution Amounts"
+        },
+        {
+          "level": 3,
+          "text": "Stop Contributions"
+        },
+        {
+          "level": 3,
+          "text": "Withdrawals"
+        },
+        {
+          "level": 3,
+          "text": "Alternate ESPP Non-US"
+        },
+        {
+          "level": 3,
+          "text": "What is an Offering Period?"
+        },
+        {
+          "level": 3,
+          "text": "When do Purchases Occur?"
+        },
+        {
+          "level": 3,
+          "text": "Other ESPP references"
+        },
+        {
+          "level": 2,
+          "text": "Grant Levels"
+        },
+        {
+          "level": 2,
+          "text": "Promotions"
+        },
+        {
+          "level": 2,
+          "text": "Refresh Grants"
+        },
+        {
+          "level": 2,
+          "text": "Annual Refresh Grant Program Eligibility"
+        },
+        {
+          "level": 2,
+          "text": "Option Vesting"
+        },
+        {
+          "level": 2,
+          "text": "RSU Vesting & Grant Cadence"
+        },
+        {
+          "level": 2,
+          "text": "Exercising Your Options"
+        },
+        {
+          "level": 2,
+          "text": "E-TRADE: Exercising your Shares in an Open Trading Window"
+        },
+        {
+          "level": 2,
+          "text": "Purchasing GTLB Stock"
+        },
+        {
+          "level": 2,
+          "text": "Questions about your stock plan or retail account"
+        },
+        {
+          "level": 3,
+          "text": "E-TRADE Team Member Education Sessions"
+        },
+        {
+          "level": 3,
+          "text": "E-TRADE Securities Customer Service"
+        },
+        {
+          "level": 3,
+          "text": "Equity Policies"
+        },
+        {
+          "level": 3,
+          "text": "Option Expiration"
+        },
+        {
+          "level": 3,
+          "text": "Exercise Window After Termination"
+        },
+        {
+          "level": 3,
+          "text": "Equity Administration"
+        },
+        {
+          "level": 3,
+          "text": "Taxes"
+        },
+        {
+          "level": 3,
+          "text": "US employees with Incentive Stock Options (ISOs)"
+        },
+        {
+          "level": 3,
+          "text": "US service providers with Non-qualified Statutory Options (NQs)"
+        },
+        {
+          "level": 3,
+          "text": "Netherlands, Germany and Australia"
+        },
+        {
+          "level": 3,
+          "text": "The United Kingdom"
+        },
+        {
+          "level": 3,
+          "text": "Dual-Class Stock"
+        },
+        {
+          "level": 3,
+          "text": "Effect of Dual-Class Stock"
+        },
+        {
+          "level": 3,
+          "text": "Dual-Class Voting"
+        },
+        {
+          "level": 3,
+          "text": "Creation of Dual-Class Stock"
+        },
+        {
+          "level": 2,
+          "text": "Being Public"
+        }
+      ],
+      "list_items": 70,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_guidance_on_feedback",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/guidance-on-feedback/",
+      "raw_sha256": "d005f988a345997aa87f3abdda1900466b1ec19de2dc5147de97e0295e01e11c",
+      "cleaned_file": "cleaned/hr_guidance_on_feedback.md",
+      "cleaned_sha256": "b8f5797cf75e365e36bf134550e51c8717f05c0f17f0f113a41ad46859cbade7",
+      "cleaned_bytes": 14768,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Guidance on Feedback"
+        },
+        {
+          "level": 2,
+          "text": "Documenting Feedback"
+        },
+        {
+          "level": 2,
+          "text": "Impact"
+        },
+        {
+          "level": 2,
+          "text": "Guidance on Giving and Receiving Feedback"
+        },
+        {
+          "level": 3,
+          "text": "Embracing Feedback"
+        },
+        {
+          "level": 3,
+          "text": "Hard Conversations"
+        },
+        {
+          "level": 3,
+          "text": "Radical candor"
+        },
+        {
+          "level": 3,
+          "text": "Cross-Cultural Feedback Considerations"
+        },
+        {
+          "level": 3,
+          "text": "What Comes First, Honesty or Trust?"
+        },
+        {
+          "level": 2,
+          "text": "Giving Feedback"
+        },
+        {
+          "level": 3,
+          "text": "S-B-I Model"
+        },
+        {
+          "level": 2,
+          "text": "Receiving Feedback"
+        },
+        {
+          "level": 2,
+          "text": "Recognition"
+        },
+        {
+          "level": 3,
+          "text": "How To Recognize Team Members"
+        },
+        {
+          "level": 3,
+          "text": "When and Where to Give Recognition"
+        },
+        {
+          "level": 3,
+          "text": "Beware Of Saying “Thank You” Too Much"
+        },
+        {
+          "level": 2,
+          "text": "Additional Resources"
+        },
+        {
+          "level": 2,
+          "text": "Modeling a Culture of Feedback Manager Competency"
+        }
+      ],
+      "list_items": 102,
+      "tables": 1,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_competencies",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/competencies/",
+      "raw_sha256": "bf3f5d308a71844f57d29e0d17c4aa64860af111e89c53c46cadd80c3e7cc039",
+      "cleaned_file": "cleaned/hr_competencies.md",
+      "cleaned_sha256": "43b08d1b251662324ca9cf521d18352c2d6b0b1305c3932b4853436df321c5c7",
+      "cleaned_bytes": 9532,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Competencies"
+        },
+        {
+          "level": 2,
+          "text": "Principles"
+        },
+        {
+          "level": 2,
+          "text": "Where we use competencies"
+        },
+        {
+          "level": 2,
+          "text": "Content"
+        },
+        {
+          "level": 2,
+          "text": "Structure"
+        },
+        {
+          "level": 2,
+          "text": "List"
+        },
+        {
+          "level": 3,
+          "text": "Values Competencies"
+        },
+        {
+          "level": 3,
+          "text": "Remote Work Competencies"
+        },
+        {
+          "level": 3,
+          "text": "Functional Competencies"
+        },
+        {
+          "level": 3,
+          "text": "Manager and Leadership Competencies"
+        }
+      ],
+      "list_items": 47,
+      "tables": 1,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_anti_harassment",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/anti-harassment/",
+      "raw_sha256": "e3902631466a21aba022433f3a5506597f40980856bfdebbfdfb259805a7c2c5",
+      "cleaned_file": "cleaned/hr_anti_harassment.md",
+      "cleaned_sha256": "2c1034f14e6efaca93c3b77048e2af8f5806cefba6027e3f80de5cb2e81873c7",
+      "cleaned_bytes": 40034,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Anti-Harassment Policy"
+        },
+        {
+          "level": 2,
+          "text": "Introduction"
+        },
+        {
+          "level": 2,
+          "text": "Perspective"
+        },
+        {
+          "level": 2,
+          "text": "Scope"
+        },
+        {
+          "level": 2,
+          "text": "Roles and Responsibilities"
+        },
+        {
+          "level": 2,
+          "text": "Types of Harassment"
+        },
+        {
+          "level": 3,
+          "text": "Sexual Harassment"
+        },
+        {
+          "level": 3,
+          "text": "Discrimination"
+        },
+        {
+          "level": 3,
+          "text": "Bullying / Workplace Violence"
+        },
+        {
+          "level": 3,
+          "text": "Retaliation"
+        },
+        {
+          "level": 2,
+          "text": "Speaking up during a public situation"
+        },
+        {
+          "level": 2,
+          "text": "Reporting a Physical Threat"
+        },
+        {
+          "level": 2,
+          "text": "Reporting Alleged Harassment"
+        },
+        {
+          "level": 3,
+          "text": "The Role of Managers"
+        },
+        {
+          "level": 3,
+          "text": "The Role of Individual Contributors"
+        },
+        {
+          "level": 3,
+          "text": "The Role of People Business Partners"
+        },
+        {
+          "level": 2,
+          "text": "Classification of disciplinary action"
+        },
+        {
+          "level": 3,
+          "text": "Level 1"
+        },
+        {
+          "level": 3,
+          "text": "Level 2"
+        },
+        {
+          "level": 3,
+          "text": "Level 3"
+        },
+        {
+          "level": 3,
+          "text": "Level 4"
+        },
+        {
+          "level": 2,
+          "text": "Training & Guidance"
+        },
+        {
+          "level": 2,
+          "text": "Country & US State-Specific Requirements"
+        },
+        {
+          "level": 3,
+          "text": "GitLab BV (The Netherlands)"
+        },
+        {
+          "level": 3,
+          "text": "GitLab BV (Belgium)"
+        },
+        {
+          "level": 3,
+          "text": "GitLab GK (Japan)"
+        },
+        {
+          "level": 3,
+          "text": "GitLab India Private Limited"
+        },
+        {
+          "level": 3,
+          "text": "GitLab LTD (The UK)"
+        },
+        {
+          "level": 3,
+          "text": "GitLab Ireland Ltd"
+        },
+        {
+          "level": 3,
+          "text": "GitLab Inc and GitLab Federal LLC"
+        },
+        {
+          "level": 3,
+          "text": "California Law Requirements"
+        },
+        {
+          "level": 3,
+          "text": "Connecticut Law Requirements"
+        },
+        {
+          "level": 3,
+          "text": "Maine Law Requirements"
+        },
+        {
+          "level": 3,
+          "text": "Massachusetts Law Requirements"
+        },
+        {
+          "level": 3,
+          "text": "Oregon Law Requirements"
+        },
+        {
+          "level": 3,
+          "text": "Rhode Island Law Requirements"
+        },
+        {
+          "level": 3,
+          "text": "Vermont Law Requirements"
+        },
+        {
+          "level": 2,
+          "text": "Resources"
+        },
+        {
+          "level": 2,
+          "text": "Further Guidance (Country-Specific)"
+        }
+      ],
+      "list_items": 107,
+      "tables": 1,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_incident_response",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/incident-response/",
+      "raw_sha256": "5abc1b8b5f3d2a006b49e1fd399304d846378f78731b5d3e3517e33335f8a21f",
+      "cleaned_file": "cleaned/hr_incident_response.md",
+      "cleaned_sha256": "b6e20c62b874e3f722681bbc37e63c4e0cc654b7ddb8a5c16ed50c21c9bf9396",
+      "cleaned_bytes": 4659,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Incident Response"
+        },
+        {
+          "level": 2,
+          "text": "Incident Response Plan"
+        },
+        {
+          "level": 3,
+          "text": "When to initiate Incident Response"
+        },
+        {
+          "level": 3,
+          "text": "Team Member Assistance"
+        },
+        {
+          "level": 3,
+          "text": "Time Off From Work"
+        },
+        {
+          "level": 3,
+          "text": "Team member resources"
+        },
+        {
+          "level": 3,
+          "text": "Actions to take as a Manager"
+        }
+      ],
+      "list_items": 6,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_igp_guide",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/career-development/igp-guide/",
+      "raw_sha256": "b7900adbdf3327e036d424241461b3c6c71bcc094707d5c4c97c7f0070cb3bae",
+      "cleaned_file": "cleaned/hr_igp_guide.md",
+      "cleaned_sha256": "384dd9b34959d2bbd034514b8b4839b4ad25cc8005b8134fdafeced103be0878",
+      "cleaned_bytes": 8990,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Your Individual Growth Plan (IGP) Journey"
+        },
+        {
+          "level": 2,
+          "text": "Your Role as the Driver of Your Career"
+        },
+        {
+          "level": 2,
+          "text": "Section 1: What Inspires You?"
+        },
+        {
+          "level": 2,
+          "text": "Section 2: Finding Your Focus"
+        },
+        {
+          "level": 2,
+          "text": "Section 3: Setting Your Intention"
+        },
+        {
+          "level": 2,
+          "text": "Creating Your Development Goals"
+        },
+        {
+          "level": 2,
+          "text": "Bringing Your Plan to Life: Track, Reflect, and Adapt"
+        },
+        {
+          "level": 2,
+          "text": "Resources to Support Your Journey"
+        }
+      ],
+      "list_items": 38,
+      "tables": 2,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_mentor",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/mentor/",
+      "raw_sha256": "ea6fc7be84a6cafe538c33e98534929d0515293cf52134e14f8b9c97495972e7",
+      "cleaned_file": "cleaned/hr_mentor.md",
+      "cleaned_sha256": "1d473d75a7b619acb4fff7ac85306e6807fd556ae17bb827be7f8d1facb96ce6",
+      "cleaned_bytes": 31977,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Mentoring at GitLab"
+        },
+        {
+          "level": 2,
+          "text": "How to get started"
+        },
+        {
+          "level": 3,
+          "text": "What team members are Saying"
+        },
+        {
+          "level": 3,
+          "text": "Results"
+        },
+        {
+          "level": 2,
+          "text": "Benefits and Expectations"
+        },
+        {
+          "level": 3,
+          "text": "Benefits for the mentee"
+        },
+        {
+          "level": 3,
+          "text": "Benefits for the mentor"
+        },
+        {
+          "level": 3,
+          "text": "Expectations"
+        },
+        {
+          "level": 2,
+          "text": "Find a mentor"
+        },
+        {
+          "level": 2,
+          "text": "Become a mentor"
+        },
+        {
+          "level": 2,
+          "text": "Organized mentorship programs"
+        },
+        {
+          "level": 2,
+          "text": "Resources"
+        },
+        {
+          "level": 3,
+          "text": "Mentor and Mentee training"
+        },
+        {
+          "level": 3,
+          "text": "Mentee: What to do before your mentorship begins"
+        },
+        {
+          "level": 3,
+          "text": "Mentee: Set your goal and purpose"
+        },
+        {
+          "level": 3,
+          "text": "What is your goal?"
+        },
+        {
+          "level": 4,
+          "text": "Setting tool-specific goals"
+        },
+        {
+          "level": 3,
+          "text": "What is your purpose?"
+        },
+        {
+          "level": 3,
+          "text": "Communicate your goal and purpose"
+        },
+        {
+          "level": 2,
+          "text": "Mentee: Set a Meeting Schedule"
+        },
+        {
+          "level": 3,
+          "text": "Sample sync meeting agendas"
+        },
+        {
+          "level": 3,
+          "text": "Sample async meeting formats"
+        },
+        {
+          "level": 3,
+          "text": "Other tools for async mentorship"
+        },
+        {
+          "level": 2,
+          "text": "Track your progress"
+        },
+        {
+          "level": 2,
+          "text": "Ending your mentorship"
+        },
+        {
+          "level": 2,
+          "text": "Additional Resources"
+        },
+        {
+          "level": 2,
+          "text": "FAQs for New Mentors and Mentees"
+        },
+        {
+          "level": 2,
+          "text": "How to organize an all-remote mentorship program"
+        }
+      ],
+      "list_items": 59,
+      "tables": 6,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_hone",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/hone/",
+      "raw_sha256": "c7ff40df08d3e40a819138b54111102cde384544037dfd140e64bce10ef1d8ff",
+      "cleaned_file": "cleaned/hr_hone.md",
+      "cleaned_sha256": "60a04e340808307914a00ae4246756901924874acc907534c268c3e582612574",
+      "cleaned_bytes": 3906,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Hone Partnership"
+        },
+        {
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "level": 2,
+          "text": "Access and Eligibility"
+        },
+        {
+          "level": 3,
+          "text": "People Managers"
+        },
+        {
+          "level": 3,
+          "text": "Individual Contributors"
+        },
+        {
+          "level": 2,
+          "text": "Important Guidelines"
+        },
+        {
+          "level": 3,
+          "text": "Security and Confidentiality"
+        },
+        {
+          "level": 2,
+          "text": "Measuring Success"
+        },
+        {
+          "level": 2,
+          "text": "Support and Resources"
+        },
+        {
+          "level": 2,
+          "text": "Frequently Asked Questions"
+        },
+        {
+          "level": 3,
+          "text": "How is this different from Elevate?"
+        },
+        {
+          "level": 3,
+          "text": "Do I need to complete specific courses?"
+        },
+        {
+          "level": 3,
+          "text": "Can I share my access with others?"
+        },
+        {
+          "level": 3,
+          "text": "What if I can’t attend a session I’ve registered for?"
+        },
+        {
+          "level": 3,
+          "text": "How much time should I dedicate to this?"
+        }
+      ],
+      "list_items": 8,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_team_workshops",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/team-workshops/",
+      "raw_sha256": "796de998923519056bbe55b36b1ab893048bb912eae3b84739356bbd0d6f91e6",
+      "cleaned_file": "cleaned/hr_team_workshops.md",
+      "cleaned_sha256": "764b9b458391c5afd96dbe1113c897b67e92f656642b6f781f7dfed81681791b",
+      "cleaned_bytes": 1751,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Team Workshops"
+        }
+      ],
+      "list_items": 9,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_talent_assessment",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/talent-assessment/",
+      "raw_sha256": "0f4265fa33c29df57206c5b95112eb1b8adfef454a4bc1a559bcae9140a42e70",
+      "cleaned_file": "cleaned/hr_talent_assessment.md",
+      "cleaned_sha256": "90b3182f77736247cecbff44e6c5e9e40dc859b251552a6072011140d1fd762c",
+      "cleaned_bytes": 100634,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Talent Assessment"
+        },
+        {
+          "level": 3,
+          "text": "Quick Start: What You Need to Know Now"
+        },
+        {
+          "level": 3,
+          "text": "Understanding How We Evaluate Talent"
+        },
+        {
+          "level": 3,
+          "text": "Your Role in the Process"
+        },
+        {
+          "level": 3,
+          "text": "The Calibration Process"
+        },
+        {
+          "level": 3,
+          "text": "After the Assessment: What Comes Next"
+        },
+        {
+          "level": 3,
+          "text": "Special Topics"
+        },
+        {
+          "level": 3,
+          "text": "Manager Resources & Scenarios"
+        },
+        {
+          "level": 2,
+          "text": "FY26 Talent Assessment & Q2 Promotion Cycle"
+        },
+        {
+          "level": 2,
+          "text": "Purpose"
+        },
+        {
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "level": 2,
+          "text": "The Performance/Growth Potential Matrix"
+        },
+        {
+          "level": 3,
+          "text": "What is “Performance”?"
+        },
+        {
+          "level": 3,
+          "text": "Developing"
+        },
+        {
+          "level": 3,
+          "text": "Performing"
+        },
+        {
+          "level": 3,
+          "text": "Exceeding"
+        },
+        {
+          "level": 3,
+          "text": "Expected Distribution Performance/Growth Potential Company-Wide"
+        },
+        {
+          "level": 3,
+          "text": "Measuring Performance"
+        },
+        {
+          "level": 4,
+          "text": "Job Family Responsibilities and Functional Competencies"
+        },
+        {
+          "level": 4,
+          "text": "GitLab Competencies"
+        },
+        {
+          "level": 2,
+          "text": "What is “Growth Potential”?"
+        },
+        {
+          "level": 3,
+          "text": "Measuring Growth Potential"
+        },
+        {
+          "level": 4,
+          "text": "Adaptability"
+        },
+        {
+          "level": 4,
+          "text": "Expandability"
+        },
+        {
+          "level": 4,
+          "text": "Consistency"
+        },
+        {
+          "level": 4,
+          "text": "Self-Awareness"
+        },
+        {
+          "level": 3,
+          "text": "Growth Potential Output"
+        },
+        {
+          "level": 4,
+          "text": "Developing"
+        },
+        {
+          "level": 4,
+          "text": "Growing"
+        },
+        {
+          "level": 4,
+          "text": "Exceeding"
+        },
+        {
+          "level": 2,
+          "text": "Calibration"
+        },
+        {
+          "level": 3,
+          "text": "Too New to Rate"
+        },
+        {
+          "level": 3,
+          "text": "Calibration Session"
+        },
+        {
+          "level": 4,
+          "text": "Best Practices"
+        },
+        {
+          "level": 5,
+          "text": "Who Do I Calibrate?"
+        },
+        {
+          "level": 4,
+          "text": "Calibration Session Pre-Work"
+        },
+        {
+          "level": 4,
+          "text": "Topics To Avoid"
+        },
+        {
+          "level": 2,
+          "text": "Identifying Action"
+        },
+        {
+          "level": 2,
+          "text": "FY26 Talent Assessment"
+        },
+        {
+          "level": 3,
+          "text": "Timeline"
+        },
+        {
+          "level": 3,
+          "text": "Cadence"
+        },
+        {
+          "level": 3,
+          "text": "Eligibility"
+        },
+        {
+          "level": 3,
+          "text": "Team Member Self-Evaluations"
+        },
+        {
+          "level": 3,
+          "text": "Matrix Assessment Timeline"
+        },
+        {
+          "level": 3,
+          "text": "Final Assessments in Workday"
+        },
+        {
+          "level": 2,
+          "text": "Promotions or Transfers During Assessment Cycle"
+        },
+        {
+          "level": 3,
+          "text": "Promotions"
+        },
+        {
+          "level": 3,
+          "text": "Transfers"
+        },
+        {
+          "level": 3,
+          "text": "New Hires - TNTR Guidance"
+        },
+        {
+          "level": 2,
+          "text": "Best Practices for Communicating Performance/Growth Potential Factors"
+        },
+        {
+          "level": 2,
+          "text": "Communication"
+        },
+        {
+          "level": 3,
+          "text": "Sample Script for Delivering a Talent Assessment"
+        },
+        {
+          "level": 3,
+          "text": "Sample Next Steps"
+        },
+        {
+          "level": 2,
+          "text": "Information Guide"
+        },
+        {
+          "level": 3,
+          "text": "Performance/Growth Potential Review General Information"
+        },
+        {
+          "level": 3,
+          "text": "Talent Assessment - Manager Scenarios"
+        },
+        {
+          "level": 2,
+          "text": "Mid-Year Check In"
+        },
+        {
+          "level": 3,
+          "text": "Eligibility"
+        },
+        {
+          "level": 3,
+          "text": "Process"
+        },
+        {
+          "level": 3,
+          "text": "Timeline"
+        },
+        {
+          "level": 2,
+          "text": "Succession Planning"
+        },
+        {
+          "level": 3,
+          "text": "Succession Planning Process"
+        },
+        {
+          "level": 3,
+          "text": "Succession Readiness Definitions"
+        },
+        {
+          "level": 2,
+          "text": "Resources"
+        },
+        {
+          "level": 2,
+          "text": "Key Talent"
+        },
+        {
+          "level": 3,
+          "text": "Key Talent Criteria"
+        },
+        {
+          "level": 4,
+          "text": "Characteristics of Key Talent"
+        },
+        {
+          "level": 3,
+          "text": "Key Talent, Performance, and Growth Potential"
+        },
+        {
+          "level": 3,
+          "text": "Single Point of Failure"
+        },
+        {
+          "level": 3,
+          "text": "Process to Determine Key Talent"
+        },
+        {
+          "level": 2,
+          "text": "Organizational Value"
+        },
+        {
+          "level": 2,
+          "text": "Impact of Being Identified as Key Talent"
+        },
+        {
+          "level": 3,
+          "text": "Individual Growth Plans (IGPs)"
+        }
+      ],
+      "list_items": 295,
+      "tables": 4,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_promotion_document_style_guide",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/promotion-document-style-guide/",
+      "raw_sha256": "fa945c8ba34ffae2668132fc921b580bd6562ea2830121da6cc5144ddcade4ef",
+      "cleaned_file": "cleaned/hr_promotion_document_style_guide.md",
+      "cleaned_sha256": "9344364bc1b07184ee17944ac8386e84cdae97d7cdd73112def28167c2ae1499",
+      "cleaned_bytes": 4741,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Promotion Document Style Guide"
+        },
+        {
+          "level": 2,
+          "text": "Principles for Presenting a Strong Promotion Case"
+        },
+        {
+          "level": 2,
+          "text": "Additional Tips for Clarity and Impact"
+        }
+      ],
+      "list_items": 45,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_people_business_partners",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/people-business-partners/",
+      "raw_sha256": "da90d8a36649cb816f1e6bb0b2f7c62b04eb9e6bf2fadecf2dd0837ff360f9c0",
+      "cleaned_file": "cleaned/hr_people_business_partners.md",
+      "cleaned_sha256": "279f6bd99dd87a3f66f9b4666b44d3b48ab781b6033c9518e6ff475b1fda8c14",
+      "cleaned_bytes": 594,
+      "headings": [
+        {
+          "level": 1,
+          "text": "People Business Partner Team"
+        },
+        {
+          "level": 2,
+          "text": "Team Structure and Organizational Health"
+        },
+        {
+          "level": 2,
+          "text": "People Business Partner Alignments"
+        }
+      ],
+      "list_items": 0,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_elevate_applied",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevate-applied/",
+      "raw_sha256": "5530e124c49e5321678f23d9d698fc9ca0be25b8af3433ddff8228c6f9b4b865",
+      "cleaned_file": "cleaned/hr_elevate_applied.md",
+      "cleaned_sha256": "d22ae8d76584ca02da73768e9a4a5b88e84a2e89b4d143fd3da43083837de649",
+      "cleaned_bytes": 4731,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Elevate Applied"
+        },
+        {
+          "level": 2,
+          "text": "Continuous Learning Philosophy"
+        },
+        {
+          "level": 2,
+          "text": "Program Benefits"
+        },
+        {
+          "level": 3,
+          "text": "Hone Membership License"
+        },
+        {
+          "level": 3,
+          "text": "Professional Coaching"
+        },
+        {
+          "level": 2,
+          "text": "Masterclass Content Partnership"
+        },
+        {
+          "level": 3,
+          "text": "Featured Masterclass Content"
+        }
+      ],
+      "list_items": 15,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_remote_com",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com/",
+      "raw_sha256": "bd2791fb7f3cd35a798b043a37a2a0c8da7328b2b8f6f62120ce7c28236a6b4e",
+      "cleaned_file": "cleaned/hr_remote_com.md",
+      "cleaned_sha256": "7e84559c8795e3a8d190b5f857493ed9a4e28ba9cc036c8d76663312f1cb61a6",
+      "cleaned_bytes": 36848,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Remote.com"
+        },
+        {
+          "level": 2,
+          "text": "Clear benefits, real support"
+        },
+        {
+          "level": 2,
+          "text": "Brazil 🇧🇷"
+        },
+        {
+          "level": 2,
+          "text": "Sweden 🇸🇪"
+        },
+        {
+          "level": 2,
+          "text": "Italy 🇮🇹"
+        },
+        {
+          "level": 2,
+          "text": "Switzerland 🇨🇭"
+        },
+        {
+          "level": 2,
+          "text": "Hungary 🇭🇺"
+        },
+        {
+          "level": 2,
+          "text": "Luxembourg 🇱🇺"
+        },
+        {
+          "level": 2,
+          "text": "Questions?"
+        }
+      ],
+      "list_items": 93,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_elevate_prep",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevate-prep/",
+      "raw_sha256": "11d003c2a9eb17ad1ce5305cea85600d54ebaef849d9de3003a751273529f8d4",
+      "cleaned_file": "cleaned/hr_elevate_prep.md",
+      "cleaned_sha256": "37814763d2d78aa972e6191ffedeaaa22e5057dbce993bd4933853b1d0c0e58a",
+      "cleaned_bytes": 7495,
+      "headings": [
+        {
+          "level": 1,
+          "text": "ElevatePrep"
+        },
+        {
+          "level": 3,
+          "text": "Important Note About Career Development"
+        },
+        {
+          "level": 2,
+          "text": "What is ElevatePrep"
+        },
+        {
+          "level": 2,
+          "text": "How is the program structured?"
+        },
+        {
+          "level": 2,
+          "text": "Program Requirements"
+        },
+        {
+          "level": 2,
+          "text": "Eligibility and Nomination Process"
+        },
+        {
+          "level": 2,
+          "text": "Making up missed sessions"
+        },
+        {
+          "level": 2,
+          "text": "Supporting your team members in ElevatePrep"
+        },
+        {
+          "level": 2,
+          "text": "Measuring Success"
+        },
+        {
+          "level": 2,
+          "text": "Frequently Asked Questions"
+        },
+        {
+          "level": 3,
+          "text": "Does participating in ElevatePrep guarantee a future management role?"
+        },
+        {
+          "level": 3,
+          "text": "How often will this program run?"
+        },
+        {
+          "level": 3,
+          "text": "How do I express interest in participating?"
+        },
+        {
+          "level": 3,
+          "text": "What if I miss a session?"
+        },
+        {
+          "level": 3,
+          "text": "Where do I communicate questions or concerns about the program?"
+        },
+        {
+          "level": 3,
+          "text": "Is ElevatePrep a prerequisite for the main Elevate program?"
+        }
+      ],
+      "list_items": 19,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_parental_leave_toolkit",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/parental-leave-toolkit/",
+      "raw_sha256": "9573a9771c8fc6f1aeaeefbb54bfc65bcb86ea20df272af3bf5f453c0a73bb57",
+      "cleaned_file": "cleaned/hr_parental_leave_toolkit.md",
+      "cleaned_sha256": "c682476544da71ee9bd44af158216b006feda186765afc7450707761264b0451",
+      "cleaned_bytes": 11050,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Leave of Absence Toolkit for Team Members and Managers"
+        },
+        {
+          "level": 2,
+          "text": "Team Member Toolkit"
+        },
+        {
+          "level": 3,
+          "text": "Pre-Leave"
+        },
+        {
+          "level": 3,
+          "text": "Returning from Leave"
+        },
+        {
+          "level": 2,
+          "text": "Parental Leave Policy Feedback"
+        },
+        {
+          "level": 2,
+          "text": "Manager Toolkit"
+        },
+        {
+          "level": 2,
+          "text": "General Guidelines For Managers on Resource Allocation"
+        }
+      ],
+      "list_items": 28,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_elevate",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevate/",
+      "raw_sha256": "9952cb3f5718d37d776d74a0213256f61e29e41246dcaf4fe8c9d5226085b21f",
+      "cleaned_file": "cleaned/hr_elevate.md",
+      "cleaned_sha256": "26689a4939f8476a2d21c96780f0e6b7d42ab3b30ccd2e53220b12971c954f80",
+      "cleaned_bytes": 9272,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Elevate"
+        },
+        {
+          "level": 3,
+          "text": "Goal"
+        },
+        {
+          "level": 2,
+          "text": "What team members are saying about Elevate"
+        },
+        {
+          "level": 2,
+          "text": "What is Elevate"
+        },
+        {
+          "level": 2,
+          "text": "How is the program structured?"
+        },
+        {
+          "level": 2,
+          "text": "Making up missed sessions"
+        },
+        {
+          "level": 2,
+          "text": "Supporting your team in Elevate"
+        },
+        {
+          "level": 2,
+          "text": "Measuring Success"
+        },
+        {
+          "level": 2,
+          "text": "Frequently Asked Questions"
+        },
+        {
+          "level": 3,
+          "text": "Is my participation in Elevate required?"
+        },
+        {
+          "level": 3,
+          "text": "Where do I communicate my questions, concerns, and feedback as I go through the program?"
+        },
+        {
+          "level": 3,
+          "text": "I missed, or cannot attend, a session, what do I do?"
+        },
+        {
+          "level": 3,
+          "text": "I’m over capacity and feel like I may need to opt out of the training, what should I do?"
+        },
+        {
+          "level": 3,
+          "text": "How often will this program run?"
+        },
+        {
+          "level": 3,
+          "text": "Is there opportunity to participate in the program if I am an aspiring manager?"
+        },
+        {
+          "level": 3,
+          "text": "What if I get promoted while I’m part of Elevate?"
+        }
+      ],
+      "list_items": 15,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    },
+    {
+      "document_id": "hr_elevateplus",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevateplus/",
+      "raw_sha256": "2c759cedaa33f4b74b879b0c805d64ec0c3ae24af7e6061a8e3904cd04885105",
+      "cleaned_file": "cleaned/hr_elevateplus.md",
+      "cleaned_sha256": "317f69fa173655c91c202cfbea1d68717b2d05a19160a765963a6cfc71f9b6cc",
+      "cleaned_bytes": 4964,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Elevate+"
+        },
+        {
+          "level": 2,
+          "text": "Frequently Asked Questions"
+        },
+        {
+          "level": 3,
+          "text": "What does success in Elevate+ look like?"
+        },
+        {
+          "level": 3,
+          "text": "Is my participation in Elevate+ required?"
+        },
+        {
+          "level": 3,
+          "text": "Where do I communicate my questions, concerns, and feedback as I go through the program?"
+        },
+        {
+          "level": 3,
+          "text": "I missed, or cannot attend, a live session. What do I do?"
+        },
+        {
+          "level": 3,
+          "text": "When I complete this program will I earn a certificate?"
+        }
+      ],
+      "list_items": 7,
+      "tables": 0,
+      "status": "cleaned",
+      "indexed": false
+    }
+  ]
+}

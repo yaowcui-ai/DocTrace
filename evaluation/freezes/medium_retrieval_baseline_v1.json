@@ -1,0 +1,39 @@
+{
+  "freeze_id": "medium_retrieval_baseline_v1",
+  "created_at_utc": "2026-10-16T03:11:06.269841+00:00",
+  "corpus_id": "gitlab_hr_v3",
+  "target": "http://127.0.0.1:9624",
+  "counts": {
+    "documents": 68,
+    "chunks": 318,
+    "new_development_cases": 20,
+    "new_development_groups": 45,
+    "replay_cases": 42,
+    "replay_groups": 65
+  },
+  "request_options": {
+    "modes": [
+      "naive",
+      "mix"
+    ],
+    "max_total_tokens": 30000,
+    "enable_rerank": false
+  },
+  "cache_policy": "Not cleared; record run order and do not infer stable latency advantage.",
+  "no_new_holdout_yet": true,
+  "model_requests_sent": 0,
+  "hashes": {
+    "evaluation/hr_medium_dev_v1.json": "1c624c09e9eb8257de81771253587601dde44209c5856fdbae8c8a767d185bed",
+    "evaluation/hr_medium_replay_v1.json": "e2831f2f6886dd8883d053ecfec537d6cd29c327d916ffeed197e76e36e25463",
+    "data/gitlab_hr/v3/processing_manifest.json": "318beea980e6c4ce3a395c8e70f2244a6c4c12001eb2cce9ef23d15e14a7b57c",
+    "data/gitlab_hr/v3/index_acceptance.json": "34abbe862f5f049e01509dbe1ef46c254779123c9bd4103a9bbf7c6bfe98b4ae",
+    "deploy/compose.hr-v3.yml": "6cef6d7bc4f3c71d8d8b3181dacd7d178162b0571d7d1a21a9ff0b1da50c8599",
+    "app/evaluate.py": "07b634050b5ad41cbd4af9219417684ef3c0fb3d07a257ea13b3dd87feef2d07",
+    "app/config.py": "d4996b03f5f9e71fb796613c69b758dda64e9d0e37379dbf39efd6eb009bd817",
+    "evaluation/medium_retrieval_plan_v1.md": "7f21a6430b6585fa7ce15be7a7485a02c9a1070f430de52f559fd5fa5cbc1ec7"
+  },
+  "limits": [
+    "Only local artifacts frozen; provider alias versions and all runtime settings not independently guaranteed.",
+    "New developer set is development; cross-document does not imply graph required."
+  ]
+}

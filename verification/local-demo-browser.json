@@ -1,0 +1,25 @@
+{
+  "kind": "public_static_replay_browser",
+  "status": "passed",
+  "checks": [
+    "local static server ready",
+    "replay disclosure visible in page",
+    "no fake login or credentials requested",
+    "ten reviewed public examples available",
+    "arbitrary live questions cannot be submitted",
+    "default result carries saved naive provenance",
+    "mode switch loads actual saved mix result",
+    "both saved mode results retained as separate turns",
+    "citation opens matching turn evidence",
+    "public example loads into conversation",
+    "history locates matching prior turn",
+    "mode selector follows a selected saved-mode history turn",
+    "history selection does not duplicate messages",
+    "mobile layout fits viewport",
+    "reload restores replay without login",
+    "only static GET requests; no auth, QA or provider requests",
+    "no external CDN or third-party API dependency",
+    "no JavaScript errors"
+  ],
+  "provider_requests": 0
+}

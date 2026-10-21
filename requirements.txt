@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+python-dotenv==1.2.4
+httpx2==2.13.1
+SQLAlchemy==2.0.54
+PyMySQL[rsa]==1.2.3
+pwdlib[argon2]==0.3.1

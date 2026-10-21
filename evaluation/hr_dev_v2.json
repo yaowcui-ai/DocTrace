@@ -1,0 +1,89 @@
+{
+  "dataset_id": "hr_dev_v2",
+  "split": "development",
+  "status": "draft_for_user_review",
+  "corpus_id": "gitlab_hr_v1",
+  "corpus_manifest": "data/gitlab_hr/v1/processing_manifest.json",
+  "language": "zh",
+  "cases": [
+    {
+      "id": "HR-D01",
+      "type": "eligibility",
+      "question": "GitLab 的 Growth and Development Fund 申请人需要满足哪些资格条件？",
+      "expected_behavior": "answer",
+      "required_points": ["GitLab全职员工", "满足岗位绩效预期", "不处于休假状态"],
+      "failure_conditions": ["称所有团队成员无条件符合资格", "遗漏任一基本资格条件"],
+      "evidence": [{"file_path": "hr_growth_development.md", "heading_path": "Growth and Development Fund → Eligibility", "quote": "To use the Growth and Development Fund, applicants must be full-time GitLab employees who meet performance expectations in their role and are not on leave status."}]
+    },
+    {
+      "id": "HR-D02",
+      "type": "qualified_rule",
+      "question": "申请 GitLab 学习发展基金，是不是少于提前30天提交就一律不能申请？",
+      "expected_behavior": "answer",
+      "required_points": ["原文要求尽可能提前至少30天提交", "when possible不能被省略为无例外的硬性禁止", "原文没有给出少于30天一律拒绝的结论，也不能保证一定获批"],
+      "failure_conditions": ["称少于30天一律拒绝", "保证不足30天也一定通过"],
+      "evidence": [{"file_path": "hr_growth_development.md", "heading_path": "Growth and Development Fund → Process → Step 2 - Submit your request in Compass", "quote": "Your request should be submitted at least 30 days in advance of the beginning of your experience when possible."}]
+    },
+    {
+      "id": "HR-D03",
+      "type": "numeric_condition",
+      "question": "假设我已经符合 G&D Fund 的申请资格，申请1500美元的学习费用，需要哪些层级审批？",
+      "expected_behavior": "answer",
+      "required_points": ["1500美元属于1000.01至10000美元档", "经理和VP审批"],
+      "failure_conditions": ["称只需要经理审批", "把福利上限当作自动获批"],
+      "evidence": [{"file_path": "hr_growth_development.md", "heading_path": "Growth and Development Fund → Process → Step 3 - Gain approval", "quote": "Manager + VP approval: $1,000.01 - $10,000"}]
+    },
+    {
+      "id": "HR-D04",
+      "type": "duration_condition",
+      "question": "GitLab 员工计划连续休26个自然日的PTO，仅与经理协调是否足够？",
+      "expected_behavior": "answer",
+      "required_points": ["不够；超过连续25个自然日需要特殊许可", "经理、People Business Partner和Absence Management Team", "连续自然日包含周末和节假日"],
+      "failure_conditions": ["称没有年度限额所以无需额外许可", "把自然日换成工作日", "遗漏任一审批方"],
+      "evidence": [{"file_path": "hr_time_off_types.md", "heading_path": "Time Off Types → Flexible Paid Time Off (PTO) → Overview", "quote": "for time off exceeding 25 consecutive calendar days (including weekends and holidays), special permission is required from your Manager, People Business Partner, and the Absence Management Team"}]
+    },
+    {
+      "id": "HR-D05",
+      "type": "location_condition",
+      "question": "我是位于加拿大且符合育儿假资格的GitLab团队成员，应通过哪个系统提交育儿假申请？",
+      "expected_behavior": "answer",
+      "required_points": ["通过Tilt提交", "通过Okta访问Tilt", "这是USA和Canada对应的流程，不应直接套用其他地区的Workday步骤"],
+      "failure_conditions": ["直接要求选择Workday中的GitLab Parental Leave而不区分地区"],
+      "evidence": [{"file_path": "hr_leave_types.md", "heading_path": "Leave Types → GitLab Parental Leave → How to Initiate Your Leave", "quote": "**USA and Canada:** Please submit your Parental Leave request to Tilt (accessed through Okta)."}]
+    },
+    {
+      "id": "HR-D06",
+      "type": "cross_document",
+      "question": "我已经符合GitLab育儿假资格，育儿假结束后想接着休3个工作日PTO，可以吗？该提前多久通知经理？",
+      "expected_behavior": "answer",
+      "required_points": ["可以按Flexible PTO流程与经理协调，并非无条件保证获批", "通知时间至少为计划PTO天数的两倍；3个工作日对应至少提前6个工作日", "业务关键期限受影响时经理可能要求调整日期"],
+      "failure_conditions": ["把PTO当作自动延长原来的带薪育儿假额度", "称只需提前3天", "称无需经理协调"],
+      "evidence": [
+        {"file_path": "hr_leave_types.md", "heading_path": "Leave Types → GitLab Parental Leave → Supplement with Paid Time Off", "quote": "policy with manager coordination. If business critical deadlines will be missed, your Manager may ask you to change the dates."},
+        {"file_path": "hr_time_off_types.md", "heading_path": "Time Off Types → Flexible Paid Time Off (PTO) → PTO Protocols (Planning and Coordination)", "quote": "Discuss planned time off with your manager first and provide as much notice as possible, but at least twice as many days as your planned time off (e.g., 6 business days notice for 3 days off)."}
+      ]
+    },
+    {
+      "id": "HR-D07",
+      "type": "no_answer",
+      "question": "请根据当前知识库告诉我，我2026年10月实际到账的工资是多少美元？",
+      "expected_behavior": "abstain",
+      "required_points": ["当前公开政策知识库没有用户的个人工资或实际到账记录，无法确定金额", "不能把学习基金报销额度或其他福利金额当作工资"],
+      "failure_conditions": ["编造实际到账金额", "把年度10000美元学习报销上限作为工资"],
+      "evidence": [],
+      "answerability_note": "Current corpus consists of six public policy pages, not user-specific payroll records. Related reimbursement or wage-percentage clauses do not establish a personal net salary. Empty retrieval alone does not prove a question unanswerable."
+    },
+    {
+      "id": "HR-D08",
+      "type": "missing_condition",
+      "question": "GitLab育儿假应该通过哪个系统提交申请？",
+      "expected_behavior": "clarify_or_conditional_answer",
+      "required_points": ["说明提交系统取决于地区", "可以先询问地区，或同时明确美国/加拿大用Tilt、其他地区用Workday的分支", "如果列出Workday步骤，明确选择GitLab Parental Leave而非普通Paid Time Off"],
+      "failure_conditions": ["未限定地区就给所有人同一个系统", "将育儿假提交类型错误说成普通Paid Time Off"],
+      "evidence": [
+        {"file_path": "hr_leave_types.md", "heading_path": "Leave Types → GitLab Parental Leave → How to Initiate Your Leave", "quote": "**USA and Canada:** Please submit your Parental Leave request to Tilt (accessed through Okta)."},
+        {"file_path": "hr_leave_types.md", "heading_path": "Leave Types → GitLab Parental Leave → How to Initiate Your Leave", "quote": "**All other Locations:** Enter your Parental Leave into Workday by selecting the “GitLab Parental Leave” option under the Leaves dropdown menu."}
+      ]
+    }
+  ]
+}

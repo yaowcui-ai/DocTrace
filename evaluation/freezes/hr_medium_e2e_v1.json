@@ -1,0 +1,13 @@
+{
+  "created_at_utc": "2026-10-16T11:02:35.569869+00:00",
+  "dataset_file": "evaluation/hr_medium_e2e_v1.json",
+  "dataset_sha256": "967161fd2dee46c52ab8b2f10bf1c480e5a71e7a28c700562e0e966f831ab97d",
+  "source_dataset_sha256": "5643126b983610d4a07dc1645110144299fbc3b823befc53a7503e922e3f91ec",
+  "case_ids": [
+    "HR-M01",
+    "HR-M17",
+    "HR-M19"
+  ],
+  "role": "Reused development smoke cases; not fresh holdout",
+  "provider_requests_sent": 0
+}

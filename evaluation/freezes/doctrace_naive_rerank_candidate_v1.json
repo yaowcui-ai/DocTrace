@@ -1,0 +1,65 @@
+{
+  "snapshot_id": "doctrace_naive_rerank_candidate_v1",
+  "created_at_utc": "2026-10-15T09:58:20.222325+00:00",
+  "status": "local_candidate_frozen_before_fresh_question_evaluation",
+  "public_settings": {
+    "endpoint": "/ask/optimized",
+    "mode": "naive",
+    "context_max_chars": 30000,
+    "context_min_score": 0.3,
+    "rerank_model": "BAAI/bge-reranker-v2-m3",
+    "answer_model": "deepseek-flash",
+    "answer_thinking": "disabled"
+  },
+  "expected_upstream_settings_not_live_verified": {
+    "chunk_top_k": 20,
+    "embedding_model": "BAAI/bge-m3",
+    "embedding_dimensions": 1024
+  },
+  "file_sha256": {
+    "app/__init__.py": "8500d6f6e16a2905c293c3af7b5d43350a88aa6cda3de903b62b6e8a48969721",
+    "app/answer_client.py": "fe393a2ff85f7e398d75c63fc0f3928e2eb86917b65a24a0303c97f7d760bf77",
+    "app/answer_config.py": "3a630cfa4f5fe3dab6c7f1025f7e57d526fb53897853682da32755427b5bd490",
+    "app/answer_prompt.py": "7a3e735f6d6b29d38f6187e82dbd447f242911cd40426a2bb10b7374ba387fb5",
+    "app/citation_audit.py": "6fe55e741d417cf97aaac8448996902a694efa7ab0bd7f87ab2cacb5a354d136",
+    "app/config.py": "d4996b03f5f9e71fb796613c69b758dda64e9d0e37379dbf39efd6eb009bd817",
+    "app/context_builder.py": "9d48b22016e04f23e062834ba02b2369322faf34db170abf6fb365b2c3caa333",
+    "app/context_experiment.py": "7d91fd38623684739b193a101c44cdd0cebf8bb4cb55b06ee50750cd4bd91db8",
+    "app/context_selection.py": "95a4e56017b8b0ba2025e9c087a4f7890a635f79543e961168bcd3f19169ae59",
+    "app/corpus.py": "088d747a2d8fd5c524dfef5d2a2b8f3648228670595d800708e5bdc550adf5ec",
+    "app/evaluate.py": "d16e4cd2e1f63207218491d1ca18eaf87ea877498ad53cfce57d3e73b6e2808e",
+    "app/lightrag_client.py": "db88a21ada56bbf4b07d8ecca3704520c2a537da54ec2c30769ba6d4300cb57d",
+    "app/main.py": "1e32d8d025fc632059dc3253d73b429a328d7b8863cd0727a2aed5f276fab11d",
+    "app/pipeline_config.py": "701601c70ec87b4d347154dab743f9b07d96f3669cf7bafa155ec6e85fcecc85",
+    "app/qa_pipeline.py": "dabaea86b1eff13431bd4d281b902a1e361604bb6cf19b054fa1373339794351",
+    "app/rerank.py": "33b36ee32a2dfeba635aabea69b5df0729bcb53936110e140b2300ae85775551",
+    "app/rerank_client.py": "1f2fc57a0c721e2cd753a728048f38111c9515f40eeba5268cbdef554fd8e5a4",
+    "app/rerank_config.py": "1e90890e37d9a9be660ba761c98318cde99b76d8a39bc80620debe9fe4241fc8",
+    "app/rerank_experiment.py": "e31bf1baf1e34ea8c36a801251ab824519c260527a6c584561652f7e0bddbcd3",
+    "app/retrieval_client.py": "12203683953270adc2ab0514e8e40d7725717aa3f2fe217a156b4da2301f3dc7",
+    "app/schemas.py": "e7d8448958e1ee26cd525242841592fd26268ff22b514287869100a779161158",
+    "data/gitlab_hr/v1/cleaned/hr_general_entity_benefits.md": "bc3fc73122458b325766fc1d2dcbb5ff0b3daff448e9ca05a0e4b7c52428a27d",
+    "data/gitlab_hr/v1/cleaned/hr_growth_development.md": "0412dd420b4bae04c4d2f188475d43a61d00d4e78fee9082150907193e55e358",
+    "data/gitlab_hr/v1/cleaned/hr_leave_types.md": "633d6a2864fd04b62329f30ca3a0f808f509dff69695b64a3f1a6b5ed50d4985",
+    "data/gitlab_hr/v1/cleaned/hr_time_away_overview.md": "84c7a6241e0fa19dad0c9a561877416313be6fe4be2ab004ec5836e77bb2eab0",
+    "data/gitlab_hr/v1/cleaned/hr_time_away_philosophy.md": "aa561bb07b07797658e9029b0d34bd3d9477c986c0e5fc35bcf50e74c500ba66",
+    "data/gitlab_hr/v1/cleaned/hr_time_off_types.md": "7b83ede2a904763770fdb4c9862094e40ecdf50c24aa9f1cece6b6704a371d29",
+    "deploy/compose.hr.diagnostics.yml": "370232f346d331879e82a898a755b08ee6cffcd8afb9c82ec9096bbdce932fd7",
+    "deploy/compose.hr.yml": "68dcfaa730d9bb35fea0f937c2a9a2633830314c22df3fc792f5c3e9dcfa01e8",
+    "evaluation/hr_dev_v3.json": "3ba54585a5850a1a9ad1c9d7e5c109f619320ed07fa27ccfe976a796cd989caa",
+    "evaluation/hr_holdout_v1.json": "3534118eb418e0159e3f3407c97856ce4d98d17b61b4fa552e461aa2d98d1c5d",
+    "runtime/diagnostics/lightrag/operate.py": "919ab4ffded4b60702a7d80a56decbfa063158dcfc4a7ca91f411c051f6540b9"
+  },
+  "development_runs_preserved": [
+    "20261015T093107Z_ce24dcea",
+    "20261015T094125Z_4a0514da",
+    "20261015T094945Z_ab283781"
+  ],
+  "holdout_dataset": "evaluation/hr_holdout_v1.json",
+  "limitations": [
+    "Manifest records hashes; it does not prevent future edits. Compare hashes before any reported evaluation.",
+    "Local files and settings were read; running server memory, upstream live configuration and provider model alias versions were not independently verified.",
+    "No keys, complete .env contents or .env hash are included.",
+    "No model requests were sent while preparing this snapshot."
+  ]
+}

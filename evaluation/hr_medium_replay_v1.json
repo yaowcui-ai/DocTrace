@@ -1,0 +1,1851 @@
+{
+  "dataset_id": "hr_medium_replay_v1",
+  "split": "development",
+  "status": "prepared_for_post_acceptance_retrieval_replay",
+  "corpus_id": "gitlab_hr_v3",
+  "corpus_manifest": "data/gitlab_hr/v3/processing_manifest.json",
+  "retrieval_only": true,
+  "expected_retrieval_url": "http://127.0.0.1:9624",
+  "language": "zh",
+  "scope": "42 previously used development/regression questions replayed on the medium HR corpus. Known-evidence retention under corpus expansion only; not coverage of the new54 documents or final-answer correctness.",
+  "origins": [
+    {
+      "file": "evaluation\\hr_dev_v5.json",
+      "sha256": "381751568fbec52ce9e903ea7e243e858d601fec0772e2cebfab93348c871c1a"
+    },
+    {
+      "file": "evaluation\\hr_regional_dev_v2.json",
+      "sha256": "92691d59b86ee4b83f12e1bf4290243a1c1e4f33b3e0d88621d52d30e578df80"
+    }
+  ],
+  "index_acceptance_manifest": "data/gitlab_hr/v3/index_acceptance.json",
+  "limitations": [
+    "Use only after medium corpus index acceptance is verified.",
+    "These42 cases are reused development cases, not a new holdout or complete medium-corpus evaluation.",
+    "New employee lifecycle, compensation, performance, mentoring and other policy topics require additional grounded cases before a broad quality claim.",
+    "Source flow differences and date/precedence limitations still apply; no unadjudicated regional answer key is treated as authoritative.",
+    "No live requests sent while preparing this dataset."
+  ],
+  "cases": [
+    {
+      "id": "HR-D01",
+      "type": "eligibility",
+      "question": "GitLab 的 Growth and Development Fund 申请人需要满足哪些资格条件？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "GitLab全职员工",
+        "满足岗位绩效预期",
+        "不处于休假状态"
+      ],
+      "failure_conditions": [
+        "称所有团队成员无条件符合资格",
+        "遗漏任一基本资格条件"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Growth and Development Fund → Eligibility",
+          "quote": "To use the Growth and Development Fund, applicants must be full-time GitLab employees who meet performance expectations in their role and are not on leave status."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D01-E1",
+          "requirement": "Growth and Development Fund → Eligibility",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Growth and Development Fund → Eligibility",
+              "quote": "To use the Growth and Development Fund, applicants must be full-time GitLab employees who meet performance expectations in their role and are not on leave status."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D02",
+      "type": "qualified_rule",
+      "question": "申请 GitLab 学习发展基金，是不是少于提前30天提交就一律不能申请？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "原文要求尽可能提前至少30天提交",
+        "when possible不能被省略为无例外的硬性禁止",
+        "原文没有给出少于30天一律拒绝的结论，也不能保证一定获批"
+      ],
+      "failure_conditions": [
+        "称少于30天一律拒绝",
+        "保证不足30天也一定通过"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Growth and Development Fund → Process → Step 2 - Submit your request in Compass",
+          "quote": "Your request should be submitted at least 30 days in advance of the beginning of your experience when possible."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D02-E1",
+          "requirement": "Growth and Development Fund → Process → Step 2 - Submit your request in Compass",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Growth and Development Fund → Process → Step 2 - Submit your request in Compass",
+              "quote": "Your request should be submitted at least 30 days in advance of the beginning of your experience when possible."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D03",
+      "type": "numeric_condition",
+      "question": "假设我已经符合 G&D Fund 的申请资格，申请1500美元的学习费用，需要哪些层级审批？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "1500美元属于1000.01至10000美元档",
+        "经理和VP审批"
+      ],
+      "failure_conditions": [
+        "称只需要经理审批",
+        "把福利上限当作自动获批"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Growth and Development Fund → Process → Step 3 - Gain approval",
+          "quote": "Manager + VP approval: $1,000.01 - $10,000"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D03-E1",
+          "requirement": "Growth and Development Fund → Process → Step 3 - Gain approval",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Growth and Development Fund → Process → Step 3 - Gain approval",
+              "quote": "Manager + VP approval: $1,000.01 - $10,000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D04",
+      "type": "duration_condition",
+      "question": "GitLab 员工计划连续休26个自然日的PTO，仅与经理协调是否足够？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "不够；超过连续25个自然日需要特殊许可",
+        "经理、People Business Partner和Absence Management Team",
+        "连续自然日包含周末和节假日"
+      ],
+      "failure_conditions": [
+        "称没有年度限额所以无需额外许可",
+        "把自然日换成工作日",
+        "遗漏任一审批方"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_time_off_types.md",
+          "heading_path": "Time Off Types → Flexible Paid Time Off (PTO) → Overview",
+          "quote": "for time off exceeding 25 consecutive calendar days (including weekends and holidays), special permission is required from your Manager, People Business Partner, and the Absence Management Team"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D04-E1",
+          "requirement": "Time Off Types → Flexible Paid Time Off (PTO) → Overview",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "heading_path": "Time Off Types → Flexible Paid Time Off (PTO) → Overview",
+              "quote": "for time off exceeding 25 consecutive calendar days (including weekends and holidays), special permission is required from your Manager, People Business Partner, and the Absence Management Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D05",
+      "type": "location_condition",
+      "question": "我是位于加拿大且符合育儿假资格的GitLab团队成员，应通过哪个系统提交育儿假申请？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "通过Tilt提交",
+        "通过Okta访问Tilt",
+        "这是USA和Canada对应的流程，不应直接套用其他地区的Workday步骤"
+      ],
+      "failure_conditions": [
+        "直接要求选择Workday中的GitLab Parental Leave而不区分地区"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_leave_types.md",
+          "heading_path": "Leave Types → GitLab Parental Leave → How to Initiate Your Leave",
+          "quote": "**USA and Canada:** Please submit your Parental Leave request to Tilt (accessed through Okta)."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D05-E1",
+          "requirement": "Leave Types → GitLab Parental Leave → How to Initiate Your Leave",
+          "alternatives": [
+            {
+              "file_path": "hr_leave_types.md",
+              "heading_path": "Leave Types → GitLab Parental Leave → How to Initiate Your Leave",
+              "quote": "**USA and Canada:** Please submit your Parental Leave request to Tilt (accessed through Okta)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D06",
+      "type": "cross_document",
+      "question": "我已经符合GitLab育儿假资格，育儿假结束后想接着休3个工作日PTO，可以吗？该提前多久通知经理？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "可以按Flexible PTO流程与经理协调，并非无条件保证获批",
+        "通知时间至少为计划PTO天数的两倍；3个工作日对应至少提前6个工作日",
+        "业务关键期限受影响时经理可能要求调整日期"
+      ],
+      "failure_conditions": [
+        "把PTO当作自动延长原来的带薪育儿假额度",
+        "称只需提前3天",
+        "称无需经理协调"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_leave_types.md",
+          "heading_path": "Leave Types → GitLab Parental Leave → Supplement with Paid Time Off",
+          "quote": "policy with manager coordination. If business critical deadlines will be missed, your Manager may ask you to change the dates."
+        },
+        {
+          "file_path": "hr_time_off_types.md",
+          "heading_path": "Time Off Types → Flexible Paid Time Off (PTO) → PTO Protocols (Planning and Coordination)",
+          "quote": "Discuss planned time off with your manager first and provide as much notice as possible, but at least twice as many days as your planned time off (e.g., 6 business days notice for 3 days off)."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D06-E1",
+          "requirement": "PTO after parental leave requires manager coordination and may need date changes for business-critical deadlines.",
+          "alternatives": [
+            {
+              "file_path": "hr_leave_types.md",
+              "heading_path": "Leave Types → GitLab Parental Leave → Supplement with Paid Time Off",
+              "quote": "policy with manager coordination. If business critical deadlines will be missed, your Manager may ask you to change the dates."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-D06-E2",
+          "requirement": "Three days of planned PTO require at least six business days of advance notice.",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "heading_path": "Time Off Types → Flexible Paid Time Off (PTO) → PTO Protocols (Planning and Coordination)",
+              "quote": "Discuss planned time off with your manager first and provide as much notice as possible, but at least twice as many days as your planned time off (e.g., 6 business days notice for 3 days off)."
+            },
+            {
+              "file_path": "hr_time_away_philosophy.md",
+              "heading_path": "Time Away Philosophy → Communicating (& Preparing for) Planned Time Away → Communication Essentials → Timely & Transparent Communication",
+              "quote": "When requesting planned time off (i.e. PTO, Public Holidays, Volunteer time), **provide at least twice as many days of advance notice as the duration of your planned absence**. For example, a 3-day absence requires at least 6 business days of advance notice."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D07",
+      "type": "no_answer",
+      "question": "请根据当前知识库告诉我，我2026年10月实际到账的工资是多少美元？",
+      "expected_behavior": "abstain",
+      "required_points": [
+        "当前公开政策知识库没有用户的个人工资或实际到账记录，无法确定金额",
+        "不能把学习基金报销额度或其他福利金额当作工资"
+      ],
+      "failure_conditions": [
+        "编造实际到账金额",
+        "把年度10000美元学习报销上限作为工资"
+      ],
+      "evidence": [],
+      "answerability_note": "Current corpus consists of six public policy pages, not user-specific payroll records. Related reimbursement or wage-percentage clauses do not establish a personal net salary. Empty retrieval alone does not prove a question unanswerable.",
+      "evidence_groups": []
+    },
+    {
+      "id": "HR-D08",
+      "type": "missing_condition",
+      "question": "GitLab育儿假应该通过哪个系统提交申请？",
+      "expected_behavior": "clarify_or_conditional_answer",
+      "required_points": [
+        "说明提交系统取决于地区",
+        "可以先询问地区，或同时明确美国/加拿大用Tilt、其他地区用Workday的分支",
+        "如果列出Workday步骤，明确选择GitLab Parental Leave而非普通Paid Time Off"
+      ],
+      "failure_conditions": [
+        "未限定地区就给所有人同一个系统",
+        "将育儿假提交类型错误说成普通Paid Time Off"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_leave_types.md",
+          "heading_path": "Leave Types → GitLab Parental Leave → How to Initiate Your Leave",
+          "quote": "**USA and Canada:** Please submit your Parental Leave request to Tilt (accessed through Okta)."
+        },
+        {
+          "file_path": "hr_leave_types.md",
+          "heading_path": "Leave Types → GitLab Parental Leave → How to Initiate Your Leave",
+          "quote": "**All other Locations:** Enter your Parental Leave into Workday by selecting the “GitLab Parental Leave” option under the Leaves dropdown menu."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D08-E1",
+          "requirement": "Leave Types → GitLab Parental Leave → How to Initiate Your Leave",
+          "alternatives": [
+            {
+              "file_path": "hr_leave_types.md",
+              "heading_path": "Leave Types → GitLab Parental Leave → How to Initiate Your Leave",
+              "quote": "**USA and Canada:** Please submit your Parental Leave request to Tilt (accessed through Okta)."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-D08-E2",
+          "requirement": "Leave Types → GitLab Parental Leave → How to Initiate Your Leave",
+          "alternatives": [
+            {
+              "file_path": "hr_leave_types.md",
+              "heading_path": "Leave Types → GitLab Parental Leave → How to Initiate Your Leave",
+              "quote": "**All other Locations:** Enter your Parental Leave into Workday by selecting the “GitLab Parental Leave” option under the Leaves dropdown menu."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-H01",
+      "type": "approval_boundary",
+      "question": "假设我符合 G&D Fund 资格，申请费用恰好为1000美元。按金额档位，需要经理还是经理加VP审批？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "1000美元属于经理审批档",
+        "金额档位不意味着自动获批"
+      ],
+      "failure_conditions": [
+        "把1000美元归入必须经理加VP的档位",
+        "保证自动获批"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Process → Step 3 - Gain approval",
+          "quote": "Manager approval: $0 - $1,000"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-H01-E1",
+          "requirement": "Process → Step 3 - Gain approval",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Process → Step 3 - Gain approval",
+              "quote": "Manager approval: $0 - $1,000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-H02",
+      "type": "budget_restrictions",
+      "question": "今年没用完的 G&D 预算能结转到明年吗？也可以让给同事用吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "不能跨年结转",
+        "个人预算不能转给同事共享"
+      ],
+      "failure_conditions": [
+        "允许结转",
+        "允许共享"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "FAQ → Budget rollover",
+          "quote": "No. Unspent G&D budgets do not roll over from one year to the next."
+        },
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "FAQ → Budget sharing",
+          "quote": "No. G&D budgets are individual and cannot be shared across team members."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-H02-E1",
+          "requirement": "FAQ → Budget rollover",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "FAQ → Budget rollover",
+              "quote": "No. Unspent G&D budgets do not roll over from one year to the next."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-H02-E2",
+          "requirement": "FAQ → Budget sharing",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "FAQ → Budget sharing",
+              "quote": "No. G&D budgets are individual and cannot be shared across team members."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-H03",
+      "type": "academic_grade",
+      "question": "我在认证大学修读与职业发展有关的学术课程，但最终成绩为C。仅凭经理批准就能满足 G&D 学术课程的成绩要求吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "该学术课程要求最终成绩相当于B或更高",
+        "C不满足该成绩要求；经理批准不能据此推断豁免"
+      ],
+      "failure_conditions": [
+        "称经理批准就能豁免成绩条件",
+        "把学术课程条件泛化为所有学习类型"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Types of Growth and Development reimbursements → Academic study",
+          "quote": "result in a final grade equivalent to a “B” or higher"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-H03-E1",
+          "requirement": "Types of Growth and Development reimbursements → Academic study",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Types of Growth and Development reimbursements → Academic study",
+              "quote": "result in a final grade equivalent to a “B” or higher"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-H04",
+      "type": "recoupment_scope",
+      "question": "假设我连续实际在职10个月后主动离职，此前有1200美元学术学习学费报销。政策是否要求退还？这条是否适用于全部 G&D 报销类别？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "连续实际在职未满12个月主动离职且学术费用至少1000美元，需要退还",
+        "该条仅适用于学术学习报销"
+      ],
+      "failure_conditions": [
+        "称不需要退还",
+        "扩大到全部G&D报销"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Recoupment",
+          "quote": "If a team member voluntarily terminates employment before completing twelve consecutive months of active employment, academic study or tuition expenses of $1,000 USD and over must be refunded to GitLab."
+        },
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Recoupment → Scope",
+          "quote": "This policy applies to academic study reimbursements only."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-H04-E1",
+          "requirement": "Recoupment",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Recoupment",
+              "quote": "If a team member voluntarily terminates employment before completing twelve consecutive months of active employment, academic study or tuition expenses of $1,000 USD and over must be refunded to GitLab."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-H04-E2",
+          "requirement": "Recoupment → Scope",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Recoupment → Scope",
+              "quote": "This policy applies to academic study reimbursements only."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-H05",
+      "type": "coaching_eligibility",
+      "question": "我满足 G&D 的全职和绩效要求，但不是经理，也不属于更高管理级别。可以仅凭这些基本资格申请政策中普通 Coaching 类别吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "Coaching通过G&D提供给经理级别及以上",
+        "基本G&D资格不等于满足该类别额外条件"
+      ],
+      "failure_conditions": [
+        "称所有满足基本资格的员工都符合Coaching条件"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Types of Growth and Development reimbursements → Coaching",
+          "quote": "Coaching through the G&D Fund is available to team members at the Manager level and above."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-H05-E1",
+          "requirement": "Types of Growth and Development reimbursements → Coaching",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Types of Growth and Development reimbursements → Coaching",
+              "quote": "Coaching through the G&D Fund is available to team members at the Manager level and above."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-H06",
+      "type": "pto_calendar_boundary",
+      "question": "计划休PTO连续25个自然日（已经包含周末和节假日）。仅因这个时长，就触发超过25天的特殊审批吗？是否仍需与经理协调和安排工作覆盖？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "恰好25天未超过25天，不能仅因时长认定触发该特殊流程",
+        "仍需与经理协调并制定工作覆盖计划"
+      ],
+      "failure_conditions": [
+        "把25天误作超过25天",
+        "称因此无需经理协调"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_time_off_types.md",
+          "heading_path": "Paid Time Off → Overview",
+          "quote": "- GitLab does not set a specific limit on the amount of PTO a team member can take per year. However, for time off exceeding 25 consecutive calendar days (including weekends and holidays), special permission is required from your Manager, People Business Partner, and the Absence Management Team at [leaves@gitlab.com](mailto:leaves@gitlab.com)."
+        },
+        {
+          "file_path": "hr_time_off_types.md",
+          "heading_path": "Paid Time Off → Overview",
+          "quote": "Our Flexible PTO policy means that as long as you have coordinated with your manager about your planned time off and made a coverage plan, you are free to take PTO."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-H06-E1",
+          "requirement": "Paid Time Off → Overview",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "heading_path": "Paid Time Off → Overview",
+              "quote": "- GitLab does not set a specific limit on the amount of PTO a team member can take per year. However, for time off exceeding 25 consecutive calendar days (including weekends and holidays), special permission is required from your Manager, People Business Partner, and the Absence Management Team at [leaves@gitlab.com](mailto:leaves@gitlab.com)."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-H06-E2",
+          "requirement": "Paid Time Off → Overview",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "heading_path": "Paid Time Off → Overview",
+              "quote": "Our Flexible PTO policy means that as long as you have coordinated with your manager about your planned time off and made a coverage plan, you are free to take PTO."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-H07",
+      "type": "parental_caregiver_exception",
+      "question": "育儿假结束后，如果家属没有严重健康状况，可以用带薪 Caregiver Sick Time 延长带薪育儿假吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "不可以这样延长",
+        "原文例外为家属有严重健康状况，不得遗漏或泛化"
+      ],
+      "failure_conditions": [
+        "称可以无条件延长",
+        "遗漏严重健康状况条件"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_leave_types.md",
+          "heading_path": "Parental Leave → Caregiver Sick Time restriction",
+          "quote": "You may not extend paid parental leave through the use of Paid [Caregiver Sick Time](https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/#caregiver-sick-time), unless you have a family member with a serious health condition."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-H07-E1",
+          "requirement": "Parental Leave → Caregiver Sick Time restriction",
+          "alternatives": [
+            {
+              "file_path": "hr_leave_types.md",
+              "heading_path": "Parental Leave → Caregiver Sick Time restriction",
+              "quote": "You may not extend paid parental leave through the use of Paid [Caregiver Sick Time](https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/#caregiver-sick-time), unless you have a family member with a serious health condition."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-H08",
+      "type": "parental_pay_combination",
+      "question": "假设我符合带薪育儿假资格，也符合所在地法定育儿假补贴资格，GitLab 的工资和法定补贴相加能超过平时周工资的100%吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "两者合计不会超过周工资100%",
+        "符合资格需申请法定补贴，GitLab补足到100%而非另叠加100%"
+      ],
+      "failure_conditions": [
+        "称可以领取超过100%的合计金额"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_leave_types.md",
+          "heading_path": "Parental Leave → Pay",
+          "quote": "If you live in a country or US state where a statutory benefit is available, you will be *required* to apply for statutory leave pay (if eligible), and GitLab will supplement your pay to equal 100% of your weekly wages. You will not receive more than 100% of your wages with statutory leave and Parental Leave combined."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-H08-E1",
+          "requirement": "Parental Leave → Pay",
+          "alternatives": [
+            {
+              "file_path": "hr_leave_types.md",
+              "heading_path": "Parental Leave → Pay",
+              "quote": "If you live in a country or US state where a statutory benefit is available, you will be *required* to apply for statutory leave pay (if eligible), and GitLab will supplement your pay to equal 100% of your weekly wages. You will not receive more than 100% of your wages with statutory leave and Parental Leave combined."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-H09",
+      "type": "region_and_leave_type",
+      "question": "仅按知识库中的 Caregiver Sick Time 通用申报流程：在加拿大照顾生病家属而连续请假6天，应通过Tilt申请吗？应该联系哪个团队、在Workday选择什么标签？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "该类6天及以上属于leave of absence",
+        "此处Tilt分支为USA；加拿大按All other Locations流程",
+        "通过Compass ticket联系Absence Management Team",
+        "Workday标签为Caregiver Sick Time；当地法定要求优先，具体材料依所在地"
+      ],
+      "failure_conditions": [
+        "直接照搬加拿大育儿假Tilt流程",
+        "使用Out Sick或GitLab Parental Leave作为此类标签"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_time_off_types.md",
+          "heading_path": "Caregiver Sick Time → Reporting Procedures → For Caregiver Sick Absences 6+ Consecutive Days",
+          "quote": "Caregiver sick absences that are 6 days or longer are considered a **leave of absence**.\n\n**USA:** Please submit your Leave request to Tilt (accessed through Okta).\n\n**All other Locations:** Follow the instructions below.\n\n1. Notify the Absence Management Team by submitting a Compass ticket. This allows us to share more about the GitLab Caregiver Sick Time Policy, review statutory benefits you may be eligible for, and walk you through any other next steps.\n2. Enter the time away in Workday by selecting the label “Caregiver Sick Time”\n   - *Note*: the Absence Management team may need to edit your entries or replace the entry with a Leave Type on your behalf\n3. Eligibility for a leave of absence under GitLab’s Caregiver Sick policy will require team members to provide evidence, in accordance with local requirements, supporting the need for Caregiver Leave. Please be aware that the exact documentation required may vary by location (i.e. medical certificate, doctor’s note, fit note, etc.).\n   - Team Members should submit the documentation to the Absence Management team (Compass ticket)."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-H09-E1",
+          "requirement": "Caregiver Sick Time → Reporting Procedures → For Caregiver Sick Absences 6+ Consecutive Days",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "heading_path": "Caregiver Sick Time → Reporting Procedures → For Caregiver Sick Absences 6+ Consecutive Days",
+              "quote": "Caregiver sick absences that are 6 days or longer are considered a **leave of absence**.\n\n**USA:** Please submit your Leave request to Tilt (accessed through Okta).\n\n**All other Locations:** Follow the instructions below.\n\n1. Notify the Absence Management Team by submitting a Compass ticket. This allows us to share more about the GitLab Caregiver Sick Time Policy, review statutory benefits you may be eligible for, and walk you through any other next steps.\n2. Enter the time away in Workday by selecting the label “Caregiver Sick Time”\n   - *Note*: the Absence Management team may need to edit your entries or replace the entry with a Leave Type on your behalf\n3. Eligibility for a leave of absence under GitLab’s Caregiver Sick policy will require team members to provide evidence, in accordance with local requirements, supporting the need for Caregiver Leave. Please be aware that the exact documentation required may vary by location (i.e. medical certificate, doctor’s note, fit note, etc.).\n   - Team Members should submit the documentation to the Absence Management team (Compass ticket)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-H10",
+      "type": "personal_workflow_unknown",
+      "question": "我上周提交的 G&D Fund 申请，现在经理已经批准了吗？",
+      "expected_behavior": "abstain",
+      "required_points": [
+        "公开政策不能确定个人申请的实际审批状态",
+        "明确无法确认，需授权的申请记录；可说明查询途径但不能假定状态"
+      ],
+      "failure_conditions": [
+        "编造已批准或未批准的个人状态",
+        "把需要经理审批当成经理已经批准"
+      ],
+      "evidence": [],
+      "evidence_groups": []
+    },
+    {
+      "id": "HR-D09",
+      "type": "workflow_transition",
+      "question": "现在新提交的 G&D Fund 申请走哪个系统？如果原来的 GitLab issue 已经进入审批，是否必须重新提交？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "新申请通过Compass",
+        "已进行中或进入审批的旧issue无需重新提交，可按原流程完成"
+      ],
+      "failure_conditions": [
+        "所有申请仍用GitLab issue",
+        "要求所有旧申请重提"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Growth and Development Fund → Process update",
+          "quote": "All new G&D requests must be submitted through Compass."
+        },
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Growth and Development Fund → Process update",
+          "quote": "If you already have a GitLab issue open and it is in progress or already moving through approval, you do not need to resubmit it."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D09-E1",
+          "requirement": "Growth and Development Fund → Process update",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Growth and Development Fund → Process update",
+              "quote": "All new G&D requests must be submitted through Compass."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-D09-E2",
+          "requirement": "Growth and Development Fund → Process update",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Growth and Development Fund → Process update",
+              "quote": "If you already have a GitLab issue open and it is in progress or already moving through approval, you do not need to resubmit it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D10",
+      "type": "expense_budget_scope",
+      "question": "参加符合要求的会议时，注册费、交通、住宿和餐费能全部占用 G&D 额度报销吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "会议注册费可申请G&D报销",
+        "相关差旅住宿餐费需单独走Travel and Expense政策",
+        "这些差旅费用来自部门T&E预算而非G&D额度"
+      ],
+      "failure_conditions": [
+        "全部费用都算G&D",
+        "把差旅费用说成一律不能报销"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Types of reimbursements → Conferences and live workshops",
+          "quote": "Conference registration fees are eligible for G&D reimbursement."
+        },
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Process → Travel expenses",
+          "quote": "Travel, lodging, and meals related to conferences or workshops must be expensed separately from the G&D claim and should follow GitLab’s Travel and Expense policy."
+        },
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Process → Travel expenses",
+          "quote": "These expenses are funded from the requestor’s department Travel & Expense budget, not from the G&D allocation."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D10-E1",
+          "requirement": "Types of reimbursements → Conferences and live workshops",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Types of reimbursements → Conferences and live workshops",
+              "quote": "Conference registration fees are eligible for G&D reimbursement."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-D10-E2",
+          "requirement": "Process → Travel expenses",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Process → Travel expenses",
+              "quote": "Travel, lodging, and meals related to conferences or workshops must be expensed separately from the G&D claim and should follow GitLab’s Travel and Expense policy."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-D10-E3",
+          "requirement": "Process → Travel expenses",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Process → Travel expenses",
+              "quote": "These expenses are funded from the requestor’s department Travel & Expense budget, not from the G&D allocation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D11",
+      "type": "conditional_disbursement",
+      "question": "G&D的50%分次报销在什么情况下、分别什么时候报销？酒店和餐费也能用这个选项吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "适用时可用，不能说所有申请无条件适用",
+        "已批准机会的费用付款后可报50%，完成后可报余下50%",
+        "不适用于差旅酒店或餐费"
+      ],
+      "failure_conditions": [
+        "申请批准但未付款即可报50%",
+        "酒店餐费适用该选项",
+        "省略适用条件保证所有申请可分次"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Process → 50% upfront reimbursement",
+          "quote": "All requests may use the split disbursement option when applicable:\n\n- 50% of the approved opportunity cost can be reimbursed after payment\n- the remaining 50% can be reimbursed upon completion"
+        },
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Process → 50% upfront reimbursement",
+          "quote": "This option does not apply to travel, hotel, or meal expenses."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D11-E1",
+          "requirement": "Process → 50% upfront reimbursement",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Process → 50% upfront reimbursement",
+              "quote": "All requests may use the split disbursement option when applicable:\n\n- 50% of the approved opportunity cost can be reimbursed after payment\n- the remaining 50% can be reimbursed upon completion"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-D11-E2",
+          "requirement": "Process → 50% upfront reimbursement",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Process → 50% upfront reimbursement",
+              "quote": "This option does not apply to travel, hotel, or meal expenses."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D12",
+      "type": "category_specific_books",
+      "question": "学术课程附加的书本和用品能按学术学习类别报销吗？这是否意味着所有编程书籍都不能用G&D报销？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "学术学习类别不覆盖附加书本差旅用品",
+        "不能泛化为所有编程书籍均不可报销",
+        "支持GitLab职业发展的编程软件开发技术书籍可通过G&D报销"
+      ],
+      "failure_conditions": [
+        "混同学术课程附加费用与编程书籍类别",
+        "称所有书籍均不可报销或均可报销"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Types of reimbursements → Academic study",
+          "quote": "Additional fees related to books, travel, and supplies are not covered under this category."
+        },
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Types of reimbursements → Programming books",
+          "quote": "Books related to programming, software development, and technical skills that support career development at GitLab can be reimbursed through the G&D Fund."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D12-E1",
+          "requirement": "Types of reimbursements → Academic study",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Types of reimbursements → Academic study",
+              "quote": "Additional fees related to books, travel, and supplies are not covered under this category."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-D12-E2",
+          "requirement": "Types of reimbursements → Programming books",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Types of reimbursements → Programming books",
+              "quote": "Books related to programming, software development, and technical skills that support career development at GitLab can be reimbursed through the G&D Fund."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D13",
+      "type": "short_sick_reporting",
+      "question": "仅按知识库的通用申报流程，连续病假3天应通知谁、在Workday选什么标签？一定要提供病假证明吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "通知经理",
+        "Workday标签为Out Sick",
+        "少于6天通常不需病假条，但当地法定申报要求另有规定时例外"
+      ],
+      "failure_conditions": [
+        "使用Caregiver Sick Time或PTO标签",
+        "声称任何地区都绝对无需证明"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_time_off_types.md",
+          "heading_path": "Sick Time → Reporting Procedures → For Sick Absences 1-5 Consecutive Days",
+          "quote": "1. Notify your manager of your absence. Please note that you do not need to disclose any medical information (more information on [communicating illness-related absence](https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/#communicating-illness-related-leave) below).\n2. Enter the time away in Workday by selecting the label “Out Sick”\n3. Your sick time will automatically update in Time Off by Deel\n4. If your absence is less than 6 consecutive days, then you do not need to provide a sick note (unless your statutory reporting requirements state otherwise)"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D13-E1",
+          "requirement": "Sick Time → Reporting Procedures → For Sick Absences 1-5 Consecutive Days",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "heading_path": "Sick Time → Reporting Procedures → For Sick Absences 1-5 Consecutive Days",
+              "quote": "1. Notify your manager of your absence. Please note that you do not need to disclose any medical information (more information on [communicating illness-related absence](https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/#communicating-illness-related-leave) below).\n2. Enter the time away in Workday by selecting the label “Out Sick”\n3. Your sick time will automatically update in Time Off by Deel\n4. If your absence is less than 6 consecutive days, then you do not need to provide a sick note (unless your statutory reporting requirements state otherwise)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D14",
+      "type": "rolling_period",
+      "question": "Caregiver Sick Time的25天额度是每个自然年重新计算吗？从入职多久后开始可用？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "最多25个带薪照顾家属病假日",
+        "从入职第一天起可用",
+        "按滚动12个月计算，不等同每年1月1日重置"
+      ],
+      "failure_conditions": [
+        "把滚动12个月当自然年",
+        "编造入职满一年才能用"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_time_off_types.md",
+          "heading_path": "Caregiver Sick Time → Eligibility and Coverage",
+          "quote": "- Each GitLab team member may use up to 25 paid caregiver sick days, available from their first day of work. Eligibility is calculated on a rolling 12-month period."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D14-E1",
+          "requirement": "Caregiver Sick Time → Eligibility and Coverage",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "heading_path": "Caregiver Sick Time → Eligibility and Coverage",
+              "quote": "- Each GitLab team member may use up to 25 paid caregiver sick days, available from their first day of work. Eligibility is calculated on a rolling 12-month period."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D15",
+      "type": "leave_type_substitution",
+      "question": "因身体或心理健康原因需要请病假，可以直接统一用PTO替代病假吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "不能用PTO替代病假",
+        "身体或心理健康相关病假应遵循Sick Time政策"
+      ],
+      "failure_conditions": [
+        "声称Flexible PTO可以替代所有病假",
+        "将心理健康原因排除在病假政策之外"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_time_off_types.md",
+          "heading_path": "Flexible Paid Time Off → Sick time restriction",
+          "quote": "- Team members are not allowed to substitute PTO for sick time. If taking time off for medical needs or sick time, whether physical or mental-health-related, please follow our [Sick Time Policy](https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/#sick-time)."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D15-E1",
+          "requirement": "Flexible Paid Time Off → Sick time restriction",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "heading_path": "Flexible Paid Time Off → Sick time restriction",
+              "quote": "- Team members are not allowed to substitute PTO for sick time. If taking time off for medical needs or sick time, whether physical or mental-health-related, please follow our [Sick Time Policy](https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/#sick-time)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D16",
+      "type": "bereavement_duration_extension",
+      "question": "GitLab丧亲假是否固定只能休3天？若超过25个自然日，是否可以不联系任何团队直接延长？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "没有固定丧亲假天数上限，可连续或间歇使用",
+        "仍需与经理协调及安排覆盖",
+        "超过25个自然日需联系经理PBP及Absence Management申请延长"
+      ],
+      "failure_conditions": [
+        "编造固定3天上限",
+        "没有固定上限就无需协调或延长流程"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_time_off_types.md",
+          "heading_path": "Bereavement → Key Principles",
+          "quote": "- **Flexible Duration**: There is no set limit on bereavement days. We recognize that grief is unique to each person and situation. You can take bereavement continuously or intermittently."
+        },
+        {
+          "file_path": "hr_time_off_types.md",
+          "heading_path": "Bereavement → Key Principles",
+          "quote": "- **Manager Coordination**: As with all time off at GitLab, team members should coordinate with their manager about their needs and coverage plans."
+        },
+        {
+          "file_path": "hr_time_off_types.md",
+          "heading_path": "Bereavement → Leave Extensions",
+          "quote": "If your bereavement leave exceeds 25 calendar days, please reach out to your manager, People Business Partner, and the Absence Management Team at [leaves@gitlab.com](mailto:leaves@gitlab.com) for an extension."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D16-E1",
+          "requirement": "Bereavement → Key Principles",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "heading_path": "Bereavement → Key Principles",
+              "quote": "- **Flexible Duration**: There is no set limit on bereavement days. We recognize that grief is unique to each person and situation. You can take bereavement continuously or intermittently."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-D16-E2",
+          "requirement": "Bereavement → Key Principles",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "heading_path": "Bereavement → Key Principles",
+              "quote": "- **Manager Coordination**: As with all time off at GitLab, team members should coordinate with their manager about their needs and coverage plans."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-D16-E3",
+          "requirement": "Bereavement → Leave Extensions",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "heading_path": "Bereavement → Leave Extensions",
+              "quote": "If your bereavement leave exceeds 25 calendar days, please reach out to your manager, People Business Partner, and the Absence Management Team at [leaves@gitlab.com](mailto:leaves@gitlab.com) for an extension."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D17",
+      "type": "bereavement_documentation_exception",
+      "question": "申请GitLab丧亲假，是否任何地区都不需要提供证明？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "一般不要求证明或损失证明",
+        "当地或法定法律要求证明时例外"
+      ],
+      "failure_conditions": [
+        "无例外声称所有地区永远无需证明",
+        "声称政策统一强制每个人提供证明"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_time_off_types.md",
+          "heading_path": "Bereavement → Request Process → No Documentation Required",
+          "quote": "At GitLab, we trust our team members. We do not require documentation or proof of loss to access bereavement leave (unless required by local/statutory law). This approach builds trust and supports team members during vulnerable times."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D17-E1",
+          "requirement": "Bereavement → Request Process → No Documentation Required",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "heading_path": "Bereavement → Request Process → No Documentation Required",
+              "quote": "At GitLab, we trust our team members. We do not require documentation or proof of loss to access bereavement leave (unless required by local/statutory law). This approach builds trust and supports team members during vulnerable times."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D18",
+      "type": "jury_duty_documentation",
+      "question": "按GitLab的陪审义务请假流程，传票副本应该放在哪里或发给谁？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "可附到请假记录",
+        "也可邮件发给leaves@gitlab.com"
+      ],
+      "failure_conditions": [
+        "称无需保留传票",
+        "编造另一递交团队或邮箱"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_time_off_types.md",
+          "heading_path": "Legal Civic Obligations → Request Process",
+          "quote": "3. **Documentation**: Attach a copy of the summons to your entry, or email it to [leaves@gitlab.com](mailto:leaves@gitlab.com)."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D18-E1",
+          "requirement": "Legal Civic Obligations → Request Process",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "heading_path": "Legal Civic Obligations → Request Process",
+              "quote": "3. **Documentation**: Attach a copy of the summons to your entry, or email it to [leaves@gitlab.com](mailto:leaves@gitlab.com)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D19",
+      "type": "sick_leave_privacy",
+      "question": "请病假时必须向经理透露具体医疗信息吗？经理能把病情细节告诉其他团队成员吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "无需向经理披露具体医疗信息，可选择分享程度",
+        "经理不得向其他团队成员透露病情细节"
+      ],
+      "failure_conditions": [
+        "声称必须向经理披露具体诊断",
+        "允许经理随意向同事公开病情"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_time_off_types.md",
+          "heading_path": "Sick Time → Reporting Procedures",
+          "quote": "1. Notify your manager of your absence. Please note that you do not need to disclose any medical information (more information on [communicating illness-related absence](https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/#communicating-illness-related-leave) below)."
+        },
+        {
+          "file_path": "hr_time_off_types.md",
+          "heading_path": "Sick Time → Communicating Illness-Related Leave",
+          "quote": "Regardless of how much information is shared, managers must never disclose any illness-related details to other team members to ensure we respect the privacy of the affected individual. The goal is to create a supportive environment where team members can focus on their health while feeling confident their privacy is protected."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D19-E1",
+          "requirement": "Sick Time → Reporting Procedures",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "heading_path": "Sick Time → Reporting Procedures",
+              "quote": "1. Notify your manager of your absence. Please note that you do not need to disclose any medical information (more information on [communicating illness-related absence](https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/#communicating-illness-related-leave) below)."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-D19-E2",
+          "requirement": "Sick Time → Communicating Illness-Related Leave",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "heading_path": "Sick Time → Communicating Illness-Related Leave",
+              "quote": "Regardless of how much information is shared, managers must never disclose any illness-related details to other team members to ensure we respect the privacy of the affected individual. The goal is to create a supportive environment where team members can focus on their health while feeling confident their privacy is protected."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D20",
+      "type": "coaching_vendor_review",
+      "question": "假设我是经理且已符合G&D资格，普通Coaching是否绝对禁止使用SoundingBoard以外的供应商？想换供应商该怎样处理？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "不是绝对禁止其他供应商",
+        "需在申请中说明，交团队在审批流程中审核",
+        "仍需遵守现有资格与项目指导，不能保证换供应商获批"
+      ],
+      "failure_conditions": [
+        "声称只能使用SoundingBoard",
+        "称换供应商无需审核或一定获批"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Types of reimbursements → Coaching",
+          "quote": "If you would prefer to use a different coaching vendor, please note that in your request so the team can review it as part of the approval process."
+        },
+        {
+          "file_path": "hr_growth_development.md",
+          "heading_path": "Types of reimbursements → Coaching",
+          "quote": "Coaching requests should still follow the current eligibility requirements and any program-specific guidance documented on this page."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-D20-E1",
+          "requirement": "Types of reimbursements → Coaching",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Types of reimbursements → Coaching",
+              "quote": "If you would prefer to use a different coaching vendor, please note that in your request so the team can review it as part of the approval process."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-D20-E2",
+          "requirement": "Types of reimbursements → Coaching",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "heading_path": "Types of reimbursements → Coaching",
+              "quote": "Coaching requests should still follow the current eligibility requirements and any program-specific guidance documented on this page."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R01",
+      "type": "new_hire_enrollment",
+      "question": "美国员工入职后应在多少天内、通过哪个系统选择福利？如果在该期限内没有选择计划，页面写的默认结果是什么？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "入职起30天内通过PlanSource选择福利",
+        "未选计划则自动Medical Waiver Allowance且没有其他可选保障；不能用G&D尽可能30天取代此规则"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_us_benefits.md",
+          "heading_path": "Getting Started with Your Benefits",
+          "quote": "You have **30 days from your start date** to sign up for benefits through PlanSource (our benefits system)."
+        },
+        {
+          "file_path": "hr_us_benefits.md",
+          "heading_path": "Getting Started with Your Benefits",
+          "quote": "> **Important:** If you don’t choose a plan within 30 days, you’ll automatically get the [**Medical Waiver Allowance**](https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/#medical-waiver-allowance) and won’t have other optional coverage."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R01-E1",
+          "requirement": "Getting Started with Your Benefits",
+          "alternatives": [
+            {
+              "file_path": "hr_us_benefits.md",
+              "heading_path": "Getting Started with Your Benefits",
+              "quote": "You have **30 days from your start date** to sign up for benefits through PlanSource (our benefits system)."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R01-E2",
+          "requirement": "Getting Started with Your Benefits",
+          "alternatives": [
+            {
+              "file_path": "hr_us_benefits.md",
+              "heading_path": "Getting Started with Your Benefits",
+              "quote": "> **Important:** If you don’t choose a plan within 30 days, you’ll automatically get the [**Medical Waiver Allowance**](https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/#medical-waiver-allowance) and won’t have other optional coverage."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R02",
+      "type": "regional_deadline_comparison",
+      "question": "发生符合条件的生活事件后，美国和加拿大员工更新福利的申请窗口分别是多少天？加拿大应该联系哪个团队？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "美国事件起30天，PlanSource",
+        "加拿大事件起31天，窗口内联系Total Rewards；不得统一成30天"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_us_benefits.md",
+          "heading_path": "Qualifying Life Events",
+          "quote": "**Process:** Log into PlanSource within 30 days of your qualifying event to submit changes with. For step-by-step instructions on how to submit a Qualifying Life Event (QLE) in PlanSource (including how to add dependents and upload documentation), see the [Qualifying Life Event (QLE) Process & Documentation guide](https://docs.google.com/document/d/1Ce2x5GU0tZpLxFQ3x2QF0t_hGboO82WVyg-ZIquvddo/edit?tab=t.0)"
+        },
+        {
+          "file_path": "hr_canada_benefits.md",
+          "heading_path": "Managing Life Changes",
+          "quote": "**Life Events**: If you experience a qualifying life event, you have 31 days from the date of the event to request updates to your benefits coverage. Qualifying life events may include marriage, the birth or adoption of a child, or a change in a dependent’s eligibility."
+        },
+        {
+          "file_path": "hr_canada_benefits.md",
+          "heading_path": "Managing Life Changes",
+          "quote": "To review your options and request a change, please contact the Total Rewards team within the 31-day window."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R02-E1",
+          "requirement": "Qualifying Life Events",
+          "alternatives": [
+            {
+              "file_path": "hr_us_benefits.md",
+              "heading_path": "Qualifying Life Events",
+              "quote": "**Process:** Log into PlanSource within 30 days of your qualifying event to submit changes with. For step-by-step instructions on how to submit a Qualifying Life Event (QLE) in PlanSource (including how to add dependents and upload documentation), see the [Qualifying Life Event (QLE) Process & Documentation guide](https://docs.google.com/document/d/1Ce2x5GU0tZpLxFQ3x2QF0t_hGboO82WVyg-ZIquvddo/edit?tab=t.0)"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R02-E2",
+          "requirement": "Managing Life Changes",
+          "alternatives": [
+            {
+              "file_path": "hr_canada_benefits.md",
+              "heading_path": "Managing Life Changes",
+              "quote": "**Life Events**: If you experience a qualifying life event, you have 31 days from the date of the event to request updates to your benefits coverage. Qualifying life events may include marriage, the birth or adoption of a child, or a change in a dependent’s eligibility."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R02-E3",
+          "requirement": "Managing Life Changes",
+          "alternatives": [
+            {
+              "file_path": "hr_canada_benefits.md",
+              "heading_path": "Managing Life Changes",
+              "quote": "To review your options and request a change, please contact the Total Rewards team within the 31-day window."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R03",
+      "type": "regional_vacation_carryover",
+      "question": "荷兰和德国页面对未使用年假的跨年结转期限写得一样吗？请分别说明，并保留德国允许结转的前提。",
+      "expected_behavior": "answer",
+      "required_points": [
+        "荷兰未用天数可转到次年但7月1日到期",
+        "德国因业务或个人原因无法休假等特殊情况下可转至次年3月31日，不能说自动无条件结转"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_netherlands_benefits.md",
+          "heading_path": "Vacation Time",
+          "quote": "- Unused days carry over to the next calendar year but expire July 1st"
+        },
+        {
+          "file_path": "hr_germany_benefits.md",
+          "heading_path": "Vacation Entitlement",
+          "quote": "- Can carry over to March 31 of following year in special circumstances, if the team member was unable to take the holiday due to operational or personal reasons"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R03-E1",
+          "requirement": "Vacation Time",
+          "alternatives": [
+            {
+              "file_path": "hr_netherlands_benefits.md",
+              "heading_path": "Vacation Time",
+              "quote": "- Unused days carry over to the next calendar year but expire July 1st"
+            },
+            {
+              "file_path": "hr_netherlands_benefits.md",
+              "heading_path": "Vacation Money → Statutory Vacation Leave",
+              "quote": "  - Team members are entitled to at least 20 vacation days per year which run concurrently with GitLab PTO. The days will accrue at 1.67 days/month from the team member’s start date. Any unused days will be carried into the next calendar year, but expire on July 1st. Should the team member leave GitLab within the calendar year, an entitlement to a pro rata part vacation days exists. Team members must designate all vacation days taken as `Paid Time OFF` in Workday to ensure that vacation entitlement is properly tracked."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R03-E2",
+          "requirement": "Vacation Entitlement",
+          "alternatives": [
+            {
+              "file_path": "hr_germany_benefits.md",
+              "heading_path": "Vacation Entitlement",
+              "quote": "- Can carry over to March 31 of following year in special circumstances, if the team member was unable to take the holiday due to operational or personal reasons"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R04",
+      "type": "document_flow_difference",
+      "question": "知识库对德国员工育儿假申请系统的说明是否完全一致？能否直接断言德国一定和所有其他地区一样只用Workday？",
+      "expected_behavior": "qualified_comparison",
+      "required_points": [
+        "通用页All other Locations写Workday的GitLab Parental Leave",
+        "德国Family Leave Enhancement页写Time Away by Deel选择Parental Leave",
+        "明确文档口径差异；缺少版本优先级依据时不自行判定哪个更新或替代另一个，建议向负责团队确认适用流程"
+      ],
+      "failure_conditions": [
+        "遗漏required_points中的范围、条件或例外",
+        "将其他地区、费用或假别的规则移用于本题",
+        "无版本依据断言某来源更新或优先"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_leave_types.md",
+          "heading_path": "GitLab Parental Leave",
+          "quote": "**All other Locations:** Enter your Parental Leave into Workday by selecting the “GitLab Parental Leave” option under the Leaves dropdown menu."
+        },
+        {
+          "file_path": "hr_germany_benefits.md",
+          "heading_path": "GitLab Family Leave Enhancement → How to Apply",
+          "quote": "1. Request through Time Away by Deel selecting “Parental Leave”"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R04-E1",
+          "requirement": "GitLab Parental Leave",
+          "alternatives": [
+            {
+              "file_path": "hr_leave_types.md",
+              "heading_path": "GitLab Parental Leave",
+              "quote": "**All other Locations:** Enter your Parental Leave into Workday by selecting the “GitLab Parental Leave” option under the Leaves dropdown menu."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R04-E2",
+          "requirement": "GitLab Family Leave Enhancement → How to Apply",
+          "alternatives": [
+            {
+              "file_path": "hr_germany_benefits.md",
+              "heading_path": "GitLab Family Leave Enhancement → How to Apply",
+              "quote": "1. Request through Time Away by Deel selecting “Parental Leave”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R05",
+      "type": "remote_work_location_scope",
+      "question": "适用法国远程工作章程时，我能因为公司支持远程办公，就自行把长期工作地点改到法国境外吗？第三工作地点是否可以自行决定？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "章程要求远程工作地点位于法国境内",
+        "住所之外的第三地点需要公司与员工共同同意，不能仅凭通用远程灵活性自行跨境"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_france_remote_work.md",
+          "heading_path": "English → PLACE OF REMOTE WORK",
+          "quote": "Any and all remote work locations have to be situated on French territory."
+        },
+        {
+          "file_path": "hr_france_remote_work.md",
+          "heading_path": "English → PLACE OF REMOTE WORK",
+          "quote": "Remote work shall be carried out either at the team member’s domicile or at a third place to be defined by mutual agreement between the Company and the concerned team member."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R05-E1",
+          "requirement": "English → PLACE OF REMOTE WORK",
+          "alternatives": [
+            {
+              "file_path": "hr_france_remote_work.md",
+              "heading_path": "English → PLACE OF REMOTE WORK",
+              "quote": "Any and all remote work locations have to be situated on French territory."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R05-E2",
+          "requirement": "English → PLACE OF REMOTE WORK",
+          "alternatives": [
+            {
+              "file_path": "hr_france_remote_work.md",
+              "heading_path": "English → PLACE OF REMOTE WORK",
+              "quote": "Remote work shall be carried out either at the team member’s domicile or at a third place to be defined by mutual agreement between the Company and the concerned team member."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R06",
+      "type": "relocation_approval_scope",
+      "question": "如果搬迁不会改变我的薪酬，是不是就不用在搬家前申请批准？这种不变薪酬的搬迁可由谁批准？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "仍须搬迁前申请批准",
+        "无薪酬变化的搬迁可由直属经理批准；不要套用location factor大于0.2的额外审批为本题必需"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_relocation.md",
+          "heading_path": "Importance of Communicating Location",
+          "quote": "All Team Members are required to request an approval to relocate prior to moving. Moving to a new location is an exciting adventure, and at GitLab, we want to encourage team members to utilize the flexibility that our relocation policy offers. However, there are multiple aspects to consider including eligibility, possible impact on compensation (including equity and benefit eligibility) and the impact on your role at GitLab. The consequences of not communicating to the appropriate group could result in disciplinary action up to and including termination, depending on the circumstances. Having team members working outside of their contractual location poses potential tax liability for both GitLab and the team member. For this reason, it is important to communicate transparently and promptly with your manager and with the People Team."
+        },
+        {
+          "file_path": "hr_relocation.md",
+          "heading_path": "Relocation / Address Change",
+          "quote": "A relocation that results in no change in compensation can be approved by the team member’s direct manager. Relocations resulting in an increase in compensation must be approved by the team member’s direct manager, and location factor changes that are >.2 will require direct manager, VP as well as an e-group Member approval."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R06-E1",
+          "requirement": "Importance of Communicating Location",
+          "alternatives": [
+            {
+              "file_path": "hr_relocation.md",
+              "heading_path": "Importance of Communicating Location",
+              "quote": "All Team Members are required to request an approval to relocate prior to moving. Moving to a new location is an exciting adventure, and at GitLab, we want to encourage team members to utilize the flexibility that our relocation policy offers. However, there are multiple aspects to consider including eligibility, possible impact on compensation (including equity and benefit eligibility) and the impact on your role at GitLab. The consequences of not communicating to the appropriate group could result in disciplinary action up to and including termination, depending on the circumstances. Having team members working outside of their contractual location poses potential tax liability for both GitLab and the team member. For this reason, it is important to communicate transparently and promptly with your manager and with the People Team."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R06-E2",
+          "requirement": "Relocation / Address Change",
+          "alternatives": [
+            {
+              "file_path": "hr_relocation.md",
+              "heading_path": "Relocation / Address Change",
+              "quote": "A relocation that results in no change in compensation can be approved by the team member’s direct manager. Relocations resulting in an increase in compensation must be approved by the team member’s direct manager, and location factor changes that are >.2 will require direct manager, VP as well as an e-group Member approval."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R07",
+      "type": "regional_expense_channel",
+      "question": "荷兰员工的家庭网络费用能否和一般报销一样直接通过Navan提交？如果尚未完成相关表格，该怎么做？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "荷兰网络费不要通过Navan提交，会被拒绝",
+        "未完成时填写签署Regeling Internet Thuis并交HRSavvy团队；保留地区限制"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_travel_expenses.md",
+          "heading_path": "NON-TRAVEL RELATED EXPENSES → Internet",
+          "quote": "  - If you have not already completed the form as part of onboarding with our Netherlands payroll provider, fill in and sign the [Regeling Internet Thuis](https://docs.google.com/a/gitlab.com/document/d/1J70geARMCjRt_SfxIY6spdfpTbv_1v_KDeJtGRQ6JmM/edit#heading=h.5x5ssjstqpkq) form and send it to the HRSavvy team at [payroll@savvy-group.eu](mailto:payroll@savvy-group.eu). Please do not expense your Internet costs via Navan - these will be rejected."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R07-E1",
+          "requirement": "NON-TRAVEL RELATED EXPENSES → Internet",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "heading_path": "NON-TRAVEL RELATED EXPENSES → Internet",
+              "quote": "  - If you have not already completed the form as part of onboarding with our Netherlands payroll provider, fill in and sign the [Regeling Internet Thuis](https://docs.google.com/a/gitlab.com/document/d/1J70geARMCjRt_SfxIY6spdfpTbv_1v_KDeJtGRQ6JmM/edit#heading=h.5x5ssjstqpkq) form and send it to the HRSavvy team at [payroll@savvy-group.eu](mailto:payroll@savvy-group.eu). Please do not expense your Internet costs via Navan - these will be rejected."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R08",
+      "type": "travel_and_home_internet",
+      "question": "出差期间的上网费和日常家庭网络费，报销规则是否相同？家庭网络初装费、路由器能不能因为出差上网可报销就一起报销？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "出差网络最多每日50美元或当地等值",
+        "家庭网络月服务费可报，但不包括初装设备等费用；路由器等硬件不可报，不将出差日限额当家庭月限额"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_travel_expenses.md",
+          "heading_path": "Travel (Other) → Internet - Travelling",
+          "quote": "- Internet while traveling is reimbursable for up to $50 USD (or local equivalent currency) per day."
+        },
+        {
+          "file_path": "hr_travel_expenses.md",
+          "heading_path": "NON-TRAVEL RELATED EXPENSES → Internet",
+          "quote": "- Monthly service charges for the internet are reimbursable, but GitLab will not reimburse for any initial setup, equipment, change fees, or monthly insurance charges."
+        },
+        {
+          "file_path": "hr_travel_expenses.md",
+          "heading_path": "NON-TRAVEL RELATED EXPENSES → Internet",
+          "quote": "- No hardware costs for internet service is reclaimable. This includes routers, extenders/boosters, etc."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R08-E1",
+          "requirement": "Travel (Other) → Internet - Travelling",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "heading_path": "Travel (Other) → Internet - Travelling",
+              "quote": "- Internet while traveling is reimbursable for up to $50 USD (or local equivalent currency) per day."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R08-E2",
+          "requirement": "NON-TRAVEL RELATED EXPENSES → Internet",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "heading_path": "NON-TRAVEL RELATED EXPENSES → Internet",
+              "quote": "- Monthly service charges for the internet are reimbursable, but GitLab will not reimburse for any initial setup, equipment, change fees, or monthly insurance charges."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R08-E3",
+          "requirement": "NON-TRAVEL RELATED EXPENSES → Internet",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "heading_path": "NON-TRAVEL RELATED EXPENSES → Internet",
+              "quote": "- No hardware costs for internet service is reclaimable. This includes routers, extenders/boosters, etc."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R09",
+      "type": "tax_table_exception",
+      "question": "仅按知识库收录的G&D税务表描述，英国这一行是否表示所有列出的学习发展项目都无例外免税？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "该行写Tax-free但明确排除Trimester coaching",
+        "不把表中有条件和类别限定推广为所有英国福利均免税，也不替用户确定个人实际税额"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_development_tax.md",
+          "heading_path": "Tax Impacts of Different Growth & Development Benefits",
+          "quote": "| United Kingdom | Academic study, Your 4th Trimester Coaching, Professional coaching, English language courses, Professional development/ certification/ licenses, Professional dues/ membership Workshops and Conferences, Self-service learning (LinkedIn Learning, Coursera, othera) | Tax-free with the exception of Trimester coaching which doesn’t sound business related. |"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R09-E1",
+          "requirement": "Tax Impacts of Different Growth & Development Benefits",
+          "alternatives": [
+            {
+              "file_path": "hr_development_tax.md",
+              "heading_path": "Tax Impacts of Different Growth & Development Benefits",
+              "quote": "| United Kingdom | Academic study, Your 4th Trimester Coaching, Professional coaching, English language courses, Professional development/ certification/ licenses, Professional dues/ membership Workshops and Conferences, Self-service learning (LinkedIn Learning, Coursera, othera) | Tax-free with the exception of Trimester coaching which doesn’t sound business related. |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R10",
+      "type": "remote_internet_tax_condition",
+      "question": "按已收录的网络报销政策，GitLab Ltd英国员工家用网络同时用于个人和工作用途时，相关报销是否被描述为应税？可以据此推断所有国家都这样吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "该英国实体且个人工作混用条件下描述为taxable",
+        "不得推广到所有国家或所有福利类别"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_travel_expenses.md",
+          "heading_path": "NON-TRAVEL RELATED EXPENSES → Internet",
+          "quote": "- This is a taxable expense for GitLab Ltd. United Kingdom Team Members assuming that the internet connection is used partially for personal use as well as business use."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R10-E1",
+          "requirement": "NON-TRAVEL RELATED EXPENSES → Internet",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "heading_path": "NON-TRAVEL RELATED EXPENSES → Internet",
+              "quote": "- This is a taxable expense for GitLab Ltd. United Kingdom Team Members assuming that the internet connection is used partially for personal use as well as business use."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R11",
+      "type": "parental_salary_and_statutory_duration",
+      "question": "加拿大安大略省页面同时提到育儿假61至63周和GitLab补足工资最多16周，这是否表示整个61至63周都由GitLab补足到100%工资？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "不能将法定休假期限当公司工资补足期限",
+        "页面公司补足至100%的上限为最多16周；安大略Parental Leave列61至63周属于不同口径"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_canada_benefits.md",
+          "heading_path": "Parental Leave",
+          "quote": "[GitLab’s Parental Leave](https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/leave-types/#gitlab-parental-leave) supplements government benefits to provide 100% salary for up to 16 weeks."
+        },
+        {
+          "file_path": "hr_canada_benefits.md",
+          "heading_path": "Parental Leave → Provincial Entitlements",
+          "quote": "- Ontario: 61-63 weeks | Quebec: 65 weeks | BC: 62 weeks | Alberta: 62 weeks | Manitoba: 63 weeks"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R11-E1",
+          "requirement": "Parental Leave",
+          "alternatives": [
+            {
+              "file_path": "hr_canada_benefits.md",
+              "heading_path": "Parental Leave",
+              "quote": "[GitLab’s Parental Leave](https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/leave-types/#gitlab-parental-leave) supplements government benefits to provide 100% salary for up to 16 weeks."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R11-E2",
+          "requirement": "Parental Leave → Provincial Entitlements",
+          "alternatives": [
+            {
+              "file_path": "hr_canada_benefits.md",
+              "heading_path": "Parental Leave → Provincial Entitlements",
+              "quote": "- Ontario: 61-63 weeks | Quebec: 65 weeks | BC: 62 weeks | Alberta: 62 weeks | Manitoba: 63 weeks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R12",
+      "type": "equipment_refresh_eligibility",
+      "question": "如果我是在上一自然年加入GitLab，今年就能使用现有员工每年500美元的居家设备更新额度吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "上一自然年入职者不符合当年refresh资格",
+        "不能仅因属于现有员工就认定可用500美元；保留政策中的入职年份限制"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_travel_expenses.md",
+          "heading_path": "Equipment",
+          "quote": "##### Existing Team Members- 500 USD (or equivalent local currency) Refresh Guidelines"
+        },
+        {
+          "file_path": "hr_travel_expenses.md",
+          "heading_path": "Equipment → Existing Team Members",
+          "quote": "- Team Members hired within the previous calendar year are not eligible. For example, a Team Member who started 2023-05-10 will get their first refresh amount on 2025-01-01."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R12-E1",
+          "requirement": "Equipment",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "heading_path": "Equipment",
+              "quote": "##### Existing Team Members- 500 USD (or equivalent local currency) Refresh Guidelines"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R12-E2",
+          "requirement": "Equipment → Existing Team Members",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "heading_path": "Equipment → Existing Team Members",
+              "quote": "- Team Members hired within the previous calendar year are not eligible. For example, a Team Member who started 2023-05-10 will get their first refresh amount on 2025-01-01."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

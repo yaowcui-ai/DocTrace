@@ -1,0 +1,607 @@
+{
+  "dataset_id": "hr_regional_dev_v1",
+  "split": "development",
+  "status": "source_grounded_annotations_for_review",
+  "corpus_id": "gitlab_hr_v2",
+  "corpus_manifest": "data/gitlab_hr/v2/processing_manifest.json",
+  "language": "zh",
+  "retrieval_only": true,
+  "expected_retrieval_url": "http://127.0.0.1:9623",
+  "scope": "Twelve new regional, category and document-difference development cases on the added eight documents. First measure retrieval of exact required source statements, not legal validity or final answers.",
+  "review_file": "evaluation/diagnostics/hr_regional_dev_v1_annotation_validation_20261015.json",
+  "limitations": [
+    "Development annotations, not an independent holdout or production/legal guidance.",
+    "Policy statements are from the saved snapshots; no current-law, effective-date or source-precedence claim.",
+    "R04 intentionally requires retaining both differing source statements, not inventing a resolved workflow.",
+    "Exact-quote coverage may miss other valid paraphrases or alternative passages, and does not score graph descriptions or answer semantics.",
+    "No live requests sent while authoring; failure outcomes are unknown."
+  ],
+  "cases": [
+    {
+      "id": "HR-R01",
+      "type": "new_hire_enrollment",
+      "question": "美国员工入职后应在多少天内、通过哪个系统选择福利？如果在该期限内没有选择计划，页面写的默认结果是什么？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "入职起30天内通过PlanSource选择福利",
+        "未选计划则自动Medical Waiver Allowance且没有其他可选保障；不能用G&D尽可能30天取代此规则"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_us_benefits.md",
+          "heading_path": "Getting Started with Your Benefits",
+          "quote": "You have **30 days from your start date** to sign up for benefits through PlanSource (our benefits system)."
+        },
+        {
+          "file_path": "hr_us_benefits.md",
+          "heading_path": "Getting Started with Your Benefits",
+          "quote": "> **Important:** If you don’t choose a plan within 30 days, you’ll automatically get the [**Medical Waiver Allowance**](https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/#medical-waiver-allowance) and won’t have other optional coverage."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R01-E1",
+          "requirement": "Getting Started with Your Benefits",
+          "alternatives": [
+            {
+              "file_path": "hr_us_benefits.md",
+              "heading_path": "Getting Started with Your Benefits",
+              "quote": "You have **30 days from your start date** to sign up for benefits through PlanSource (our benefits system)."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R01-E2",
+          "requirement": "Getting Started with Your Benefits",
+          "alternatives": [
+            {
+              "file_path": "hr_us_benefits.md",
+              "heading_path": "Getting Started with Your Benefits",
+              "quote": "> **Important:** If you don’t choose a plan within 30 days, you’ll automatically get the [**Medical Waiver Allowance**](https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/#medical-waiver-allowance) and won’t have other optional coverage."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R02",
+      "type": "regional_deadline_comparison",
+      "question": "发生符合条件的生活事件后，美国和加拿大员工更新福利的申请窗口分别是多少天？加拿大应该联系哪个团队？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "美国事件起30天，PlanSource",
+        "加拿大事件起31天，窗口内联系Total Rewards；不得统一成30天"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_us_benefits.md",
+          "heading_path": "Qualifying Life Events",
+          "quote": "**Process:** Log into PlanSource within 30 days of your qualifying event to submit changes with. For step-by-step instructions on how to submit a Qualifying Life Event (QLE) in PlanSource (including how to add dependents and upload documentation), see the [Qualifying Life Event (QLE) Process & Documentation guide](https://docs.google.com/document/d/1Ce2x5GU0tZpLxFQ3x2QF0t_hGboO82WVyg-ZIquvddo/edit?tab=t.0)"
+        },
+        {
+          "file_path": "hr_canada_benefits.md",
+          "heading_path": "Managing Life Changes",
+          "quote": "**Life Events**: If you experience a qualifying life event, you have 31 days from the date of the event to request updates to your benefits coverage. Qualifying life events may include marriage, the birth or adoption of a child, or a change in a dependent’s eligibility."
+        },
+        {
+          "file_path": "hr_canada_benefits.md",
+          "heading_path": "Managing Life Changes",
+          "quote": "To review your options and request a change, please contact the Total Rewards team within the 31-day window."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R02-E1",
+          "requirement": "Qualifying Life Events",
+          "alternatives": [
+            {
+              "file_path": "hr_us_benefits.md",
+              "heading_path": "Qualifying Life Events",
+              "quote": "**Process:** Log into PlanSource within 30 days of your qualifying event to submit changes with. For step-by-step instructions on how to submit a Qualifying Life Event (QLE) in PlanSource (including how to add dependents and upload documentation), see the [Qualifying Life Event (QLE) Process & Documentation guide](https://docs.google.com/document/d/1Ce2x5GU0tZpLxFQ3x2QF0t_hGboO82WVyg-ZIquvddo/edit?tab=t.0)"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R02-E2",
+          "requirement": "Managing Life Changes",
+          "alternatives": [
+            {
+              "file_path": "hr_canada_benefits.md",
+              "heading_path": "Managing Life Changes",
+              "quote": "**Life Events**: If you experience a qualifying life event, you have 31 days from the date of the event to request updates to your benefits coverage. Qualifying life events may include marriage, the birth or adoption of a child, or a change in a dependent’s eligibility."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R02-E3",
+          "requirement": "Managing Life Changes",
+          "alternatives": [
+            {
+              "file_path": "hr_canada_benefits.md",
+              "heading_path": "Managing Life Changes",
+              "quote": "To review your options and request a change, please contact the Total Rewards team within the 31-day window."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R03",
+      "type": "regional_vacation_carryover",
+      "question": "荷兰和德国页面对未使用年假的跨年结转期限写得一样吗？请分别说明，并保留德国允许结转的前提。",
+      "expected_behavior": "answer",
+      "required_points": [
+        "荷兰未用天数可转到次年但7月1日到期",
+        "德国因业务或个人原因无法休假等特殊情况下可转至次年3月31日，不能说自动无条件结转"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_netherlands_benefits.md",
+          "heading_path": "Vacation Time",
+          "quote": "- Unused days carry over to the next calendar year but expire July 1st"
+        },
+        {
+          "file_path": "hr_germany_benefits.md",
+          "heading_path": "Vacation Entitlement",
+          "quote": "- Can carry over to March 31 of following year in special circumstances, if the team member was unable to take the holiday due to operational or personal reasons"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R03-E1",
+          "requirement": "Vacation Time",
+          "alternatives": [
+            {
+              "file_path": "hr_netherlands_benefits.md",
+              "heading_path": "Vacation Time",
+              "quote": "- Unused days carry over to the next calendar year but expire July 1st"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R03-E2",
+          "requirement": "Vacation Entitlement",
+          "alternatives": [
+            {
+              "file_path": "hr_germany_benefits.md",
+              "heading_path": "Vacation Entitlement",
+              "quote": "- Can carry over to March 31 of following year in special circumstances, if the team member was unable to take the holiday due to operational or personal reasons"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R04",
+      "type": "document_flow_difference",
+      "question": "知识库对德国员工育儿假申请系统的说明是否完全一致？能否直接断言德国一定和所有其他地区一样只用Workday？",
+      "expected_behavior": "qualified_comparison",
+      "required_points": [
+        "通用页All other Locations写Workday的GitLab Parental Leave",
+        "德国Family Leave Enhancement页写Time Away by Deel选择Parental Leave",
+        "明确文档口径差异；缺少版本优先级依据时不自行判定哪个更新或替代另一个，建议向负责团队确认适用流程"
+      ],
+      "failure_conditions": [
+        "遗漏required_points中的范围、条件或例外",
+        "将其他地区、费用或假别的规则移用于本题",
+        "无版本依据断言某来源更新或优先"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_leave_types.md",
+          "heading_path": "GitLab Parental Leave",
+          "quote": "**All other Locations:** Enter your Parental Leave into Workday by selecting the “GitLab Parental Leave” option under the Leaves dropdown menu."
+        },
+        {
+          "file_path": "hr_germany_benefits.md",
+          "heading_path": "GitLab Family Leave Enhancement → How to Apply",
+          "quote": "1. Request through Time Away by Deel selecting “Parental Leave”"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R04-E1",
+          "requirement": "GitLab Parental Leave",
+          "alternatives": [
+            {
+              "file_path": "hr_leave_types.md",
+              "heading_path": "GitLab Parental Leave",
+              "quote": "**All other Locations:** Enter your Parental Leave into Workday by selecting the “GitLab Parental Leave” option under the Leaves dropdown menu."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R04-E2",
+          "requirement": "GitLab Family Leave Enhancement → How to Apply",
+          "alternatives": [
+            {
+              "file_path": "hr_germany_benefits.md",
+              "heading_path": "GitLab Family Leave Enhancement → How to Apply",
+              "quote": "1. Request through Time Away by Deel selecting “Parental Leave”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R05",
+      "type": "remote_work_location_scope",
+      "question": "适用法国远程工作章程时，我能因为公司支持远程办公，就自行把长期工作地点改到法国境外吗？第三工作地点是否可以自行决定？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "章程要求远程工作地点位于法国境内",
+        "住所之外的第三地点需要公司与员工共同同意，不能仅凭通用远程灵活性自行跨境"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_france_remote_work.md",
+          "heading_path": "English → PLACE OF REMOTE WORK",
+          "quote": "Any and all remote work locations have to be situated on French territory."
+        },
+        {
+          "file_path": "hr_france_remote_work.md",
+          "heading_path": "English → PLACE OF REMOTE WORK",
+          "quote": "Remote work shall be carried out either at the team member’s domicile or at a third place to be defined by mutual agreement between the Company and the concerned team member."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R05-E1",
+          "requirement": "English → PLACE OF REMOTE WORK",
+          "alternatives": [
+            {
+              "file_path": "hr_france_remote_work.md",
+              "heading_path": "English → PLACE OF REMOTE WORK",
+              "quote": "Any and all remote work locations have to be situated on French territory."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R05-E2",
+          "requirement": "English → PLACE OF REMOTE WORK",
+          "alternatives": [
+            {
+              "file_path": "hr_france_remote_work.md",
+              "heading_path": "English → PLACE OF REMOTE WORK",
+              "quote": "Remote work shall be carried out either at the team member’s domicile or at a third place to be defined by mutual agreement between the Company and the concerned team member."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R06",
+      "type": "relocation_approval_scope",
+      "question": "如果搬迁不会改变我的薪酬，是不是就不用在搬家前申请批准？这种不变薪酬的搬迁可由谁批准？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "仍须搬迁前申请批准",
+        "无薪酬变化的搬迁可由直属经理批准；不要套用location factor大于0.2的额外审批为本题必需"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_relocation.md",
+          "heading_path": "Importance of Communicating Location",
+          "quote": "All Team Members are required to request an approval to relocate prior to moving. Moving to a new location is an exciting adventure, and at GitLab, we want to encourage team members to utilize the flexibility that our relocation policy offers. However, there are multiple aspects to consider including eligibility, possible impact on compensation (including equity and benefit eligibility) and the impact on your role at GitLab. The consequences of not communicating to the appropriate group could result in disciplinary action up to and including termination, depending on the circumstances. Having team members working outside of their contractual location poses potential tax liability for both GitLab and the team member. For this reason, it is important to communicate transparently and promptly with your manager and with the People Team."
+        },
+        {
+          "file_path": "hr_relocation.md",
+          "heading_path": "Relocation / Address Change",
+          "quote": "A relocation that results in no change in compensation can be approved by the team member’s direct manager. Relocations resulting in an increase in compensation must be approved by the team member’s direct manager, and location factor changes that are >.2 will require direct manager, VP as well as an e-group Member approval."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R06-E1",
+          "requirement": "Importance of Communicating Location",
+          "alternatives": [
+            {
+              "file_path": "hr_relocation.md",
+              "heading_path": "Importance of Communicating Location",
+              "quote": "All Team Members are required to request an approval to relocate prior to moving. Moving to a new location is an exciting adventure, and at GitLab, we want to encourage team members to utilize the flexibility that our relocation policy offers. However, there are multiple aspects to consider including eligibility, possible impact on compensation (including equity and benefit eligibility) and the impact on your role at GitLab. The consequences of not communicating to the appropriate group could result in disciplinary action up to and including termination, depending on the circumstances. Having team members working outside of their contractual location poses potential tax liability for both GitLab and the team member. For this reason, it is important to communicate transparently and promptly with your manager and with the People Team."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R06-E2",
+          "requirement": "Relocation / Address Change",
+          "alternatives": [
+            {
+              "file_path": "hr_relocation.md",
+              "heading_path": "Relocation / Address Change",
+              "quote": "A relocation that results in no change in compensation can be approved by the team member’s direct manager. Relocations resulting in an increase in compensation must be approved by the team member’s direct manager, and location factor changes that are >.2 will require direct manager, VP as well as an e-group Member approval."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R07",
+      "type": "regional_expense_channel",
+      "question": "荷兰员工的家庭网络费用能否和一般报销一样直接通过Navan提交？如果尚未完成相关表格，该怎么做？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "荷兰网络费不要通过Navan提交，会被拒绝",
+        "未完成时填写签署Regeling Internet Thuis并交HRSavvy团队；保留地区限制"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_travel_expenses.md",
+          "heading_path": "NON-TRAVEL RELATED EXPENSES → Internet",
+          "quote": "  - If you have not already completed the form as part of onboarding with our Netherlands payroll provider, fill in and sign the [Regeling Internet Thuis](https://docs.google.com/a/gitlab.com/document/d/1J70geARMCjRt_SfxIY6spdfpTbv_1v_KDeJtGRQ6JmM/edit#heading=h.5x5ssjstqpkq) form and send it to the HRSavvy team at [payroll@savvy-group.eu](mailto:payroll@savvy-group.eu). Please do not expense your Internet costs via Navan - these will be rejected."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R07-E1",
+          "requirement": "NON-TRAVEL RELATED EXPENSES → Internet",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "heading_path": "NON-TRAVEL RELATED EXPENSES → Internet",
+              "quote": "  - If you have not already completed the form as part of onboarding with our Netherlands payroll provider, fill in and sign the [Regeling Internet Thuis](https://docs.google.com/a/gitlab.com/document/d/1J70geARMCjRt_SfxIY6spdfpTbv_1v_KDeJtGRQ6JmM/edit#heading=h.5x5ssjstqpkq) form and send it to the HRSavvy team at [payroll@savvy-group.eu](mailto:payroll@savvy-group.eu). Please do not expense your Internet costs via Navan - these will be rejected."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R08",
+      "type": "travel_and_home_internet",
+      "question": "出差期间的上网费和日常家庭网络费，报销规则是否相同？家庭网络初装费、路由器能不能因为出差上网可报销就一起报销？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "出差网络最多每日50美元或当地等值",
+        "家庭网络月服务费可报，但不包括初装设备等费用；路由器等硬件不可报，不将出差日限额当家庭月限额"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_travel_expenses.md",
+          "heading_path": "Travel (Other) → Internet - Travelling",
+          "quote": "- Internet while traveling is reimbursable for up to $50 USD (or local equivalent currency) per day."
+        },
+        {
+          "file_path": "hr_travel_expenses.md",
+          "heading_path": "NON-TRAVEL RELATED EXPENSES → Internet",
+          "quote": "- Monthly service charges for the internet are reimbursable, but GitLab will not reimburse for any initial setup, equipment, change fees, or monthly insurance charges."
+        },
+        {
+          "file_path": "hr_travel_expenses.md",
+          "heading_path": "NON-TRAVEL RELATED EXPENSES → Internet",
+          "quote": "- No hardware costs for internet service is reclaimable. This includes routers, extenders/boosters, etc."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R08-E1",
+          "requirement": "Travel (Other) → Internet - Travelling",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "heading_path": "Travel (Other) → Internet - Travelling",
+              "quote": "- Internet while traveling is reimbursable for up to $50 USD (or local equivalent currency) per day."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R08-E2",
+          "requirement": "NON-TRAVEL RELATED EXPENSES → Internet",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "heading_path": "NON-TRAVEL RELATED EXPENSES → Internet",
+              "quote": "- Monthly service charges for the internet are reimbursable, but GitLab will not reimburse for any initial setup, equipment, change fees, or monthly insurance charges."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R08-E3",
+          "requirement": "NON-TRAVEL RELATED EXPENSES → Internet",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "heading_path": "NON-TRAVEL RELATED EXPENSES → Internet",
+              "quote": "- No hardware costs for internet service is reclaimable. This includes routers, extenders/boosters, etc."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R09",
+      "type": "tax_table_exception",
+      "question": "仅按知识库收录的G&D税务表描述，英国这一行是否表示所有列出的学习发展项目都无例外免税？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "该行写Tax-free但明确排除Trimester coaching",
+        "不把表中有条件和类别限定推广为所有英国福利均免税，也不替用户确定个人实际税额"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_development_tax.md",
+          "heading_path": "Tax Impacts of Different Growth & Development Benefits",
+          "quote": "| United Kingdom | Academic study, Your 4th Trimester Coaching, Professional coaching, English language courses, Professional development/ certification/ licenses, Professional dues/ membership Workshops and Conferences, Self-service learning (LinkedIn Learning, Coursera, othera) | Tax-free with the exception of Trimester coaching which doesn’t sound business related. |"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R09-E1",
+          "requirement": "Tax Impacts of Different Growth & Development Benefits",
+          "alternatives": [
+            {
+              "file_path": "hr_development_tax.md",
+              "heading_path": "Tax Impacts of Different Growth & Development Benefits",
+              "quote": "| United Kingdom | Academic study, Your 4th Trimester Coaching, Professional coaching, English language courses, Professional development/ certification/ licenses, Professional dues/ membership Workshops and Conferences, Self-service learning (LinkedIn Learning, Coursera, othera) | Tax-free with the exception of Trimester coaching which doesn’t sound business related. |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R10",
+      "type": "remote_internet_tax_condition",
+      "question": "按已收录的网络报销政策，GitLab Ltd英国员工家用网络同时用于个人和工作用途时，相关报销是否被描述为应税？可以据此推断所有国家都这样吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "该英国实体且个人工作混用条件下描述为taxable",
+        "不得推广到所有国家或所有福利类别"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_travel_expenses.md",
+          "heading_path": "NON-TRAVEL RELATED EXPENSES → Internet",
+          "quote": "- This is a taxable expense for GitLab Ltd. United Kingdom Team Members assuming that the internet connection is used partially for personal use as well as business use."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R10-E1",
+          "requirement": "NON-TRAVEL RELATED EXPENSES → Internet",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "heading_path": "NON-TRAVEL RELATED EXPENSES → Internet",
+              "quote": "- This is a taxable expense for GitLab Ltd. United Kingdom Team Members assuming that the internet connection is used partially for personal use as well as business use."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R11",
+      "type": "parental_salary_and_statutory_duration",
+      "question": "加拿大安大略省页面同时提到育儿假61至63周和GitLab补足工资最多16周，这是否表示整个61至63周都由GitLab补足到100%工资？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "不能将法定休假期限当公司工资补足期限",
+        "页面公司补足至100%的上限为最多16周；安大略Parental Leave列61至63周属于不同口径"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_canada_benefits.md",
+          "heading_path": "Parental Leave",
+          "quote": "[GitLab’s Parental Leave](https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/leave-types/#gitlab-parental-leave) supplements government benefits to provide 100% salary for up to 16 weeks."
+        },
+        {
+          "file_path": "hr_canada_benefits.md",
+          "heading_path": "Parental Leave → Provincial Entitlements",
+          "quote": "- Ontario: 61-63 weeks | Quebec: 65 weeks | BC: 62 weeks | Alberta: 62 weeks | Manitoba: 63 weeks"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R11-E1",
+          "requirement": "Parental Leave",
+          "alternatives": [
+            {
+              "file_path": "hr_canada_benefits.md",
+              "heading_path": "Parental Leave",
+              "quote": "[GitLab’s Parental Leave](https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/leave-types/#gitlab-parental-leave) supplements government benefits to provide 100% salary for up to 16 weeks."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R11-E2",
+          "requirement": "Parental Leave → Provincial Entitlements",
+          "alternatives": [
+            {
+              "file_path": "hr_canada_benefits.md",
+              "heading_path": "Parental Leave → Provincial Entitlements",
+              "quote": "- Ontario: 61-63 weeks | Quebec: 65 weeks | BC: 62 weeks | Alberta: 62 weeks | Manitoba: 63 weeks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-R12",
+      "type": "equipment_refresh_eligibility",
+      "question": "如果我是在上一自然年加入GitLab，今年就能使用现有员工每年500美元的居家设备更新额度吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "上一自然年入职者不符合当年refresh资格",
+        "不能仅因属于现有员工就认定可用500美元；保留政策中的入职年份限制"
+      ],
+      "failure_conditions": [
+        "回答与required_points相矛盾或遗漏必要条件",
+        "将相似但不同地区、时间起点或政策类别的规则混为一谈"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_travel_expenses.md",
+          "heading_path": "Equipment",
+          "quote": "##### Existing Team Members- 500 USD (or equivalent local currency) Refresh Guidelines"
+        },
+        {
+          "file_path": "hr_travel_expenses.md",
+          "heading_path": "Equipment → Existing Team Members",
+          "quote": "- Team Members hired within the previous calendar year are not eligible. For example, a Team Member who started 2023-05-10 will get their first refresh amount on 2025-01-01."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-R12-E1",
+          "requirement": "Equipment",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "heading_path": "Equipment",
+              "quote": "##### Existing Team Members- 500 USD (or equivalent local currency) Refresh Guidelines"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-R12-E2",
+          "requirement": "Equipment → Existing Team Members",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "heading_path": "Equipment → Existing Team Members",
+              "quote": "- Team Members hired within the previous calendar year are not eligible. For example, a Team Member who started 2023-05-10 will get their first refresh amount on 2025-01-01."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "frozen_at_utc": "2026-10-16T06:20:27.704996+00:00",
+  "dataset_sha256": "3b28f077e71554c01572bbf11e7565c7233c98172681769406f6773370e7d7ba",
+  "cases": 12,
+  "groups": 26,
+  "checks": [
+    {
+      "group_id": "HR-V01-E1",
+      "matching_index_chunk_ids": [
+        "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V01-E2",
+      "matching_index_chunk_ids": [
+        "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V02-E1",
+      "matching_index_chunk_ids": [
+        "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V02-E2",
+      "matching_index_chunk_ids": [
+        "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V03-E1",
+      "matching_index_chunk_ids": [
+        "doc-f33d721bc424ba16540b64d502fadb37-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V03-E2",
+      "matching_index_chunk_ids": [
+        "doc-f33d721bc424ba16540b64d502fadb37-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V03-E3",
+      "matching_index_chunk_ids": [
+        "doc-f33d721bc424ba16540b64d502fadb37-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V04-E1",
+      "matching_index_chunk_ids": [
+        "doc-72ca97dea20ca10bf17ea0f861cae5e2-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V04-E2",
+      "matching_index_chunk_ids": [
+        "doc-f33d721bc424ba16540b64d502fadb37-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V05-E1",
+      "matching_index_chunk_ids": [
+        "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-001"
+      ]
+    },
+    {
+      "group_id": "HR-V05-E2",
+      "matching_index_chunk_ids": [
+        "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-001"
+      ]
+    },
+    {
+      "group_id": "HR-V06-E1",
+      "matching_index_chunk_ids": [
+        "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-001"
+      ]
+    },
+    {
+      "group_id": "HR-V06-E2",
+      "matching_index_chunk_ids": [
+        "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-001"
+      ]
+    },
+    {
+      "group_id": "HR-V07-E1",
+      "matching_index_chunk_ids": [
+        "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V07-E2",
+      "matching_index_chunk_ids": [
+        "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V07-E3",
+      "matching_index_chunk_ids": [
+        "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V08-E1",
+      "matching_index_chunk_ids": [
+        "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V08-E2",
+      "matching_index_chunk_ids": [
+        "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V09-E1",
+      "matching_index_chunk_ids": [
+        "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-001"
+      ]
+    },
+    {
+      "group_id": "HR-V09-E2",
+      "matching_index_chunk_ids": [
+        "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-001"
+      ]
+    },
+    {
+      "group_id": "HR-V10-E1",
+      "matching_index_chunk_ids": [
+        "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-001"
+      ]
+    },
+    {
+      "group_id": "HR-V11-E1",
+      "matching_index_chunk_ids": [
+        "doc-6c98b4fe721e3a00147d514f8794f8dd-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V11-E2",
+      "matching_index_chunk_ids": [
+        "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V11-E3",
+      "matching_index_chunk_ids": [
+        "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V12-E1",
+      "matching_index_chunk_ids": [
+        "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000"
+      ]
+    },
+    {
+      "group_id": "HR-V12-E2",
+      "matching_index_chunk_ids": [
+        "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000"
+      ]
+    }
+  ],
+  "model_requests_sent": 0,
+  "must_not_tune_from_holdout": true
+}

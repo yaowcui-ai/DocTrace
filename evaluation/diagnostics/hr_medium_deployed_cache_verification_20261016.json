@@ -1,0 +1,1 @@
+{"status": "passed", "network_blocked": true, "metadata": {"version": "facet_interleave_v1", "strategy": "whole_query_rerank", "provider_calls": 0, "cache_hits": 1, "subqueries": [], "elapsed_seconds": 0.093}, "candidates": 85}

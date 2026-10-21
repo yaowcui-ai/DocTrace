@@ -1,0 +1,94 @@
+{
+  "corpus_id": "gitlab_hr_v2",
+  "scope": "Expanded public HR policy snapshots: original six plus regional benefits, expenses, relocation and development tax.",
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "license_source": "https://handbook.gitlab.com/handbook/about/handbook-usage/",
+  "base_corpus_id": "gitlab_hr_v1",
+  "documents": [
+    {
+      "document_id": "hr_time_away_overview",
+      "title": "Time Off and Absence at GitLab",
+      "topic": "time_away",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/"
+    },
+    {
+      "document_id": "hr_time_away_philosophy",
+      "title": "Time Away Philosophy",
+      "topic": "time_away",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-away-philosophy/"
+    },
+    {
+      "document_id": "hr_time_off_types",
+      "title": "Time Off Types",
+      "topic": "time_away",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/"
+    },
+    {
+      "document_id": "hr_leave_types",
+      "title": "Leave Types",
+      "topic": "time_away",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/leave-types/"
+    },
+    {
+      "document_id": "hr_general_entity_benefits",
+      "title": "General & Entity Specific Benefits & Information",
+      "topic": "benefits",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/"
+    },
+    {
+      "document_id": "hr_growth_development",
+      "title": "Growth and Development Fund",
+      "topic": "development",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/growth-and-development/"
+    },
+    {
+      "document_id": "hr_travel_expenses",
+      "title": "Global Travel and Expense Policy",
+      "topic": "expenses",
+      "source_url": "https://handbook.gitlab.com/handbook/finance/expenses/"
+    },
+    {
+      "document_id": "hr_canada_benefits",
+      "title": "GitLab Canada Corp",
+      "topic": "canada",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits/"
+    },
+    {
+      "document_id": "hr_us_benefits",
+      "title": "GitLab Inc (US) Benefits",
+      "topic": "us",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/"
+    },
+    {
+      "document_id": "hr_netherlands_benefits",
+      "title": "GitLab BV (Netherlands) Benefits",
+      "topic": "netherlands",
+      "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands/"
+    },
+    {
+      "document_id": "hr_germany_benefits",
+      "title": "GitLab GmbH (Germany) information & benefits",
+      "topic": "germany",
+      "source_url": "https://handbook.gitlab.com/handbook/entity/gmbh-germany/"
+    },
+    {
+      "document_id": "hr_france_remote_work",
+      "title": "GitLab France S.A.S. Remote Work Charter",
+      "topic": "france",
+      "source_url": "https://handbook.gitlab.com/handbook/people-policies/france-sas/remote-work-charter/"
+    },
+    {
+      "document_id": "hr_relocation",
+      "title": "Relocation",
+      "topic": "relocation",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/relocation/"
+    },
+    {
+      "document_id": "hr_development_tax",
+      "title": "Tax Impacts of Different Growth & Development Benefits",
+      "topic": "development_tax",
+      "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/growth-and-development/tax/"
+    }
+  ]
+}

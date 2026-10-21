@@ -1,0 +1,177 @@
+{
+  "dataset_id": "hr_medium_e2e_v1",
+  "split": "development",
+  "corpus_id": "gitlab_hr_v3",
+  "corpus_manifest": "data/gitlab_hr/v3/processing_manifest.json",
+  "retrieval_only": false,
+  "expected_endpoint": "/ask/optimized",
+  "expected_mode": "mix",
+  "expected_retrieval_url": "http://127.0.0.1:9624",
+  "scope": "Three reused medium development cases for end-to-end smoke review; not a holdout or accuracy benchmark. Inspect conditions, citations, degradation and retained failures manually.",
+  "source_dataset": "evaluation/hr_medium_dev_v2.json",
+  "source_dataset_sha256": "5643126b983610d4a07dc1645110144299fbc3b823befc53a7503e922e3f91ec",
+  "limitations": [
+    "Existing required points/evidence are copied unchanged; retrieval quote coverage does not grade generated answers.",
+    "Expected upstream URL is an experiment declaration, not independently verified server configuration."
+  ],
+  "cases": [
+    {
+      "id": "HR-M01",
+      "type": "probation_exception",
+      "question": "根据库中的合同政策，员工跨国搬迁或更换合同时，一定要重新经历新地区的试用期吗？免除重新试用需要同时满足什么条件？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "不一定；在GitLab任职连续未中断，且已通过原地区或原合同的试用期时，无需重新试用"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_contracts_probation_periods.md",
+          "heading_path": "Contracts, Background Screenings, Probation Periods & PIAA → Probation Period",
+          "quote": "In case of relocation to a different country or change of contract, if a team member has continued service with GitLab (tenure with GitLab has been uninterrupted) and they have already passed the probationary period of their original location or contract, they do not need to go through the probation period of their new location or contract."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M01-E1",
+          "requirement": "持续任职且已通过原试用期，两项同时成立",
+          "alternatives": [
+            {
+              "file_path": "hr_contracts_probation_periods.md",
+              "heading_path": "Contracts, Background Screenings, Probation Periods & PIAA → Probation Period",
+              "quote": "In case of relocation to a different country or change of contract, if a team member has continued service with GitLab (tenure with GitLab has been uninterrupted) and they have already passed the probationary period of their original location or contract, they do not need to go through the probation period of their new location or contract."
+            },
+            {
+              "file_path": "hr_relocation.md",
+              "heading_path": "Relocation → How To Apply for a Long-Term Relocation → Contract Phase → Relocation to a New Country → Tasks for People Operations",
+              "quote": "   - [Probation Period](https://handbook.gitlab.com/handbook/people-group/contracts-probation-periods/#probation-period): If a team member has continued service with GitLab (tenure with GitLab has been uninterrupted) and they have already passed the probationary period of their original location or contract, they do not need to go through the probation period of their new location or contract."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M17",
+      "type": "cross_document_growth",
+      "question": "导师指导中的目标应该如何记录和回顾？如果把它们纳入IGP，Workday是否只在每年年底提醒一次刷新？请结合两类指引回答。",
+      "expected_behavior": "answer",
+      "required_points": [
+        "导师目标写下来并经常回顾",
+        "IGP在经理输入后每六个月提醒回顾刷新，并非仅年底"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_mentor.md",
+          "heading_path": "Mentoring at GitLab → Benefits and Expectations → Expectations",
+          "quote": "| **Set Goals** | Mentees should create goals, put them in writing, and frequently revisit goals to measure progress. |"
+        },
+        {
+          "file_path": "hr_igp_guide.md",
+          "heading_path": "Your Individual Growth Plan (IGP) Journey → Bringing Your Plan to Life: Track, Reflect, and Adapt",
+          "quote": "Workday will remind you to review and refresh your IGP every 6 months after your manager provides input."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M17-E1",
+          "requirement": "导师目标书面与持续回顾",
+          "alternatives": [
+            {
+              "file_path": "hr_mentor.md",
+              "heading_path": "Mentoring at GitLab → Benefits and Expectations → Expectations",
+              "quote": "| **Set Goals** | Mentees should create goals, put them in writing, and frequently revisit goals to measure progress. |"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M17-E2",
+          "requirement": "IGP六个月提醒",
+          "alternatives": [
+            {
+              "file_path": "hr_igp_guide.md",
+              "heading_path": "Your Individual Growth Plan (IGP) Journey → Bringing Your Plan to Life: Track, Reflect, and Adapt",
+              "quote": "Workday will remind you to review and refresh your IGP every 6 months after your manager provides input."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M19",
+      "type": "compensation_guarantees",
+      "question": "基本工资、variable pay目标金额、股权授予都属于已保证的报酬吗？根据薪酬和股权页面分别解释。",
+      "expected_behavior": "answer",
+      "required_points": [
+        "基本工资为年度保证工资",
+        "variable pay目标不保证实际支付，随结果可高可低",
+        "股权需董事会批准才最终确定"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_compensation.md",
+          "heading_path": "Compensation at Gitlab → Compensation Elements → Base Salary",
+          "quote": "Base salary is annual guaranteed pay, typically paid in local currency. It’s determined by role, level, and location, and forms the foundation of total compensation."
+        },
+        {
+          "file_path": "hr_compensation.md",
+          "heading_path": "Compensation at Gitlab → Compensation Elements → Variable Pay",
+          "quote": "Some roles include variable pay in addition to base salary. Variable pay has a target amount, but is not guaranteed. The target amount represents what a team member would earn if performance targets are met. Actual payment can be higher or lower depending on results."
+        },
+        {
+          "file_path": "hr_stock_options.md",
+          "heading_path": "Equity Compensation → Grant Levels",
+          "quote": "Note: All stock options and RSU grants are subject to approval by the Board of Directors and no grants are final until such approval has been made. The Company reserves the right in its own determination to make any adjustments to stock option grants at its sole discretion including the decision not to make a grant at all."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M19-E1",
+          "requirement": "基本工资",
+          "alternatives": [
+            {
+              "file_path": "hr_compensation.md",
+              "heading_path": "Compensation at Gitlab → Compensation Elements → Base Salary",
+              "quote": "Base salary is annual guaranteed pay, typically paid in local currency. It’s determined by role, level, and location, and forms the foundation of total compensation."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M19-E2",
+          "requirement": "浮动目标不保证",
+          "alternatives": [
+            {
+              "file_path": "hr_compensation.md",
+              "heading_path": "Compensation at Gitlab → Compensation Elements → Variable Pay",
+              "quote": "Some roles include variable pay in addition to base salary. Variable pay has a target amount, but is not guaranteed. The target amount represents what a team member would earn if performance targets are met. Actual payment can be higher or lower depending on results."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M19-E3",
+          "requirement": "授予需董事会批准",
+          "alternatives": [
+            {
+              "file_path": "hr_stock_options.md",
+              "heading_path": "Equity Compensation → Grant Levels",
+              "quote": "Note: All stock options and RSU grants are subject to approval by the Board of Directors and no grants are final until such approval has been made. The Company reserves the right in its own determination to make any adjustments to stock option grants at its sole discretion including the decision not to make a grant at all."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

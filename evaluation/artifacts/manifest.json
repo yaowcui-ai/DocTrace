@@ -1,0 +1,12 @@
+[
+  {
+    "file": "evaluation/artifacts/20261016T062604Z_f77bc38a_facet_batch.json.gz",
+    "uncompressed_sha256": "58574e33473c24aaabfd28770c679dea272bc7022f0bf5d407eaf5116d62cd18",
+    "uncompressed_bytes": 41814980
+  },
+  {
+    "file": "evaluation/artifacts/20261016T064819Z_42871deb_facet_batch.json.gz",
+    "uncompressed_sha256": "4da1613505197cf78025a8be622c29ef5ee56b24ed40827627d5693e3fa72688",
+    "uncompressed_bytes": 28860819
+  }
+]

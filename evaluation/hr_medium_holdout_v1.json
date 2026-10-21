@@ -1,0 +1,648 @@
+{
+  "dataset_id": "hr_medium_holdout_v1",
+  "split": "holdout",
+  "corpus_id": "gitlab_hr_v3",
+  "corpus_manifest": "data/gitlab_hr/v3/processing_manifest.json",
+  "retrieval_only": true,
+  "expected_retrieval_url": "http://127.0.0.1:9624",
+  "language": "zh",
+  "scope": "12 fresh internal source-grounded questions on same frozen corpus; not an external blinded benchmark.",
+  "limitations": [
+    "Authored and source-checked by the same assistant; small sample, correlated source chunks.",
+    "No retrieval/rerank/answer runs used to author or adjust these cases.",
+    "Do not tune on the holdout; failures become future regression and need another holdout."
+  ],
+  "cases": [
+    {
+      "id": "HR-V01",
+      "type": "learning_time",
+      "question": "GitLab内部Internship for Learning必须固定占20%工时吗？通常持续多久？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "10%或20%常见，取决于双方经理和本人容量而非固定20%",
+        "通常6周至3个月"
+      ],
+      "failure_conditions": [
+        "必要条件、例外或适用对象丢失",
+        "建议被说成强制或资源被保证可得"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_internship_for_learning.md",
+          "heading_path": "Internship for Learning → How does this work?",
+          "quote": "Well, 10% time and 20% time are reasonably common. As long as you and your manager have the capacity the decision is theirs and yours."
+        },
+        {
+          "file_path": "hr_internship_for_learning.md",
+          "heading_path": "Internship for Learning → How does this work?",
+          "quote": "This will vary from team to team, but typically 6 weeks to 3 months depending on the goals for your internship."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-V01-E1",
+          "requirement": "Internship for Learning → How does this work?",
+          "alternatives": [
+            {
+              "file_path": "hr_internship_for_learning.md",
+              "heading_path": "Internship for Learning → How does this work?",
+              "quote": "Well, 10% time and 20% time are reasonably common. As long as you and your manager have the capacity the decision is theirs and yours."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-V01-E2",
+          "requirement": "Internship for Learning → How does this work?",
+          "alternatives": [
+            {
+              "file_path": "hr_internship_for_learning.md",
+              "heading_path": "Internship for Learning → How does this work?",
+              "quote": "This will vary from team to team, but typically 6 weeks to 3 months depending on the goals for your internship."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-V02",
+      "type": "internship_eligibility",
+      "question": "完成Internship for Learning会保证转入目标团队吗？申请前对双方经理的协商和本人当前绩效有什么要求？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "不保证转岗，可能没有编制",
+        "双方经理商定时间比例，本人达到当前绩效期望"
+      ],
+      "failure_conditions": [
+        "必要条件、例外或适用对象丢失",
+        "建议被说成强制或资源被保证可得"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_internship_for_learning.md",
+          "heading_path": "Internship for Learning → How does this work?",
+          "quote": "Completing an internship through this program does not guarantee an internal transfer."
+        },
+        {
+          "file_path": "hr_internship_for_learning.md",
+          "heading_path": "Internship for Learning → Starting Your New Internship",
+          "quote": "No internship for learning should be approved without both managers having a conversation and agreeing upon the percentage of time the team member will be spending on the internship. In order to be eligible for an internship for learning, the team member needs to be meeting performance expectations in their current role."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-V02-E1",
+          "requirement": "Internship for Learning → How does this work?",
+          "alternatives": [
+            {
+              "file_path": "hr_internship_for_learning.md",
+              "heading_path": "Internship for Learning → How does this work?",
+              "quote": "Completing an internship through this program does not guarantee an internal transfer."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-V02-E2",
+          "requirement": "Internship for Learning → Starting Your New Internship",
+          "alternatives": [
+            {
+              "file_path": "hr_internship_for_learning.md",
+              "heading_path": "Internship for Learning → Starting Your New Internship",
+              "quote": "No internship for learning should be approved without both managers having a conversation and agreeing upon the percentage of time the team member will be spending on the internship. In order to be eligible for an internship for learning, the team member needs to be meeting performance expectations in their current role."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-V03",
+      "type": "hone_license",
+      "question": "Hone账号能借给同事吗？普通IC与people manager能否都保证获得同样的无限访问权限？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "账号个人绑定GitLab邮箱不能分享",
+        "people managers无限访问，IC按剩余席位提供不保证"
+      ],
+      "failure_conditions": [
+        "必要条件、例外或适用对象丢失",
+        "建议被说成强制或资源被保证可得"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_hone.md",
+          "heading_path": "Hone Partnership → Frequently Asked Questions → Can I share my access with others?",
+          "quote": "No, Hone accounts are individual and tied to your GitLab email. Individual Contributors interested in access should explore using their Growth and Development benefit."
+        },
+        {
+          "file_path": "hr_hone.md",
+          "heading_path": "Hone Partnership → Access and Eligibility → People Managers",
+          "quote": "All GitLab people managers receive unlimited access to the Hone platform for the year. Managers will receive an access link to create their account and begin participating in sessions."
+        },
+        {
+          "file_path": "hr_hone.md",
+          "heading_path": "Hone Partnership → Access and Eligibility → Individual Contributors",
+          "quote": "We provide available seats to ICs based on availability."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-V03-E1",
+          "requirement": "Hone Partnership → Frequently Asked Questions → Can I share my access with others?",
+          "alternatives": [
+            {
+              "file_path": "hr_hone.md",
+              "heading_path": "Hone Partnership → Frequently Asked Questions → Can I share my access with others?",
+              "quote": "No, Hone accounts are individual and tied to your GitLab email. Individual Contributors interested in access should explore using their Growth and Development benefit."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-V03-E2",
+          "requirement": "Hone Partnership → Access and Eligibility → People Managers",
+          "alternatives": [
+            {
+              "file_path": "hr_hone.md",
+              "heading_path": "Hone Partnership → Access and Eligibility → People Managers",
+              "quote": "All GitLab people managers receive unlimited access to the Hone platform for the year. Managers will receive an access link to create their account and begin participating in sessions."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-V03-E3",
+          "requirement": "Hone Partnership → Access and Eligibility → Individual Contributors",
+          "alternatives": [
+            {
+              "file_path": "hr_hone.md",
+              "heading_path": "Hone Partnership → Access and Eligibility → Individual Contributors",
+              "quote": "We provide available seats to ICs based on availability."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-V04",
+      "type": "cross_learning",
+      "question": "MasterClass学习需要额外付费或审批吗？Hone的IC席位也能保证随时获得吗？请结合两类学习资源说明。",
+      "expected_behavior": "answer",
+      "required_points": [
+        "MasterClass所有团队成员免费无需审批",
+        "Hone IC席位依可用性不保证"
+      ],
+      "failure_conditions": [
+        "必要条件、例外或适用对象丢失",
+        "建议被说成强制或资源被保证可得"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_self_paced_learning.md",
+          "heading_path": "Self-Paced External Trainings → MasterClass",
+          "quote": "All GitLab team members have a MasterClass license included as part of our learning offering, so there’s no cost and no approval needed — just log in and start learning."
+        },
+        {
+          "file_path": "hr_hone.md",
+          "heading_path": "Hone Partnership → Access and Eligibility → Individual Contributors",
+          "quote": "We provide available seats to ICs based on availability."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-V04-E1",
+          "requirement": "Self-Paced External Trainings → MasterClass",
+          "alternatives": [
+            {
+              "file_path": "hr_self_paced_learning.md",
+              "heading_path": "Self-Paced External Trainings → MasterClass",
+              "quote": "All GitLab team members have a MasterClass license included as part of our learning offering, so there’s no cost and no approval needed — just log in and start learning."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-V04-E2",
+          "requirement": "Hone Partnership → Access and Eligibility → Individual Contributors",
+          "alternatives": [
+            {
+              "file_path": "hr_hone.md",
+              "heading_path": "Hone Partnership → Access and Eligibility → Individual Contributors",
+              "quote": "We provide available seats to ICs based on availability."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-V05",
+      "type": "feedback_modality",
+      "question": "反馈是否应该等到绩效评审时才给？正面与建设性反馈4:1是推荐比例还是强制配额？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "实时频繁反馈，不等待绩效评审",
+        "4:1是推荐"
+      ],
+      "failure_conditions": [
+        "必要条件、例外或适用对象丢失",
+        "建议被说成强制或资源被保证可得"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_guidance_on_feedback.md",
+          "heading_path": "Guidance on Feedback → Giving Feedback",
+          "quote": "   - Don’t wait until performance reviews to deliver"
+        },
+        {
+          "file_path": "hr_guidance_on_feedback.md",
+          "heading_path": "Guidance on Feedback → Giving Feedback",
+          "quote": "   - It is recommended to use a 4:1 ratio of positive to constructive"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-V05-E1",
+          "requirement": "Guidance on Feedback → Giving Feedback",
+          "alternatives": [
+            {
+              "file_path": "hr_guidance_on_feedback.md",
+              "heading_path": "Guidance on Feedback → Giving Feedback",
+              "quote": "   - Don’t wait until performance reviews to deliver"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-V05-E2",
+          "requirement": "Guidance on Feedback → Giving Feedback",
+          "alternatives": [
+            {
+              "file_path": "hr_guidance_on_feedback.md",
+              "heading_path": "Guidance on Feedback → Giving Feedback",
+              "quote": "   - It is recommended to use a 4:1 ratio of positive to constructive"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-V06",
+      "type": "feedback_framework",
+      "question": "S-B-I反馈模型里，Behavior与Impact分别应该描述什么？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "可观察的行为及实施方式",
+        "行为对自己或他人体验和想法的影响"
+      ],
+      "failure_conditions": [
+        "必要条件、例外或适用对象丢失",
+        "建议被说成强制或资源被保证可得"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_guidance_on_feedback.md",
+          "heading_path": "Guidance on Feedback → Giving Feedback → S-B-I Model",
+          "quote": "**Behavior** - Describe the observable behavior and how it was applied."
+        },
+        {
+          "file_path": "hr_guidance_on_feedback.md",
+          "heading_path": "Guidance on Feedback → Giving Feedback → S-B-I Model",
+          "quote": "**Impact** - Describe how the other person’s action affected you or others experiences and thinking."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-V06-E1",
+          "requirement": "Guidance on Feedback → Giving Feedback → S-B-I Model",
+          "alternatives": [
+            {
+              "file_path": "hr_guidance_on_feedback.md",
+              "heading_path": "Guidance on Feedback → Giving Feedback → S-B-I Model",
+              "quote": "**Behavior** - Describe the observable behavior and how it was applied."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-V06-E2",
+          "requirement": "Guidance on Feedback → Giving Feedback → S-B-I Model",
+          "alternatives": [
+            {
+              "file_path": "hr_guidance_on_feedback.md",
+              "heading_path": "Guidance on Feedback → Giving Feedback → S-B-I Model",
+              "quote": "**Impact** - Describe how the other person’s action affected you or others experiences and thinking."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-V07",
+      "type": "financial_boundaries",
+      "question": "Modern Health财务辅导是否面向全球成员免费提供？SageView能直接给个人提供具体税务或法律建议吗？请结合页面说明。",
+      "expected_behavior": "answer",
+      "required_points": [
+        "Modern Health全球成员、免费且保密",
+        "SageView教育指导不能具体税务法律财务建议"
+      ],
+      "failure_conditions": [
+        "必要条件、例外或适用对象丢失",
+        "建议被说成强制或资源被保证可得"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_financial_wellness.md",
+          "heading_path": "Financial Wellness → Modern Health Financial Coaching",
+          "quote": "- All GitLab team members globally"
+        },
+        {
+          "file_path": "hr_financial_wellness.md",
+          "heading_path": "Financial Wellness → Modern Health Financial Coaching",
+          "quote": "- No cost, confidential support"
+        },
+        {
+          "file_path": "hr_financial_wellness.md",
+          "heading_path": "Financial Wellness → SageView Financial Wellness Program",
+          "quote": "SageView provides educational guidance but cannot offer specific tax, legal, or financial advice. All consultations are confidential."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-V07-E1",
+          "requirement": "Financial Wellness → Modern Health Financial Coaching",
+          "alternatives": [
+            {
+              "file_path": "hr_financial_wellness.md",
+              "heading_path": "Financial Wellness → Modern Health Financial Coaching",
+              "quote": "- All GitLab team members globally"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-V07-E2",
+          "requirement": "Financial Wellness → Modern Health Financial Coaching",
+          "alternatives": [
+            {
+              "file_path": "hr_financial_wellness.md",
+              "heading_path": "Financial Wellness → Modern Health Financial Coaching",
+              "quote": "- No cost, confidential support"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-V07-E3",
+          "requirement": "Financial Wellness → SageView Financial Wellness Program",
+          "alternatives": [
+            {
+              "file_path": "hr_financial_wellness.md",
+              "heading_path": "Financial Wellness → SageView Financial Wellness Program",
+              "quote": "SageView provides educational guidance but cannot offer specific tax, legal, or financial advice. All consultations are confidential."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-V08",
+      "type": "offboarding_transition",
+      "question": "员工临时转成顾问或承包商，就可以保留原访问权限而跳过离职流程吗？电脑归还是否也必须在普通5个工作日任务期限内完成？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "完整offboarding，单独onboarding只授临时所需权限",
+        "电脑归还是例外可能2至4周"
+      ],
+      "failure_conditions": [
+        "必要条件、例外或适用对象丢失",
+        "建议被说成强制或资源被保证可得"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_offboarding_standards.md",
+          "heading_path": "GitLab Offboarding Standards → Offboarding Procedure → Creating the Offboarding Case",
+          "quote": "**Note:** If the team member is temporarily transitioning to a [contractor or consultant role](https://handbook.gitlab.com/handbook/finance/procurement/contingent-worker-policy/), please proceed with the full offboarding process and create a separate onboarding issue to grant only specific temporary access for what they would need to fulfill their contractual obligations."
+        },
+        {
+          "file_path": "hr_offboarding_standards.md",
+          "heading_path": "GitLab Offboarding Standards → Offboarding Procedure → Creating the Offboarding Case",
+          "quote": "Many teams work to deprovision access including the IT Operations, this should be regarded as urgent and all tasks expected to be completed within 5 working days (Child Cases close automatically after 5 days), with the exception of [laptop returns](https://handbook.gitlab.com/handbook/eta/corporate-it/end-user-services/laptop-management/), which can take 2-4 weeks."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-V08-E1",
+          "requirement": "GitLab Offboarding Standards → Offboarding Procedure → Creating the Offboarding Case",
+          "alternatives": [
+            {
+              "file_path": "hr_offboarding_standards.md",
+              "heading_path": "GitLab Offboarding Standards → Offboarding Procedure → Creating the Offboarding Case",
+              "quote": "**Note:** If the team member is temporarily transitioning to a [contractor or consultant role](https://handbook.gitlab.com/handbook/finance/procurement/contingent-worker-policy/), please proceed with the full offboarding process and create a separate onboarding issue to grant only specific temporary access for what they would need to fulfill their contractual obligations."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-V08-E2",
+          "requirement": "GitLab Offboarding Standards → Offboarding Procedure → Creating the Offboarding Case",
+          "alternatives": [
+            {
+              "file_path": "hr_offboarding_standards.md",
+              "heading_path": "GitLab Offboarding Standards → Offboarding Procedure → Creating the Offboarding Case",
+              "quote": "Many teams work to deprovision access including the IT Operations, this should be regarded as urgent and all tasks expected to be completed within 5 working days (Child Cases close automatically after 5 days), with the exception of [laptop returns](https://handbook.gitlab.com/handbook/eta/corporate-it/end-user-services/laptop-management/), which can take 2-4 weeks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-V09",
+      "type": "offboarding_mail",
+      "question": "离职邮箱的自动回复保留多久？离职标准的例外由哪个团队批准？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "90天后ITOps归档账户",
+        "People Operations批准例外"
+      ],
+      "failure_conditions": [
+        "必要条件、例外或适用对象丢失",
+        "建议被说成强制或资源被保证可得"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_offboarding_standards.md",
+          "heading_path": "GitLab Offboarding Standards → Offboarding Procedure → Offboarding Tools → Google Workspace",
+          "quote": "The Out of Office message will stay on the account for 90 days, afterwards ITOPs will follow up and archive the account in the G-Suite vault."
+        },
+        {
+          "file_path": "hr_offboarding_standards.md",
+          "heading_path": "GitLab Offboarding Standards → Exceptions",
+          "quote": "Exceptions to this policy must be approved by the People Operations team."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-V09-E1",
+          "requirement": "GitLab Offboarding Standards → Offboarding Procedure → Offboarding Tools → Google Workspace",
+          "alternatives": [
+            {
+              "file_path": "hr_offboarding_standards.md",
+              "heading_path": "GitLab Offboarding Standards → Offboarding Procedure → Offboarding Tools → Google Workspace",
+              "quote": "The Out of Office message will stay on the account for 90 days, afterwards ITOPs will follow up and archive the account in the G-Suite vault."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-V09-E2",
+          "requirement": "GitLab Offboarding Standards → Exceptions",
+          "alternatives": [
+            {
+              "file_path": "hr_offboarding_standards.md",
+              "heading_path": "GitLab Offboarding Standards → Exceptions",
+              "quote": "Exceptions to this policy must be approved by the People Operations team."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-V10",
+      "type": "screening_exception",
+      "question": "根据库中背调政策，是否可以在有条件offer之前就开始背调？本地法律要求例外如何处理？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "一般要先有条件offer，除非当地法律明确要求例外"
+      ],
+      "failure_conditions": [
+        "必要条件、例外或适用对象丢失",
+        "建议被说成强制或资源被保证可得"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_contracts_probation_periods.md",
+          "heading_path": "Contracts, Background Screenings, Probation Periods & PIAA → Job Change Letter → Background Screenings",
+          "quote": "No background screening will be run until a conditional offer has been made, unless local law explicitly requires otherwise."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-V10-E1",
+          "requirement": "Contracts, Background Screenings, Probation Periods & PIAA → Job Change Letter → Background Screenings",
+          "alternatives": [
+            {
+              "file_path": "hr_contracts_probation_periods.md",
+              "heading_path": "Contracts, Background Screenings, Probation Periods & PIAA → Job Change Letter → Background Screenings",
+              "quote": "No background screening will be run until a conditional offer has been made, unless local law explicitly requires otherwise."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-V11",
+      "type": "cross_resources",
+      "question": "我想参加公司志愿活动，也想了解免费财务辅导：GiveLab归哪个团队管理？Modern Health财务支持面向什么成员？请结合两个页面回答。",
+      "expected_behavior": "answer",
+      "required_points": [
+        "GiveLab属于ESG团队",
+        "Modern Health财务辅导全球成员免费保密"
+      ],
+      "failure_conditions": [
+        "必要条件、例外或适用对象丢失",
+        "建议被说成强制或资源被保证可得"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_givelab_volunteer_initiatives.md",
+          "heading_path": "GiveLab Volunteer Initiatives → About GiveLab",
+          "quote": "GiveLab is GitLab’s Team Member Volunteer Program. The GiveLab Program lives under the [ESG Team](https://handbook.gitlab.com/job-description-library/legal-and-corporate-affairs/environmental-social-governance/) and is a part of GitLab’s overall [ESG strategy](https://handbook.gitlab.com/handbook/legal/esg/) and program development. The term GiveLab encompasses all Team Member Volunteering initiatives at GitLab."
+        },
+        {
+          "file_path": "hr_financial_wellness.md",
+          "heading_path": "Financial Wellness → Modern Health Financial Coaching",
+          "quote": "- All GitLab team members globally"
+        },
+        {
+          "file_path": "hr_financial_wellness.md",
+          "heading_path": "Financial Wellness → Modern Health Financial Coaching",
+          "quote": "- No cost, confidential support"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-V11-E1",
+          "requirement": "GiveLab Volunteer Initiatives → About GiveLab",
+          "alternatives": [
+            {
+              "file_path": "hr_givelab_volunteer_initiatives.md",
+              "heading_path": "GiveLab Volunteer Initiatives → About GiveLab",
+              "quote": "GiveLab is GitLab’s Team Member Volunteer Program. The GiveLab Program lives under the [ESG Team](https://handbook.gitlab.com/job-description-library/legal-and-corporate-affairs/environmental-social-governance/) and is a part of GitLab’s overall [ESG strategy](https://handbook.gitlab.com/handbook/legal/esg/) and program development. The term GiveLab encompasses all Team Member Volunteering initiatives at GitLab."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-V11-E2",
+          "requirement": "Financial Wellness → Modern Health Financial Coaching",
+          "alternatives": [
+            {
+              "file_path": "hr_financial_wellness.md",
+              "heading_path": "Financial Wellness → Modern Health Financial Coaching",
+              "quote": "- All GitLab team members globally"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-V11-E3",
+          "requirement": "Financial Wellness → Modern Health Financial Coaching",
+          "alternatives": [
+            {
+              "file_path": "hr_financial_wellness.md",
+              "heading_path": "Financial Wellness → Modern Health Financial Coaching",
+              "quote": "- No cost, confidential support"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-V12",
+      "type": "offboarding_schedule",
+      "question": "离职流程的常规处理窗口是按哪个时区、几点安排？确需窗口外开始撤权应联系谁？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "周一至周五成员Slack本地时区16至17时",
+        "本人或经理联系IT Operations安排其他时间"
+      ],
+      "failure_conditions": [
+        "必要条件、例外或适用对象丢失",
+        "建议被说成强制或资源被保证可得"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_offboarding_standards.md",
+          "heading_path": "GitLab Offboarding Standards → Offboarding Procedure → Notice of Offboarding",
+          "quote": "In alignment with the needs of both People Operations and IT Operations, scheduled offboardings will be opened between 4:00 - 5:00pm of the **team members’ local timezone** in Slack Monday-Friday."
+        },
+        {
+          "file_path": "hr_offboarding_standards.md",
+          "heading_path": "GitLab Offboarding Standards → Offboarding Procedure → Notice of Offboarding",
+          "quote": "**Note:** In instances where team members require deprovisioning initiated outside of these times, team members or their manager should reach out to IT Operations to arrange an alternate time."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-V12-E1",
+          "requirement": "GitLab Offboarding Standards → Offboarding Procedure → Notice of Offboarding",
+          "alternatives": [
+            {
+              "file_path": "hr_offboarding_standards.md",
+              "heading_path": "GitLab Offboarding Standards → Offboarding Procedure → Notice of Offboarding",
+              "quote": "In alignment with the needs of both People Operations and IT Operations, scheduled offboardings will be opened between 4:00 - 5:00pm of the **team members’ local timezone** in Slack Monday-Friday."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-V12-E2",
+          "requirement": "GitLab Offboarding Standards → Offboarding Procedure → Notice of Offboarding",
+          "alternatives": [
+            {
+              "file_path": "hr_offboarding_standards.md",
+              "heading_path": "GitLab Offboarding Standards → Offboarding Procedure → Notice of Offboarding",
+              "quote": "**Note:** In instances where team members require deprovisioning initiated outside of these times, team members or their manager should reach out to IT Operations to arrange an alternate time."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

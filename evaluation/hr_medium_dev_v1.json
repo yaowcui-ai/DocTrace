@@ -1,0 +1,1123 @@
+{
+  "dataset_id": "hr_medium_dev_v1",
+  "split": "development",
+  "corpus_id": "gitlab_hr_v3",
+  "corpus_manifest": "data/gitlab_hr/v3/processing_manifest.json",
+  "index_acceptance_manifest": "data/gitlab_hr/v3/index_acceptance.json",
+  "retrieval_only": true,
+  "expected_retrieval_url": "http://127.0.0.1:9624",
+  "language": "zh",
+  "scope": "20 new development questions on selected newly added HR topics, including cross-document synthesis; not all68-document coverage or independent holdout.",
+  "limitations": [
+    "All questions refer to the frozen local corpus snapshot, not current legal, financial or employment advice.",
+    "Exact quote coverage is a diagnostic proxy; manually check equivalent passages before declaring a retrieval miss.",
+    "Multiple evidence groups in the same chunk are not independent retrieval successes.",
+    "Cross-document questions do not establish that graph retrieval is necessary or superior.",
+    "No-evidence personal-record behavior remains in the42-case replay; no retrieval correctness score for such cases.",
+    "Holdout will be prepared and frozen separately before tuning; this development set must not be called holdout."
+  ],
+  "cases": [
+    {
+      "id": "HR-M01",
+      "type": "probation_exception",
+      "question": "根据库中的合同政策，员工跨国搬迁或更换合同时，一定要重新经历新地区的试用期吗？免除重新试用需要同时满足什么条件？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "不一定；在GitLab任职连续未中断，且已通过原地区或原合同的试用期时，无需重新试用"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_contracts_probation_periods.md",
+          "heading_path": "Contracts, Background Screenings, Probation Periods & PIAA → Probation Period",
+          "quote": "In case of relocation to a different country or change of contract, if a team member has continued service with GitLab (tenure with GitLab has been uninterrupted) and they have already passed the probationary period of their original location or contract, they do not need to go through the probation period of their new location or contract."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M01-E1",
+          "requirement": "持续任职且已通过原试用期，两项同时成立",
+          "alternatives": [
+            {
+              "file_path": "hr_contracts_probation_periods.md",
+              "heading_path": "Contracts, Background Screenings, Probation Periods & PIAA → Probation Period",
+              "quote": "In case of relocation to a different country or change of contract, if a team member has continued service with GitLab (tenure with GitLab has been uninterrupted) and they have already passed the probationary period of their original location or contract, they do not need to go through the probation period of their new location or contract."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M02",
+      "type": "responsibility_routing",
+      "question": "劳动合同模板需要修改，以及已入职员工咨询自己的合同，分别应该找谁？模板修改需要谁批准，个人合同问题从哪里提交？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "模板由Legal, Employment负责，修改需VP of Legal, Employment批准",
+        "个人合同由People Operations负责，通过Compass ticket咨询"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_contracts_probation_periods.md",
+          "heading_path": "Contracts, Background Screenings, Probation Periods & PIAA → Contract Templates",
+          "quote": "GitLab’s Team Member contract templates are accessible (for reference) within GitLab only [(here)](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/employment_contracts/#employment-agreements). The DRI for all contract templates is the Legal, Employment team. Contracts are audited and updated on a regular basis. Any suggestions or requests for changes to employment templates should be made to the Legal, Employment team and will require approval from the VP of Legal, Employment. You can read [*how* to connect with Legal, Employment](https://handbook.gitlab.com/handbook/legal/employment-law/#connect) in the Handbook."
+        },
+        {
+          "file_path": "hr_contracts_probation_periods.md",
+          "heading_path": "Contracts, Background Screenings, Probation Periods & PIAA → Team Member’s Individual Contracts",
+          "quote": "The DRI for individual team member contracts (once a team member is hired) is the People Operations Team. Any queries about a team member’s contract should go to the People Operations Team by Compass ticket, and the query will be directed or escalated as appropriate."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M02-E1",
+          "requirement": "模板责任与批准",
+          "alternatives": [
+            {
+              "file_path": "hr_contracts_probation_periods.md",
+              "heading_path": "Contracts, Background Screenings, Probation Periods & PIAA → Contract Templates",
+              "quote": "GitLab’s Team Member contract templates are accessible (for reference) within GitLab only [(here)](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/employment_contracts/#employment-agreements). The DRI for all contract templates is the Legal, Employment team. Contracts are audited and updated on a regular basis. Any suggestions or requests for changes to employment templates should be made to the Legal, Employment team and will require approval from the VP of Legal, Employment. You can read [*how* to connect with Legal, Employment](https://handbook.gitlab.com/handbook/legal/employment-law/#connect) in the Handbook."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M02-E2",
+          "requirement": "个人合同咨询责任与入口",
+          "alternatives": [
+            {
+              "file_path": "hr_contracts_probation_periods.md",
+              "heading_path": "Contracts, Background Screenings, Probation Periods & PIAA → Team Member’s Individual Contracts",
+              "quote": "The DRI for individual team member contracts (once a team member is hired) is the People Operations Team. Any queries about a team member’s contract should go to the People Operations Team by Compass ticket, and the query will be directed or escalated as appropriate."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M03",
+      "type": "promotion_route",
+      "question": "同一职系内的周期晋升，与申请开放职位的内部流动晋升，是同一种流程吗？分别是否需要面试、周期晋升用哪个系统、内部流动晋升额外需要谁批准？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "周期晋升无需面试，在Workday而非Greenhouse处理",
+        "内部流动通过开放职位申请与完整面试流程，晋升需skip-level leader批准"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_promotions_transfers.md",
+          "heading_path": "Promotions and Transfers → Types of Promotions",
+          "quote": "**In-Cycle Promotions:**  An in-cycle promotion is any individual that is within the same job family, and has a similar but increased job scope. A promotion is not necessarily defined with a new grade due to differences in job families. We would typically expect a team member to have been in position for at least twelve months prior to being promoted to the next level position within the same job family. This process does not require interview(s), does not create backfill headcount and occurs semi-annually through the calibrated promotion process or monthly for level 5 team members in the Sales Development job family. All in-cycle promotions are processed in **Workday and not in Greenhouse.**"
+        },
+        {
+          "file_path": "hr_promotions_transfers.md",
+          "heading_path": "Promotions and Transfers → Definitions → Internal Mobility",
+          "quote": "Internal mobility is the process by which team members move into open positions at GitLab. When a position is open and posted on the career site via Greenhouse, and then filled by a current GitLab team member, it is classified as ‘internal mobility’. Similar to filling a role with an external candidate, internal team member candidates will also follow the same Greenhouse hiring steps and experience a full interview process to enable an informed hiring decision. All open positions should be posted to allow for equal opportunity for consideration."
+        },
+        {
+          "file_path": "hr_promotions_transfers.md",
+          "heading_path": "Promotions and Transfers → Types of Promotions",
+          "quote": "- In order for promotions through internal mobility to occur, approval from the skip-level leader is required."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M03-E1",
+          "requirement": "周期晋升定义与系统",
+          "alternatives": [
+            {
+              "file_path": "hr_promotions_transfers.md",
+              "heading_path": "Promotions and Transfers → Types of Promotions",
+              "quote": "**In-Cycle Promotions:**  An in-cycle promotion is any individual that is within the same job family, and has a similar but increased job scope. A promotion is not necessarily defined with a new grade due to differences in job families. We would typically expect a team member to have been in position for at least twelve months prior to being promoted to the next level position within the same job family. This process does not require interview(s), does not create backfill headcount and occurs semi-annually through the calibrated promotion process or monthly for level 5 team members in the Sales Development job family. All in-cycle promotions are processed in **Workday and not in Greenhouse.**"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M03-E2",
+          "requirement": "内部流动完整面试",
+          "alternatives": [
+            {
+              "file_path": "hr_promotions_transfers.md",
+              "heading_path": "Promotions and Transfers → Definitions → Internal Mobility",
+              "quote": "Internal mobility is the process by which team members move into open positions at GitLab. When a position is open and posted on the career site via Greenhouse, and then filled by a current GitLab team member, it is classified as ‘internal mobility’. Similar to filling a role with an external candidate, internal team member candidates will also follow the same Greenhouse hiring steps and experience a full interview process to enable an informed hiring decision. All open positions should be posted to allow for equal opportunity for consideration."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M03-E3",
+          "requirement": "跨级领导批准",
+          "alternatives": [
+            {
+              "file_path": "hr_promotions_transfers.md",
+              "heading_path": "Promotions and Transfers → Types of Promotions",
+              "quote": "- In order for promotions through internal mobility to occur, approval from the skip-level leader is required."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M04",
+      "type": "lateral_pay_exception",
+      "question": "我接受了同职级的内部转岗，能否据此断言一定涨薪？什么情况下薪酬结构差异可能影响判断？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "多数同职级横向转岗不涨薪，但新旧职系薪酬结构显著不同存在例外，仍需审查level/family/scope"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_promotions_transfers.md",
+          "heading_path": "Promotions and Transfers → Definitions → Internal Mobility",
+          "quote": "- If a team member applies for and accepts a position at the same grade, it will most likely be considered a [lateral transfer](https://handbook.gitlab.com/handbook/people-group/promotions-transfers/#transfer-compensation-guidelines). In most cases, a lateral transfer will not result in a compensation increase, unless there is a significant difference in the compensation structure between the new and prior job families. When a team member moves to a new role, a review of the job level, family, and scope will determine if this is indeed a lateral move."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M04-E1",
+          "requirement": "不保证涨薪且保留职系结构例外",
+          "alternatives": [
+            {
+              "file_path": "hr_promotions_transfers.md",
+              "heading_path": "Promotions and Transfers → Definitions → Internal Mobility",
+              "quote": "- If a team member applies for and accepts a position at the same grade, it will most likely be considered a [lateral transfer](https://handbook.gitlab.com/handbook/people-group/promotions-transfers/#transfer-compensation-guidelines). In most cases, a lateral transfer will not result in a compensation increase, unless there is a significant difference in the compensation structure between the new and prior job families. When a team member moves to a new role, a review of the job level, family, and scope will determine if this is indeed a lateral move."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M05",
+      "type": "interim_eligibility",
+      "question": "临时管理岗位的奖金资格中，岗位覆盖时长的通常门槛是什么？如果是同级岗位，在保留永久全职工作的同时承担其100%工作量，需要多久、由谁考虑奖金？满足后能说必发吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "通常覆盖需求需超过30天",
+        "保留原永久全职岗位并承担同级岗位100%工作量60天或以上，可由PBP和该组领导考虑，不是保证发放"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_incentives.md",
+          "heading_path": "Incentives at GitLab → Compensation for Acting and Interim Roles → Criteria for Eligibility",
+          "quote": "- For an interim role to be considered, the need for coverage would need to be longer than a 30 day time period."
+        },
+        {
+          "file_path": "hr_incentives.md",
+          "heading_path": "Incentives at GitLab → Compensation for Acting and Interim Roles → Criteria for Eligibility",
+          "quote": "  - If a team member assumes 100% of the workload of a lateral role for 60 days or more **in addition to their permanent full time role,** an interim bonus may be considered by the [People Business Partner](https://handbook.gitlab.com/handbook/people-group/people-business-partners/#people-business-partner-alignments) and leader of the group."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M05-E1",
+          "requirement": "通常超过30天",
+          "alternatives": [
+            {
+              "file_path": "hr_incentives.md",
+              "heading_path": "Incentives at GitLab → Compensation for Acting and Interim Roles → Criteria for Eligibility",
+              "quote": "- For an interim role to be considered, the need for coverage would need to be longer than a 30 day time period."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M05-E2",
+          "requirement": "同级60天及额外工作量、审批裁量",
+          "alternatives": [
+            {
+              "file_path": "hr_incentives.md",
+              "heading_path": "Incentives at GitLab → Compensation for Acting and Interim Roles → Criteria for Eligibility",
+              "quote": "  - If a team member assumes 100% of the workload of a lateral role for 60 days or more **in addition to their permanent full time role,** an interim bonus may be considered by the [People Business Partner](https://handbook.gitlab.com/handbook/people-group/people-business-partners/#people-business-partner-alignments) and leader of the group."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M06",
+      "type": "interim_bonus_calculation",
+      "question": "对base salary方案的员工，临时岗位奖金公式是什么、与1000美元基准如何比较？临时任职中途工资变化时，能直接用结束后的工资统一计算吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "取1000美元按当前汇率折算金额与计算结果较大者",
+        "年基本工资/365×10%×临时岗位自然日数",
+        "不能用结束后的工资统一算；按临时期间每个自然日适用工资计算"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_incentives.md",
+          "heading_path": "Incentives at GitLab → Compensation for Acting and Interim Roles → Calculation of Interim Bonus",
+          "quote": "The greater value of the standard discretionary bonus amount ($1,000 at the current exchange rate) OR the following calculation:"
+        },
+        {
+          "file_path": "hr_incentives.md",
+          "heading_path": "Incentives at GitLab → Compensation for Acting and Interim Roles → Calculation of Interim Bonus",
+          "quote": "- `(Annual Base Salary in Local Currency/365) x .10 (10%) x # of Calendar Days in the Interim Role`"
+        },
+        {
+          "file_path": "hr_incentives.md",
+          "heading_path": "Incentives at GitLab → Compensation for Acting and Interim Roles → Calculation of Interim Bonus",
+          "quote": "**The interim bonus should be calculated based on the team member’s salary during the interim period, not the salary after the interim period.** If your compensation changes during the interim period (for example, relocation, country conversion, etc.), we will calculate the interim bonus based on the pay rate of each calendar day."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M06-E1",
+          "requirement": "较大值规则",
+          "alternatives": [
+            {
+              "file_path": "hr_incentives.md",
+              "heading_path": "Incentives at GitLab → Compensation for Acting and Interim Roles → Calculation of Interim Bonus",
+              "quote": "The greater value of the standard discretionary bonus amount ($1,000 at the current exchange rate) OR the following calculation:"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M06-E2",
+          "requirement": "基本工资公式",
+          "alternatives": [
+            {
+              "file_path": "hr_incentives.md",
+              "heading_path": "Incentives at GitLab → Compensation for Acting and Interim Roles → Calculation of Interim Bonus",
+              "quote": "- `(Annual Base Salary in Local Currency/365) x .10 (10%) x # of Calendar Days in the Interim Role`"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M06-E3",
+          "requirement": "工资变化分日计算",
+          "alternatives": [
+            {
+              "file_path": "hr_incentives.md",
+              "heading_path": "Incentives at GitLab → Compensation for Acting and Interim Roles → Calculation of Interim Bonus",
+              "quote": "**The interim bonus should be calculated based on the team member’s salary during the interim period, not the salary after the interim period.** If your compensation changes during the interim period (for example, relocation, country conversion, etc.), we will calculate the interim bonus based on the pay rate of each calendar day."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M07",
+      "type": "equity_exit",
+      "question": "根据库中股权政策快照，离职后的已归属期权行权期限是多少？未归属的RSU和期权是否也保留到该期限？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "已归属期权离职后90天行权",
+        "未归属RSU及期权在离职当日失效，不可混用90天"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_stock_options.md",
+          "heading_path": "Equity Compensation → About Your Ownership in GitLab",
+          "quote": "If a team member leaves GitLab, they have 90 days post termination to exercise their vested options. Unvested RSUs and options are forfeited upon the date of the team member’s exit from the company."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M07-E1",
+          "requirement": "已归属与未归属的不同处理",
+          "alternatives": [
+            {
+              "file_path": "hr_stock_options.md",
+              "heading_path": "Equity Compensation → About Your Ownership in GitLab",
+              "quote": "If a team member leaves GitLab, they have 90 days post termination to exercise their vested options. Unvested RSUs and options are forfeited upon the date of the team member’s exit from the company."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M08",
+      "type": "equity_refresh_discretion",
+      "question": "完成六个月服务，就能保证拿到年度refresh grant吗？还要考虑哪些条件，由谁最终批准？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "六个月只是可能参与评审，不保证获授",
+        "考虑人才评估、good standing、key talent及预算等，股权授予需董事会审核批准"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_stock_options.md",
+          "heading_path": "Equity Compensation → Annual Refresh Grant Program Eligibility",
+          "quote": "Team members may be eligible to participate in the annual refresh grant cycle review if they have completed six months of service with the company."
+        },
+        {
+          "file_path": "hr_stock_options.md",
+          "heading_path": "Equity Compensation → Annual Refresh Grant Program Eligibility",
+          "quote": "However, participation will be based upon individual team member talent assessments (including if a team member is currently in good standing) and [key talent criteria](https://handbook.gitlab.com/handbook/people-group/talent-assessment/#key-talent-criteria)."
+        },
+        {
+          "file_path": "hr_stock_options.md",
+          "heading_path": "Equity Compensation → Annual Refresh Grant Program Eligibility",
+          "quote": "Therefore, not all team members will receive a refresh grant in the annual review cycle. Leaders will have discretion on the size of the refresh grant based on talent assessments and equity budget as allocated to each E-group member’s division."
+        },
+        {
+          "file_path": "hr_stock_options.md",
+          "heading_path": "Equity Compensation → Annual Refresh Grant Program Eligibility",
+          "quote": "All proposed equity grants are subject to review and approval by the GitLab Board of Directors."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M08-E1",
+          "requirement": "六个月只是可能参与评审",
+          "alternatives": [
+            {
+              "file_path": "hr_stock_options.md",
+              "heading_path": "Equity Compensation → Annual Refresh Grant Program Eligibility",
+              "quote": "Team members may be eligible to participate in the annual refresh grant cycle review if they have completed six months of service with the company."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M08-E2",
+          "requirement": "人才评估及良好状态",
+          "alternatives": [
+            {
+              "file_path": "hr_stock_options.md",
+              "heading_path": "Equity Compensation → Annual Refresh Grant Program Eligibility",
+              "quote": "However, participation will be based upon individual team member talent assessments (including if a team member is currently in good standing) and [key talent criteria](https://handbook.gitlab.com/handbook/people-group/talent-assessment/#key-talent-criteria)."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M08-E3",
+          "requirement": "非人人获授及预算裁量",
+          "alternatives": [
+            {
+              "file_path": "hr_stock_options.md",
+              "heading_path": "Equity Compensation → Annual Refresh Grant Program Eligibility",
+              "quote": "Therefore, not all team members will receive a refresh grant in the annual review cycle. Leaders will have discretion on the size of the refresh grant based on talent assessments and equity budget as allocated to each E-group member’s division."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M08-E4",
+          "requirement": "董事会批准",
+          "alternatives": [
+            {
+              "file_path": "hr_stock_options.md",
+              "heading_path": "Equity Compensation → Annual Refresh Grant Program Eligibility",
+              "quote": "All proposed equity grants are subject to review and approval by the GitLab Board of Directors."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M09",
+      "type": "talent_new_hire",
+      "question": "人才评估启动时入职不超过三个月，会被直接认定为低绩效吗？对应标记是什么？评估使用哪个系统以及哪两个维度？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "标记Too New to Rate，不能等同低绩效",
+        "Workday，Performance/Growth Potential矩阵"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_talent_assessment.md",
+          "heading_path": "Talent Assessment → Overview",
+          "quote": "For team members with a tenure up to three months to the launch of the Talent Assessment Program will be designated as “Too New to Rate”. Also in some cases a “Too New to Rate” designation might be applicable for newly promoted or transferred team members. More about that designation can be found below."
+        },
+        {
+          "file_path": "hr_talent_assessment.md",
+          "heading_path": "Talent Assessment → Overview",
+          "quote": "We use Workday to complete our Talent Assessment."
+        },
+        {
+          "file_path": "hr_talent_assessment.md",
+          "heading_path": "Talent Assessment → Overview",
+          "quote": "There are many talent assessment options, and we have opted to use a Performance/Growth Potential Matrix (commonly known as “9-Box” in the US) and annually review Key Talent."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M09-E1",
+          "requirement": "新员工评估标记",
+          "alternatives": [
+            {
+              "file_path": "hr_talent_assessment.md",
+              "heading_path": "Talent Assessment → Overview",
+              "quote": "For team members with a tenure up to three months to the launch of the Talent Assessment Program will be designated as “Too New to Rate”. Also in some cases a “Too New to Rate” designation might be applicable for newly promoted or transferred team members. More about that designation can be found below."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M09-E2",
+          "requirement": "评估系统",
+          "alternatives": [
+            {
+              "file_path": "hr_talent_assessment.md",
+              "heading_path": "Talent Assessment → Overview",
+              "quote": "We use Workday to complete our Talent Assessment."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M09-E3",
+          "requirement": "评估的两个维度",
+          "alternatives": [
+            {
+              "file_path": "hr_talent_assessment.md",
+              "heading_path": "Talent Assessment → Overview",
+              "quote": "There are many talent assessment options, and we have opted to use a Performance/Growth Potential Matrix (commonly known as “9-Box” in the US) and annually review Key Talent."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M10",
+      "type": "mentoring_expectations",
+      "question": "导师关系里应该由导师还是学员主导谈话？交流内容可以默认分享给别人吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "学员主导",
+        "保密，除非导师和学员同意分享"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_mentor.md",
+          "heading_path": "Mentoring at GitLab → Benefits and Expectations → Expectations",
+          "quote": "| **Mentees lead conversations** | Mentorship is led by the mentee, similar to how [1:1’s at GitLab](https://handbook.gitlab.com/handbook/leadership/1-1/) are driven by direct reports. |"
+        },
+        {
+          "file_path": "hr_mentor.md",
+          "heading_path": "Mentoring at GitLab → Benefits and Expectations → Expectations",
+          "quote": "| **Confidentiality** | Respect the trust built between mentor and mentee. Challenges and conversations shared in mentorship sessions should be kept confidential unless the mentor and mentee are okay with them being shared. |"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M10-E1",
+          "requirement": "学员主导",
+          "alternatives": [
+            {
+              "file_path": "hr_mentor.md",
+              "heading_path": "Mentoring at GitLab → Benefits and Expectations → Expectations",
+              "quote": "| **Mentees lead conversations** | Mentorship is led by the mentee, similar to how [1:1’s at GitLab](https://handbook.gitlab.com/handbook/leadership/1-1/) are driven by direct reports. |"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M10-E2",
+          "requirement": "保密及分享条件",
+          "alternatives": [
+            {
+              "file_path": "hr_mentor.md",
+              "heading_path": "Mentoring at GitLab → Benefits and Expectations → Expectations",
+              "quote": "| **Confidentiality** | Respect the trust built between mentor and mentee. Challenges and conversations shared in mentorship sessions should be kept confidential unless the mentor and mentee are okay with them being shared. |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M11",
+      "type": "mentoring_modality",
+      "question": "导师指导关系必须严格持续六个月、只能同步开会吗？页面建议的期限与交流频率是什么？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "建议3至6个月，不是强制六个月",
+        "每两周30至45分钟，可同步或约定异步交流"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_mentor.md",
+          "heading_path": "Mentoring at GitLab → Mentee: Set a Meeting Schedule",
+          "quote": "Below is a suggested format for this meeting cadence:"
+        },
+        {
+          "file_path": "hr_mentor.md",
+          "heading_path": "Mentoring at GitLab → Mentee: Set a Meeting Schedule",
+          "quote": "1. Establish a timeframe: 3-6 month is suggested"
+        },
+        {
+          "file_path": "hr_mentor.md",
+          "heading_path": "Mentoring at GitLab → Mentee: Set a Meeting Schedule",
+          "quote": "2. Set a meeting cadence every other week for 30-45 minutes or agree to spend 30-45 minutes every other week communicating asynchronously"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M11-E1",
+          "requirement": "建议性质",
+          "alternatives": [
+            {
+              "file_path": "hr_mentor.md",
+              "heading_path": "Mentoring at GitLab → Mentee: Set a Meeting Schedule",
+              "quote": "Below is a suggested format for this meeting cadence:"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M11-E2",
+          "requirement": "建议3至6个月",
+          "alternatives": [
+            {
+              "file_path": "hr_mentor.md",
+              "heading_path": "Mentoring at GitLab → Mentee: Set a Meeting Schedule",
+              "quote": "1. Establish a timeframe: 3-6 month is suggested"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M11-E3",
+          "requirement": "同步或异步频率",
+          "alternatives": [
+            {
+              "file_path": "hr_mentor.md",
+              "heading_path": "Mentoring at GitLab → Mentee: Set a Meeting Schedule",
+              "quote": "2. Set a meeting cadence every other week for 30-45 minutes or agree to spend 30-45 minutes every other week communicating asynchronously"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M12",
+      "type": "igp_cadence",
+      "question": "IGP每个评审周期建议聚焦多少个发展目标？Workday提醒更新计划，与和经理开展职业对话，分别是什么频率？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "每评审周期1至3个有意义的发展目标",
+        "经理提供输入后Workday每六个月提醒回顾刷新",
+        "与经理至少每季度一次职业对话"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_igp_guide.md",
+          "heading_path": "Your Individual Growth Plan (IGP) Journey → Creating Your Development Goals",
+          "quote": "Focus on 1-3 meaningful development goals per review period."
+        },
+        {
+          "file_path": "hr_igp_guide.md",
+          "heading_path": "Your Individual Growth Plan (IGP) Journey → Bringing Your Plan to Life: Track, Reflect, and Adapt",
+          "quote": "Workday will remind you to review and refresh your IGP every 6 months after your manager provides input."
+        },
+        {
+          "file_path": "hr_igp_guide.md",
+          "heading_path": "Your Individual Growth Plan (IGP) Journey → Bringing Your Plan to Life: Track, Reflect, and Adapt",
+          "quote": "2. Schedule at least one quarterly [career conversation](https://handbook.gitlab.com/handbook/people-group/learning-and-development/career-development/#having-career-conversations) with your manager during a 1:1."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M12-E1",
+          "requirement": "目标数量",
+          "alternatives": [
+            {
+              "file_path": "hr_igp_guide.md",
+              "heading_path": "Your Individual Growth Plan (IGP) Journey → Creating Your Development Goals",
+              "quote": "Focus on 1-3 meaningful development goals per review period."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M12-E2",
+          "requirement": "Workday六个月提醒",
+          "alternatives": [
+            {
+              "file_path": "hr_igp_guide.md",
+              "heading_path": "Your Individual Growth Plan (IGP) Journey → Bringing Your Plan to Life: Track, Reflect, and Adapt",
+              "quote": "Workday will remind you to review and refresh your IGP every 6 months after your manager provides input."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M12-E3",
+          "requirement": "季度经理对话",
+          "alternatives": [
+            {
+              "file_path": "hr_igp_guide.md",
+              "heading_path": "Your Individual Growth Plan (IGP) Journey → Bringing Your Plan to Life: Track, Reflect, and Adapt",
+              "quote": "2. Schedule at least one quarterly [career conversation](https://handbook.gitlab.com/handbook/people-group/learning-and-development/career-development/#having-career-conversations) with your manager during a 1:1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M13",
+      "type": "elevateplus_completion",
+      "question": "Elevate+的工作坊和个人辅导分别有几次、每次多久？只参加工作坊就能拿证吗？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "5次工作坊每次60分钟，6次个人辅导每次60分钟",
+        "证书还要求必要现场课出席、异步学习和Executive coaching"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_elevateplus.md",
+          "heading_path": "Elevate+",
+          "quote": "5 Executive Discussion Workshops (60 minutes each)"
+        },
+        {
+          "file_path": "hr_elevateplus.md",
+          "heading_path": "Elevate+",
+          "quote": "Individual coaching sessions (6 sessions, 60 minutes each, flexible scheduling)"
+        },
+        {
+          "file_path": "hr_elevateplus.md",
+          "heading_path": "Elevate+ → Frequently Asked Questions → When I complete this program will I earn a certificate?",
+          "quote": "Yes! Upon successful completion of the program, including attendance to all required live sessions, asynchronous learning participation, and Executive coaching sessions, participants will be awarded the GitLab Elevate+ certification."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M13-E1",
+          "requirement": "工作坊次数时长",
+          "alternatives": [
+            {
+              "file_path": "hr_elevateplus.md",
+              "heading_path": "Elevate+",
+              "quote": "5 Executive Discussion Workshops (60 minutes each)"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M13-E2",
+          "requirement": "辅导次数时长",
+          "alternatives": [
+            {
+              "file_path": "hr_elevateplus.md",
+              "heading_path": "Elevate+",
+              "quote": "Individual coaching sessions (6 sessions, 60 minutes each, flexible scheduling)"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M13-E3",
+          "requirement": "拿证完整要求",
+          "alternatives": [
+            {
+              "file_path": "hr_elevateplus.md",
+              "heading_path": "Elevate+ → Frequently Asked Questions → When I complete this program will I earn a certificate?",
+              "quote": "Yes! Upon successful completion of the program, including attendance to all required live sessions, asynchronous learning participation, and Executive coaching sessions, participants will be awarded the GitLab Elevate+ certification."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M14",
+      "type": "elevateplus_absence",
+      "question": "Elevate+因个人原因缺席一次现场课，需要谁批准？补课时间如何要求，额外缺席会怎样？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "个人原因缺一次需经理批准",
+        "每月内补上错过课程，额外缺席导致incomplete状态"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_elevateplus.md",
+          "heading_path": "Elevate+ → Frequently Asked Questions → I missed, or cannot attend, a live session. What do I do?",
+          "quote": "It’s a requirement to make up missed sessions within each month to ensure that you’re learning each new skill and moving through the program in the appropriate order. Please make every effort to attend live sessions as scheduled. Please reach out to your Learning and Development team for any questions."
+        },
+        {
+          "file_path": "hr_elevateplus.md",
+          "heading_path": "Elevate+ → Frequently Asked Questions → I missed, or cannot attend, a live session. What do I do?",
+          "quote": "We’re committed to working with you to find a solution that lets you successfully complete Elevate+. If you must miss one live session for personal reasons, you need approval from your manager. Additional missed sessions will result in an incomplete Elevate+ status."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M14-E1",
+          "requirement": "当月补课",
+          "alternatives": [
+            {
+              "file_path": "hr_elevateplus.md",
+              "heading_path": "Elevate+ → Frequently Asked Questions → I missed, or cannot attend, a live session. What do I do?",
+              "quote": "It’s a requirement to make up missed sessions within each month to ensure that you’re learning each new skill and moving through the program in the appropriate order. Please make every effort to attend live sessions as scheduled. Please reach out to your Learning and Development team for any questions."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M14-E2",
+          "requirement": "经理批准与额外缺席结果",
+          "alternatives": [
+            {
+              "file_path": "hr_elevateplus.md",
+              "heading_path": "Elevate+ → Frequently Asked Questions → I missed, or cannot attend, a live session. What do I do?",
+              "quote": "We’re committed to working with you to find a solution that lets you successfully complete Elevate+. If you must miss one live session for personal reasons, you need approval from your manager. Additional missed sessions will result in an incomplete Elevate+ status."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M15",
+      "type": "offboarding_deadline",
+      "question": "离职任务都可以等到离职后第五天才处理吗？全部任务与Slack、1Password等关键系统的期限有什么区别？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "全部部门离职任务5天内完成",
+        "关键及时效敏感系统如Slack和1Password须在最初24小时内完成"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_offboarding_standards.md",
+          "heading_path": "GitLab Offboarding Standards → Offboarding Procedure → Offboarding Compliance",
+          "quote": "All offboarding tasks by all Departments need to be completed within 5 days of the offboarding date. For systems that are more critical and time sensitive, these will be completed within the first 24 hours (example 1Password, Slack) by the relevant Departments. Information about application & system deprovisioners can be found on the [Tech Stack](https://techstack.gtlb.com)."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M15-E1",
+          "requirement": "普通及关键系统不同期限",
+          "alternatives": [
+            {
+              "file_path": "hr_offboarding_standards.md",
+              "heading_path": "GitLab Offboarding Standards → Offboarding Procedure → Offboarding Compliance",
+              "quote": "All offboarding tasks by all Departments need to be completed within 5 days of the offboarding date. For systems that are more critical and time sensitive, these will be completed within the first 24 hours (example 1Password, Slack) by the relevant Departments. Information about application & system deprovisioners can be found on the [Tech Stack](https://techstack.gtlb.com)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M16",
+      "type": "harassment_scope_reporting",
+      "question": "反骚扰政策是否只适用于正式雇员、不含承包商？经理已经知悉不当行为，但没人向PBP书面投诉，是否可以不处理？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "所有地区团队成员包含contractor与employee，处理需遵守适用当地规则",
+        "即使没有书面或正式投诉，经理也须及时认真保密公平处理"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_anti_harassment.md",
+          "heading_path": "Anti-Harassment Policy → Scope",
+          "quote": "This policy applies to all team members of GitLab, whether contractor or employee, in all locations. There are local labor laws in every country and in the case of the United States, state laws, that must be followed when handling, reporting and investigating incidents of harassment. The People Business Partner team and legal counsel, if required, in each of those countries will be called upon to ensure compliance and the appropriate legal processes and procedures are followed. Specific country requirements for employees (subject to changes in employment law) are listed in the [Country & US State-Specific Requirements](https://handbook.gitlab.com/handbook/people-group/anti-harassment/#country--us-state-specific-requirements) section and will be updated regularly. All individual contributors, managers, and leaders will be subject to disciplinary action, up to and including termination, for any act of harassment they commit."
+        },
+        {
+          "file_path": "hr_anti_harassment.md",
+          "heading_path": "Anti-Harassment Policy → Reporting Alleged Harassment → The Role of Managers",
+          "quote": "If managers become aware of misconduct, they must deal with any allegations expeditiously, seriously, confidentially, and fairly, whether or not there has been a written or formal complaint made to People Business partner. Informed managers are expected to:"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M16-E1",
+          "requirement": "适用范围与当地规则",
+          "alternatives": [
+            {
+              "file_path": "hr_anti_harassment.md",
+              "heading_path": "Anti-Harassment Policy → Scope",
+              "quote": "This policy applies to all team members of GitLab, whether contractor or employee, in all locations. There are local labor laws in every country and in the case of the United States, state laws, that must be followed when handling, reporting and investigating incidents of harassment. The People Business Partner team and legal counsel, if required, in each of those countries will be called upon to ensure compliance and the appropriate legal processes and procedures are followed. Specific country requirements for employees (subject to changes in employment law) are listed in the [Country & US State-Specific Requirements](https://handbook.gitlab.com/handbook/people-group/anti-harassment/#country--us-state-specific-requirements) section and will be updated regularly. All individual contributors, managers, and leaders will be subject to disciplinary action, up to and including termination, for any act of harassment they commit."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M16-E2",
+          "requirement": "无正式投诉也应处理",
+          "alternatives": [
+            {
+              "file_path": "hr_anti_harassment.md",
+              "heading_path": "Anti-Harassment Policy → Reporting Alleged Harassment → The Role of Managers",
+              "quote": "If managers become aware of misconduct, they must deal with any allegations expeditiously, seriously, confidentially, and fairly, whether or not there has been a written or formal complaint made to People Business partner. Informed managers are expected to:"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M17",
+      "type": "cross_document_growth",
+      "question": "导师指导中的目标应该如何记录和回顾？如果把它们纳入IGP，Workday是否只在每年年底提醒一次刷新？请结合两类指引回答。",
+      "expected_behavior": "answer",
+      "required_points": [
+        "导师目标写下来并经常回顾",
+        "IGP在经理输入后每六个月提醒回顾刷新，并非仅年底"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_mentor.md",
+          "heading_path": "Mentoring at GitLab → Benefits and Expectations → Expectations",
+          "quote": "| **Set Goals** | Mentees should create goals, put them in writing, and frequently revisit goals to measure progress. |"
+        },
+        {
+          "file_path": "hr_igp_guide.md",
+          "heading_path": "Your Individual Growth Plan (IGP) Journey → Bringing Your Plan to Life: Track, Reflect, and Adapt",
+          "quote": "Workday will remind you to review and refresh your IGP every 6 months after your manager provides input."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M17-E1",
+          "requirement": "导师目标书面与持续回顾",
+          "alternatives": [
+            {
+              "file_path": "hr_mentor.md",
+              "heading_path": "Mentoring at GitLab → Benefits and Expectations → Expectations",
+              "quote": "| **Set Goals** | Mentees should create goals, put them in writing, and frequently revisit goals to measure progress. |"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M17-E2",
+          "requirement": "IGP六个月提醒",
+          "alternatives": [
+            {
+              "file_path": "hr_igp_guide.md",
+              "heading_path": "Your Individual Growth Plan (IGP) Journey → Bringing Your Plan to Life: Track, Reflect, and Adapt",
+              "quote": "Workday will remind you to review and refresh your IGP every 6 months after your manager provides input."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M18",
+      "type": "cross_document_exit",
+      "question": "离职后，期权和系统访问权限都能统一按90天处理吗？请分别说明已归属期权、未归属股权和Slack等关键系统的处理期限。",
+      "expected_behavior": "answer",
+      "required_points": [
+        "已归属期权离职后90天行权",
+        "未归属RSU和期权离职日失效",
+        "Slack等关键系统最初24小时内处理，不是90天"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_stock_options.md",
+          "heading_path": "Equity Compensation → About Your Ownership in GitLab",
+          "quote": "If a team member leaves GitLab, they have 90 days post termination to exercise their vested options. Unvested RSUs and options are forfeited upon the date of the team member’s exit from the company."
+        },
+        {
+          "file_path": "hr_offboarding_standards.md",
+          "heading_path": "GitLab Offboarding Standards → Offboarding Procedure → Offboarding Compliance",
+          "quote": "All offboarding tasks by all Departments need to be completed within 5 days of the offboarding date. For systems that are more critical and time sensitive, these will be completed within the first 24 hours (example 1Password, Slack) by the relevant Departments. Information about application & system deprovisioners can be found on the [Tech Stack](https://techstack.gtlb.com)."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M18-E1",
+          "requirement": "股权不同归属状态",
+          "alternatives": [
+            {
+              "file_path": "hr_stock_options.md",
+              "heading_path": "Equity Compensation → About Your Ownership in GitLab",
+              "quote": "If a team member leaves GitLab, they have 90 days post termination to exercise their vested options. Unvested RSUs and options are forfeited upon the date of the team member’s exit from the company."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M18-E2",
+          "requirement": "关键系统24小时",
+          "alternatives": [
+            {
+              "file_path": "hr_offboarding_standards.md",
+              "heading_path": "GitLab Offboarding Standards → Offboarding Procedure → Offboarding Compliance",
+              "quote": "All offboarding tasks by all Departments need to be completed within 5 days of the offboarding date. For systems that are more critical and time sensitive, these will be completed within the first 24 hours (example 1Password, Slack) by the relevant Departments. Information about application & system deprovisioners can be found on the [Tech Stack](https://techstack.gtlb.com)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M19",
+      "type": "compensation_guarantees",
+      "question": "基本工资、variable pay目标金额、股权授予都属于已保证的报酬吗？根据薪酬和股权页面分别解释。",
+      "expected_behavior": "answer",
+      "required_points": [
+        "基本工资为年度保证工资",
+        "variable pay目标不保证实际支付，随结果可高可低",
+        "股权需董事会批准才最终确定"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_compensation.md",
+          "heading_path": "Compensation at Gitlab → Compensation Elements → Base Salary",
+          "quote": "Base salary is annual guaranteed pay, typically paid in local currency. It’s determined by role, level, and location, and forms the foundation of total compensation."
+        },
+        {
+          "file_path": "hr_compensation.md",
+          "heading_path": "Compensation at Gitlab → Compensation Elements → Variable Pay",
+          "quote": "Some roles include variable pay in addition to base salary. Variable pay has a target amount, but is not guaranteed. The target amount represents what a team member would earn if performance targets are met. Actual payment can be higher or lower depending on results."
+        },
+        {
+          "file_path": "hr_stock_options.md",
+          "heading_path": "Equity Compensation → Grant Levels",
+          "quote": "Note: All stock options and RSU grants are subject to approval by the Board of Directors and no grants are final until such approval has been made. The Company reserves the right in its own determination to make any adjustments to stock option grants at its sole discretion including the decision not to make a grant at all."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M19-E1",
+          "requirement": "基本工资",
+          "alternatives": [
+            {
+              "file_path": "hr_compensation.md",
+              "heading_path": "Compensation at Gitlab → Compensation Elements → Base Salary",
+              "quote": "Base salary is annual guaranteed pay, typically paid in local currency. It’s determined by role, level, and location, and forms the foundation of total compensation."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M19-E2",
+          "requirement": "浮动目标不保证",
+          "alternatives": [
+            {
+              "file_path": "hr_compensation.md",
+              "heading_path": "Compensation at Gitlab → Compensation Elements → Variable Pay",
+              "quote": "Some roles include variable pay in addition to base salary. Variable pay has a target amount, but is not guaranteed. The target amount represents what a team member would earn if performance targets are met. Actual payment can be higher or lower depending on results."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M19-E3",
+          "requirement": "授予需董事会批准",
+          "alternatives": [
+            {
+              "file_path": "hr_stock_options.md",
+              "heading_path": "Equity Compensation → Grant Levels",
+              "quote": "Note: All stock options and RSU grants are subject to approval by the Board of Directors and no grants are final until such approval has been made. The Company reserves the right in its own determination to make any adjustments to stock option grants at its sole discretion including the decision not to make a grant at all."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-M20",
+      "type": "acting_vs_promotion",
+      "question": "担任acting role就等于获得正式晋升吗？acting资格由谁判断，同职系周期晋升是否仍要求已持续表现出下一职级的能力？",
+      "expected_behavior": "answer",
+      "required_points": [
+        "acting通常不以晋升结束，资格由Hiring Manager和Department head判断",
+        "周期晋升看当前绩效，晋升前应持续达到下一岗位框架水平，不能仅看潜力"
+      ],
+      "failure_conditions": [
+        "遗漏主问题的必要条件或例外",
+        "把建议或可能性说成必然，或把强制要求说成可选",
+        "用其他事项的相同数字或系统名称代替本题依据"
+      ],
+      "evidence": [
+        {
+          "file_path": "hr_incentives.md",
+          "heading_path": "Incentives at GitLab → Compensation for Acting and Interim Roles → Criteria for Eligibility",
+          "quote": "**Since Acting roles do not typically end in promotion, the decision on whether the acting role meets the eligible criteria rests with the Hiring Manager and the Department head.**"
+        },
+        {
+          "file_path": "hr_promotions_transfers.md",
+          "heading_path": "Promotions and Transfers → Promotion Philosophy → Pillars",
+          "quote": "- **Performance First**: Promotions reflect your current performance, not just potential. For an in-line promotion, you should already be consistently operating at the level described in the next [job framework](https://handbook.gitlab.com/handbook/company/structure/#job-frameworks) before being promoted. While you’d typically become eligible for promotion to the next level in your job family after twelve months in your current role, remember that broadening your skills laterally is equally valuable to your growth journey."
+        }
+      ],
+      "evidence_groups": [
+        {
+          "group_id": "HR-M20-E1",
+          "requirement": "代理角色不等同晋升",
+          "alternatives": [
+            {
+              "file_path": "hr_incentives.md",
+              "heading_path": "Incentives at GitLab → Compensation for Acting and Interim Roles → Criteria for Eligibility",
+              "quote": "**Since Acting roles do not typically end in promotion, the decision on whether the acting role meets the eligible criteria rests with the Hiring Manager and the Department head.**"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-M20-E2",
+          "requirement": "晋升前持续达到下一水平",
+          "alternatives": [
+            {
+              "file_path": "hr_promotions_transfers.md",
+              "heading_path": "Promotions and Transfers → Promotion Philosophy → Pillars",
+              "quote": "- **Performance First**: Promotions reflect your current performance, not just potential. For an in-line promotion, you should already be consistently operating at the level described in the next [job framework](https://handbook.gitlab.com/handbook/company/structure/#job-frameworks) before being promoted. While you’d typically become eligible for promotion to the next level in your job family after twelve months in your current role, remember that broadening your skills laterally is equally valuable to your growth journey."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# Secrets and private data
+.env
+.env.*
+!.env.example
+.lightrag.env
+.lightrag.env.*
+!.lightrag.env.example
+*.private.*
+*.pem
+*.key
+*.sql.gz
+runtime/
+logs/
+backups/
+data/public_examples/
+.venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+evaluation/runs/

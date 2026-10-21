@@ -1,0 +1,3631 @@
+{
+  "created_at_utc": "2026-10-16T06:46:12.431666+00:00",
+  "source_file": "evaluation\\runs\\20261016T062604Z_f77bc38a_facet_batch.json",
+  "source_sha256": "58574e33473c24aaabfd28770c679dea272bc7022f0bf5d407eaf5116d62cd18",
+  "dataset_sha256": "5643126b983610d4a07dc1645110144299fbc3b823befc53a7503e922e3f91ec",
+  "summary": {
+    "original": {
+      "matched": 39,
+      "expected": 45,
+      "complete": 15,
+      "cases": 20
+    },
+    "whole": {
+      "matched": 43,
+      "expected": 45,
+      "complete": 18,
+      "cases": 20
+    },
+    "policy": {
+      "matched": 44,
+      "expected": 45,
+      "complete": 19,
+      "cases": 20
+    }
+  },
+  "records": [
+    {
+      "case_id": "HR-M01",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-018",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-008",
+            "doc-e848379782c5617af8a5db636b120df0-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-f03f8bef9f806024302698252e1eb038-chunk-001",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-007",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-007",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-005",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-001",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-002",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-000",
+            "doc-c375d1c29d77648fddd9374367e78059-chunk-006",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-006",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-005",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-004",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-004",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-001"
+          ],
+          "rendered_chunk_tokens": 24422,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 1,
+            "matched_count": 1,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M01-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_contracts_probation_periods.md",
+                    "quote": "In case of relocation to a different country or change of contract, if a team member has continued service with GitLab (tenure with GitLab has been uninterrupted) and they have already passed the probationary period of their original location or contract, they do not need to go through the probation period of their new location or contract.",
+                    "found": false
+                  },
+                  {
+                    "file_path": "hr_relocation.md",
+                    "quote": "   - [Probation Period](https://handbook.gitlab.com/handbook/people-group/contracts-probation-periods/#probation-period): If a team member has continued service with GitLab (tenure with GitLab has been uninterrupted) and they have already passed the probationary period of their original location or contract, they do not need to go through the probation period of their new location or contract.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-006",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-005",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-007",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-008",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-003",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-008",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-001",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-004",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-009",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-007",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-002",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-003",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-006",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-004",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001"
+          ],
+          "rendered_chunk_tokens": 24844,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 1,
+            "matched_count": 1,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M01-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_contracts_probation_periods.md",
+                    "quote": "In case of relocation to a different country or change of contract, if a team member has continued service with GitLab (tenure with GitLab has been uninterrupted) and they have already passed the probationary period of their original location or contract, they do not need to go through the probation period of their new location or contract.",
+                    "found": true
+                  },
+                  {
+                    "file_path": "hr_relocation.md",
+                    "quote": "   - [Probation Period](https://handbook.gitlab.com/handbook/people-group/contracts-probation-periods/#probation-period): If a team member has continued service with GitLab (tenure with GitLab has been uninterrupted) and they have already passed the probationary period of their original location or contract, they do not need to go through the probation period of their new location or contract.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-006",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-005",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-007",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-008",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-003",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-008",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-001",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-004",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-009",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-007",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-002",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-003",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-006",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-004",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001"
+          ],
+          "rendered_chunk_tokens": 24844,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 1,
+            "matched_count": 1,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M01-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_contracts_probation_periods.md",
+                    "quote": "In case of relocation to a different country or change of contract, if a team member has continued service with GitLab (tenure with GitLab has been uninterrupted) and they have already passed the probationary period of their original location or contract, they do not need to go through the probation period of their new location or contract.",
+                    "found": true
+                  },
+                  {
+                    "file_path": "hr_relocation.md",
+                    "quote": "   - [Probation Period](https://handbook.gitlab.com/handbook/people-group/contracts-probation-periods/#probation-period): If a team member has continued service with GitLab (tenure with GitLab has been uninterrupted) and they have already passed the probationary period of their original location or contract, they do not need to go through the probation period of their new location or contract.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M02",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-000",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-005",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-006",
+            "doc-90532fdb2c8ac6878c2d9bb8fec4b6f0-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-005",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-014",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-004",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-e848379782c5617af8a5db636b120df0-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-009",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-006",
+            "doc-b344a586bcf3329526036b0689f6a13a-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-018",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-001"
+          ],
+          "rendered_chunk_tokens": 25178,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M02-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_contracts_probation_periods.md",
+                    "quote": "GitLab’s Team Member contract templates are accessible (for reference) within GitLab only [(here)](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/employment_contracts/#employment-agreements). The DRI for all contract templates is the Legal, Employment team. Contracts are audited and updated on a regular basis. Any suggestions or requests for changes to employment templates should be made to the Legal, Employment team and will require approval from the VP of Legal, Employment. You can read [*how* to connect with Legal, Employment](https://handbook.gitlab.com/handbook/legal/employment-law/#connect) in the Handbook.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M02-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_contracts_probation_periods.md",
+                    "quote": "The DRI for individual team member contracts (once a team member is hired) is the People Operations Team. Any queries about a team member’s contract should go to the People Operations Team by Compass ticket, and the query will be directed or escalated as appropriate.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-005",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-006",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-009",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-007",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-006",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-008",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-008",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-007",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-003",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-007",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-005",
+            "doc-f03f8bef9f806024302698252e1eb038-chunk-000",
+            "doc-b344a586bcf3329526036b0689f6a13a-chunk-003",
+            "doc-76d5ccec0577fa18de21059ba2d4c0ad-chunk-001",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-008",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-003",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-002"
+          ],
+          "rendered_chunk_tokens": 25036,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M02-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_contracts_probation_periods.md",
+                    "quote": "GitLab’s Team Member contract templates are accessible (for reference) within GitLab only [(here)](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/employment_contracts/#employment-agreements). The DRI for all contract templates is the Legal, Employment team. Contracts are audited and updated on a regular basis. Any suggestions or requests for changes to employment templates should be made to the Legal, Employment team and will require approval from the VP of Legal, Employment. You can read [*how* to connect with Legal, Employment](https://handbook.gitlab.com/handbook/legal/employment-law/#connect) in the Handbook.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M02-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_contracts_probation_periods.md",
+                    "quote": "The DRI for individual team member contracts (once a team member is hired) is the People Operations Team. Any queries about a team member’s contract should go to the People Operations Team by Compass ticket, and the query will be directed or escalated as appropriate.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-005",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-006",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-009",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-007",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-006",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-008",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-008",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-007",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-003",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-007",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-005",
+            "doc-f03f8bef9f806024302698252e1eb038-chunk-000",
+            "doc-b344a586bcf3329526036b0689f6a13a-chunk-003",
+            "doc-76d5ccec0577fa18de21059ba2d4c0ad-chunk-001",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-008",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-003",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-002"
+          ],
+          "rendered_chunk_tokens": 25036,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M02-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_contracts_probation_periods.md",
+                    "quote": "GitLab’s Team Member contract templates are accessible (for reference) within GitLab only [(here)](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/employment_contracts/#employment-agreements). The DRI for all contract templates is the Legal, Employment team. Contracts are audited and updated on a regular basis. Any suggestions or requests for changes to employment templates should be made to the Legal, Employment team and will require approval from the VP of Legal, Employment. You can read [*how* to connect with Legal, Employment](https://handbook.gitlab.com/handbook/legal/employment-law/#connect) in the Handbook.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M02-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_contracts_probation_periods.md",
+                    "quote": "The DRI for individual team member contracts (once a team member is hired) is the People Operations Team. Any queries about a team member’s contract should go to the People Operations Team by Compass ticket, and the query will be directed or escalated as appropriate.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M03",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-000",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-009",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-018",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-004",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-010",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-004",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-019",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-017",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-008",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-009",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-006",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-006",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-014"
+          ],
+          "rendered_chunk_tokens": 23404,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M03-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_promotions_transfers.md",
+                    "quote": "**In-Cycle Promotions:**  An in-cycle promotion is any individual that is within the same job family, and has a similar but increased job scope. A promotion is not necessarily defined with a new grade due to differences in job families. We would typically expect a team member to have been in position for at least twelve months prior to being promoted to the next level position within the same job family. This process does not require interview(s), does not create backfill headcount and occurs semi-annually through the calibrated promotion process or monthly for level 5 team members in the Sales Development job family. All in-cycle promotions are processed in **Workday and not in Greenhouse.**",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M03-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_promotions_transfers.md",
+                    "quote": "Internal mobility is the process by which team members move into open positions at GitLab. When a position is open and posted on the career site via Greenhouse, and then filled by a current GitLab team member, it is classified as ‘internal mobility’. Similar to filling a role with an external candidate, internal team member candidates will also follow the same Greenhouse hiring steps and experience a full interview process to enable an informed hiring decision. All open positions should be posted to allow for equal opportunity for consideration.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M03-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_promotions_transfers.md",
+                    "quote": "- In order for promotions through internal mobility to occur, approval from the skip-level leader is required.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-018",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-010",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-017",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-009",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-019",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-006",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-001",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-014",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-000"
+          ],
+          "rendered_chunk_tokens": 24261,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M03-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_promotions_transfers.md",
+                    "quote": "**In-Cycle Promotions:**  An in-cycle promotion is any individual that is within the same job family, and has a similar but increased job scope. A promotion is not necessarily defined with a new grade due to differences in job families. We would typically expect a team member to have been in position for at least twelve months prior to being promoted to the next level position within the same job family. This process does not require interview(s), does not create backfill headcount and occurs semi-annually through the calibrated promotion process or monthly for level 5 team members in the Sales Development job family. All in-cycle promotions are processed in **Workday and not in Greenhouse.**",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M03-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_promotions_transfers.md",
+                    "quote": "Internal mobility is the process by which team members move into open positions at GitLab. When a position is open and posted on the career site via Greenhouse, and then filled by a current GitLab team member, it is classified as ‘internal mobility’. Similar to filling a role with an external candidate, internal team member candidates will also follow the same Greenhouse hiring steps and experience a full interview process to enable an informed hiring decision. All open positions should be posted to allow for equal opportunity for consideration.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M03-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_promotions_transfers.md",
+                    "quote": "- In order for promotions through internal mobility to occur, approval from the skip-level leader is required.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-018",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-010",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-017",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-009",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-019",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-006",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-001",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-014",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-000"
+          ],
+          "rendered_chunk_tokens": 24261,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M03-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_promotions_transfers.md",
+                    "quote": "**In-Cycle Promotions:**  An in-cycle promotion is any individual that is within the same job family, and has a similar but increased job scope. A promotion is not necessarily defined with a new grade due to differences in job families. We would typically expect a team member to have been in position for at least twelve months prior to being promoted to the next level position within the same job family. This process does not require interview(s), does not create backfill headcount and occurs semi-annually through the calibrated promotion process or monthly for level 5 team members in the Sales Development job family. All in-cycle promotions are processed in **Workday and not in Greenhouse.**",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M03-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_promotions_transfers.md",
+                    "quote": "Internal mobility is the process by which team members move into open positions at GitLab. When a position is open and posted on the career site via Greenhouse, and then filled by a current GitLab team member, it is classified as ‘internal mobility’. Similar to filling a role with an external candidate, internal team member candidates will also follow the same Greenhouse hiring steps and experience a full interview process to enable an informed hiring decision. All open positions should be posted to allow for equal opportunity for consideration.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M03-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_promotions_transfers.md",
+                    "quote": "- In order for promotions through internal mobility to occur, approval from the skip-level leader is required.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M04",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-011",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-000",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-004",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-018",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-000",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-010",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-6baaa52b9d8df91bf5f1f00ef3c64283-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-017",
+            "doc-c375d1c29d77648fddd9374367e78059-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-006",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-003",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-002"
+          ],
+          "rendered_chunk_tokens": 23200,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 1,
+            "matched_count": 1,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M04-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_promotions_transfers.md",
+                    "quote": "- If a team member applies for and accepts a position at the same grade, it will most likely be considered a [lateral transfer](https://handbook.gitlab.com/handbook/people-group/promotions-transfers/#transfer-compensation-guidelines). In most cases, a lateral transfer will not result in a compensation increase, unless there is a significant difference in the compensation structure between the new and prior job families. When a team member moves to a new role, a review of the job level, family, and scope will determine if this is indeed a lateral move.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-000",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-002",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-010",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-011",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-018",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-017",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-010",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000",
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-003",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-008",
+            "doc-7ce173cf24eedd8046c214eb4a30be74-chunk-000"
+          ],
+          "rendered_chunk_tokens": 24689,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 1,
+            "matched_count": 1,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M04-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_promotions_transfers.md",
+                    "quote": "- If a team member applies for and accepts a position at the same grade, it will most likely be considered a [lateral transfer](https://handbook.gitlab.com/handbook/people-group/promotions-transfers/#transfer-compensation-guidelines). In most cases, a lateral transfer will not result in a compensation increase, unless there is a significant difference in the compensation structure between the new and prior job families. When a team member moves to a new role, a review of the job level, family, and scope will determine if this is indeed a lateral move.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-000",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-002",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-010",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-011",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-018",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-017",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-010",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000",
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-003",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-008",
+            "doc-7ce173cf24eedd8046c214eb4a30be74-chunk-000"
+          ],
+          "rendered_chunk_tokens": 24689,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 1,
+            "matched_count": 1,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M04-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_promotions_transfers.md",
+                    "quote": "- If a team member applies for and accepts a position at the same grade, it will most likely be considered a [lateral transfer](https://handbook.gitlab.com/handbook/people-group/promotions-transfers/#transfer-compensation-guidelines). In most cases, a lateral transfer will not result in a compensation increase, unless there is a significant difference in the compensation structure between the new and prior job families. When a team member moves to a new role, a review of the job level, family, and scope will determine if this is indeed a lateral move.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M05",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-a607946668a902c69c39a005f31b5ca7-chunk-002",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-002",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-001",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-007",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-005",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-003",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002",
+            "doc-a607946668a902c69c39a005f31b5ca7-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-001",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-002",
+            "doc-85dbba125c84e424d8fdd839d19a6963-chunk-002",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-002",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-002",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-007",
+            "doc-b241a0d96ef61ec4460bedd675630573-chunk-001",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-004",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-003"
+          ],
+          "rendered_chunk_tokens": 23391,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 0,
+            "coverage": 0.0,
+            "checks": [
+              {
+                "group_id": "HR-M05-E1",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "- For an interim role to be considered, the need for coverage would need to be longer than a 30 day time period.",
+                    "found": false
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M05-E2",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "  - If a team member assumes 100% of the workload of a lateral role for 60 days or more **in addition to their permanent full time role,** an interim bonus may be considered by the [People Business Partner](https://handbook.gitlab.com/handbook/people-group/people-business-partners/#people-business-partner-alignments) and leader of the group.",
+                    "found": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-000",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-001",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-001",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-002",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-001",
+            "doc-b344a586bcf3329526036b0689f6a13a-chunk-003",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-003",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-016",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-003",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-004",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-007",
+            "doc-7ce173cf24eedd8046c214eb4a30be74-chunk-000",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-002",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-001",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-000",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-002"
+          ],
+          "rendered_chunk_tokens": 23338,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M05-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "- For an interim role to be considered, the need for coverage would need to be longer than a 30 day time period.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M05-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "  - If a team member assumes 100% of the workload of a lateral role for 60 days or more **in addition to their permanent full time role,** an interim bonus may be considered by the [People Business Partner](https://handbook.gitlab.com/handbook/people-group/people-business-partners/#people-business-partner-alignments) and leader of the group.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-000",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-001",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-001",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-002",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-001",
+            "doc-b344a586bcf3329526036b0689f6a13a-chunk-003",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-003",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-016",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-003",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-004",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-007",
+            "doc-7ce173cf24eedd8046c214eb4a30be74-chunk-000",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-002",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-001",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-000",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-002"
+          ],
+          "rendered_chunk_tokens": 23338,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M05-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "- For an interim role to be considered, the need for coverage would need to be longer than a 30 day time period.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M05-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "  - If a team member assumes 100% of the workload of a lateral role for 60 days or more **in addition to their permanent full time role,** an interim bonus may be considered by the [People Business Partner](https://handbook.gitlab.com/handbook/people-group/people-business-partners/#people-business-partner-alignments) and leader of the group.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M06",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-002",
+            "doc-a607946668a902c69c39a005f31b5ca7-chunk-002",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-000",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-001",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-007",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-005",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-001",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-004",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-002",
+            "doc-a607946668a902c69c39a005f31b5ca7-chunk-001",
+            "doc-d7885064ceccbd6cbcd23a3248057ad7-chunk-000",
+            "doc-85dbba125c84e424d8fdd839d19a6963-chunk-009",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-004",
+            "doc-d7885064ceccbd6cbcd23a3248057ad7-chunk-007",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-001",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-002",
+            "doc-85dbba125c84e424d8fdd839d19a6963-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-003"
+          ],
+          "rendered_chunk_tokens": 21641,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M06-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "The greater value of the standard discretionary bonus amount ($1,000 at the current exchange rate) OR the following calculation:",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M06-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "- `(Annual Base Salary in Local Currency/365) x .10 (10%) x # of Calendar Days in the Interim Role`",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M06-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "**The interim bonus should be calculated based on the team member’s salary during the interim period, not the salary after the interim period.** If your compensation changes during the interim period (for example, relocation, country conversion, etc.), we will calculate the interim bonus based on the pay rate of each calendar day.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-000",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-001",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-007",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-002",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-002",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-002",
+            "doc-e848379782c5617af8a5db636b120df0-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-010",
+            "doc-d7885064ceccbd6cbcd23a3248057ad7-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-014",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-002",
+            "doc-d7885064ceccbd6cbcd23a3248057ad7-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-000"
+          ],
+          "rendered_chunk_tokens": 23147,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M06-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "The greater value of the standard discretionary bonus amount ($1,000 at the current exchange rate) OR the following calculation:",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M06-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "- `(Annual Base Salary in Local Currency/365) x .10 (10%) x # of Calendar Days in the Interim Role`",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M06-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "**The interim bonus should be calculated based on the team member’s salary during the interim period, not the salary after the interim period.** If your compensation changes during the interim period (for example, relocation, country conversion, etc.), we will calculate the interim bonus based on the pay rate of each calendar day.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-000",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-001",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-007",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-002",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-002",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-002",
+            "doc-e848379782c5617af8a5db636b120df0-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-010",
+            "doc-d7885064ceccbd6cbcd23a3248057ad7-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-014",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-002",
+            "doc-d7885064ceccbd6cbcd23a3248057ad7-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-000"
+          ],
+          "rendered_chunk_tokens": 23147,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M06-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "The greater value of the standard discretionary bonus amount ($1,000 at the current exchange rate) OR the following calculation:",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M06-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "- `(Annual Base Salary in Local Currency/365) x .10 (10%) x # of Calendar Days in the Interim Role`",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M06-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "**The interim bonus should be calculated based on the team member’s salary during the interim period, not the salary after the interim period.** If your compensation changes during the interim period (for example, relocation, country conversion, etc.), we will calculate the interim bonus based on the pay rate of each calendar day.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M07",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-000",
+            "doc-d7885064ceccbd6cbcd23a3248057ad7-chunk-003",
+            "doc-a607946668a902c69c39a005f31b5ca7-chunk-002",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-005",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-003",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-009",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-002",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-005",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-002",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-002",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-001",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-010",
+            "doc-d7885064ceccbd6cbcd23a3248057ad7-chunk-001",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-001",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-000",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009",
+            "doc-85dbba125c84e424d8fdd839d19a6963-chunk-006",
+            "doc-c375d1c29d77648fddd9374367e78059-chunk-006"
+          ],
+          "rendered_chunk_tokens": 22908,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 1,
+            "matched_count": 1,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M07-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "If a team member leaves GitLab, they have 90 days post termination to exercise their vested options. Unvested RSUs and options are forfeited upon the date of the team member’s exit from the company.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-000",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-003",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-004",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-002",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-001",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-008",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-003",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-7ce173cf24eedd8046c214eb4a30be74-chunk-000",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-004",
+            "doc-a607946668a902c69c39a005f31b5ca7-chunk-000",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-005",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-006"
+          ],
+          "rendered_chunk_tokens": 23702,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 1,
+            "matched_count": 1,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M07-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "If a team member leaves GitLab, they have 90 days post termination to exercise their vested options. Unvested RSUs and options are forfeited upon the date of the team member’s exit from the company.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-000",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-003",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-004",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-002",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-001",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-008",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-003",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-7ce173cf24eedd8046c214eb4a30be74-chunk-000",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-004",
+            "doc-a607946668a902c69c39a005f31b5ca7-chunk-000",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-005",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-006"
+          ],
+          "rendered_chunk_tokens": 23702,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 1,
+            "matched_count": 1,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M07-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "If a team member leaves GitLab, they have 90 days post termination to exercise their vested options. Unvested RSUs and options are forfeited upon the date of the team member’s exit from the company.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M08",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-002",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-008",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-006",
+            "doc-d42f675239f807b67bca8ebd7668e19c-chunk-000",
+            "doc-7ce173cf24eedd8046c214eb4a30be74-chunk-000",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-003",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-003",
+            "doc-c375d1c29d77648fddd9374367e78059-chunk-006",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-003",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-007",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-000",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-001",
+            "doc-03839a80b94ece99bd6035b576996882-chunk-000",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-018",
+            "doc-a607946668a902c69c39a005f31b5ca7-chunk-002",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-007",
+            "doc-76d5ccec0577fa18de21059ba2d4c0ad-chunk-000"
+          ],
+          "rendered_chunk_tokens": 23195,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 4,
+            "matched_count": 4,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M08-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "Team members may be eligible to participate in the annual refresh grant cycle review if they have completed six months of service with the company.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M08-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "However, participation will be based upon individual team member talent assessments (including if a team member is currently in good standing) and [key talent criteria](https://handbook.gitlab.com/handbook/people-group/talent-assessment/#key-talent-criteria).",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M08-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "Therefore, not all team members will receive a refresh grant in the annual review cycle. Leaders will have discretion on the size of the refresh grant based on talent assessments and equity budget as allocated to each E-group member’s division.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M08-E4",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "All proposed equity grants are subject to review and approval by the GitLab Board of Directors.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-002",
+            "doc-7ce173cf24eedd8046c214eb4a30be74-chunk-000",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-003",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-001",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-003",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-004",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-000",
+            "doc-d42f675239f807b67bca8ebd7668e19c-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-001",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-002",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-004",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002",
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-014",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-000",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-002",
+            "doc-e848379782c5617af8a5db636b120df0-chunk-003",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-001",
+            "doc-76d5ccec0577fa18de21059ba2d4c0ad-chunk-000"
+          ],
+          "rendered_chunk_tokens": 24255,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 4,
+            "matched_count": 4,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M08-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "Team members may be eligible to participate in the annual refresh grant cycle review if they have completed six months of service with the company.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M08-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "However, participation will be based upon individual team member talent assessments (including if a team member is currently in good standing) and [key talent criteria](https://handbook.gitlab.com/handbook/people-group/talent-assessment/#key-talent-criteria).",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M08-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "Therefore, not all team members will receive a refresh grant in the annual review cycle. Leaders will have discretion on the size of the refresh grant based on talent assessments and equity budget as allocated to each E-group member’s division.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M08-E4",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "All proposed equity grants are subject to review and approval by the GitLab Board of Directors.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-002",
+            "doc-7ce173cf24eedd8046c214eb4a30be74-chunk-000",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-003",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-001",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-003",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-004",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-000",
+            "doc-d42f675239f807b67bca8ebd7668e19c-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-001",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-002",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-004",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002",
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-014",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-000",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-002",
+            "doc-e848379782c5617af8a5db636b120df0-chunk-003",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-001",
+            "doc-76d5ccec0577fa18de21059ba2d4c0ad-chunk-000"
+          ],
+          "rendered_chunk_tokens": 24255,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 4,
+            "matched_count": 4,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M08-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "Team members may be eligible to participate in the annual refresh grant cycle review if they have completed six months of service with the company.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M08-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "However, participation will be based upon individual team member talent assessments (including if a team member is currently in good standing) and [key talent criteria](https://handbook.gitlab.com/handbook/people-group/talent-assessment/#key-talent-criteria).",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M08-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "Therefore, not all team members will receive a refresh grant in the annual review cycle. Leaders will have discretion on the size of the refresh grant based on talent assessments and equity budget as allocated to each E-group member’s division.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M08-E4",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "All proposed equity grants are subject to review and approval by the GitLab Board of Directors.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M09",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-008",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-006",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-001",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-002",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-001",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-004",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-014",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-001",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-007",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-003",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-011",
+            "doc-e848379782c5617af8a5db636b120df0-chunk-004",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-003"
+          ],
+          "rendered_chunk_tokens": 24139,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M09-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_talent_assessment.md",
+                    "quote": "For team members with a tenure up to three months to the launch of the Talent Assessment Program will be designated as “Too New to Rate”. Also in some cases a “Too New to Rate” designation might be applicable for newly promoted or transferred team members. More about that designation can be found below.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M09-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_talent_assessment.md",
+                    "quote": "We use Workday to complete our Talent Assessment.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M09-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_talent_assessment.md",
+                    "quote": "There are many talent assessment options, and we have opted to use a Performance/Growth Potential Matrix (commonly known as “9-Box” in the US) and annually review Key Talent.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-006",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-010",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-012",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-008",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-011",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-007",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-016",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-017",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-014",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-020",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-015",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-004",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002"
+          ],
+          "rendered_chunk_tokens": 25112,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M09-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_talent_assessment.md",
+                    "quote": "For team members with a tenure up to three months to the launch of the Talent Assessment Program will be designated as “Too New to Rate”. Also in some cases a “Too New to Rate” designation might be applicable for newly promoted or transferred team members. More about that designation can be found below.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M09-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_talent_assessment.md",
+                    "quote": "We use Workday to complete our Talent Assessment.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M09-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_talent_assessment.md",
+                    "quote": "There are many talent assessment options, and we have opted to use a Performance/Growth Potential Matrix (commonly known as “9-Box” in the US) and annually review Key Talent.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-006",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-010",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-012",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-008",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-011",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-007",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-016",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-017",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-014",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-020",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-015",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-004",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002"
+          ],
+          "rendered_chunk_tokens": 25112,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M09-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_talent_assessment.md",
+                    "quote": "For team members with a tenure up to three months to the launch of the Talent Assessment Program will be designated as “Too New to Rate”. Also in some cases a “Too New to Rate” designation might be applicable for newly promoted or transferred team members. More about that designation can be found below.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M09-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_talent_assessment.md",
+                    "quote": "We use Workday to complete our Talent Assessment.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M09-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_talent_assessment.md",
+                    "quote": "There are many talent assessment options, and we have opted to use a Performance/Growth Potential Matrix (commonly known as “9-Box” in the US) and annually review Key Talent.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M10",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-006",
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-001",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-000",
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-003",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-009",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-001",
+            "doc-c7a7423eaaa060dff882092372fac62c-chunk-000",
+            "doc-7f7fe6295ecb3876843a8d2419b3a1b1-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-006",
+            "doc-f33d721bc424ba16540b64d502fadb37-chunk-000",
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-008",
+            "doc-325010f12f53e6b9c1ef3b6b61681256-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-010",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-001"
+          ],
+          "rendered_chunk_tokens": 21943,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M10-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "| **Mentees lead conversations** | Mentorship is led by the mentee, similar to how [1:1’s at GitLab](https://handbook.gitlab.com/handbook/leadership/1-1/) are driven by direct reports. |",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M10-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "| **Confidentiality** | Respect the trust built between mentor and mentee. Challenges and conversations shared in mentorship sessions should be kept confidential unless the mentor and mentee are okay with them being shared. |",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-001",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-006",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-004",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-005",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-000",
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-002",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-007",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-001",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-001",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-000",
+            "doc-e958a8064982ad983e8550462f58a832-chunk-000",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-001",
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009"
+          ],
+          "rendered_chunk_tokens": 24986,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M10-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "| **Mentees lead conversations** | Mentorship is led by the mentee, similar to how [1:1’s at GitLab](https://handbook.gitlab.com/handbook/leadership/1-1/) are driven by direct reports. |",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M10-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "| **Confidentiality** | Respect the trust built between mentor and mentee. Challenges and conversations shared in mentorship sessions should be kept confidential unless the mentor and mentee are okay with them being shared. |",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-001",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-006",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-004",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-005",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-000",
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-002",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-007",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-001",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-001",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-000",
+            "doc-e958a8064982ad983e8550462f58a832-chunk-000",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-001",
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009"
+          ],
+          "rendered_chunk_tokens": 24986,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M10-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "| **Mentees lead conversations** | Mentorship is led by the mentee, similar to how [1:1’s at GitLab](https://handbook.gitlab.com/handbook/leadership/1-1/) are driven by direct reports. |",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M10-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "| **Confidentiality** | Respect the trust built between mentor and mentee. Challenges and conversations shared in mentorship sessions should be kept confidential unless the mentor and mentee are okay with them being shared. |",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M11",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-003",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-006",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-002",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-005",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-004",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-009",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-005",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-002",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-004",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-91f35df2b2275e3c5b2812ca77da55ec-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-008",
+            "doc-03839a80b94ece99bd6035b576996882-chunk-000",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-002",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-000",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-003"
+          ],
+          "rendered_chunk_tokens": 24533,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M11-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "Below is a suggested format for this meeting cadence:",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M11-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "1. Establish a timeframe: 3-6 month is suggested",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M11-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "2. Set a meeting cadence every other week for 30-45 minutes or agree to spend 30-45 minutes every other week communicating asynchronously",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-005",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-004",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-006",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-001",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-000",
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-000",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-004",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-000",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-001",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-002",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-005",
+            "doc-c7a7423eaaa060dff882092372fac62c-chunk-000",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-001",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-000",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-002"
+          ],
+          "rendered_chunk_tokens": 24949,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M11-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "Below is a suggested format for this meeting cadence:",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M11-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "1. Establish a timeframe: 3-6 month is suggested",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M11-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "2. Set a meeting cadence every other week for 30-45 minutes or agree to spend 30-45 minutes every other week communicating asynchronously",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-005",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-004",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-006",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-001",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-000",
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-000",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-004",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-000",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-001",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-002",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-005",
+            "doc-c7a7423eaaa060dff882092372fac62c-chunk-000",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-001",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-000",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-002"
+          ],
+          "rendered_chunk_tokens": 24949,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M11-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "Below is a suggested format for this meeting cadence:",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M11-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "1. Establish a timeframe: 3-6 month is suggested",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M11-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "2. Set a meeting cadence every other week for 30-45 minutes or agree to spend 30-45 minutes every other week communicating asynchronously",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M12",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-014",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-001",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-008",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-004",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-002",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-002",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-005",
+            "doc-b241a0d96ef61ec4460bedd675630573-chunk-001",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-003",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-001",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-004",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-010",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-001"
+          ],
+          "rendered_chunk_tokens": 24007,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M12-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_igp_guide.md",
+                    "quote": "Focus on 1-3 meaningful development goals per review period.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M12-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_igp_guide.md",
+                    "quote": "Workday will remind you to review and refresh your IGP every 6 months after your manager provides input.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M12-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_igp_guide.md",
+                    "quote": "2. Schedule at least one quarterly [career conversation](https://handbook.gitlab.com/handbook/people-group/learning-and-development/career-development/#having-career-conversations) with your manager during a 1:1.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-001",
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-003",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-016",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-007",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-008",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-010",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-018",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-004",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013"
+          ],
+          "rendered_chunk_tokens": 23970,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M12-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_igp_guide.md",
+                    "quote": "Focus on 1-3 meaningful development goals per review period.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M12-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_igp_guide.md",
+                    "quote": "Workday will remind you to review and refresh your IGP every 6 months after your manager provides input.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M12-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_igp_guide.md",
+                    "quote": "2. Schedule at least one quarterly [career conversation](https://handbook.gitlab.com/handbook/people-group/learning-and-development/career-development/#having-career-conversations) with your manager during a 1:1.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-001",
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-003",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-016",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-007",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-008",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-010",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-018",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-004",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013"
+          ],
+          "rendered_chunk_tokens": 23970,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M12-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_igp_guide.md",
+                    "quote": "Focus on 1-3 meaningful development goals per review period.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M12-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_igp_guide.md",
+                    "quote": "Workday will remind you to review and refresh your IGP every 6 months after your manager provides input.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M12-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_igp_guide.md",
+                    "quote": "2. Schedule at least one quarterly [career conversation](https://handbook.gitlab.com/handbook/people-group/learning-and-development/career-development/#having-career-conversations) with your manager during a 1:1.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M13",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-001",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-004",
+            "doc-7f7fe6295ecb3876843a8d2419b3a1b1-chunk-000",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-005",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-000",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-003",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-001",
+            "doc-c7a7423eaaa060dff882092372fac62c-chunk-001",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-c375d1c29d77648fddd9374367e78059-chunk-002",
+            "doc-ac2a7e3526ba91a5f3eb5bc1ef1759f5-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-000",
+            "doc-ef4a4b472540950304cd4e7b14c87ecb-chunk-000",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-000",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-002",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-002",
+            "doc-f33d721bc424ba16540b64d502fadb37-chunk-000",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-001",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-008"
+          ],
+          "rendered_chunk_tokens": 20545,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M13-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_elevateplus.md",
+                    "quote": "5 Executive Discussion Workshops (60 minutes each)",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M13-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_elevateplus.md",
+                    "quote": "Individual coaching sessions (6 sessions, 60 minutes each, flexible scheduling)",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M13-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_elevateplus.md",
+                    "quote": "Yes! Upon successful completion of the program, including attendance to all required live sessions, asynchronous learning participation, and Executive coaching sessions, participants will be awarded the GitLab Elevate+ certification.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-7f7fe6295ecb3876843a8d2419b3a1b1-chunk-000",
+            "doc-ef4a4b472540950304cd4e7b14c87ecb-chunk-000",
+            "doc-ac2a7e3526ba91a5f3eb5bc1ef1759f5-chunk-000",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-000",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-001",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-002",
+            "doc-f33d721bc424ba16540b64d502fadb37-chunk-000",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-000",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-000",
+            "doc-c7a7423eaaa060dff882092372fac62c-chunk-001",
+            "doc-325010f12f53e6b9c1ef3b6b61681256-chunk-000",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-001",
+            "doc-64c7598653aa695fd5c3ddf1750e33d6-chunk-000",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-000",
+            "doc-64c7598653aa695fd5c3ddf1750e33d6-chunk-001",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-002",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-001",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-008",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-001"
+          ],
+          "rendered_chunk_tokens": 20370,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M13-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_elevateplus.md",
+                    "quote": "5 Executive Discussion Workshops (60 minutes each)",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M13-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_elevateplus.md",
+                    "quote": "Individual coaching sessions (6 sessions, 60 minutes each, flexible scheduling)",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M13-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_elevateplus.md",
+                    "quote": "Yes! Upon successful completion of the program, including attendance to all required live sessions, asynchronous learning participation, and Executive coaching sessions, participants will be awarded the GitLab Elevate+ certification.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-7f7fe6295ecb3876843a8d2419b3a1b1-chunk-000",
+            "doc-ef4a4b472540950304cd4e7b14c87ecb-chunk-000",
+            "doc-ac2a7e3526ba91a5f3eb5bc1ef1759f5-chunk-000",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-000",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-001",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-002",
+            "doc-f33d721bc424ba16540b64d502fadb37-chunk-000",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-000",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-000",
+            "doc-c7a7423eaaa060dff882092372fac62c-chunk-001",
+            "doc-325010f12f53e6b9c1ef3b6b61681256-chunk-000",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-001",
+            "doc-64c7598653aa695fd5c3ddf1750e33d6-chunk-000",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-000",
+            "doc-64c7598653aa695fd5c3ddf1750e33d6-chunk-001",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-002",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-001",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-008",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-001"
+          ],
+          "rendered_chunk_tokens": 20370,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M13-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_elevateplus.md",
+                    "quote": "5 Executive Discussion Workshops (60 minutes each)",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M13-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_elevateplus.md",
+                    "quote": "Individual coaching sessions (6 sessions, 60 minutes each, flexible scheduling)",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M13-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_elevateplus.md",
+                    "quote": "Yes! Upon successful completion of the program, including attendance to all required live sessions, asynchronous learning participation, and Executive coaching sessions, participants will be awarded the GitLab Elevate+ certification.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M14",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-001",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-007",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-001",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-000",
+            "doc-7f7fe6295ecb3876843a8d2419b3a1b1-chunk-000",
+            "doc-a607946668a902c69c39a005f31b5ca7-chunk-002",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-003",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-012",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-004",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-002",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-007",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-000",
+            "doc-3e9bcae5517d88a9e0031549492c4091-chunk-000",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-002",
+            "doc-c375d1c29d77648fddd9374367e78059-chunk-012",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-002",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-002",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-000"
+          ],
+          "rendered_chunk_tokens": 19319,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M14-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_elevateplus.md",
+                    "quote": "It’s a requirement to make up missed sessions within each month to ensure that you’re learning each new skill and moving through the program in the appropriate order. Please make every effort to attend live sessions as scheduled. Please reach out to your Learning and Development team for any questions.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M14-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_elevateplus.md",
+                    "quote": "We’re committed to working with you to find a solution that lets you successfully complete Elevate+. If you must miss one live session for personal reasons, you need approval from your manager. Additional missed sessions will result in an incomplete Elevate+ status.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-7f7fe6295ecb3876843a8d2419b3a1b1-chunk-000",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-001",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-000",
+            "doc-ef4a4b472540950304cd4e7b14c87ecb-chunk-000",
+            "doc-ac2a7e3526ba91a5f3eb5bc1ef1759f5-chunk-000",
+            "doc-f33d721bc424ba16540b64d502fadb37-chunk-000",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-001",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-003",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-007",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-005",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-002",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-002",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-000",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-000",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-000",
+            "doc-a08f330ff1122100e533d53f2adabd32-chunk-000",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-000",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-005"
+          ],
+          "rendered_chunk_tokens": 21382,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M14-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_elevateplus.md",
+                    "quote": "It’s a requirement to make up missed sessions within each month to ensure that you’re learning each new skill and moving through the program in the appropriate order. Please make every effort to attend live sessions as scheduled. Please reach out to your Learning and Development team for any questions.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M14-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_elevateplus.md",
+                    "quote": "We’re committed to working with you to find a solution that lets you successfully complete Elevate+. If you must miss one live session for personal reasons, you need approval from your manager. Additional missed sessions will result in an incomplete Elevate+ status.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-7f7fe6295ecb3876843a8d2419b3a1b1-chunk-000",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-001",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-000",
+            "doc-ef4a4b472540950304cd4e7b14c87ecb-chunk-000",
+            "doc-ac2a7e3526ba91a5f3eb5bc1ef1759f5-chunk-000",
+            "doc-f33d721bc424ba16540b64d502fadb37-chunk-000",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-001",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-003",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-007",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-005",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-002",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-002",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-000",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-000",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-000",
+            "doc-a08f330ff1122100e533d53f2adabd32-chunk-000",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-000",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-005"
+          ],
+          "rendered_chunk_tokens": 21382,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M14-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_elevateplus.md",
+                    "quote": "It’s a requirement to make up missed sessions within each month to ensure that you’re learning each new skill and moving through the program in the appropriate order. Please make every effort to attend live sessions as scheduled. Please reach out to your Learning and Development team for any questions.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M14-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_elevateplus.md",
+                    "quote": "We’re committed to working with you to find a solution that lets you successfully complete Elevate+. If you must miss one live session for personal reasons, you need approval from your manager. Additional missed sessions will result in an incomplete Elevate+ status.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M15",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-001",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-002",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-006",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-007",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-005",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-003",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-004",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-002",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-003",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-001",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-002",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-002",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-002",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-003",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-005",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-003"
+          ],
+          "rendered_chunk_tokens": 23264,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 1,
+            "matched_count": 0,
+            "coverage": 0.0,
+            "checks": [
+              {
+                "group_id": "HR-M15-E1",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "All offboarding tasks by all Departments need to be completed within 5 days of the offboarding date. For systems that are more critical and time sensitive, these will be completed within the first 24 hours (example 1Password, Slack) by the relevant Departments. Information about application & system deprovisioners can be found on the [Tech Stack](https://techstack.gtlb.com).",
+                    "found": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-001",
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-003",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-003",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-002",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-004",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-005",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-004",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-001",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-019",
+            "doc-b344a586bcf3329526036b0689f6a13a-chunk-003",
+            "doc-91f35df2b2275e3c5b2812ca77da55ec-chunk-003",
+            "doc-b241a0d96ef61ec4460bedd675630573-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-006"
+          ],
+          "rendered_chunk_tokens": 24497,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 1,
+            "matched_count": 1,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M15-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "All offboarding tasks by all Departments need to be completed within 5 days of the offboarding date. For systems that are more critical and time sensitive, these will be completed within the first 24 hours (example 1Password, Slack) by the relevant Departments. Information about application & system deprovisioners can be found on the [Tech Stack](https://techstack.gtlb.com).",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-001",
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-003",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-003",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-002",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-004",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-005",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-004",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-001",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-019",
+            "doc-b344a586bcf3329526036b0689f6a13a-chunk-003",
+            "doc-91f35df2b2275e3c5b2812ca77da55ec-chunk-003",
+            "doc-b241a0d96ef61ec4460bedd675630573-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-006"
+          ],
+          "rendered_chunk_tokens": 24497,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 1,
+            "matched_count": 1,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M15-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "All offboarding tasks by all Departments need to be completed within 5 days of the offboarding date. For systems that are more critical and time sensitive, these will be completed within the first 24 hours (example 1Password, Slack) by the relevant Departments. Information about application & system deprovisioners can be found on the [Tech Stack](https://techstack.gtlb.com).",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M16",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-004",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-007",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-003",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-006",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-003",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-002",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-001",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-000",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-006",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-002",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-004",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-003",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-012",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-001",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-002",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-005",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-005",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-000"
+          ],
+          "rendered_chunk_tokens": 24121,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M16-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_anti_harassment.md",
+                    "quote": "This policy applies to all team members of GitLab, whether contractor or employee, in all locations. There are local labor laws in every country and in the case of the United States, state laws, that must be followed when handling, reporting and investigating incidents of harassment. The People Business Partner team and legal counsel, if required, in each of those countries will be called upon to ensure compliance and the appropriate legal processes and procedures are followed. Specific country requirements for employees (subject to changes in employment law) are listed in the [Country & US State-Specific Requirements](https://handbook.gitlab.com/handbook/people-group/anti-harassment/#country--us-state-specific-requirements) section and will be updated regularly. All individual contributors, managers, and leaders will be subject to disciplinary action, up to and including termination, for any act of harassment they commit.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M16-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_anti_harassment.md",
+                    "quote": "If managers become aware of misconduct, they must deal with any allegations expeditiously, seriously, confidentially, and fairly, whether or not there has been a written or formal complaint made to People Business partner. Informed managers are expected to:",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-002",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-000",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-000",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-004",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-002",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-003",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-005",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-006",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-003",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-005",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-016",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-014",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-001"
+          ],
+          "rendered_chunk_tokens": 24604,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M16-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_anti_harassment.md",
+                    "quote": "This policy applies to all team members of GitLab, whether contractor or employee, in all locations. There are local labor laws in every country and in the case of the United States, state laws, that must be followed when handling, reporting and investigating incidents of harassment. The People Business Partner team and legal counsel, if required, in each of those countries will be called upon to ensure compliance and the appropriate legal processes and procedures are followed. Specific country requirements for employees (subject to changes in employment law) are listed in the [Country & US State-Specific Requirements](https://handbook.gitlab.com/handbook/people-group/anti-harassment/#country--us-state-specific-requirements) section and will be updated regularly. All individual contributors, managers, and leaders will be subject to disciplinary action, up to and including termination, for any act of harassment they commit.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M16-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_anti_harassment.md",
+                    "quote": "If managers become aware of misconduct, they must deal with any allegations expeditiously, seriously, confidentially, and fairly, whether or not there has been a written or formal complaint made to People Business partner. Informed managers are expected to:",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-002",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-000",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-000",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-004",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-002",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-003",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-005",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-006",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-003",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-005",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-016",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-014",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-001"
+          ],
+          "rendered_chunk_tokens": 24604,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M16-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_anti_harassment.md",
+                    "quote": "This policy applies to all team members of GitLab, whether contractor or employee, in all locations. There are local labor laws in every country and in the case of the United States, state laws, that must be followed when handling, reporting and investigating incidents of harassment. The People Business Partner team and legal counsel, if required, in each of those countries will be called upon to ensure compliance and the appropriate legal processes and procedures are followed. Specific country requirements for employees (subject to changes in employment law) are listed in the [Country & US State-Specific Requirements](https://handbook.gitlab.com/handbook/people-group/anti-harassment/#country--us-state-specific-requirements) section and will be updated regularly. All individual contributors, managers, and leaders will be subject to disciplinary action, up to and including termination, for any act of harassment they commit.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M16-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_anti_harassment.md",
+                    "quote": "If managers become aware of misconduct, they must deal with any allegations expeditiously, seriously, confidentially, and fairly, whether or not there has been a written or formal complaint made to People Business partner. Informed managers are expected to:",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M17",
+      "strategy": "facet_interleave_v1",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-001",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-002",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-001",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-020",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-007",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-008",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-010",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-000",
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-000",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-015",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-008",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-005",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-006",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-003",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-007"
+          ],
+          "rendered_chunk_tokens": 24608,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 1,
+            "coverage": 0.5,
+            "checks": [
+              {
+                "group_id": "HR-M17-E1",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "| **Set Goals** | Mentees should create goals, put them in writing, and frequently revisit goals to measure progress. |",
+                    "found": false
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M17-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_igp_guide.md",
+                    "quote": "Workday will remind you to review and refresh your IGP every 6 months after your manager provides input.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-001",
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-016",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-018",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-008",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-004",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-007",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-003",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-000"
+          ],
+          "rendered_chunk_tokens": 24432,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 1,
+            "coverage": 0.5,
+            "checks": [
+              {
+                "group_id": "HR-M17-E1",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "| **Set Goals** | Mentees should create goals, put them in writing, and frequently revisit goals to measure progress. |",
+                    "found": false
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M17-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_igp_guide.md",
+                    "quote": "Workday will remind you to review and refresh your IGP every 6 months after your manager provides input.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-001",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-005",
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-000",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-004",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-001",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-016",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-006",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-018",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-000",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-001",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-002",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-017",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000"
+          ],
+          "rendered_chunk_tokens": 24400,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M17-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_mentor.md",
+                    "quote": "| **Set Goals** | Mentees should create goals, put them in writing, and frequently revisit goals to measure progress. |",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M17-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_igp_guide.md",
+                    "quote": "Workday will remind you to review and refresh your IGP every 6 months after your manager provides input.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M18",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-001",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-002",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-005",
+            "doc-d7885064ceccbd6cbcd23a3248057ad7-chunk-007",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-005",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-008",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-001",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-006",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-003",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-004",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-008",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-003",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-007",
+            "doc-d42f675239f807b67bca8ebd7668e19c-chunk-001",
+            "doc-d7885064ceccbd6cbcd23a3248057ad7-chunk-001",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-002",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-000",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-003",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-005",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-003"
+          ],
+          "rendered_chunk_tokens": 20465,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 1,
+            "coverage": 0.5,
+            "checks": [
+              {
+                "group_id": "HR-M18-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "If a team member leaves GitLab, they have 90 days post termination to exercise their vested options. Unvested RSUs and options are forfeited upon the date of the team member’s exit from the company.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M18-E2",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "All offboarding tasks by all Departments need to be completed within 5 days of the offboarding date. For systems that are more critical and time sensitive, these will be completed within the first 24 hours (example 1Password, Slack) by the relevant Departments. Information about application & system deprovisioners can be found on the [Tech Stack](https://techstack.gtlb.com).",
+                    "found": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000",
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-001",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-004",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-003",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-002",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-019",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-003",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-004",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-003",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-004",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-001",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002",
+            "doc-91f35df2b2275e3c5b2812ca77da55ec-chunk-003",
+            "doc-b241a0d96ef61ec4460bedd675630573-chunk-000",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-000",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-002",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-008",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-003"
+          ],
+          "rendered_chunk_tokens": 25017,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M18-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "If a team member leaves GitLab, they have 90 days post termination to exercise their vested options. Unvested RSUs and options are forfeited upon the date of the team member’s exit from the company.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M18-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "All offboarding tasks by all Departments need to be completed within 5 days of the offboarding date. For systems that are more critical and time sensitive, these will be completed within the first 24 hours (example 1Password, Slack) by the relevant Departments. Information about application & system deprovisioners can be found on the [Tech Stack](https://techstack.gtlb.com).",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000",
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-001",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-004",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-003",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-002",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-019",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-003",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-004",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-003",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-004",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-001",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002",
+            "doc-91f35df2b2275e3c5b2812ca77da55ec-chunk-003",
+            "doc-b241a0d96ef61ec4460bedd675630573-chunk-000",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-000",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-002",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-008",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-003"
+          ],
+          "rendered_chunk_tokens": 25017,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M18-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "If a team member leaves GitLab, they have 90 days post termination to exercise their vested options. Unvested RSUs and options are forfeited upon the date of the team member’s exit from the company.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M18-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "All offboarding tasks by all Departments need to be completed within 5 days of the offboarding date. For systems that are more critical and time sensitive, these will be completed within the first 24 hours (example 1Password, Slack) by the relevant Departments. Information about application & system deprovisioners can be found on the [Tech Stack](https://techstack.gtlb.com).",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M19",
+      "strategy": "facet_interleave_v1",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000",
+            "doc-85dbba125c84e424d8fdd839d19a6963-chunk-009",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-005",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-018",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-001",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-008",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-002",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-003",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-005",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-001",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-002",
+            "doc-7ce173cf24eedd8046c214eb4a30be74-chunk-000",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-001",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-003",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-002",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-002",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-001",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-000"
+          ],
+          "rendered_chunk_tokens": 21668,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M19-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_compensation.md",
+                    "quote": "Base salary is annual guaranteed pay, typically paid in local currency. It’s determined by role, level, and location, and forms the foundation of total compensation.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M19-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_compensation.md",
+                    "quote": "Some roles include variable pay in addition to base salary. Variable pay has a target amount, but is not guaranteed. The target amount represents what a team member would earn if performance targets are met. Actual payment can be higher or lower depending on results.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M19-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "Note: All stock options and RSU grants are subject to approval by the Board of Directors and no grants are final until such approval has been made. The Company reserves the right in its own determination to make any adjustments to stock option grants at its sole discretion including the decision not to make a grant at all.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-001",
+            "doc-7ce173cf24eedd8046c214eb4a30be74-chunk-000",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-002",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-002",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-007",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-004",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-003",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-000",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-001",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-001",
+            "doc-f03f8bef9f806024302698252e1eb038-chunk-000",
+            "doc-76d5ccec0577fa18de21059ba2d4c0ad-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-007",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-004"
+          ],
+          "rendered_chunk_tokens": 24423,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 2,
+            "coverage": 0.6666666666666666,
+            "checks": [
+              {
+                "group_id": "HR-M19-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_compensation.md",
+                    "quote": "Base salary is annual guaranteed pay, typically paid in local currency. It’s determined by role, level, and location, and forms the foundation of total compensation.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M19-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_compensation.md",
+                    "quote": "Some roles include variable pay in addition to base salary. Variable pay has a target amount, but is not guaranteed. The target amount represents what a team member would earn if performance targets are met. Actual payment can be higher or lower depending on results.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M19-E3",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "Note: All stock options and RSU grants are subject to approval by the Board of Directors and no grants are final until such approval has been made. The Company reserves the right in its own determination to make any adjustments to stock option grants at its sole discretion including the decision not to make a grant at all.",
+                    "found": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-001",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-004",
+            "doc-7ce173cf24eedd8046c214eb4a30be74-chunk-000",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-005",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-002",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-003",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-008",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-e848379782c5617af8a5db636b120df0-chunk-000",
+            "doc-91f35df2b2275e3c5b2812ca77da55ec-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-004",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-004",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-002",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-003"
+          ],
+          "rendered_chunk_tokens": 25021,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 2,
+            "coverage": 0.6666666666666666,
+            "checks": [
+              {
+                "group_id": "HR-M19-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_compensation.md",
+                    "quote": "Base salary is annual guaranteed pay, typically paid in local currency. It’s determined by role, level, and location, and forms the foundation of total compensation.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M19-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_compensation.md",
+                    "quote": "Some roles include variable pay in addition to base salary. Variable pay has a target amount, but is not guaranteed. The target amount represents what a team member would earn if performance targets are met. Actual payment can be higher or lower depending on results.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M19-E3",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_stock_options.md",
+                    "quote": "Note: All stock options and RSU grants are subject to approval by the Board of Directors and no grants are final until such approval has been made. The Company reserves the right in its own determination to make any adjustments to stock option grants at its sole discretion including the decision not to make a grant at all.",
+                    "found": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-M20",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-000",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-001",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-017",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-014",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-011",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-004",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-007",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-016",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-000",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-010",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-014",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015"
+          ],
+          "rendered_chunk_tokens": 24518,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 1,
+            "coverage": 0.5,
+            "checks": [
+              {
+                "group_id": "HR-M20-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "**Since Acting roles do not typically end in promotion, the decision on whether the acting role meets the eligible criteria rests with the Hiring Manager and the Department head.**",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M20-E2",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_promotions_transfers.md",
+                    "quote": "- **Performance First**: Promotions reflect your current performance, not just potential. For an in-line promotion, you should already be consistently operating at the level described in the next [job framework](https://handbook.gitlab.com/handbook/company/structure/#job-frameworks) before being promoted. While you’d typically become eligible for promotion to the next level in your job family after twelve months in your current role, remember that broadening your skills laterally is equally valuable to your growth journey.",
+                    "found": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-000",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-014",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-014",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-002",
+            "doc-995228c5488096c19529241fe972248a-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-010",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-001",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-016",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-017",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-006"
+          ],
+          "rendered_chunk_tokens": 24178,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M20-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "**Since Acting roles do not typically end in promotion, the decision on whether the acting role meets the eligible criteria rests with the Hiring Manager and the Department head.**",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M20-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_promotions_transfers.md",
+                    "quote": "- **Performance First**: Promotions reflect your current performance, not just potential. For an in-line promotion, you should already be consistently operating at the level described in the next [job framework](https://handbook.gitlab.com/handbook/company/structure/#job-frameworks) before being promoted. While you’d typically become eligible for promotion to the next level in your job family after twelve months in your current role, remember that broadening your skills laterally is equally valuable to your growth journey.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-000",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-014",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-014",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-002",
+            "doc-995228c5488096c19529241fe972248a-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-010",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-001",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-016",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-017",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-006"
+          ],
+          "rendered_chunk_tokens": 24178,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-M20-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_incentives.md",
+                    "quote": "**Since Acting roles do not typically end in promotion, the decision on whether the acting role meets the eligible criteria rests with the Hiring Manager and the Department head.**",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-M20-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_promotions_transfers.md",
+                    "quote": "- **Performance First**: Promotions reflect your current performance, not just potential. For an in-line promotion, you should already be consistently operating at the level described in the next [job framework](https://handbook.gitlab.com/handbook/company/structure/#job-frameworks) before being promoted. While you’d typically become eligible for promotion to the next level in your job family after twelve months in your current role, remember that broadening your skills laterally is equally valuable to your growth journey.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "network_calls": 0,
+  "min_score": null,
+  "utils_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc"
+}

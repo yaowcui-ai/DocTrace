@@ -1,0 +1,37 @@
+{
+  "checked_at_utc": "2026-10-16T07:04:56.414937+00:00",
+  "status": "passed",
+  "tests_passed": 401,
+  "pytest_summary": "401 passed in 4.58s",
+  "models_called_by_this_verification": 0,
+  "health_status": "healthy",
+  "corpus_counts_unchanged": {
+    "documents": 68,
+    "chunks": 318,
+    "nodes": 4179,
+    "edges": 5621
+  },
+  "policy_unchanged_since_freeze": true,
+  "holdout_dataset_unchanged_since_freeze": true,
+  "archived_run_hashes_verified": 107,
+  "credential_scan_files": 57,
+  "credential_scan_passed": true,
+  "deployment": {
+    "loaded_final_fixes": true,
+    "mode": "mix",
+    "max_total_tokens": 40000
+  },
+  "source_sha256": {
+    "app/facet_policy.py": "e2064c9e8ecf9e846a20448abcc2346296e000a768b516034defd0c256bf651e",
+    "app/prelimit_adapter.py": "dcee551a911b1db27e1476da2f248c53722e0eedf0abb2e37dbabeb1e3d6869e",
+    "deploy/build_hr_prelimit.py": "fa9562b7bec7f2c7644f359e72cee5d9677dbe70461c0c101e846308be722944",
+    "runtime/hr_prelimit/operate.py": "f5434407616c44ccef5b81947b7915b5a196b5d7b448f7faaec418e10062933a",
+    "evaluation/MEDIUM_EVALUATION_REPORT_20261016.md": "f042dc2d2817e7611fa91e17e3988ed075382902145a9ec5ebf7157ffca671c4"
+  },
+  "limitations": [
+    "Evidence quote coverage is not answer accuracy.",
+    "M19 known regression retained.",
+    "Cold live M17 took 103.477 seconds; no production latency claim.",
+    "8001 business layer still uses old corpus configuration."
+  ]
+}

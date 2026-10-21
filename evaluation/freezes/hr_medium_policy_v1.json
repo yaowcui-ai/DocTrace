@@ -1,0 +1,12 @@
+{
+  "frozen_at_utc": "2026-10-16T06:35:31.700809+00:00",
+  "policy": "facet_interleave_v1",
+  "source_sha256": "e2064c9e8ecf9e846a20448abcc2346296e000a768b516034defd0c256bf651e",
+  "mode": "mix",
+  "max_total_tokens": 40000,
+  "chunk_top_k": 20,
+  "min_score": null,
+  "whole_query_anchor": true,
+  "tuning_closed_before_holdout": true,
+  "known_dev_failure": "HR-M19 equity approval evidence missing"
+}

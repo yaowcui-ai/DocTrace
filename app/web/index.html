@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocTrace · HR 政策问答</title>
+  <meta name="description" content="HR 政策问答与证据追溯，查看答案及其原文依据。">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script type="module" src="/static/history.js"></script>
+  <script type="module" src="/static/question.js"></script>
+  <script type="module" src="/static/auth.js"></script>
+  <script type="module" src="/static/examples.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳转到问答区</a>
+  <div class="workspace">
+    <aside class="sidebar" aria-label="问答历史">
+      <a class="brand" href="/" aria-label="DocTrace 首页">
+        <span class="brand-icon" aria-hidden="true">D<span>·</span></span>
+        <span>DocTrace<small>HR POLICY WORKSPACE</small></span>
+      </a>
+
+      <div class="sidebar-intro">
+        <span class="eyebrow">你的工作空间</span>
+        <h2>每次回答，都有迹可循。</h2>
+        <p>查看政策，保留问题，回到依据。</p>
+      </div>
+
+      <fieldset id="history-controls" class="history-section" aria-labelledby="history-title">
+        <div class="section-heading">
+          <h3 id="history-title">我的问答</h3>
+          <button id="refresh-history" class="text-button" type="button" disabled>刷新</button>
+        </div>
+        <p id="history-status" class="history-hint" role="status">你的问答记录将显示在这里。</p>
+        <ul id="history-list" class="history-list"></ul>
+        <nav class="pagination" aria-label="历史记录分页">
+          <button id="history-prev" class="secondary-button" type="button" disabled>上一页</button>
+          <span id="history-page">最近记录</span>
+          <button id="history-next" class="secondary-button" type="button" disabled>下一页</button>
+        </nav>
+      </fieldset>
+
+      <div class="sidebar-footer"><span class="footer-mark" aria-hidden="true"></span>企业 HR 政策问答与证据追溯</div>
+    </aside>
+
+    <main id="main-content" class="main-content">
+      <header class="topbar">
+        <span class="breadcrumb">DocTrace <span aria-hidden="true">/</span> 政策问答</span>
+        <span class="source-badge">GitLab 公开政策</span>
+      </header>
+
+      <div class="content-column">
+        <section class="auth-card" aria-label="账户登录">
+          <p id="auth-status" role="status">正在确认登录状态…</p>
+          <form id="login-form" hidden>
+            <label for="login-username">用户名</label>
+            <input id="login-username" name="username" autocomplete="username" pattern="[a-z][a-z0-9_]{2,31}" minlength="3" maxlength="32" required>
+            <label for="login-password">密码</label>
+            <input id="login-password" name="password" type="password" autocomplete="current-password" minlength="6" maxlength="10" required>
+            <button id="login-button" type="submit" class="primary-button">登录</button>
+          </form>
+          <button id="logout-button" type="button" class="secondary-button" hidden>退出登录</button>
+          <p class="muted">登录后可提问并查看自己的问答。现有账户由管理员创建。</p>
+        </section>
+        <section class="intro" aria-labelledby="page-title">
+          <span class="eyebrow">ASK WITH CONTEXT</span>
+          <h1 id="page-title">把政策问题，<br>交给有依据的回答。</h1>
+          <p>了解休假、福利与职业发展政策，并查看回答引用的原文。</p>
+        </section>
+
+        <section id="public-examples-section" class="public-examples" aria-labelledby="public-examples-title">
+          <div class="section-heading">
+            <h2 id="public-examples-title">公开示例</h2>
+            <button id="refresh-examples" class="text-button" type="button">刷新</button>
+          </div>
+          <p class="muted">无需登录，查看经过审核的答案与依据。示例是已保存的政策快照，不代表当前实时政策。</p>
+          <p id="public-examples-status" role="status"></p>
+          <ul id="public-examples-list" class="public-examples-list"></ul>
+          <p id="public-example-status" role="status"></p>
+          <article id="public-example-detail" hidden>
+            <h3 id="public-example-question"></h3>
+            <p id="public-example-meta" class="muted"></p>
+            <div id="public-example-answer"></div>
+            <h4>示例原文依据</h4>
+            <div id="public-example-references" class="public-example-evidence"></div>
+          </article>
+        </section>
+
+        <div class="chat-workspace">
+          <section id="answer-panel" class="answer-panel" aria-labelledby="answer-title">
+            <div class="section-heading answer-heading"><h2 id="answer-title">政策对话</h2></div>
+            <div id="answer-empty" class="empty-state">
+              <span class="document-icon" aria-hidden="true">≡</span>
+              <h3>从一个政策问题开始</h3>
+              <p>问题、回答和依据会依次显示在这里。<br>点击左侧个人历史，可以回到对应的问答。</p>
+            </div>
+            <div id="conversation-log" class="conversation-log" role="log" aria-label="个人政策问答对话" aria-live="polite" aria-relevant="additions text">
+              <article class="chat-turn" tabindex="-1" hidden>
+                <div class="chat-message chat-user"><span class="chat-speaker">你</span><p id="selected-question" data-field="selected-question" class="selected-question" hidden></p></div>
+                <div class="chat-message chat-assistant">
+                  <div class="chat-message-heading"><span class="chat-speaker">DocTrace</span><span id="answer-meta" data-field="answer-meta" class="muted"></span></div>
+                  <div id="answer-content" data-field="answer-content" class="answer-content" hidden></div>
+                  <details class="chat-record-details"><summary>记录信息</summary><div id="record-info" data-field="record-info" class="record-info" hidden></div></details>
+                  <section id="evidence-panel" data-field="evidence-panel" class="evidence-panel chat-evidence" aria-label="本条回答的原文依据" hidden><h3>原文依据</h3><div id="reference-list" data-field="reference-list"></div></section>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <template id="chat-turn-template">
+            <article class="chat-turn" tabindex="-1">
+              <div class="chat-message chat-user"><span class="chat-speaker">你</span><p data-field="selected-question" class="selected-question"></p></div>
+              <div class="chat-message chat-assistant">
+                <div class="chat-message-heading"><span class="chat-speaker">DocTrace</span><span data-field="answer-meta" class="muted"></span></div>
+                <div data-field="answer-content" class="answer-content"></div>
+                <details class="chat-record-details"><summary>记录信息</summary><div data-field="record-info" class="record-info"></div></details>
+                <section data-field="evidence-panel" class="evidence-panel chat-evidence" aria-label="本条回答的原文依据" hidden><h3>原文依据</h3><div data-field="reference-list"></div></section>
+              </div>
+            </article>
+          </template>
+
+        <section class="question-card" aria-labelledby="question-label">
+          <form id="question-form">
+            <label id="question-label" for="question">你想了解什么？</label>
+            <textarea id="question" name="question" rows="4" maxlength="2000" required
+              placeholder="例如：跨国搬迁后，是否需要重新经历试用期？"
+              aria-describedby="question-hint"></textarea>
+            <div class="mode-control">
+              <label for="retrieval-mode">检索模式</label>
+              <select id="retrieval-mode" aria-describedby="retrieval-mode-hint" disabled>
+                <option value="naive" selected>标准问答 · naive</option>
+                <option value="mix">关联问答 · mix</option>
+              </select>
+              <p id="retrieval-mode-hint">标准模式使用文本向量检索；关联模式结合图与向量检索。每次只运行所选模式，关联模式不保证更准确。</p>
+            </div>
+            <div class="composer-footer">
+              <p id="question-hint">提供适用地区和具体情形，有助于找到相关政策。</p>
+              <button id="submit-question" class="primary-button" type="submit" disabled>提交问题 <span aria-hidden="true">↗</span></button>
+            </div>
+          </form>
+          <div id="pending-operation" class="pending-operation" hidden>
+            <p><strong>有一条提问保留了操作记录</strong></p>
+            <p id="pending-question" class="pending-question"></p>
+            <p>可先查看历史记录，或重试原请求确认结果。结束跟踪只清除本页的操作记录，不会取消后台请求或删除问答。</p>
+            <div class="pending-actions">
+              <button id="retry-pending" class="secondary-button" type="button">重试原请求</button>
+              <button id="discard-pending" class="secondary-button" type="button">结束跟踪</button>
+            </div>
+          </div>
+        </section>
+        </div>
+
+        <p id="request-status" class="request-status" role="status" aria-live="polite"></p>
+        <div id="error-message" class="error-message" role="alert" hidden></div>
+
+        <footer class="policy-note">基于 GitLab 公开 HR 政策快照。回答供政策参考，具体适用条件请结合原文核对。</footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

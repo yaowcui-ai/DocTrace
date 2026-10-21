@@ -1,0 +1,2149 @@
+{
+  "created_at_utc": "2026-10-16T06:54:46.361770+00:00",
+  "source_file": "evaluation\\runs\\20261016T064819Z_42871deb_facet_batch.json",
+  "source_sha256": "4da1613505197cf78025a8be622c29ef5ee56b24ed40827627d5693e3fa72688",
+  "dataset_sha256": "3b28f077e71554c01572bbf11e7565c7233c98172681769406f6773370e7d7ba",
+  "summary": {
+    "original": {
+      "matched": 17,
+      "expected": 26,
+      "complete": 7,
+      "cases": 12
+    },
+    "whole": {
+      "matched": 26,
+      "expected": 26,
+      "complete": 12,
+      "cases": 12
+    },
+    "policy": {
+      "matched": 26,
+      "expected": 26,
+      "complete": 12,
+      "cases": 12
+    }
+  },
+  "records": [
+    {
+      "case_id": "HR-V01",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-a607946668a902c69c39a005f31b5ca7-chunk-001",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-004",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-006",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-001",
+            "doc-b241a0d96ef61ec4460bedd675630573-chunk-001",
+            "doc-d42f675239f807b67bca8ebd7668e19c-chunk-001",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-001",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-004",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-002",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-005",
+            "doc-e848379782c5617af8a5db636b120df0-chunk-003",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-003",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-003",
+            "doc-abe8ced754bc8f1d585c290b645ae259-chunk-002",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-3aae0be99d59ad4e5951466f70096abb-chunk-001",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-001",
+            "doc-85dbba125c84e424d8fdd839d19a6963-chunk-006"
+          ],
+          "rendered_chunk_tokens": 23199,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V01-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_internship_for_learning.md",
+                    "quote": "Well, 10% time and 20% time are reasonably common. As long as you and your manager have the capacity the decision is theirs and yours.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V01-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_internship_for_learning.md",
+                    "quote": "This will vary from team to team, but typically 6 weeks to 3 months depending on the goals for your internship.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-000",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-004",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-002",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-001",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-004",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-000",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000",
+            "doc-c375d1c29d77648fddd9374367e78059-chunk-006",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-003",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-001",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-001",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-000",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-000",
+            "doc-b344a586bcf3329526036b0689f6a13a-chunk-002",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-007",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-002",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-000",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-002",
+            "doc-f03f8bef9f806024302698252e1eb038-chunk-000"
+          ],
+          "rendered_chunk_tokens": 25176,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V01-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_internship_for_learning.md",
+                    "quote": "Well, 10% time and 20% time are reasonably common. As long as you and your manager have the capacity the decision is theirs and yours.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V01-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_internship_for_learning.md",
+                    "quote": "This will vary from team to team, but typically 6 weeks to 3 months depending on the goals for your internship.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-000",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-004",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-002",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-001",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-004",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-000",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000",
+            "doc-c375d1c29d77648fddd9374367e78059-chunk-006",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-003",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-001",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-001",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-000",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-000",
+            "doc-b344a586bcf3329526036b0689f6a13a-chunk-002",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-007",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-002",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-000",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-002",
+            "doc-f03f8bef9f806024302698252e1eb038-chunk-000"
+          ],
+          "rendered_chunk_tokens": 25176,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V01-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_internship_for_learning.md",
+                    "quote": "Well, 10% time and 20% time are reasonably common. As long as you and your manager have the capacity the decision is theirs and yours.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V01-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_internship_for_learning.md",
+                    "quote": "This will vary from team to team, but typically 6 weeks to 3 months depending on the goals for your internship.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-V02",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-007",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-016",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-018",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-008",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-019",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-004",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-017",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-006",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-010",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-020",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-000"
+          ],
+          "rendered_chunk_tokens": 23203,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V02-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_internship_for_learning.md",
+                    "quote": "Completing an internship through this program does not guarantee an internal transfer.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V02-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_internship_for_learning.md",
+                    "quote": "No internship for learning should be approved without both managers having a conversation and agreeing upon the percentage of time the team member will be spending on the internship. In order to be eligible for an internship for learning, the team member needs to be meeting performance expectations in their current role.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-018",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-000",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009",
+            "doc-e958a8064982ad983e8550462f58a832-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-017",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-012",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-007",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-010",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-015",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-020",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-019",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-008"
+          ],
+          "rendered_chunk_tokens": 24448,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V02-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_internship_for_learning.md",
+                    "quote": "Completing an internship through this program does not guarantee an internal transfer.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V02-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_internship_for_learning.md",
+                    "quote": "No internship for learning should be approved without both managers having a conversation and agreeing upon the percentage of time the team member will be spending on the internship. In order to be eligible for an internship for learning, the team member needs to be meeting performance expectations in their current role.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-018",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-000",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009",
+            "doc-e958a8064982ad983e8550462f58a832-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-017",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-012",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-007",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-010",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-015",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-020",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-019",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-008"
+          ],
+          "rendered_chunk_tokens": 24448,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V02-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_internship_for_learning.md",
+                    "quote": "Completing an internship through this program does not guarantee an internal transfer.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V02-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_internship_for_learning.md",
+                    "quote": "No internship for learning should be approved without both managers having a conversation and agreeing upon the percentage of time the team member will be spending on the internship. In order to be eligible for an internship for learning, the team member needs to be meeting performance expectations in their current role.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-V03",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-f33d721bc424ba16540b64d502fadb37-chunk-000",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-001",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-abe8ced754bc8f1d585c290b645ae259-chunk-000",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-000",
+            "doc-91f35df2b2275e3c5b2812ca77da55ec-chunk-000",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-000",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-006",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-003",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-007",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-d42f675239f807b67bca8ebd7668e19c-chunk-001",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-002",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-005",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-000",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-000",
+            "doc-c375d1c29d77648fddd9374367e78059-chunk-011",
+            "doc-91f35df2b2275e3c5b2812ca77da55ec-chunk-001",
+            "doc-b241a0d96ef61ec4460bedd675630573-chunk-000"
+          ],
+          "rendered_chunk_tokens": 22697,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V03-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_hone.md",
+                    "quote": "No, Hone accounts are individual and tied to your GitLab email. Individual Contributors interested in access should explore using their Growth and Development benefit.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V03-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_hone.md",
+                    "quote": "All GitLab people managers receive unlimited access to the Hone platform for the year. Managers will receive an access link to create their account and begin participating in sessions.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V03-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_hone.md",
+                    "quote": "We provide available seats to ICs based on availability.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-f33d721bc424ba16540b64d502fadb37-chunk-000",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-72ca97dea20ca10bf17ea0f861cae5e2-chunk-000",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-000",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-001",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-002",
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-001",
+            "doc-ef4a4b472540950304cd4e7b14c87ecb-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-019",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-014",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-001",
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-007",
+            "doc-c375d1c29d77648fddd9374367e78059-chunk-007",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-000",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-001",
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-002",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-003",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002"
+          ],
+          "rendered_chunk_tokens": 22137,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V03-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_hone.md",
+                    "quote": "No, Hone accounts are individual and tied to your GitLab email. Individual Contributors interested in access should explore using their Growth and Development benefit.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V03-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_hone.md",
+                    "quote": "All GitLab people managers receive unlimited access to the Hone platform for the year. Managers will receive an access link to create their account and begin participating in sessions.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V03-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_hone.md",
+                    "quote": "We provide available seats to ICs based on availability.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-f33d721bc424ba16540b64d502fadb37-chunk-000",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-72ca97dea20ca10bf17ea0f861cae5e2-chunk-000",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-000",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-001",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-002",
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-001",
+            "doc-ef4a4b472540950304cd4e7b14c87ecb-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-019",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-014",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-001",
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-007",
+            "doc-c375d1c29d77648fddd9374367e78059-chunk-007",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-000",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-001",
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-002",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-003",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002"
+          ],
+          "rendered_chunk_tokens": 22137,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V03-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_hone.md",
+                    "quote": "No, Hone accounts are individual and tied to your GitLab email. Individual Contributors interested in access should explore using their Growth and Development benefit.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V03-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_hone.md",
+                    "quote": "All GitLab people managers receive unlimited access to the Hone platform for the year. Managers will receive an access link to create their account and begin participating in sessions.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V03-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_hone.md",
+                    "quote": "We provide available seats to ICs based on availability.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-V04",
+      "strategy": "facet_interleave_v1",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-001",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-001",
+            "doc-f33d721bc424ba16540b64d502fadb37-chunk-000",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-007",
+            "doc-72ca97dea20ca10bf17ea0f861cae5e2-chunk-000",
+            "doc-abe8ced754bc8f1d585c290b645ae259-chunk-000",
+            "doc-64c7598653aa695fd5c3ddf1750e33d6-chunk-002",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-004",
+            "doc-64c7598653aa695fd5c3ddf1750e33d6-chunk-001",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-002",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-001",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-002",
+            "doc-c375d1c29d77648fddd9374367e78059-chunk-012",
+            "doc-ef4a4b472540950304cd4e7b14c87ecb-chunk-000",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-004",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-004",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-001",
+            "doc-3aae0be99d59ad4e5951466f70096abb-chunk-001",
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-008"
+          ],
+          "rendered_chunk_tokens": 21161,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V04-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_self_paced_learning.md",
+                    "quote": "All GitLab team members have a MasterClass license included as part of our learning offering, so there’s no cost and no approval needed — just log in and start learning.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V04-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_hone.md",
+                    "quote": "We provide available seats to ICs based on availability.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-72ca97dea20ca10bf17ea0f861cae5e2-chunk-000",
+            "doc-f33d721bc424ba16540b64d502fadb37-chunk-000",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-002",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-000",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-002",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-001",
+            "doc-ef4a4b472540950304cd4e7b14c87ecb-chunk-000",
+            "doc-ac2a7e3526ba91a5f3eb5bc1ef1759f5-chunk-000",
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-001",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-000",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-001",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-001",
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-014",
+            "doc-64c7598653aa695fd5c3ddf1750e33d6-chunk-001",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-003",
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-008",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-000"
+          ],
+          "rendered_chunk_tokens": 21543,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V04-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_self_paced_learning.md",
+                    "quote": "All GitLab team members have a MasterClass license included as part of our learning offering, so there’s no cost and no approval needed — just log in and start learning.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V04-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_hone.md",
+                    "quote": "We provide available seats to ICs based on availability.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-72ca97dea20ca10bf17ea0f861cae5e2-chunk-000",
+            "doc-f33d721bc424ba16540b64d502fadb37-chunk-000",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-000",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-002",
+            "doc-ef4a4b472540950304cd4e7b14c87ecb-chunk-000",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-002",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-001",
+            "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-000",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-004",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-000",
+            "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-001",
+            "doc-b344a586bcf3329526036b0689f6a13a-chunk-003",
+            "doc-ac2a7e3526ba91a5f3eb5bc1ef1759f5-chunk-000",
+            "doc-c375d1c29d77648fddd9374367e78059-chunk-009",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-005",
+            "doc-c375d1c29d77648fddd9374367e78059-chunk-006",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-001",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-002",
+            "doc-52feb05058cbc46f9c773ae0c592b496-chunk-001"
+          ],
+          "rendered_chunk_tokens": 21825,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V04-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_self_paced_learning.md",
+                    "quote": "All GitLab team members have a MasterClass license included as part of our learning offering, so there’s no cost and no approval needed — just log in and start learning.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V04-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_hone.md",
+                    "quote": "We provide available seats to ICs based on availability.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-V05",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-010",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-012",
+            "doc-f03f8bef9f806024302698252e1eb038-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-006",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-007",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-008",
+            "doc-e848379782c5617af8a5db636b120df0-chunk-004",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-d42f675239f807b67bca8ebd7668e19c-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-005",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-009",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-000",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-007",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-010",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-008",
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-002",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-006",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-007"
+          ],
+          "rendered_chunk_tokens": 23287,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 0,
+            "coverage": 0.0,
+            "checks": [
+              {
+                "group_id": "HR-V05-E1",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_guidance_on_feedback.md",
+                    "quote": "   - Don’t wait until performance reviews to deliver",
+                    "found": false
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V05-E2",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_guidance_on_feedback.md",
+                    "quote": "   - It is recommended to use a 4:1 ratio of positive to constructive",
+                    "found": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-001",
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009",
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-007",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-014",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-006",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-007",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-012",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-008",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-010",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-009",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-011",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-008",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-004",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-005",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013"
+          ],
+          "rendered_chunk_tokens": 25084,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V05-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_guidance_on_feedback.md",
+                    "quote": "   - Don’t wait until performance reviews to deliver",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V05-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_guidance_on_feedback.md",
+                    "quote": "   - It is recommended to use a 4:1 ratio of positive to constructive",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-001",
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009",
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-007",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-014",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-006",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-007",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-012",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-008",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-010",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-009",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-011",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-008",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-004",
+            "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-005",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-002",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013"
+          ],
+          "rendered_chunk_tokens": 25084,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V05-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_guidance_on_feedback.md",
+                    "quote": "   - Don’t wait until performance reviews to deliver",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V05-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_guidance_on_feedback.md",
+                    "quote": "   - It is recommended to use a 4:1 ratio of positive to constructive",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-V06",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-002",
+            "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-008",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-016",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-017",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-017",
+            "doc-e958a8064982ad983e8550462f58a832-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-007",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-003",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-014",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-001",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-009",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013"
+          ],
+          "rendered_chunk_tokens": 23207,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V06-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_guidance_on_feedback.md",
+                    "quote": "**Behavior** - Describe the observable behavior and how it was applied.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V06-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_guidance_on_feedback.md",
+                    "quote": "**Impact** - Describe how the other person’s action affected you or others experiences and thinking.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-007",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-006",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-008",
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-002",
+            "doc-e958a8064982ad983e8550462f58a832-chunk-001",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-002",
+            "doc-e958a8064982ad983e8550462f58a832-chunk-000",
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-000",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-003",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-017",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-007",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-014",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-000"
+          ],
+          "rendered_chunk_tokens": 24985,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V06-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_guidance_on_feedback.md",
+                    "quote": "**Behavior** - Describe the observable behavior and how it was applied.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V06-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_guidance_on_feedback.md",
+                    "quote": "**Impact** - Describe how the other person’s action affected you or others experiences and thinking.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-009",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-007",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-006",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-008",
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-002",
+            "doc-e958a8064982ad983e8550462f58a832-chunk-001",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-002",
+            "doc-e958a8064982ad983e8550462f58a832-chunk-000",
+            "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-000",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-003",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-017",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-007",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-014",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-005",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-000"
+          ],
+          "rendered_chunk_tokens": 24985,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V06-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_guidance_on_feedback.md",
+                    "quote": "**Behavior** - Describe the observable behavior and how it was applied.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V06-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_guidance_on_feedback.md",
+                    "quote": "**Impact** - Describe how the other person’s action affected you or others experiences and thinking.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-V07",
+      "strategy": "facet_interleave_v1",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000",
+            "doc-8d107ffb4e629e0ba3136de55388980f-chunk-000",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-001",
+            "doc-e848379782c5617af8a5db636b120df0-chunk-000",
+            "doc-90532fdb2c8ac6878c2d9bb8fec4b6f0-chunk-000",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-000",
+            "doc-90532fdb2c8ac6878c2d9bb8fec4b6f0-chunk-001",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-007",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-000",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-002",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-009",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-000",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-002",
+            "doc-abe8ced754bc8f1d585c290b645ae259-chunk-000",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-003",
+            "doc-b951957165e6cb04a882727e0ccd6100-chunk-005",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-001",
+            "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-013",
+            "doc-a607946668a902c69c39a005f31b5ca7-chunk-000"
+          ],
+          "rendered_chunk_tokens": 24073,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V07-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_financial_wellness.md",
+                    "quote": "- All GitLab team members globally",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V07-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_financial_wellness.md",
+                    "quote": "- No cost, confidential support",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V07-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_financial_wellness.md",
+                    "quote": "SageView provides educational guidance but cannot offer specific tax, legal, or financial advice. All consultations are confidential.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000",
+            "doc-90532fdb2c8ac6878c2d9bb8fec4b6f0-chunk-000",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-000",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-001",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-001",
+            "doc-3aae0be99d59ad4e5951466f70096abb-chunk-001",
+            "doc-7196522801d5149926cf74191a16505e-chunk-000",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-005",
+            "doc-03839a80b94ece99bd6035b576996882-chunk-000",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-000",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-004",
+            "doc-90532fdb2c8ac6878c2d9bb8fec4b6f0-chunk-001",
+            "doc-03839a80b94ece99bd6035b576996882-chunk-001",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-005",
+            "doc-85dbba125c84e424d8fdd839d19a6963-chunk-003",
+            "doc-85dbba125c84e424d8fdd839d19a6963-chunk-004",
+            "doc-85dbba125c84e424d8fdd839d19a6963-chunk-007",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-003",
+            "doc-b241a0d96ef61ec4460bedd675630573-chunk-000",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-000"
+          ],
+          "rendered_chunk_tokens": 22918,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V07-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_financial_wellness.md",
+                    "quote": "- All GitLab team members globally",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V07-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_financial_wellness.md",
+                    "quote": "- No cost, confidential support",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V07-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_financial_wellness.md",
+                    "quote": "SageView provides educational guidance but cannot offer specific tax, legal, or financial advice. All consultations are confidential.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000",
+            "doc-90532fdb2c8ac6878c2d9bb8fec4b6f0-chunk-000",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-005",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-000",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-001",
+            "doc-7196522801d5149926cf74191a16505e-chunk-000",
+            "doc-64c7598653aa695fd5c3ddf1750e33d6-chunk-001",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-001",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-006",
+            "doc-3aae0be99d59ad4e5951466f70096abb-chunk-001",
+            "doc-64c7598653aa695fd5c3ddf1750e33d6-chunk-000",
+            "doc-03839a80b94ece99bd6035b576996882-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-000",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-002",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-004",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-001",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-000",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-003",
+            "doc-90532fdb2c8ac6878c2d9bb8fec4b6f0-chunk-001",
+            "doc-643d6e5092967836c9b676a4af257070-chunk-002"
+          ],
+          "rendered_chunk_tokens": 23618,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V07-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_financial_wellness.md",
+                    "quote": "- All GitLab team members globally",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V07-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_financial_wellness.md",
+                    "quote": "- No cost, confidential support",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V07-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_financial_wellness.md",
+                    "quote": "SageView provides educational guidance but cannot offer specific tax, legal, or financial advice. All consultations are confidential.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-V08",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-013",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-001",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-002",
+            "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-004",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-002",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-005",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-002",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-007",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-001",
+            "doc-b344a586bcf3329526036b0689f6a13a-chunk-003",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-002",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-001",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-008",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-001",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-002",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002"
+          ],
+          "rendered_chunk_tokens": 23632,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 0,
+            "coverage": 0.0,
+            "checks": [
+              {
+                "group_id": "HR-V08-E1",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "**Note:** If the team member is temporarily transitioning to a [contractor or consultant role](https://handbook.gitlab.com/handbook/finance/procurement/contingent-worker-policy/), please proceed with the full offboarding process and create a separate onboarding issue to grant only specific temporary access for what they would need to fulfill their contractual obligations.",
+                    "found": false
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V08-E2",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "Many teams work to deprovision access including the IT Operations, this should be regarded as urgent and all tasks expected to be completed within 5 working days (Child Cases close automatically after 5 days), with the exception of [laptop returns](https://handbook.gitlab.com/handbook/eta/corporate-it/end-user-services/laptop-management/), which can take 2-4 weeks.",
+                    "found": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-007",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-005",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-003",
+            "doc-91f35df2b2275e3c5b2812ca77da55ec-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-019",
+            "doc-b344a586bcf3329526036b0689f6a13a-chunk-003",
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-001",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-007",
+            "doc-b241a0d96ef61ec4460bedd675630573-chunk-000",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-008"
+          ],
+          "rendered_chunk_tokens": 25035,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V08-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "**Note:** If the team member is temporarily transitioning to a [contractor or consultant role](https://handbook.gitlab.com/handbook/finance/procurement/contingent-worker-policy/), please proceed with the full offboarding process and create a separate onboarding issue to grant only specific temporary access for what they would need to fulfill their contractual obligations.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V08-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "Many teams work to deprovision access including the IT Operations, this should be regarded as urgent and all tasks expected to be completed within 5 working days (Child Cases close automatically after 5 days), with the exception of [laptop returns](https://handbook.gitlab.com/handbook/eta/corporate-it/end-user-services/laptop-management/), which can take 2-4 weeks.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-007",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-005",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-003",
+            "doc-91f35df2b2275e3c5b2812ca77da55ec-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-019",
+            "doc-b344a586bcf3329526036b0689f6a13a-chunk-003",
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-001",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-007",
+            "doc-b241a0d96ef61ec4460bedd675630573-chunk-000",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-000",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-008"
+          ],
+          "rendered_chunk_tokens": 25035,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V08-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "**Note:** If the team member is temporarily transitioning to a [contractor or consultant role](https://handbook.gitlab.com/handbook/finance/procurement/contingent-worker-policy/), please proceed with the full offboarding process and create a separate onboarding issue to grant only specific temporary access for what they would need to fulfill their contractual obligations.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V08-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "Many teams work to deprovision access including the IT Operations, this should be regarded as urgent and all tasks expected to be completed within 5 working days (Child Cases close automatically after 5 days), with the exception of [laptop returns](https://handbook.gitlab.com/handbook/eta/corporate-it/end-user-services/laptop-management/), which can take 2-4 weeks.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-V09",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-004",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-005",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-005",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-001",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-006",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-002",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-003",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-8d107ffb4e629e0ba3136de55388980f-chunk-003",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-005",
+            "doc-c375d1c29d77648fddd9374367e78059-chunk-012",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-012",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-007",
+            "doc-a607946668a902c69c39a005f31b5ca7-chunk-002",
+            "doc-a08f330ff1122100e533d53f2adabd32-chunk-000",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-002"
+          ],
+          "rendered_chunk_tokens": 22249,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 0,
+            "coverage": 0.0,
+            "checks": [
+              {
+                "group_id": "HR-V09-E1",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "The Out of Office message will stay on the account for 90 days, afterwards ITOPs will follow up and archive the account in the G-Suite vault.",
+                    "found": false
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V09-E2",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "Exceptions to this policy must be approved by the People Operations team.",
+                    "found": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000",
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-001",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-003",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-004",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-001",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-001",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-003",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-007",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-002",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-000",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-007",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-002",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-000"
+          ],
+          "rendered_chunk_tokens": 24640,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V09-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "The Out of Office message will stay on the account for 90 days, afterwards ITOPs will follow up and archive the account in the G-Suite vault.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V09-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "Exceptions to this policy must be approved by the People Operations team.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000",
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-001",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-003",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-004",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-001",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-001",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-003",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-007",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-002",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-000",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-007",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-002",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-000"
+          ],
+          "rendered_chunk_tokens": 24640,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V09-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "The Out of Office message will stay on the account for 90 days, afterwards ITOPs will follow up and archive the account in the G-Suite vault.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V09-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "Exceptions to this policy must be approved by the People Operations team.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-V10",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-016",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-005",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-006",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-004",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-008",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-001",
+            "doc-64c7598653aa695fd5c3ddf1750e33d6-chunk-000",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-010",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-011",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-002",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-015",
+            "doc-64c7598653aa695fd5c3ddf1750e33d6-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-006",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-003",
+            "doc-85dbba125c84e424d8fdd839d19a6963-chunk-002",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-003",
+            "doc-c375d1c29d77648fddd9374367e78059-chunk-002",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-002",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002",
+            "doc-85dbba125c84e424d8fdd839d19a6963-chunk-003"
+          ],
+          "rendered_chunk_tokens": 23545,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 1,
+            "matched_count": 1,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V10-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_contracts_probation_periods.md",
+                    "quote": "No background screening will be run until a conditional offer has been made, unless local law explicitly requires otherwise.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-005",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-001",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-003",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-006",
+            "doc-76d5ccec0577fa18de21059ba2d4c0ad-chunk-001",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-001",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-000",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-005",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-007",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-006",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-001",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-008",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-004",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-005",
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000"
+          ],
+          "rendered_chunk_tokens": 22970,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 1,
+            "matched_count": 1,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V10-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_contracts_probation_periods.md",
+                    "quote": "No background screening will be run until a conditional offer has been made, unless local law explicitly requires otherwise.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-005",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-001",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-002",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-003",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-006",
+            "doc-76d5ccec0577fa18de21059ba2d4c0ad-chunk-001",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-001",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-000",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-005",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-007",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-006",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-001",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-008",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-004",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-005",
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000"
+          ],
+          "rendered_chunk_tokens": 22970,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 1,
+            "matched_count": 1,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V10-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_contracts_probation_periods.md",
+                    "quote": "No background screening will be run until a conditional offer has been made, unless local law explicitly requires otherwise.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-V11",
+      "strategy": "facet_interleave_v1",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-90532fdb2c8ac6878c2d9bb8fec4b6f0-chunk-000",
+            "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-007",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000",
+            "doc-55c644c451493a7e5b0e5debbaee8616-chunk-001",
+            "doc-90532fdb2c8ac6878c2d9bb8fec4b6f0-chunk-001",
+            "doc-1832ac44d3c372d24142b74e30b8646e-chunk-000",
+            "doc-8d107ffb4e629e0ba3136de55388980f-chunk-000",
+            "doc-f03f8bef9f806024302698252e1eb038-chunk-001",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-000",
+            "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-000",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-001",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-000",
+            "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-000",
+            "doc-8d107ffb4e629e0ba3136de55388980f-chunk-003",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-005",
+            "doc-8d107ffb4e629e0ba3136de55388980f-chunk-002",
+            "doc-abe8ced754bc8f1d585c290b645ae259-chunk-000",
+            "doc-d42f675239f807b67bca8ebd7668e19c-chunk-001",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-003",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-017"
+          ],
+          "rendered_chunk_tokens": 21965,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 2,
+            "coverage": 0.6666666666666666,
+            "checks": [
+              {
+                "group_id": "HR-V11-E1",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_givelab_volunteer_initiatives.md",
+                    "quote": "GiveLab is GitLab’s Team Member Volunteer Program. The GiveLab Program lives under the [ESG Team](https://handbook.gitlab.com/job-description-library/legal-and-corporate-affairs/environmental-social-governance/) and is a part of GitLab’s overall [ESG strategy](https://handbook.gitlab.com/handbook/legal/esg/) and program development. The term GiveLab encompasses all Team Member Volunteering initiatives at GitLab.",
+                    "found": false
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V11-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_financial_wellness.md",
+                    "quote": "- All GitLab team members globally",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V11-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_financial_wellness.md",
+                    "quote": "- No cost, confidential support",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000",
+            "doc-7196522801d5149926cf74191a16505e-chunk-000",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-001",
+            "doc-90532fdb2c8ac6878c2d9bb8fec4b6f0-chunk-000",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-000",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-004",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-005",
+            "doc-03839a80b94ece99bd6035b576996882-chunk-000",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-001",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-000",
+            "doc-90532fdb2c8ac6878c2d9bb8fec4b6f0-chunk-001",
+            "doc-3aae0be99d59ad4e5951466f70096abb-chunk-001",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-003",
+            "doc-6c98b4fe721e3a00147d514f8794f8dd-chunk-000",
+            "doc-a607946668a902c69c39a005f31b5ca7-chunk-001",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-000",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-001",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-005",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-000",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-002"
+          ],
+          "rendered_chunk_tokens": 23075,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V11-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_givelab_volunteer_initiatives.md",
+                    "quote": "GiveLab is GitLab’s Team Member Volunteer Program. The GiveLab Program lives under the [ESG Team](https://handbook.gitlab.com/job-description-library/legal-and-corporate-affairs/environmental-social-governance/) and is a part of GitLab’s overall [ESG strategy](https://handbook.gitlab.com/handbook/legal/esg/) and program development. The term GiveLab encompasses all Team Member Volunteering initiatives at GitLab.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V11-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_financial_wellness.md",
+                    "quote": "- All GitLab team members globally",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V11-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_financial_wellness.md",
+                    "quote": "- No cost, confidential support",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000",
+            "doc-6c98b4fe721e3a00147d514f8794f8dd-chunk-000",
+            "doc-7196522801d5149926cf74191a16505e-chunk-000",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-005",
+            "doc-90532fdb2c8ac6878c2d9bb8fec4b6f0-chunk-000",
+            "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-001",
+            "doc-4f0b90773329531012701ff1d7e05984-chunk-005",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-003",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-000",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-000",
+            "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-004",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-002",
+            "doc-03839a80b94ece99bd6035b576996882-chunk-000",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-001",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-001",
+            "doc-a607946668a902c69c39a005f31b5ca7-chunk-001",
+            "doc-3aae0be99d59ad4e5951466f70096abb-chunk-001",
+            "doc-f33f26865055ca2f25022b6c01fa2210-chunk-001",
+            "doc-32c70003603b4186a5afe0f7ba677753-chunk-000",
+            "doc-d7885064ceccbd6cbcd23a3248057ad7-chunk-001"
+          ],
+          "rendered_chunk_tokens": 23788,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 3,
+            "matched_count": 3,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V11-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_givelab_volunteer_initiatives.md",
+                    "quote": "GiveLab is GitLab’s Team Member Volunteer Program. The GiveLab Program lives under the [ESG Team](https://handbook.gitlab.com/job-description-library/legal-and-corporate-affairs/environmental-social-governance/) and is a part of GitLab’s overall [ESG strategy](https://handbook.gitlab.com/handbook/legal/esg/) and program development. The term GiveLab encompasses all Team Member Volunteering initiatives at GitLab.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V11-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_financial_wellness.md",
+                    "quote": "- All GitLab team members globally",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V11-E3",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_financial_wellness.md",
+                    "quote": "- No cost, confidential support",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "HR-V12",
+      "strategy": "whole_query_rerank",
+      "variants": {
+        "original": {
+          "selected_ids": [
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-006",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-001",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-005",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-001",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-003",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-007",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-004",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-000",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-005",
+            "doc-b19a268f9318b0a3010beca02fc989df-chunk-003",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-004",
+            "doc-b17afeccd41e731df56fb176d8fd711d-chunk-010",
+            "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-003",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-1172522a75d174d9c2e383506b25406b-chunk-006",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-003",
+            "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-005"
+          ],
+          "rendered_chunk_tokens": 23401,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 0,
+            "coverage": 0.0,
+            "checks": [
+              {
+                "group_id": "HR-V12-E1",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "In alignment with the needs of both People Operations and IT Operations, scheduled offboardings will be opened between 4:00 - 5:00pm of the **team members’ local timezone** in Slack Monday-Friday.",
+                    "found": false
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V12-E2",
+                "found": false,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "**Note:** In instances where team members require deprovisioning initiated outside of these times, team members or their manager should reach out to IT Operations to arrange an alternate time.",
+                    "found": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "whole": {
+          "selected_ids": [
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-003",
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-005",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-000",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-001",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-004",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-004",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-001",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-004",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-001",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-008",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-004",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-006",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-002",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-004"
+          ],
+          "rendered_chunk_tokens": 25229,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V12-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "In alignment with the needs of both People Operations and IT Operations, scheduled offboardings will be opened between 4:00 - 5:00pm of the **team members’ local timezone** in Slack Monday-Friday.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V12-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "**Note:** In instances where team members require deprovisioning initiated outside of these times, team members or their manager should reach out to IT Operations to arrange an alternate time.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "policy": {
+          "selected_ids": [
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-003",
+            "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-000",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-005",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-000",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-001",
+            "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-004",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-004",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-004",
+            "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-002",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-001",
+            "doc-60a83fa22c192a1194af0e5f2850f294-chunk-004",
+            "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-002",
+            "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-001",
+            "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-008",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-004",
+            "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-006",
+            "doc-b961901b0a285c4896066cde60fa927d-chunk-002",
+            "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-004"
+          ],
+          "rendered_chunk_tokens": 25229,
+          "coverage": {
+            "status": "checked",
+            "expected_count": 2,
+            "matched_count": 2,
+            "coverage": 1.0,
+            "checks": [
+              {
+                "group_id": "HR-V12-E1",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "In alignment with the needs of both People Operations and IT Operations, scheduled offboardings will be opened between 4:00 - 5:00pm of the **team members’ local timezone** in Slack Monday-Friday.",
+                    "found": true
+                  }
+                ]
+              },
+              {
+                "group_id": "HR-V12-E2",
+                "found": true,
+                "alternatives": [
+                  {
+                    "file_path": "hr_offboarding_standards.md",
+                    "quote": "**Note:** In instances where team members require deprovisioning initiated outside of these times, team members or their manager should reach out to IT Operations to arrange an alternate time.",
+                    "found": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "network_calls": 0,
+  "min_score": null,
+  "utils_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc"
+}
