@@ -445,7 +445,7 @@
     "scripts/freeze_upgrade_test.py": "439a1b6f8cca3ea7bc6f3dce8d718146243936532b353d06600dcf29b3738a70",
     "scripts/init_managed_config.py": "0c59762740220c8cdf1f31954e1e86f23c7988daedc840cf2cc8d242e5b4f5b0",
     "scripts/init_upgrade_config.py": "fd9a0060891cdc1da629aa9183411cf77b1d1a4bd0eab4ac02ae2b83ad8bc814",
-    "scripts/package_upgrade_release.py": "8240b60ee7e213e06ba587e1c887db1ab55c0b290fd2457df0eb308f72ae3819",
+    "scripts/package_upgrade_release.py": "3c1f087b8bb58b0217e6e7faa096139ef5502d6c61528d372fedd45b06eff537",
     "scripts/prepare_upgrade_probe.py": "d75dc05af17295bfcb3361120079a6ae0d429cf670b312babe9aa36891cac7f5",
     "scripts/recover_managed_probe.py": "d752e757abcb73e4c283ae65766f9d4cd23b50445241b3ee8e9711935658cd5f",
     "scripts/recover_upgrade_retrieval.py": "32bd841825b3e9a1e0e77147023fb01d6a1e5d6ff64c38759fd40626c54f9ece",
@@ -586,7 +586,8 @@
     "tests/test_users.py": "bedf7bfb11503715c95dd5d98101b0a0bc2309d328c11fa979e930955ad263df",
     "tests/test_web_shell.py": "d3ce8d75f6eae05a88926f32442998d36467d576ddf7e9079e3ffcf45e504a6a",
     "tests/test_worker_service.py": "339caaed57f13a696af57d14c8f9e94e459e113d983a198aba0bd59dd4a23614",
-    "THIRD_PARTY_NOTICES.md": "435f31517d4e75f766bfb7e0cf4b6645bfe38ce74159210864f5bc6f341cfdd8"
+    "THIRD_PARTY_NOTICES.md": "435f31517d4e75f766bfb7e0cf4b6645bfe38ce74159210864f5bc6f341cfdd8",
+    ".github/workflows/checks.yml": "7d4bd4670f425781c737d8ae0f31eb2bf29ef846ac258da65936f8d22e85205b"
   },
   "hash_scope": "Copied working-tree bytes before Git text normalization; frozen algorithm Git bytes are checked separately.",
   "actual_secret_scan": "passed_after_staging",
@@ -1043,7 +1044,7 @@
     "scripts/freeze_upgrade_test.py": "439a1b6f8cca3ea7bc6f3dce8d718146243936532b353d06600dcf29b3738a70",
     "scripts/init_managed_config.py": "0c59762740220c8cdf1f31954e1e86f23c7988daedc840cf2cc8d242e5b4f5b0",
     "scripts/init_upgrade_config.py": "fd9a0060891cdc1da629aa9183411cf77b1d1a4bd0eab4ac02ae2b83ad8bc814",
-    "scripts/package_upgrade_release.py": "8240b60ee7e213e06ba587e1c887db1ab55c0b290fd2457df0eb308f72ae3819",
+    "scripts/package_upgrade_release.py": "3c1f087b8bb58b0217e6e7faa096139ef5502d6c61528d372fedd45b06eff537",
     "scripts/prepare_upgrade_probe.py": "d75dc05af17295bfcb3361120079a6ae0d429cf670b312babe9aa36891cac7f5",
     "scripts/recover_managed_probe.py": "d752e757abcb73e4c283ae65766f9d4cd23b50445241b3ee8e9711935658cd5f",
     "scripts/recover_upgrade_retrieval.py": "32bd841825b3e9a1e0e77147023fb01d6a1e5d6ff64c38759fd40626c54f9ece",
@@ -1184,6 +1185,7 @@
     "tests/test_users.py": "bedf7bfb11503715c95dd5d98101b0a0bc2309d328c11fa979e930955ad263df",
     "tests/test_web_shell.py": "d3ce8d75f6eae05a88926f32442998d36467d576ddf7e9079e3ffcf45e504a6a",
     "tests/test_worker_service.py": "339caaed57f13a696af57d14c8f9e94e459e113d983a198aba0bd59dd4a23614",
-    "THIRD_PARTY_NOTICES.md": "dd40a4651597e7c23d39a366a57c6065f7dd80a250e35c7323c33d85f0bd5832"
+    "THIRD_PARTY_NOTICES.md": "dd40a4651597e7c23d39a366a57c6065f7dd80a250e35c7323c33d85f0bd5832",
+    ".github/workflows/checks.yml": "7d4bd4670f425781c737d8ae0f31eb2bf29ef846ac258da65936f8d22e85205b"
   }
 }

@@ -33,7 +33,7 @@ def main():
                     'docs/operations/upgrade-deployment.md', 'docs/operations/managed-knowledge.md',
                     'docs/superpowers/plans/2026-10-28-fullstack-upgrade.md',
                     'evaluation/upgrade_dataset/**/*.json', 'evaluation/upgrade/reports/*.json',
-                    '.github/workflows/upgrade-checks.yml'):
+                    '.github/workflows/*.yml'):
         add(pattern)
     for name in ('README.md', 'THIRD_PARTY_NOTICES.md', '.env.example', '.lightrag.env.example', '.dockerignore',
                  'Dockerfile.upgrade', 'pytest.ini', 'requirements.txt', 'requirements-dev.txt', 'requirements-lock.txt',
@@ -75,13 +75,6 @@ def main():
         with (target/'.gitignore').open('a', encoding='utf-8') as stream:
             stream.write('\n# Upgrade generated/private runtime\nfrontend/dist/\nfrontend/test-results/\nfrontend/playwright-report/\nevaluation/upgrade/new_retrieval/\nevaluation/upgrade/live/\nevaluation/upgrade/generation/\nevaluation/upgrade/performance/\n')
     (target/'.gitattributes').write_text('* text=auto eol=lf\n*.png binary\n*.jpg binary\n*.pdf binary\n*.docx binary\nevaluation/diagnostics/* -text whitespace=-blank-at-eol\n*.patch -text whitespace=-blank-at-eol\n', encoding='utf-8')
-    workflow = target/'.github/workflows/checks.yml'
-    if workflow.exists():
-        text = workflow.read_text(encoding='utf-8').replace('python -m pip install -r requirements-lock.txt',
-            'python -m pip install -r requirements-lock.txt -r requirements-dev.txt')
-        text = text.replace('      - run: python -m pytest tests -q',
-            '      - run: python -c "import tiktoken; tiktoken.encoding_for_model(\'gpt-4o-mini\')"\n      - run: python -m pytest tests -q')
-        workflow.write_text(text, encoding='utf-8')
     (target/'verification/upgrade-source-manifest.json').write_text(json.dumps({
         'branch': branch, 'files_sha256': manifest,
         'hash_scope': 'Copied working-tree bytes before Git text normalization; frozen algorithm Git bytes are checked separately.',
