@@ -1,0 +1,20 @@
+FF                                                                       [100%]
+================================== FAILURES ===================================
+_____________ test_worker_requires_explicit_once_or_service_mode ______________
+
+    def test_worker_requires_explicit_once_or_service_mode():
+>       from app.knowledge.worker import parse_arguments
+E       ImportError: cannot import name 'parse_arguments' from 'app.knowledge.worker' (C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\app\knowledge\worker.py)
+
+tests\test_worker_service.py:5: ImportError
+________________ test_service_stops_without_claiming_more_jobs ________________
+
+    def test_service_stops_without_claiming_more_jobs():
+>       from app.knowledge.worker import run_service
+E       ImportError: cannot import name 'run_service' from 'app.knowledge.worker' (C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\app\knowledge\worker.py)
+
+tests\test_worker_service.py:15: ImportError
+=========================== short test summary info ===========================
+FAILED tests/test_worker_service.py::test_worker_requires_explicit_once_or_service_mode
+FAILED tests/test_worker_service.py::test_service_stops_without_claiming_more_jobs
+2 failed in 2.66s

@@ -1,0 +1,12 @@
+{
+  "label": "metrics-red",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_benchmark_metrics.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T02:34:54.791332+00:00",
+  "exit_code": null
+}

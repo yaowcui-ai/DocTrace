@@ -1,0 +1,12 @@
+{
+  "label": "dataset-validator-green",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_upgrade_dataset.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T07:17:10.389382+00:00",
+  "exit_code": null
+}

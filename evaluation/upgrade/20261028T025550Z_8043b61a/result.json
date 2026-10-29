@@ -1,0 +1,14 @@
+{
+  "label": "admission-red",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_qa_admission.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T02:55:50.631941+00:00",
+  "exit_code": 1,
+  "seconds": 5.931,
+  "finished_at": "2026-10-28T02:55:56.564075+00:00"
+}

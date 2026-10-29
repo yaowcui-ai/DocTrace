@@ -1,0 +1,12 @@
+{
+  "label": "public-final-all",
+  "command": [
+    "..\\..\\doctrace\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--junitxml=evaluation/public_upgrade_final_fixed.xml"
+  ],
+  "started_at": "2026-10-29T01:25:44.338280+00:00",
+  "exit_code": null
+}

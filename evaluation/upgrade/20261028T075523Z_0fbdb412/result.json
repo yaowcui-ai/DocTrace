@@ -1,0 +1,14 @@
+{
+  "label": "body-limit-red",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_request_size_limit.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T07:55:23.596305+00:00",
+  "exit_code": 1,
+  "seconds": 9.72,
+  "finished_at": "2026-10-28T07:55:33.321498+00:00"
+}

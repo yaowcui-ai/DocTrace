@@ -1,0 +1,16 @@
+{
+  "label": "captured-rerank-recovery-paced",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/recover_upgrade_retrieval.py",
+    "--run",
+    "evaluation/upgrade/new_retrieval/20261028T074830Z_2d0d3d18",
+    "--execute",
+    "--limit",
+    "40",
+    "--min-interval-seconds",
+    "30"
+  ],
+  "started_at": "2026-10-28T12:47:26.888386+00:00",
+  "exit_code": null
+}

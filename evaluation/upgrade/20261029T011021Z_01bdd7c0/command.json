@@ -1,0 +1,12 @@
+{
+  "label": "react-pagination-e2e-isolated",
+  "command": [
+    "npm.cmd",
+    "--prefix",
+    "frontend",
+    "run",
+    "test:e2e"
+  ],
+  "started_at": "2026-10-29T01:10:21.499866+00:00",
+  "exit_code": null
+}

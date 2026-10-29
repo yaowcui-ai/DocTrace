@@ -1,0 +1,15 @@
+{
+  "label": "final-password-compatibility",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_users.py",
+    "tests/test_auth_schemas.py",
+    "-q"
+  ],
+  "started_at": "2026-10-29T01:28:52.485914+00:00",
+  "exit_code": 0,
+  "seconds": 7.726,
+  "finished_at": "2026-10-29T01:29:00.206931+00:00"
+}

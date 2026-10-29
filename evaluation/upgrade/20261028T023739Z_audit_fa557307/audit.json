@@ -1,0 +1,576 @@
+{
+  "created_at": "2026-10-28T02:37:41.755331+00:00",
+  "image": "ghcr.io/hkuds/lightrag@sha256:5bdbd524931b011df246fe20888d110cef691e6804c12cde636a2b746d7de27e",
+  "provider_calls": 0,
+  "upstream_sha256": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047",
+  "built_sha256": "f5434407616c44ccef5b81947b7915b5a196b5d7b448f7faaec418e10062933a",
+  "deployed_sha256": "f5434407616c44ccef5b81947b7915b5a196b5d7b448f7faaec418e10062933a",
+  "upstream_matches_build": true,
+  "deployed_matches_built": true,
+  "corpus_checks": [
+    {
+      "document_id": "hr_time_away_overview",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_time_away_philosophy",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_time_off_types",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_leave_types",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_general_entity_benefits",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_growth_development",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_travel_expenses",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_canada_benefits",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_us_benefits",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_netherlands_benefits",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_germany_benefits",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_france_remote_work",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_relocation",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_development_tax",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_acceptable_use_policy",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_contracts_probation_periods",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_employment_solutions",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_givelab_volunteer_initiatives",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_learning_and_development",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_career_development",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_elevate_programs",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_internship_for_learning",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_level_up",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_manager_development",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_self_paced_learning",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_offboarding",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_offboarding_standards",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_promotions_transfers",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_visas",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_right_to_disconnect_charter",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_inc_usa",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_leave_of_absence",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_us",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_benefits",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_bv_benefits_belgium",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_financial_wellness",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_france_sas",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_gitlab_gk",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_gitlab_ireland_ltd",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_global_expansion",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_korea_ltd_benefits",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_ltd_benefits_uk",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_papaya_global_benefits",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_pty_benefits_australia",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_pty_benefits_new_zealand",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_singapore_pte_ltd",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_modern_health",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_compensation",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_compensation_review_cycle",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_incentives",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_stock_options",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_guidance_on_feedback",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_competencies",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_anti_harassment",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_incident_response",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_igp_guide",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_mentor",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_hone",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_team_workshops",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_talent_assessment",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_promotion_document_style_guide",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_people_business_partners",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_elevate_applied",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_remote_com",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_elevate_prep",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_parental_leave_toolkit",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_elevate",
+      "cleaned_file": true
+    },
+    {
+      "document_id": "hr_elevateplus",
+      "cleaned_file": true
+    }
+  ],
+  "frozen_artifact_hashes": {
+    "evaluation/history/batches/hr_medium_rerank_batch_20261016.json": "d2f2d604737211dfd3661422e09922646da45002d58a739a1fd49582a6984ead",
+    "evaluation/history/batches/hr_medium_rerank_batch_20261016_execution.jsonl": "77635515dc0d851167d9d34975fe439861b36055729f3fc7cacdad6331bb1d47",
+    "evaluation/history/captures/capture_00c5be961ed0495db34d72f294134a4f.json": "f1d59bae525333c9da19eeb5992fc5a38fc5afe6dab31e26bd3ee64719e8afb6",
+    "evaluation/history/captures/capture_05209ed9a8e34556b4d0cceff5779126.json": "2ac91cf6cd8c21a66b5f8989b18a981c451eda24f24c2bcc3aae14082f0178f0",
+    "evaluation/history/captures/capture_07b0c108061945c5a70c406e91c27b40.json": "6efb95b269811015a97440be01ba40e3a943222fbe7b277df4add29e14fb512f",
+    "evaluation/history/captures/capture_0feb4f355f874243b5c9c9bd921a5eb4.json": "4375c1974a6852d5a54ca4b2e41292b8d9545163b179d7d55f2ad592fe7082c5",
+    "evaluation/history/captures/capture_11b976971a174bcb919e2c2e1726654c.json": "816638b2c85965146ea19af6ce60bba8ec6265eed0e253f6e6c6d2fdca1acc97",
+    "evaluation/history/captures/capture_14524a07ba5048ce98e02b21fee8701c.json": "247cb9c0f85bc31bd469e1592bd4141401272ed27a6e16a8f7a0bb7d0618dc08",
+    "evaluation/history/captures/capture_15ae94e245bf4eb881c55642de0a4fda.json": "377a306a6e06a11bc9bda5a70cc5ea0c12b63fcc70988da88668d542ad18fbc9",
+    "evaluation/history/captures/capture_16b9cdae00674d5c8dfe126793b81c63.json": "5694f07b891f570b256b0e9e1bde1934345c7f5a255a4eb0dff9a0a1ddf3dd5f",
+    "evaluation/history/captures/capture_1dbbe403de5845e9aacd80c922105cb4.json": "3bb8e357a01ba0c772e6cf716cf56230f210f58c2735270a83d7151fb4fc905e",
+    "evaluation/history/captures/capture_1f03313ad5de401083458ce9ae824d16.json": "66de772e166947486d9a1c74435ac379f508333d023a4546fc40ad1b73f1d01c",
+    "evaluation/history/captures/capture_224092ee172b4c87b68fabe073cfdfea.json": "0fdd6d52bf423e387490c2b9ba33837fd3818d798888ef7f5c7d7063f535f070",
+    "evaluation/history/captures/capture_34317c043e584d07be72b25d1b6580c0.json": "a562a76723fbf7e6c4628a3296c1390f0b5ca64fc64a554382b4b853d9bd8302",
+    "evaluation/history/captures/capture_36afd9b47edd459f935d28f1309dbba3.json": "f79a395a538980a2be0c28082b82340469278d13f74965b02d3b868fa709991f",
+    "evaluation/history/captures/capture_398bb50111ef46f383aad9e8dde52fcf.json": "d03dfc3eb504f03b816b9b037d6ea2d4709cdb8c0375a90a54a8921815a9e490",
+    "evaluation/history/captures/capture_44a83e3a912b401488f17bd5cbf1e7e8.json": "b535bb20febf7c3939b36c57d0895b7cc1c6cb8976fc5cbde422e32f3a83839d",
+    "evaluation/history/captures/capture_45af14d73a3b4497bb350b7174d84065.json": "3495399870a0abe812342000b085a8e36eb1da926d5950c650d833253d5c8b1e",
+    "evaluation/history/captures/capture_473fe5378d0f48b7bcc74ef31459d01f.json": "ac0d5b2ec2a5a1cee012e059c24fdd88436a0d95fa9cc00151c7416061109baa",
+    "evaluation/history/captures/capture_58113d2bb7e74a268630a2328cdccbc1.json": "472c844cbeaf59852b3f60da7390738dfdd5726b65acdeb8b748860f404085ba",
+    "evaluation/history/captures/capture_6042ec6039644f60bfeabf7e583466d4.json": "0ec299cda09fe1b28d9cc1182def73a7a4cf14316530e17ca993fde2c070e981",
+    "evaluation/history/captures/capture_747a0519e9ca4662a8e22b229011da5d.json": "1717640ce165499ba1a308edfdef4d420b7f6f8c44c3ba541f4711fa18d752b6",
+    "evaluation/history/captures/capture_7bc341632d874b268a3ff89dbea3f72a.json": "4b0ef2f6a42553ee412f00c240d7fa8732df9465dc9d6a7c2443d50b2fd991d8",
+    "evaluation/history/captures/capture_7c90c0ac43fe4feb91d85bc7d3c00a49.json": "9bd43066a52b7934154834111fc907b1ba85e27d618a38d0aa9121c4951c0c0f",
+    "evaluation/history/captures/capture_836b5bb8dc6c4876a0c3f576346669e2.json": "a03dd398ad5ea415160cd46b290529b0f1f588fccefc2e86a33b7e6c48cce46d",
+    "evaluation/history/captures/capture_84f5172293954507b5171c76f081f11f.json": "efd9c5e5ff014ffa92f3fcf3324d3e2531661356b98c4d231e5629549d8eb5a1",
+    "evaluation/history/captures/capture_a7d22e02919a4ac28a5f71fc402a2199.json": "9cbb6028c798c47d557721882aec5e365fec1b4452d811b1375555cedb913ee2",
+    "evaluation/history/captures/capture_a89fe86370c14867a07fd49a1f90604c.json": "489c101abd418284b3a0709bad6e7da348ee5c1cd66d4b45a77f45fcf24d3238",
+    "evaluation/history/captures/capture_ae8b877b3d5641f2bf23491b5ab0a4ac.json": "26398518a04057defa82f1b525798c810a5bee1767eca7fcb836db0d2173c918",
+    "evaluation/history/captures/capture_b448a2c882ac4d0a9855a29e16d17eb3.json": "45edaff5329858d55097ad6a266efe762bc9ceb74e6cd3764610c57b7a9fd1d4",
+    "evaluation/history/captures/capture_b5fa231ae21442fead4e10c109052f02.json": "bc348b8b6c1f65394d4665ac100e8c781046071869741cd469ca0ee4d5369ed2",
+    "evaluation/history/captures/capture_c0022f40996547ce857aa03b2458c039.json": "9be182cc31d3820f18b7a4654036d783826a28ba91b3a71e07731c474ba3e1b4",
+    "evaluation/history/captures/capture_c6359f608a4449c898c65d1ae896307e.json": "e6279974ce95959c8b2ae8a22a0bb7e0dbe213ce06a8e59e3826d73a71536eea",
+    "evaluation/history/captures/capture_c65e494061344a868b1c00efa2557706.json": "118fec702cd9865b41e001ef106f8f38ac39010d15ab46bdde4785f435d19063",
+    "evaluation/history/captures/capture_edd54ca6b1584399b928bc2dd8f51c9e.json": "0d1335d5fc1c911328dbd3c2b12d1896b867492cbbe7222a49325d03e03527d8",
+    "evaluation/history/corpus/cleaned/hr_general_entity_benefits.md": "bc3fc73122458b325766fc1d2dcbb5ff0b3daff448e9ca05a0e4b7c52428a27d",
+    "evaluation/history/corpus/cleaned/hr_growth_development.md": "0412dd420b4bae04c4d2f188475d43a61d00d4e78fee9082150907193e55e358",
+    "evaluation/history/corpus/cleaned/hr_leave_types.md": "633d6a2864fd04b62329f30ca3a0f808f509dff69695b64a3f1a6b5ed50d4985",
+    "evaluation/history/corpus/cleaned/hr_time_away_overview.md": "84c7a6241e0fa19dad0c9a561877416313be6fe4be2ab004ec5836e77bb2eab0",
+    "evaluation/history/corpus/cleaned/hr_time_away_philosophy.md": "aa561bb07b07797658e9029b0d34bd3d9477c986c0e5fc35bcf50e74c500ba66",
+    "evaluation/history/corpus/cleaned/hr_time_off_types.md": "7b83ede2a904763770fdb4c9862094e40ecdf50c24aa9f1cece6b6704a371d29",
+    "evaluation/history/corpus/processing_manifest.json": "db374f8673e26433d061a99e8b912dc12294ef4ab750853494918a156a846907",
+    "evaluation/history/dataset/hr_dev_v1.json": "db6354bb687ea772fe0bc87c68fb577c233591a069f40bc28bceae279a6cf05f",
+    "evaluation/history/dataset/hr_dev_v2.json": "5bedf91a5f3be6269d9945fe49df6f35a8f66573aaf5336198dba665cea33d54",
+    "evaluation/history/dataset/hr_dev_v4.json": "5c97022e4f4d748c1aa40998489c33301b5407a8196a35518c5345d3b905f4b5",
+    "evaluation/history/dataset/hr_dev_v5.json": "381751568fbec52ce9e903ea7e243e858d601fec0772e2cebfab93348c871c1a",
+    "evaluation/history/dataset/hr_medium_dev_v1.json": "1c624c09e9eb8257de81771253587601dde44209c5856fdbae8c8a767d185bed",
+    "evaluation/history/dataset/hr_medium_dev_v2.json": "5643126b983610d4a07dc1645110144299fbc3b823befc53a7503e922e3f91ec",
+    "evaluation/history/dataset/hr_medium_e2e_v1.json": "967161fd2dee46c52ab8b2f10bf1c480e5a71e7a28c700562e0e966f831ab97d",
+    "evaluation/history/dataset/hr_medium_holdout_v1.json": "3b28f077e71554c01572bbf11e7565c7233c98172681769406f6773370e7d7ba",
+    "evaluation/history/dataset/hr_medium_replay_v1.json": "e2831f2f6886dd8883d053ecfec537d6cd29c327d916ffeed197e76e36e25463",
+    "evaluation/history/dataset/hr_medium_replay_v2.json": "ca7dfaf6abd747d89c308c0efd3e24ebf62ed36c70ba350bd5d3aa430ed82429",
+    "evaluation/history/dataset/hr_regional_dev_v1.json": "5d5ba53aa88d654d525022c3115aa68e763972917fbca5f300802aae4dc59e1e",
+    "evaluation/history/dataset/hr_regional_dev_v2.json": "92691d59b86ee4b83f12e1bf4290243a1c1e4f33b3e0d88621d52d30e578df80",
+    "evaluation/history/freezes/hr_medium_e2e_v1.json": "5b30aba580ceb0754e855ac2420f0fb074d641fd74ee792b1cca086d0aa63144",
+    "evaluation/history/freezes/hr_medium_holdout_v1.json": "96a5214a5cfa23081dcc7d9e9ce2cb723c17218f3aa3db1a392ebbbd6df91c48",
+    "evaluation/history/freezes/hr_medium_policy_v1.json": "64ee7c55196f819836a9494ca50a392e30472ab37ac94c52aada88d6e1cf3dbe",
+    "evaluation/history/manifest.json": "a14223220fefdc9f551d5c86e01c1d05fda58298074379cde9fdce246bfabb98",
+    "evaluation/history/manifest_before_medium_autonomy_20261016.json": "e79f8b916d04b2d035657d754395b66f9b35c404ea652a69ec37331239c42cbb",
+    "evaluation/history/observations/hr_medium_holdout_rerank_20261016_execution.jsonl": "854ed54387560e261a16e4fc16915a09ae282f2cf31151044dbdd0b2fd3b40fb",
+    "evaluation/history/observations/hr_medium_holdout_resolved_execution.jsonl": "f34f7f140afd40c2888a763c65ef53d9159736a538ff73a5652856792fc5a583",
+    "evaluation/history/observations/live_query_after_restart.json": "83919f6b71ec3e72bbd0670f89b4e5a184c3b5c3001572742970df36672ca775",
+    "evaluation/history/observations/policy_decision_43b65f068780460799fa405d0f3a6f44.json": "bd00a42681fce6e3ba75c5be7116f84c2c3ece910e5884a0551726b76b52eacd",
+    "evaluation/history/observations/policy_decision_7dc3007a11bc4d6b8ae729143299e780.json": "8e8ad0b7b7b5f3d2493a0e44ec7f03d439910965681bd265ccf0fe7647a68bb7",
+    "evaluation/history/observations/policy_decision_919b86e5ce404f99b96bd17f158863cd.json": "f7acd8bc5c92ab01e3af5844a02c67182549f0ed482b7149ab129d1c0f802f74",
+    "evaluation/history/observations/policy_decision_9b63f5b4cf274a65a2fbd661f1a04472.json": "57e8b119f957a4226a9ed04ac3f9c211875bb33be735c0c09d12ade43fa9a4b4",
+    "evaluation/history/observations/policy_decision_c3a158e5fb044f3f9c5bf15b148990ed.json": "41d7284c4409e66a0c7bb5e05ea347ab27d9700a863cd1a4aeb44bb94683ad1c",
+    "evaluation/history/observations/smoke_query.json": "68e7bf3eca4911c50a356cb2dec0abd4f532d3cf6b6d4168c6e16f4940a7397c",
+    "evaluation/history/observations/user_observation_citation_mismatch.json": "6ebfdae4247b5b416ff039b5ea1f817b505acfa22045ce35f4019d6069da766a",
+    "evaluation/history/provider_cache/facet_04f308206bfc242454aff1a748202e1a5bc76714e244ba009384a98b1cdc2937.json": "f9940d74d29848ccb9ce12a4e2115776f603a5955093a0512521a7bc07cb6b66",
+    "evaluation/history/provider_cache/facet_0e96aa4666f842631422d7beb455687f535377d25ce1b91c277e54a0ec8afb95.json": "9d544a8c44ba3ae98ef9b3cf12cb55781d4b08b69cf85d14ff28dd006289644b",
+    "evaluation/history/provider_cache/facet_36e3fca1e746e299a78df98980e9aa0f85d830f0601796d72e6b6946991cac42.json": "992e8851bca19d93af28dc6a2afd71970c2458e48fee51aadc8de51eea74d09a",
+    "evaluation/history/provider_cache/facet_4a7c282d25f34d43cce215f3716b65b22f980bbcc9cacece2cc3c0ce451b65ad.json": "50a248797ae312e02c88ab55798d8bbeb0dbab4f84fdf35bbc7d08d616f813f8",
+    "evaluation/history/provider_cache/facet_5ff049f825c45c30c9ac590a2aaaf2141a1fbad89b7a70e71d72f68f8b1a738e.json": "973edc536d8205a3744dbbf491fd65c87f97a5935414502281b0febbf1020e7f",
+    "evaluation/history/provider_cache/facet_69bc0b74ec9f0d0e03d61e9ab1e623b88db00aaa4224054e1c07b24d33c4543c.json": "3ab0e3e8f42fe5eeb89e634d20d5edac8cebfbc52b6fe2debe63192fa9880ec9",
+    "evaluation/history/provider_cache/facet_6b840d0c95c2ab3f9017cd68e0ebd4c46dce90aed7dc75b3b469f5622ebd3759.json": "897d2ee787849395adf099159d249ee3b68deaaf61631c08f936b99f0bbacfc6",
+    "evaluation/history/provider_cache/facet_7fffb059dba1e8ac599176b2cdf94d42eed607c8ec9f9226c735b15aabe0e326.json": "10a2834d85cb61f359867fee11864638f218d7a00317c20113a644f1a1df46f5",
+    "evaluation/history/provider_cache/facet_923c277d34a028419c159f3071d35343ac16e941e7396701d495f68ec7bba3db.json": "50ffe3d755caf0c1ee009c64b27711542f0ac559ebe2e448a9be49da7a740343",
+    "evaluation/history/provider_cache/facet_9288a72b97027da8bac3f6da955c1de2a5235e17a1456d34fc20dd6471513716.json": "55622551e97bda9a09a6d9fe47ab6c00b25b05aafd1805ced62a650516c35e28",
+    "evaluation/history/provider_cache/facet_ad0bc78261d668601bff0a9ce84081bdecfbc852203fa6d75375340fec5717d5.json": "bd3d3ed5c4f86df32aea08309bf0540efb451064f83ad497c71c844e7eaf6bb5",
+    "evaluation/history/provider_cache/facet_ad0bc78261d668601bff0a9ce84081bdecfbc852203fa6d75375340fec5717d5_failed_51422de2157b42d28c862e88529a4c6e.json": "d091cfd7627d3c9aa29d22e5cb3be70619180691a4af91239e941d964e925761",
+    "evaluation/history/provider_cache/live_27d8791a0265783b9a8059c8c9651c9b09bda23810ea29df67d104c7ed834653.json": "2c83c7a1c2ffe3254a5dc04ee9891ee2c8020bac3fac15ea1d882a745a987f74",
+    "evaluation/history/provider_cache/live_371ba314f2ed6cded85f356b56f788dbc1b050eb86ce61faef726a66a88844f0.json": "3274984cb00602a90714004e355ce6e40558d1f59ab4fc05e8ee72289152257a",
+    "evaluation/history/provider_cache/live_48676aaa3728d5a87b5720984c23c176b761483b271ef799b325e25a52f245ab.json": "aadc1ddf3676660c16d674634ae59877c45979c78f9e464dfc43f2647694daef",
+    "evaluation/history/provider_cache/live_4b550cdf0990a4e2eec95b9de90c270746c10d733265235d709857e2932b3b2b.json": "fcad45269e84f5f5d79fbf889d8e9fefd138052e23d88ca316bd7bd134d84b3b",
+    "evaluation/history/provider_cache/live_5f9bc70c69625854e79b275b51dfb1f6b3a123a5452b71f113ecbc3da2f0ab19.json": "2344a61c4deca933617b3b410979f15447a39b2aafce59f5cf61af58530828d7",
+    "evaluation/history/provider_cache/live_62bd79a869cb1c8208d9ecae849aa8b2547398017379572926607b2df817126e.json": "916b87c0698ed05d527a095936c26945e801262df24b3608a9fd70936d6494d1",
+    "evaluation/history/provider_cache/live_a2cc68c051782f1f80178227f61f2f8a82013605fef570ce98cd8c864ae44eb8.json": "684ede000f09f69115601844cf7209a86a6f8275d4e5d73a3e718d14fb4ea009",
+    "evaluation/history/provider_cache/live_afd38ecbe213b547993d6bc7297de6d29760fc7121bcd80b47e8086a867d2040.json": "033ad3ce73b5d1c95d5b5e48b750658adbff6c7ff76b0862c651fb4b3fd644ad",
+    "evaluation/history/provider_cache/live_afec9f8d88c682df6f43d78e33d0ba025ef9746d81fbcb0f505109289f22b281.json": "84df46c844724606aa5c7d7b298bf9e7b10b03404199a026c1b0de3b1dcc872f",
+    "evaluation/history/provider_cache/live_b93fe2fe638c3b10a33357bdc8aa5e25a764b027e139dd6106ab123ee145219c.json": "8a153a92cb221102346f4d19e609c69bfe64a64f955671ab68a326b17593e2d7",
+    "evaluation/history/provider_cache/live_f886158fcb5c93b3064dbb2fc24aec071eeb90344c3be958a783670668def7d1.json": "9b66e14ffa9b3f7d7768195690b8ef7859a59fd0e0cb094e28629b52bf80d63b",
+    "evaluation/history/README.md": "1e36118b8f6f3a219f81f93c3e51e57aa30fa55f475d93771a60e2b286b3ee8f",
+    "evaluation/history/reviews/20261014T113335Z_819945fc_review.json": "130f2541a0e0ebdc5309d3e4a97bd75aa1709010b60c82b0fcd49bc9500a5a69",
+    "evaluation/history/reviews/20261016T110509Z_0351e91c_medium_e2e_review.json": "4eb2676800f42ec0761d3b4d907ca428d6cdba61b6e0bce49286becb160f7bd6",
+    "evaluation/history/reviews/20261016T110830Z_1fd830cb_medium_e2e_review.json": "e779d65eb5b11ce8a3c2338979d02642105bf1d8a4b37b76a5aa7e0913287fbc",
+    "evaluation/history/reviews/20261016T111323Z_8d056439_medium_e2e_review.json": "e1b20f5c8b5bbe29f508ba802302f52054037a7170d314fd94029389c424524b",
+    "evaluation/history/reviews/20261016T133711Z_242555f9_persistence_smoke_review.json": "306903b01698c121bc4698fa8d528b5753dc5d9e30e5a523cd5594b63ac8a87b",
+    "evaluation/history/reviews/HR-D02_20261014T111728Z.json": "118cbdb6d6913e30844582ae9d913c664d03ce3a1472e6f5c3ef45f5ff52cb78",
+    "evaluation/history/reviews/HR-D06_v2_offline_evidence_check.json": "b339fe2bc633cb024f902ec2d86cdba0f02bbfacb9d603d2aeb103598a97dd8d",
+    "evaluation/history/runs/20261014T110450Z_c06163ee.json": "4ed5690b24b1e31b118acc47d35bdb2aa45d7f1fa8c085b6b587daa707d9abe6",
+    "evaluation/history/runs/20261014T111728Z_65f615f9.json": "f43ce512dd5d17e229b13249682d7f4f47037e02dd7e5a593ff4ba52e81b2272",
+    "evaluation/history/runs/20261014T113335Z_819945fc.json": "9254ee5cdf6d145440a1c5c9fe5e6604c82f5a5f04b2dec3517e3e7561f1bd1c",
+    "evaluation/history/runs/20261015T042012Z_53b2a2a5.json": "44b2953252338c4f5a3ed095d1d8972b482484cf5d0428e04e2585ddac510691",
+    "evaluation/history/runs/20261015T050635Z_6573e3b5.json": "a482f303e76ae38b38b48aef33dc23d738e8ee98d7526dbdea2e5589cf4169ca",
+    "evaluation/history/runs/20261015T062226Z_358a080f.json": "7e78a166d30aa3cc016ad556ee819c03cb4295e8dd7aadf4dc1f06611e0d3b93",
+    "evaluation/history/runs/20261015T062800Z_b2c773ec.json": "3f0b0a3cb6fde452df91aa5473e12b89b3542c56407899eec9feade88d5ff9f5",
+    "evaluation/history/runs/20261015T064233Z_ebe7db64.json": "17f2abc3de426ab2f0ae4ac6cc20906452423a3ded19cf2001da2979b984763a",
+    "evaluation/history/runs/20261015T064610Z_77ee96ff.json": "cf0a32ee9afef56855d438cb4be31d68791235aad16be770bfae1894509d0074",
+    "evaluation/history/runs/20261015T071408Z_9fb12015_rerank.json": "8580b27a82e809436d5746170b8449387cb0fd92801e4b64a9553a2380ee9d4f",
+    "evaluation/history/runs/20261015T071637Z_3d20d34a_rerank.json": "855a5a3a45fb723061cab78069933a568d7350f0719d6a89f0612eafab43b1c2",
+    "evaluation/history/runs/20261015T073606Z_0b30a7a7_rerank.json": "50663e672ede656c7fa8b4d8ebc17ee888a8c53a886d9e4796d6170d7ea6a3fe",
+    "evaluation/history/runs/20261015T073614Z_87fd8e01_rerank.json": "5d64e9d1bb041251223840bbcb13398daf61de9aa2cba99e45b0685637e6e870",
+    "evaluation/history/runs/20261015T073621Z_f1a6451f_rerank.json": "7f448e118c6a13cbcf8c3241c46b94260eacf1efb94e9e3e8405048862076ad6",
+    "evaluation/history/runs/20261015T073625Z_8889c57b_rerank.json": "d3e94c3ab66558ca7bf48adc4643652bc3f3065c9344fe104b87bed5518bcc3c",
+    "evaluation/history/runs/20261015T073636Z_3d5c2488_rerank.json": "7d1cd9ce6a8d814be2553a36c8e2afe31cb92e3b9dc1bf5993851299e502cf00",
+    "evaluation/history/runs/20261015T073642Z_d9b844f9_rerank.json": "2e310482deb6bf97a87fe9fd246abf78dd571ba6a7b5ff3ce1df2e5a8492f179",
+    "evaluation/history/runs/20261015T073902Z_59434ce6_rerank.json": "098ca2fe89afc154d1a364182b7b5f887cbcaf4f01a74c0d23b359fcc32ff6a0",
+    "evaluation/history/runs/20261015T074545Z_4ed5fc9a_context.json": "06120e2090a3e6570e7fb941c107561b5d50016ecf5bb8da7fc0fe2995437498",
+    "evaluation/history/runs/20261015T075832Z_9fc294a4_context.json": "b230ef673d5d9cc3583220a1dda4d7abb3cda444e41d8b6a640ef85df909970d",
+    "evaluation/history/runs/20261015T090450Z_0749ac80.json": "9248262a062dcd71e00462fc3337e46360a6919c2aa3f1491d8fcc26a23af513",
+    "evaluation/history/runs/20261015T092456Z_d7ece93c.json": "b68182ef86585049f662e769f80170fd44ffb78b56a5ee5305103bdf527e944e",
+    "evaluation/history/runs/20261015T093107Z_ce24dcea.json": "46a65ab7e393b832824ae30cd84f476cefc2c636609cf1f2b199d4ce14dbd723",
+    "evaluation/history/runs/20261015T094125Z_4a0514da.json": "e89d44e66e14b4e8eec24bf03d00b5a8957995c879d48dadb708c75a3d02975a",
+    "evaluation/history/runs/20261015T094945Z_ab283781.json": "c70bbb6d88fde02ba0f47c2f8c4b59d69950b93f0a53a94f934db8efdd78c64f",
+    "evaluation/history/runs/20261015T100312Z_e6089ae4.json": "8c80fa659630d51baaa250c8b957cd58c9905fca43a411badea0abd169dd51b6",
+    "evaluation/history/runs/20261015T102502Z_5bbd18b0.json": "db724fd17f58643ef344310bfc1bf214439501ab3c13a442308b22675aa2df15",
+    "evaluation/history/runs/20261015T102807Z_11df1e42.json": "8f2f1d4e970c00c1c55141d628efbb0bbd0cd574eedbdd99958c5c0fd14f3876",
+    "evaluation/history/runs/20261015T104350Z_ccf0356c.json": "509c58d870fb534ffd8dfbf981b7809119efa08365ba8330876799acdcb09609",
+    "evaluation/history/runs/20261015T105614Z_f2e5db3a.json": "08e241c41f6a12adea4bb5f86a5e5682ce1ded756cfef4b88f8c1f409a239c9b",
+    "evaluation/history/runs/20261015T111813Z_359e541c_grounding.json": "eac607132ea5d659903bb8d6f1de887afefc15f7b0f8fe064e8d148533323c04",
+    "evaluation/history/runs/20261015T111826Z_9ab52da3_grounding.json": "2e30c71c43bd3c17aae749f6d6e951d6f20643301384702c43aa5c55a8dfc530",
+    "evaluation/history/runs/20261015T112710Z_142df276_grounding.json": "17657d92f61bc34f3a8544dcfa9a0c17f4e78a0d9562d263b382b71724c154ea",
+    "evaluation/history/runs/20261015T112957Z_e93b88dd_grounding.json": "afeef1c5d851157d785bbfdd261cf39638e2ac697ad6fed6e00f7dcc319ebc45",
+    "evaluation/history/runs/20261015T114852Z_8f058e82_units.json": "fbd6c32d9333245dbedd674a7caada19173aa6069b8e525781e75b90c0629faf",
+    "evaluation/history/runs/20261015T114853Z_e4cff4aa_units.json": "d40e34bc2f5e7ab680c8059216a3a45a70cf89e788520b8fa6177515325340d3",
+    "evaluation/history/runs/20261015T115528Z_4d6181ae_units.json": "c77993c0f7e31798037f13deb8f0ff8ac8012a39237c6de409202eb690b810c3",
+    "evaluation/history/runs/20261015T115529Z_8e23cecd_units.json": "94d621996f78a3aaea4f858dccb32312fed260d6077c60d4835f4478cde035a8",
+    "evaluation/history/runs/20261015T120438Z_b9240180_grounding.json": "0cab2b8cfd717fe8dc25112647350a63c2673b532a89035359fcfe4d63b881b6",
+    "evaluation/history/runs/20261015T120445Z_b5c0b8e1_grounding.json": "dba34cb42fa4c1c2071d466cd949ebb9135aaf4d99b11861c8c6d1880646c723",
+    "evaluation/history/runs/20261015T121159Z_5dfc6c8a.json": "6207ef760feafb2dcb17ba1bc9edc616ce44b0de16c9beaead25ae696e89cf19",
+    "evaluation/history/runs/20261015T121205Z_dfa15052.json": "077b3c20a943e1503bd9d913c596e8243d00009d45231b5e17b0707438fe3463",
+    "evaluation/history/runs/20261015T121639Z_4d067c4b.json": "c75567618e6006a346b6b18433a7e64e6390f5b2cfcf8ea7c1a66ce80928d348",
+    "evaluation/history/runs/20261015T121655Z_180e6af1.json": "18623da26d208286e85e08001dcc91d805f15eb7d69b87ff3fa28ba19bee9a81",
+    "evaluation/history/runs/20261015T124307Z_48f05ce1.json": "b2519cbada284605245e5db4477b0732b93f769361c3a2ce72b187da5dd4c474",
+    "evaluation/history/runs/20261015T124529Z_b6b6d597.json": "1dd218b412ef3af3f6b506ca0b04adf67a71906c8e89352617aca7c07d873f29",
+    "evaluation/history/runs/20261015T142108Z_41312faa.json": "bc0e6a20284f9dc72d848a51d4938b7991267bec86f3bb6f4c46b10f4b99f8f5",
+    "evaluation/history/runs/20261015T142350Z_bbe9c868.json": "5992d7882d5d50774a1fbae42f1686851f6c8571278afd785a57c5942a19a56b",
+    "evaluation/history/runs/20261015T143137Z_63397294.json": "90f829e9350ca61c37c43fc01c490ff0dcd0250fe5f89465fb7e49899da32cd1",
+    "evaluation/history/runs/20261015T143242Z_c904f964.json": "9d2a36b309dbe185905b3c793c81ed25a168c75e49c0850d5303e14c4032b641",
+    "evaluation/history/runs/20261015T144927Z_c48ae981.json": "1fcf46b8e718637748a92f7e450417f4e4f5bda1a8285809cf7dd768dccebea0",
+    "evaluation/history/runs/20261015T144935Z_bcc53107.json": "50e7777f6c2ad928e54d98bef3b380a81537d7a7ef5e3f49fa694769f4c887fd",
+    "evaluation/history/runs/20261016T031253Z_c0039937.json": "53ab9c77ef60ae6a87f22ed921a064ec3464faa0a3c231145f2eaa9f214f2bd0",
+    "evaluation/history/runs/20261016T031257Z_7f2b95a7.json": "7a9b159cda5b0cd4610e9e6efa2c181f31fe739001c7167cd537207dd59a8d34",
+    "evaluation/history/runs/20261016T032333Z_77bd61f5.json": "5f98cacc32de97d6535ac6d0fafaa2ac84af11a1201f4290d74ec27de325481c",
+    "evaluation/history/runs/20261016T032417Z_e64e3fda.json": "20b48833b4394edf932b505f2905d63f79980120db5f3bd80ff433fdd2620455",
+    "evaluation/history/runs/20261016T040711Z_e946eabe.json": "1aca4c06c9b7bc293815a6b93bb63e93e19d3245dc692c731954d4f547c1b7d1",
+    "evaluation/history/runs/20261016T040831Z_39fd0b97.json": "447329fe9f9aef67dfde7223f021426d2ea0aaa7ebc8539105f565f29f684b5b",
+    "evaluation/history/runs/20261016T043348Z_92605609.json": "9a7104fac405bfa4bb7a127c1a10fcb5be0ce2e37d16a2175b60ed736146caa3",
+    "evaluation/history/runs/20261016T043810Z_44cc7e99.json": "64b29d3efcf522b10f48997e8c6226d048b97d8843a16b28e0f152ffaed2e954",
+    "evaluation/history/runs/20261016T044508Z_38dfaa7a.json": "6809c2450ba0623b34d0bf6e626a02fbc67a2a93bfea849d20060ca16d07113d",
+    "evaluation/history/runs/20261016T045353Z_87dd06f3.json": "bcf452fa72123354624b16f9e88cb54d424c8c3220b709125ffbbc817f13a996",
+    "evaluation/history/runs/20261016T050329Z_9e39e0f9.json": "99cb00539e90866e94e39d06e41cb9e389873ba0d27999c0f9cb0ca74463a3d3",
+    "evaluation/history/runs/20261016T051118Z_24a65abb_rerank.json": "38a42e28118d4b8f2f4761047be09e2ff2127d885237a6e1faff5435612c698a",
+    "evaluation/history/runs/20261016T053158Z_2123ed29.json": "dcc9953e246da4a626c9120c45be3134e26ac2db5e13f21042dd44d5f34f7de5",
+    "evaluation/history/runs/20261016T054446Z_97e1f65c_rerank.json": "217550b237c8b3cda11b578365c2b6b2094af96a305b81a19175f0dd7e37f327",
+    "evaluation/history/runs/20261016T054459Z_849a5298_rerank.json": "01db30a297b2a3f906cebf7de6a36b8f7745a9da7821384615087c6a8ec3135d",
+    "evaluation/history/runs/20261016T054508Z_3dda7625_rerank.json": "596245c4885d2d25f0f1e62184bf2c5ff3108904baceb39599b801d4924c0224",
+    "evaluation/history/runs/20261016T054521Z_9d252d73_rerank.json": "10c9ab8483bf5769d1ef1ddf669e1dcd7174249eeb43865a14ed458dcd66f5e7",
+    "evaluation/history/runs/20261016T054534Z_4694d14c_rerank.json": "b4b5adb417e42343711a729f067b29f562cc57469cf63f23e4480fe0f63f5677",
+    "evaluation/history/runs/20261016T054545Z_99fee325_rerank.json": "03d012889691ef4e2e794b646d5a4845b1337e1d1a7ae8e02adf4811fb247041",
+    "evaluation/history/runs/20261016T054607Z_c8a6e7fe_rerank.json": "76f8744aa0deb89ce5927cae77e1a63fe29890e3140d22f125104d78864163b2",
+    "evaluation/history/runs/20261016T054617Z_6c02bab5_rerank.json": "37c8bdbfe04c154eabedfa2fafc95ef5f5a3fc7baf7eb45f9f0b4edfb1e4a919",
+    "evaluation/history/runs/20261016T054627Z_58525c4b_rerank.json": "23e93aad9b63f650f0c4e74fa2ea7384842435967f4a8cc5dc4004c0aafe7f16",
+    "evaluation/history/runs/20261016T054643Z_00a8b961_rerank.json": "944c3720dbe09a9163b0e1d2f9866636be9765159781c1125c37082f270d3484",
+    "evaluation/history/runs/20261016T054700Z_3b0b563b_rerank.json": "074ebe2c99846cc3e2f92c444e4d8234a71e42357feab6d6bdfd178867769a74",
+    "evaluation/history/runs/20261016T054709Z_07477db9_rerank.json": "94a14d325879ee97b80d2677d754e1227b9fafcc0acc8abb35eb543a4427d392",
+    "evaluation/history/runs/20261016T054717Z_da6c9b91_rerank.json": "de10ab6cf5ecd1a19e651cad511c7098ce4fa68f3d73444b5020dc62be369ffc",
+    "evaluation/history/runs/20261016T054731Z_334e6020_rerank.json": "db869bfa9d08488746b3c9e81149f5361f462dc6342f2fe0bb9c3fb03bcd10d6",
+    "evaluation/history/runs/20261016T054751Z_2fde947d_rerank.json": "7322990a26b9bc5872fd8f4d30bac17881810cc00ba1c2c7ca200859f4bf63ab",
+    "evaluation/history/runs/20261016T054803Z_02aa78dc_rerank.json": "2c3ec8f3d67f0112ce4d2eb42423142dd1b3d13011aa00b2981918ec0256596f",
+    "evaluation/history/runs/20261016T054815Z_328d4757_rerank.json": "ad56b61d19e4d771c3ee402e3500c6499fccdbe99c23ecefdfdb103036d7169b",
+    "evaluation/history/runs/20261016T054828Z_1563a81d_rerank.json": "89ceac4cfc25ca36189289aaf9d339d24114b16e5cf185c83adf2134f168c17d",
+    "evaluation/history/runs/20261016T054842Z_39a7fe06_rerank.json": "c0df828b82dd80e97f910994755f9ef614dc97c45a65ed3f495378ee67cc5cc5",
+    "evaluation/history/runs/20261016T054852Z_719a0746_rerank.json": "6300d66ac44ed5cfd6b0aa1e971a6dc56421f57f496bd997e0795cd2240d863e",
+    "evaluation/history/runs/20261016T062340Z_24093e08_facet_batch.json": "a9d2057f6d31b8518623e94dca5959e3e09a85e0c31068b91b36183cb951719d",
+    "evaluation/history/runs/20261016T062604Z_f77bc38a_facet_batch.json": "58574e33473c24aaabfd28770c679dea272bc7022f0bf5d407eaf5116d62cd18",
+    "evaluation/history/runs/20261016T062604Z_f77bc38a_facet_batch_comparison.json": "366ab38d8a1ebc4b653d50264a3be6481a0261d1c2e4951a13bf9d4d258e52e2",
+    "evaluation/history/runs/20261016T063533Z_244ba993.json": "371a6c65614ec509a1d9ed68db8b70131ddb4b2dcacbf5b56615f819dab8c632",
+    "evaluation/history/runs/20261016T064029Z_727d6843.json": "de4bf28ef36bf74750e807af658f822fbf233ff7b9246e31278fcdc62cc61093",
+    "evaluation/history/runs/20261016T064132Z_12db5c9d_holdout_observations.json": "4393173db032c1a37edd0dcb0c0762bee00637e589d7e6134d15bae7b2063369",
+    "evaluation/history/runs/20261016T064211Z_0b78add2_rerank.json": "7d0691650dd8c82bbb08ed4053c8a11c402a682c15c61624c86d960e98f3333d",
+    "evaluation/history/runs/20261016T064233Z_9462f55f_rerank.json": "bdf469cdceac3c47a3b6d677b9c0bf99ed11896918758771231067c58097bb09",
+    "evaluation/history/runs/20261016T064304Z_cd018923_rerank.json": "79e405cc80dfc372be8ef907d9e9d9d1fde1ca40177494dabe0e4dc92150aeae",
+    "evaluation/history/runs/20261016T064310Z_6b41db56_rerank.json": "d9ae2ce3369d273ce6119ce0c6e6769356c74f2659313725ca3b657b0b2d2d65",
+    "evaluation/history/runs/20261016T064323Z_2eb14ac8_rerank.json": "3202cb799730a63aad55eec4b243533edc5771a1ad9a5f8883d09a67e5eec180",
+    "evaluation/history/runs/20261016T064337Z_0c4e6418_rerank.json": "0b9d17856abb50248e1b1921fe4f727c620d063831b319710b316861335bbdc9",
+    "evaluation/history/runs/20261016T064357Z_3f61d689_rerank.json": "336847467a90d479a83b6899d23903fa05997be4b9bee843700aed751892494d",
+    "evaluation/history/runs/20261016T064438Z_12107c78_rerank.json": "4c30dc67e75ff81c789e4cf7c8abc704a1eb8a4782620c088c585a5c168e617c",
+    "evaluation/history/runs/20261016T064518Z_13fb05b9_rerank.json": "4fd9c265e605fb29f7cf7faa4a231fadfe75e6d8292edf8b4e9c02463080c4fb",
+    "evaluation/history/runs/20261016T064530Z_eaff2131_rerank.json": "197a42196d5aea911f84bde66eeed2a7cc1430b8967020f098af550c0f6715fc",
+    "evaluation/history/runs/20261016T064536Z_ca325579_rerank.json": "d35852ddfcc452702d0074f8d24bb1bb6a28d356d1e787f539430fe06a620d25",
+    "evaluation/history/runs/20261016T064556Z_d666e5cf_rerank.json": "e2bf62305df3d1fc0701f8f7b5908b0b7fda71e68ab207807a49b4c2fe33c11b",
+    "evaluation/history/runs/20261016T064720Z_112bb2a2_rerank_retry.json": "cc80dc2c26b5499909b18b7543c0af69e6cea979fd0d74ed41d5112caafefc16",
+    "evaluation/history/runs/20261016T064753Z_6a52e4eb_rerank_retry.json": "ae2946af401e5825580c6db0e45edeffc1b3b0b98b9825e40f79d1ee4c83b227",
+    "evaluation/history/runs/20261016T064819Z_42871deb_facet_batch.json": "4da1613505197cf78025a8be622c29ef5ee56b24ed40827627d5693e3fa72688",
+    "evaluation/history/runs/20261016T064958Z_4c711021.json": "8b6d63212d63e111bbf477787df26a10dbc9201455d46c08192893b326935035",
+    "evaluation/history/runs/20261016T110509Z_0351e91c.json": "d5be201b03de6f16d62eb3938ec1c9648a2cc5ea1172cbd4cd86672184f16cdb",
+    "evaluation/history/runs/20261016T110830Z_1fd830cb.json": "3b58017d32742fec37ed11a93a21698ae7bc5c61a4907ec9eeae8f393fa278ac",
+    "evaluation/history/runs/20261016T111323Z_8d056439.json": "1978e3e5c0ccdd7083bad109c57ee40808b02ddc2ebacba6c3c63aef50ffbc7a",
+    "evaluation/history/runs/20261016T133711Z_242555f9.json": "930928c6938554ff9c7146797fea4790b8553f3edc53ecb928dbbc50fcc4777d",
+    "evaluation/history/runs/retrieval_probe_38eca20b.json": "9fd7b0e9d709ded32d07acd58cca9fb07461d24daf30a91965328a907357f9f0",
+    "evaluation/freezes/answer_prompt_before_modality_v1.py.txt": "7a3e735f6d6b29d38f6187e82dbd447f242911cd40426a2bb10b7374ba387fb5",
+    "evaluation/freezes/doctrace_naive_rerank_candidate_v1.json": "82fde7e9d186423edfdc20c7bbad9efd81a7864ae7eb1eb92774afaeb3be18ba",
+    "evaluation/freezes/doctrace_naive_rerank_candidate_v2.json": "591a2acd838e186b1099fb74e9c598f9fb491fb461190d631fe8c838d5a92566",
+    "evaluation/freezes/hr_medium_e2e_v1.json": "5b30aba580ceb0754e855ac2420f0fb074d641fd74ee792b1cca086d0aa63144",
+    "evaluation/freezes/hr_medium_holdout_v1.json": "96a5214a5cfa23081dcc7d9e9ce2cb723c17218f3aa3db1a392ebbbd6df91c48",
+    "evaluation/freezes/hr_medium_policy_v1.json": "64ee7c55196f819836a9494ca50a392e30472ab37ac94c52aada88d6e1cf3dbe",
+    "evaluation/freezes/medium_retrieval_baseline_v1.json": "4bc28ee9910051f1a9c7758954d010cfe1512ce2e3d15a6af361bb6a9907ab27",
+    "evaluation/freezes/mix_prelimit_rerank_batch_v1.json": "b9afbd2ad76e45cda356ee4f0e7f4c4faa5d5460a8351aa93f4ab9b74c1819f6",
+    "data/gitlab_hr/v3/cleaned/hr_acceptable_use_policy.md": "85dbd949742a9a0958ee4326f1731586c61ca6261e5373080a920151e08f354b",
+    "data/gitlab_hr/v3/cleaned/hr_anti_harassment.md": "2c1034f14e6efaca93c3b77048e2af8f5806cefba6027e3f80de5cb2e81873c7",
+    "data/gitlab_hr/v3/cleaned/hr_benefits.md": "1d19118806d08da24fe130578c48e65a7eb0b95516e6e3b7d2e6b78b7b4a0f3f",
+    "data/gitlab_hr/v3/cleaned/hr_bv_benefits_belgium.md": "024a34336d6394a6d0010c1725eaee1d9dd752c11025ca338036f99446cd0e23",
+    "data/gitlab_hr/v3/cleaned/hr_canada_benefits.md": "f5c263e8fda50a1c3f0893cd5cc2ca31a82693bf279f0914f9801bbd7d41b2d1",
+    "data/gitlab_hr/v3/cleaned/hr_career_development.md": "4008f9a225385668112e378e64c532179aa5dc32c48e5589d54c1d649e02fbc4",
+    "data/gitlab_hr/v3/cleaned/hr_compensation.md": "e460e208bfd630dd60d0b6d18245c8b550e9bdc7ff96fe0aad2f4bf44102ade9",
+    "data/gitlab_hr/v3/cleaned/hr_compensation_review_cycle.md": "be8e8bf90018324432e029d6d1b4644d55cfd4b0004050471f60e6332d3d9127",
+    "data/gitlab_hr/v3/cleaned/hr_competencies.md": "43b08d1b251662324ca9cf521d18352c2d6b0b1305c3932b4853436df321c5c7",
+    "data/gitlab_hr/v3/cleaned/hr_contracts_probation_periods.md": "28b61e98aa1ad406128e7c51eff8d70edbc6242d84d5be39b125159def2e7a09",
+    "data/gitlab_hr/v3/cleaned/hr_development_tax.md": "6d6e8fb3e8b46468791f4395cc3d93d1f1c79441d0e0949c4726c96bcd415871",
+    "data/gitlab_hr/v3/cleaned/hr_elevate.md": "26689a4939f8476a2d21c96780f0e6b7d42ab3b30ccd2e53220b12971c954f80",
+    "data/gitlab_hr/v3/cleaned/hr_elevate_applied.md": "d22ae8d76584ca02da73768e9a4a5b88e84a2e89b4d143fd3da43083837de649",
+    "data/gitlab_hr/v3/cleaned/hr_elevate_prep.md": "37814763d2d78aa972e6191ffedeaaa22e5057dbce993bd4933853b1d0c0e58a",
+    "data/gitlab_hr/v3/cleaned/hr_elevate_programs.md": "7baab347438fe33aea3640d0ff8500ad1290d4275bc36e7cff090febae556e27",
+    "data/gitlab_hr/v3/cleaned/hr_elevateplus.md": "317f69fa173655c91c202cfbea1d68717b2d05a19160a765963a6cfc71f9b6cc",
+    "data/gitlab_hr/v3/cleaned/hr_employment_solutions.md": "7caeea387abdbc45de68db37af0c64efef0af0c850027b2840920e8cdb226966",
+    "data/gitlab_hr/v3/cleaned/hr_financial_wellness.md": "1e69485e2926b84e386e5a834d0819508d1aafaaabe90ba47fde88fe01bfc79d",
+    "data/gitlab_hr/v3/cleaned/hr_france_remote_work.md": "f907ebeb37b4a0ffbe924fec8aef4d776de220a8b8460b77ee86d1fe657bc2f1",
+    "data/gitlab_hr/v3/cleaned/hr_france_sas.md": "38b361562dc83747f43b433b0d280aba935eeebe098a8b0e9b9b93de2225a23b",
+    "data/gitlab_hr/v3/cleaned/hr_general_entity_benefits.md": "bc3fc73122458b325766fc1d2dcbb5ff0b3daff448e9ca05a0e4b7c52428a27d",
+    "data/gitlab_hr/v3/cleaned/hr_germany_benefits.md": "727038bf92f6e0a9e1709a797d51f48c8e3fc523935d6c61a2bbe5b24885e760",
+    "data/gitlab_hr/v3/cleaned/hr_gitlab_gk.md": "7018b029c0062e62c394a2a643d97aecef5cff42e595a8e84a3f74ef5bd660a1",
+    "data/gitlab_hr/v3/cleaned/hr_gitlab_ireland_ltd.md": "aa3769d7a777f9e66dfea4a4df6e5a874a672717718f6e6d0d379d4ef1e7f19b",
+    "data/gitlab_hr/v3/cleaned/hr_givelab_volunteer_initiatives.md": "1b950141551005fcee893dcc740a73ed5cdf8a8a7946d00df193aab0511469cf",
+    "data/gitlab_hr/v3/cleaned/hr_global_expansion.md": "8cc03cc221b83a70c359921af03effb5a96b20c8d0545b420708614a366e66f2",
+    "data/gitlab_hr/v3/cleaned/hr_growth_development.md": "0412dd420b4bae04c4d2f188475d43a61d00d4e78fee9082150907193e55e358",
+    "data/gitlab_hr/v3/cleaned/hr_guidance_on_feedback.md": "b8f5797cf75e365e36bf134550e51c8717f05c0f17f0f113a41ad46859cbade7",
+    "data/gitlab_hr/v3/cleaned/hr_hone.md": "60a04e340808307914a00ae4246756901924874acc907534c268c3e582612574",
+    "data/gitlab_hr/v3/cleaned/hr_igp_guide.md": "384dd9b34959d2bbd034514b8b4839b4ad25cc8005b8134fdafeced103be0878",
+    "data/gitlab_hr/v3/cleaned/hr_inc_usa.md": "607c0a1d1e9b1b49938e2cfb6c226b58ac68935421dc9977580efa4d8fb03889",
+    "data/gitlab_hr/v3/cleaned/hr_incentives.md": "10d849eadd2b3b10a06c5800c6976907bb94af76e30e9c19e78dcaed7ef63021",
+    "data/gitlab_hr/v3/cleaned/hr_incident_response.md": "b6e20c62b874e3f722681bbc37e63c4e0cc654b7ddb8a5c16ed50c21c9bf9396",
+    "data/gitlab_hr/v3/cleaned/hr_internship_for_learning.md": "45c93c6f36f0c8cea657a2bc1ae2f2786a27c00c43e98a4f1cd1d88500332bfe",
+    "data/gitlab_hr/v3/cleaned/hr_korea_ltd_benefits.md": "0e6095b21aee530d1600918d5a4add83c912464aaa04472dfe658e8736fc8194",
+    "data/gitlab_hr/v3/cleaned/hr_learning_and_development.md": "a39473f1c6b98c141eb0b9fd4600268a06ec9a9372e060ba79e9c735641c4aaa",
+    "data/gitlab_hr/v3/cleaned/hr_learning_initiatives.md": "658628e87bb3bd38271e650baddb88272dba2c35fd3df78bcdea4f1a82b58dea",
+    "data/gitlab_hr/v3/cleaned/hr_leave_of_absence.md": "f89257de227fc963880ed5339a7e2b284d45671e6304fafcf1d98e9ef482967a",
+    "data/gitlab_hr/v3/cleaned/hr_leave_types.md": "633d6a2864fd04b62329f30ca3a0f808f509dff69695b64a3f1a6b5ed50d4985",
+    "data/gitlab_hr/v3/cleaned/hr_level_up.md": "637b1bbec9262319feb0fa3f108d15346dfb76901c38952dd7a7d784cbfa92f1",
+    "data/gitlab_hr/v3/cleaned/hr_ltd_benefits_uk.md": "eefe1e1d8e03d110246bc698667960c5da0a44c6225bb247c93f46bda4f76224",
+    "data/gitlab_hr/v3/cleaned/hr_manager_development.md": "f1b9b2732b2bb0d92c83bbadf720f06454326ab4b4278056ed19f9a43644ea58",
+    "data/gitlab_hr/v3/cleaned/hr_mentor.md": "1d473d75a7b619acb4fff7ac85306e6807fd556ae17bb827be7f8d1facb96ce6",
+    "data/gitlab_hr/v3/cleaned/hr_modern_health.md": "58f642f41b3c45271aca925e9b067496e11ffd7a63cc4537c009d541fd91e955",
+    "data/gitlab_hr/v3/cleaned/hr_netherlands_benefits.md": "d8adbe6ff93ff89df9ec843100b95f189565511c858f30ca1267b275f9769bd0",
+    "data/gitlab_hr/v3/cleaned/hr_offboarding.md": "37b8a41e8c265b7d51d50e9c7d693317cf1e6e6d524aebdeae0a5e2460a4ffec",
+    "data/gitlab_hr/v3/cleaned/hr_offboarding_standards.md": "c949aa362269db62364893b5a453f4181503322b5cea8ba777fc892176a4045d",
+    "data/gitlab_hr/v3/cleaned/hr_papaya_global_benefits.md": "adc87fcef996f0718d464b994b4766007420db7ce133a2c9851641cef291e9a7",
+    "data/gitlab_hr/v3/cleaned/hr_parental_leave_toolkit.md": "c682476544da71ee9bd44af158216b006feda186765afc7450707761264b0451",
+    "data/gitlab_hr/v3/cleaned/hr_people_business_partners.md": "279f6bd99dd87a3f66f9b4666b44d3b48ab781b6033c9518e6ff475b1fda8c14",
+    "data/gitlab_hr/v3/cleaned/hr_promotion_document_style_guide.md": "9344364bc1b07184ee17944ac8386e84cdae97d7cdd73112def28167c2ae1499",
+    "data/gitlab_hr/v3/cleaned/hr_promotions_transfers.md": "38768fc35187ad2f2ff064e9653edee04f8566e25f5bd80b89d8fd2bda0db307",
+    "data/gitlab_hr/v3/cleaned/hr_pty_benefits_australia.md": "b2eda95a39795d33f9138efd4544d7260a347094a30cf64f0d46074d23b611df",
+    "data/gitlab_hr/v3/cleaned/hr_pty_benefits_new_zealand.md": "2bd61c0c18917614a2e5ce9f0c3280e22f302d55777599fd02725df652b4be8d",
+    "data/gitlab_hr/v3/cleaned/hr_relocation.md": "37852f65e0f94d8911cf38897c606fd20e23f599a98bf19daeece19de1f9d576",
+    "data/gitlab_hr/v3/cleaned/hr_remote_com.md": "7e84559c8795e3a8d190b5f857493ed9a4e28ba9cc036c8d76663312f1cb61a6",
+    "data/gitlab_hr/v3/cleaned/hr_right_to_disconnect_charter.md": "fd28428afc262c925aad17316acb24c81006b5650e42772c98284be296281f39",
+    "data/gitlab_hr/v3/cleaned/hr_self_paced_learning.md": "c1b59f8bd2a2fc33460c70ce8ea15c964fc3d9579cf2d74674bcaaacf42ff1d7",
+    "data/gitlab_hr/v3/cleaned/hr_singapore_pte_ltd.md": "a1fa77f8ec48e78a3b5a116dfabd6d0a2e159d14158ee46313585d8857212054",
+    "data/gitlab_hr/v3/cleaned/hr_stock_options.md": "6f94ee95013d41f9cfda785bdc632001edd91a0f63c241109844b55cd6083cfc",
+    "data/gitlab_hr/v3/cleaned/hr_talent_assessment.md": "90b3182f77736247cecbff44e6c5e9e40dc859b251552a6072011140d1fd762c",
+    "data/gitlab_hr/v3/cleaned/hr_team_workshops.md": "764b9b458391c5afd96dbe1113c897b67e92f656642b6f781f7dfed81681791b",
+    "data/gitlab_hr/v3/cleaned/hr_time_away_overview.md": "84c7a6241e0fa19dad0c9a561877416313be6fe4be2ab004ec5836e77bb2eab0",
+    "data/gitlab_hr/v3/cleaned/hr_time_away_philosophy.md": "aa561bb07b07797658e9029b0d34bd3d9477c986c0e5fc35bcf50e74c500ba66",
+    "data/gitlab_hr/v3/cleaned/hr_time_off_types.md": "7b83ede2a904763770fdb4c9862094e40ecdf50c24aa9f1cece6b6704a371d29",
+    "data/gitlab_hr/v3/cleaned/hr_travel_expenses.md": "2e1562522a893e1df650dcfb3e2a8a8b45ce3fbccd35e1ccb9c86b3febc3e5ed",
+    "data/gitlab_hr/v3/cleaned/hr_us.md": "6f8215ff70d16902558cdd1acbd97acd84d58469af5e50787d9561e466aefcd4",
+    "data/gitlab_hr/v3/cleaned/hr_us_benefits.md": "7b0657ee58bde95be3469c99fe6b5f39e2bb68caa128c3376e0cf06662a904e3",
+    "data/gitlab_hr/v3/cleaned/hr_visas.md": "cabd0af669fb675be3c3fcc9c154040ea2c8ee5a62010a47c2e320adff78b0c7"
+  },
+  "note": "Snapshot taken during audit; application source changes are tracked separately in Git."
+}

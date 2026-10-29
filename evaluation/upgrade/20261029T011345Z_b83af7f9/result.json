@@ -1,0 +1,13 @@
+{
+  "label": "react-state-final",
+  "command": [
+    "npm.cmd",
+    "--prefix",
+    "frontend",
+    "test"
+  ],
+  "started_at": "2026-10-29T01:13:45.859872+00:00",
+  "exit_code": 0,
+  "seconds": 2.106,
+  "finished_at": "2026-10-29T01:13:47.966733+00:00"
+}

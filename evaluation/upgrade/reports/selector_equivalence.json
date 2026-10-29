@@ -1,0 +1,9 @@
+{
+  "cases": 109,
+  "variants": 4,
+  "selected_ids_and_rendered_tokens_identical": true,
+  "provider_calls": 0,
+  "host_sha256": "78e01d50b60af8078a857222cda808e37e228057d38437e67048ae330e7c2573",
+  "container_sha256": "89cb2ceb9e2d3f4b3f990612578b42da99174e2d14807d48f9997840e61638d6",
+  "frozen_dataset_verified": "34b45e2a380011efae919a0d9d09e2a0ae541a816593a5ad0fb22b6fd9345ba2"
+}

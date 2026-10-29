@@ -1,0 +1,38 @@
+FF                                                                       [100%]
+================================== FAILURES ===================================
+_____ test_oversized_auth_body_is_rejected_before_validation_or_database ______
+
+    def test_oversized_auth_body_is_rejected_before_validation_or_database():
+        from app.main import app
+        with TestClient(app) as client:
+            response = client.post('/auth/login', content=b'x'*40000, headers={'Content-Type': 'application/json'})
+>       assert response.status_code == 413
+E       assert 403 == 413
+E        +  where 403 = <Response [403 Forbidden]>.status_code
+
+tests\test_request_size_limit.py:8: AssertionError
+---------------------------- Captured stderr call -----------------------------
+{"timestamp": "2026-10-28T07:55:30.874747+00:00", "event": "http_received", "request_id": null, "attempt_id": "e5173cc3-af51-4212-948d-4a876fa81d1a", "stage": "HTTP"}
+{"timestamp": "2026-10-28T07:55:30.881753+00:00", "event": "http_completed", "request_id": null, "attempt_id": "e5173cc3-af51-4212-948d-4a876fa81d1a", "stage": "HTTP", "duration_ms": 7, "http_status": 403}
+________________ test_chunked_upload_cannot_bypass_byte_limit _________________
+
+    def test_chunked_upload_cannot_bypass_byte_limit():
+        from app.main import app
+        with TestClient(app) as client:
+            response = client.post('/api/v1/admin/documents', content=iter([b'x'*700000, b'y'*700000]),
+                headers={'Content-Type': 'application/json', 'Origin': 'http://127.0.0.1:8001'})
+>       assert response.status_code == 413
+E       assert 422 == 413
+E        +  where 422 = <Response [422 Unprocessable Content]>.status_code
+
+tests\test_request_size_limit.py:17: AssertionError
+---------------------------- Captured stderr call -----------------------------
+{"timestamp": "2026-10-28T07:55:32.789220+00:00", "event": "http_received", "request_id": null, "attempt_id": "35304d5f-7a63-4a71-ad50-69415b574697", "stage": "HTTP"}
+{"timestamp": "2026-10-28T07:55:32.822492+00:00", "event": "http_completed", "request_id": null, "attempt_id": "35304d5f-7a63-4a71-ad50-69415b574697", "stage": "HTTP", "duration_ms": 26, "http_status": 422}
+------------------------------ Captured log call ------------------------------
+INFO     doctrace.qa:qa_logging.py:67 {"timestamp": "2026-10-28T07:55:32.789220+00:00", "event": "http_received", "request_id": null, "attempt_id": "35304d5f-7a63-4a71-ad50-69415b574697", "stage": "HTTP"}
+INFO     doctrace.qa:qa_logging.py:67 {"timestamp": "2026-10-28T07:55:32.822492+00:00", "event": "http_completed", "request_id": null, "attempt_id": "35304d5f-7a63-4a71-ad50-69415b574697", "stage": "HTTP", "duration_ms": 26, "http_status": 422}
+=========================== short test summary info ===========================
+FAILED tests/test_request_size_limit.py::test_oversized_auth_body_is_rejected_before_validation_or_database
+FAILED tests/test_request_size_limit.py::test_chunked_upload_cannot_bypass_byte_limit
+2 failed in 5.39s

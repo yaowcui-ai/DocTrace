@@ -1,0 +1,37 @@
+FFF                                                                      [100%]
+================================== FAILURES ===================================
+_____________ test_long_passphrases_are_accepted_without_trimming _____________
+
+user_engine = Engine(sqlite+pysqlite:///C:\Users\86139\AppData\Local\Temp\pytest-of-86139\pytest-537\test_long_passphrases_are_acce0\users.db)
+
+    def test_long_passphrases_are_accepted_without_trimming(user_engine):
+        from app.users import create_user, get_user_by_username
+        from app.passwords import verify_password
+        password = '  a much longer passphrase for a real user  '
+>       assert LoginRequest(username='alice', password=password).password.get_secret_value() == password
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       pydantic_core._pydantic_core.ValidationError: 1 validation error for LoginRequest
+E       password
+E         Value should have at most 10 items after validation, not 44 [type=too_long, input_value='  a much longer passphrase for a real user  ', input_type=str]
+E           For further information visit https://errors.pydantic.dev/2.14/v/too_long
+
+tests\test_upgrade_security.py:8: ValidationError
+_________ test_limiter_is_bounded_and_expires_without_background_jobs _________
+
+    def test_limiter_is_bounded_and_expires_without_background_jobs():
+>       from app.security_limits import SlidingWindowLimiter
+E       ModuleNotFoundError: No module named 'app.security_limits'
+
+tests\test_upgrade_security.py:14: ModuleNotFoundError
+_________________________ test_limiter_is_thread_safe _________________________
+
+    def test_limiter_is_thread_safe():
+>       from app.security_limits import SlidingWindowLimiter
+E       ModuleNotFoundError: No module named 'app.security_limits'
+
+tests\test_upgrade_security.py:26: ModuleNotFoundError
+=========================== short test summary info ===========================
+FAILED tests/test_upgrade_security.py::test_long_passphrases_are_accepted_without_trimming
+FAILED tests/test_upgrade_security.py::test_limiter_is_bounded_and_expires_without_background_jobs
+FAILED tests/test_upgrade_security.py::test_limiter_is_thread_safe - ModuleNo...
+3 failed in 3.24s

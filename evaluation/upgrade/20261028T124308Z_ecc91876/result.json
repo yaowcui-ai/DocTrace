@@ -1,0 +1,15 @@
+{
+  "label": "admin-stats-green",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_admin_request_stats.py",
+    "tests/test_upgrade_reports.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T12:43:08.525930+00:00",
+  "exit_code": 0,
+  "seconds": 3.975,
+  "finished_at": "2026-10-28T12:43:12.512383+00:00"
+}

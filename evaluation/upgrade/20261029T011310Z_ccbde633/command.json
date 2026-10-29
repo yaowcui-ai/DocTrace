@@ -1,0 +1,9 @@
+{
+  "label": "real-deployment-readonly-contract",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/verify_upgrade_delivery.py"
+  ],
+  "started_at": "2026-10-29T01:13:10.281212+00:00",
+  "exit_code": null
+}

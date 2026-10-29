@@ -1,0 +1,20 @@
+FF                                                                       [100%]
+================================== FAILURES ===================================
+_______ test_rate_limit_opens_circuit_instead_of_spending_more_requests _______
+
+    def test_rate_limit_opens_circuit_instead_of_spending_more_requests():
+>       from app.experiment_budget import ProviderBudget
+E       ModuleNotFoundError: No module named 'app.experiment_budget'
+
+tests\test_experiment_budget.py:5: ModuleNotFoundError
+_____________________ test_pacing_and_budget_are_explicit _____________________
+
+    def test_pacing_and_budget_are_explicit():
+>       from app.experiment_budget import ProviderBudget
+E       ModuleNotFoundError: No module named 'app.experiment_budget'
+
+tests\test_experiment_budget.py:14: ModuleNotFoundError
+=========================== short test summary info ===========================
+FAILED tests/test_experiment_budget.py::test_rate_limit_opens_circuit_instead_of_spending_more_requests
+FAILED tests/test_experiment_budget.py::test_pacing_and_budget_are_explicit
+2 failed in 11.76s

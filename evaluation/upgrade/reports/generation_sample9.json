@@ -1,0 +1,351 @@
+{
+  "source_sha256": "25fb5eebefea5de0f7dc7c38d4a57585519ac3658d100b74c25d162a5eef08c8",
+  "method": "frozen rubric and source/output comparison",
+  "external_blind_review": false,
+  "new_model_calls": 0,
+  "summary": {
+    "B0": {
+      "fully_correct_main_answers": 5,
+      "partial": 2,
+      "not_answered_correctly": 2,
+      "reviewed_cases": 9,
+      "citation_id_structure_passes": 9
+    },
+    "B1": {
+      "fully_correct_main_answers": 8,
+      "partial": 1,
+      "not_answered_correctly": 0,
+      "reviewed_cases": 9,
+      "citation_id_structure_passes": 9
+    },
+    "B2": {
+      "fully_correct_main_answers": 8,
+      "partial": 1,
+      "not_answered_correctly": 0,
+      "reviewed_cases": 9,
+      "citation_id_structure_passes": 9
+    },
+    "B3": {
+      "fully_correct_main_answers": 8,
+      "partial": 1,
+      "not_answered_correctly": 0,
+      "reviewed_cases": 9,
+      "citation_id_structure_passes": 9
+    }
+  },
+  "records": [
+    {
+      "case_id": "HR-U001",
+      "rationale": "双方正确区分日常time off与事件性较长leave。",
+      "variants": {
+        "B0": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B1": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B2": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B3": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        }
+      }
+    },
+    {
+      "case_id": "HR-U002",
+      "rationale": "双方依据休假理念说明知识集中、文档化与交接；未给虚构量化收益。",
+      "variants": {
+        "B0": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B1": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B2": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B3": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        }
+      }
+    },
+    {
+      "case_id": "HR-U003",
+      "rationale": "B0在最终字符预算上下文缺少30天规则，保守拒答；B3给出30天与Compass路径。",
+      "variants": {
+        "B0": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 0,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": "context_organization"
+        },
+        "B1": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B2": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B3": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        }
+      },
+      "extra_claim_flag": "B3的“并非所有申请获批”可能混淆PTO审批与记录更正范围；不计作主结论错误，但需限制无关扩展。"
+    },
+    {
+      "case_id": "HR-U004",
+      "rationale": "B0缺少经理48小时和逐级升级依据而拒答；B3保留二者。",
+      "variants": {
+        "B0": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 0,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": "context_organization"
+        },
+        "B1": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B2": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B3": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        }
+      }
+    },
+    {
+      "case_id": "HR-U005",
+      "rationale": "B0未取到全球公司规则而以地区说明作部分回答；B3找到born-or-newly-adopted条件，但据出生时间直接断言无资格，未保留任职后收养的可能。",
+      "variants": {
+        "B0": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 1,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": "partial_answer_or_scope"
+        },
+        "B1": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 1,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": "generation_condition_scope"
+        },
+        "B2": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 1,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": "generation_condition_scope"
+        },
+        "B3": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 1,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": "generation_condition_scope"
+        }
+      }
+    },
+    {
+      "case_id": "HR-U028",
+      "rationale": "双方未提供他人工时，说明公开政策不含个人记录和受限分享规则。",
+      "variants": {
+        "B0": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B1": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B2": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B3": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        }
+      }
+    },
+    {
+      "case_id": "HR-U006",
+      "rationale": "双方给出开始休假后15个自然日并保留准备提供的措辞。",
+      "variants": {
+        "B0": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B1": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B2": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B3": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        }
+      }
+    },
+    {
+      "case_id": "HR-U007",
+      "rationale": "双方给出全球福利例外和实体/PEO额外福利范围。",
+      "variants": {
+        "B0": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B1": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B2": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B3": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        }
+      }
+    },
+    {
+      "case_id": "HR-U008",
+      "rationale": "B0用coaching及Parentaly局部安排解释一般规则，范围表达混杂；B3给出一般本人支付及账单模式例外。",
+      "variants": {
+        "B0": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 1,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": "partial_answer_or_scope"
+        },
+        "B1": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B2": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        },
+        "B3": {
+          "status": "reviewed",
+          "answer_correctness_0_to_2": 2,
+          "citation_ids_exist": true,
+          "citation_semantics": "core claim source-checked; not an exhaustive all-sentence precision score",
+          "failure_stage": null
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Nine cases from the then-scorable subset; not full112-case answer accuracy.",
+    "B1/B2/B3 reuse identical context answers; do not count their copies as independent generation trials.",
+    "Citation ID validity is not semantic citation precision; no exhaustive per-claim precision number reported.",
+    "No prompt/parameter updates were made from these test outcomes."
+  ]
+}

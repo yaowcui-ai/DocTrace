@@ -1,0 +1,22 @@
+FF                                                                       [100%]
+================================== FAILURES ===================================
+___________ test_snapshot_refuses_changed_bytes_before_compilation ____________
+
+tmp_path = WindowsPath('C:/Users/86139/AppData/Local/Temp/pytest-of-86139/pytest-645/test_snapshot_refuses_changed_0')
+
+    def test_snapshot_refuses_changed_bytes_before_compilation(tmp_path):
+>       from app.native_snapshot import load_selector
+E       ModuleNotFoundError: No module named 'app.native_snapshot'
+
+tests\test_native_snapshot.py:8: ModuleNotFoundError
+_____ test_native_snapshot_reranks_before_topk_and_counts_rendered_tokens _____
+
+    def test_native_snapshot_reranks_before_topk_and_counts_rendered_tokens():
+>       from app.native_snapshot import replay_rows
+E       ModuleNotFoundError: No module named 'app.native_snapshot'
+
+tests\test_native_snapshot.py:16: ModuleNotFoundError
+=========================== short test summary info ===========================
+FAILED tests/test_native_snapshot.py::test_snapshot_refuses_changed_bytes_before_compilation
+FAILED tests/test_native_snapshot.py::test_native_snapshot_reranks_before_topk_and_counts_rendered_tokens
+2 failed in 3.18s

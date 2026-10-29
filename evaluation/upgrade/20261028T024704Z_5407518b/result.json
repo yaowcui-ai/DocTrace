@@ -1,0 +1,14 @@
+{
+  "label": "ablation-red",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_ablation_replay.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T02:47:04.026938+00:00",
+  "exit_code": 1,
+  "seconds": 6.369,
+  "finished_at": "2026-10-28T02:47:10.400778+00:00"
+}

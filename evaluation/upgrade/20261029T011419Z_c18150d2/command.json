@@ -1,0 +1,24 @@
+{
+  "label": "generation-supplement-three-missing-types",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/run_upgrade_generation.py",
+    "--execute",
+    "--source",
+    "evaluation/upgrade/new_retrieval/20261028T074830Z_2d0d3d18/assembled_20261029T005711Z_136e89.json",
+    "--selection",
+    "evaluation/upgrade/reports/retrieval_internal_109_container.json",
+    "--max-cases",
+    "3",
+    "--max-calls",
+    "6",
+    "--case",
+    "HR-U099",
+    "--case",
+    "HR-U104",
+    "--case",
+    "HR-U106"
+  ],
+  "started_at": "2026-10-29T01:14:19.638720+00:00",
+  "exit_code": null
+}

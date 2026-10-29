@@ -1,0 +1,13 @@
+29.8.2
+ Container doctrace-managed-v1-lightrag_managed-1 Running 
+ Container doctrace-upgrade-mysql-1 Running 
+ Container doctrace-upgrade-app-1 Running 
+ Container doctrace-upgrade-worker-1 Running 
+ Container doctrace-upgrade-mysql-1 Waiting 
+ Container doctrace-upgrade-mysql-1 Healthy 
+ Container doctrace-upgrade-mysql-1 Waiting 
+ Container doctrace-upgrade-app-1 Waiting 
+ Container doctrace-upgrade-mysql-1 Healthy 
+ Container doctrace-upgrade-app-1 Healthy 
+Workspace: http://127.0.0.1:8005/workspace/
+Frozen corpus questions also require the existing 9624 service; managed questions use 9631.

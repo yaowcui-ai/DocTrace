@@ -1,0 +1,145 @@
+{
+  "kind": "executed_engineering_evidence",
+  "checks": [
+    {
+      "label": "react-review-build",
+      "exit_code": 0,
+      "seconds": 3.683,
+      "artifact": "evaluation/upgrade/20261029T005927Z_b2da1523",
+      "command": [
+        "npm.cmd",
+        "--prefix",
+        "frontend",
+        "run",
+        "build"
+      ]
+    },
+    {
+      "label": "react-pagination-e2e-isolated",
+      "exit_code": 0,
+      "seconds": 36.097,
+      "artifact": "evaluation/upgrade/20261029T011021Z_01bdd7c0",
+      "command": [
+        "npm.cmd",
+        "--prefix",
+        "frontend",
+        "run",
+        "test:e2e"
+      ]
+    },
+    {
+      "label": "upgrade-final-docker-build",
+      "exit_code": 0,
+      "seconds": 60.816,
+      "artifact": "evaluation/upgrade/20261029T011042Z_3538da25",
+      "command": [
+        "docker",
+        "compose",
+        "--env-file",
+        "runtime/upgrade/.env",
+        "-f",
+        "deploy/compose.upgrade.yml",
+        "--profile",
+        "managed-worker",
+        "up",
+        "-d",
+        "--build",
+        "app",
+        "worker"
+      ]
+    },
+    {
+      "label": "upgrade-final-backend",
+      "exit_code": 0,
+      "seconds": 95.391,
+      "artifact": "evaluation/upgrade/20261029T011051Z_160732eb",
+      "command": [
+        ".\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=evaluation/upgrade_backend_final_20261029_v2.xml"
+      ]
+    },
+    {
+      "label": "upgrade-final-mysql",
+      "exit_code": 0,
+      "seconds": 31.333,
+      "artifact": "evaluation/upgrade/20261029T011102Z_52f95c52",
+      "command": [
+        ".\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_mysql_upgrade.py",
+        "-q"
+      ]
+    },
+    {
+      "label": "real-deployment-readonly-contract",
+      "exit_code": 0,
+      "seconds": 2.241,
+      "artifact": "evaluation/upgrade/20261029T011310Z_ccbde633",
+      "command": [
+        ".\\.venv\\Scripts\\python.exe",
+        "scripts/verify_upgrade_delivery.py"
+      ]
+    },
+    {
+      "label": "legacy-js-final",
+      "exit_code": 0,
+      "seconds": 32.297,
+      "artifact": "evaluation/upgrade/20261029T011313Z_b78ea652",
+      "command": [
+        "npm.cmd",
+        "run",
+        "test:frontend"
+      ]
+    },
+    {
+      "label": "final-source-preservation",
+      "exit_code": 0,
+      "seconds": 7.864,
+      "artifact": "evaluation/upgrade/20261029T011337Z_50415fbd",
+      "command": [
+        ".\\.venv\\Scripts\\python.exe",
+        "scripts/audit_upgrade_sources.py"
+      ]
+    },
+    {
+      "label": "react-state-final",
+      "exit_code": 0,
+      "seconds": 2.106,
+      "artifact": "evaluation/upgrade/20261029T011345Z_b83af7f9",
+      "command": [
+        "npm.cmd",
+        "--prefix",
+        "frontend",
+        "test"
+      ]
+    },
+    {
+      "label": "upgrade-start-script-fixed",
+      "exit_code": 0,
+      "seconds": 4.647,
+      "artifact": "evaluation/upgrade/20261029T012325Z_6c841e13",
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        "scripts/start_upgrade.ps1",
+        "-NoBuild"
+      ]
+    }
+  ],
+  "provider_calls_in_these_checks": 0,
+  "python_passed": 1076,
+  "mysql_passed": 3,
+  "playwright_flows_passed": 3,
+  "legacy_js_passed": 86,
+  "react_state_passed": 7,
+  "scope": "Mock provider in API/browser tests; real deployed HTTP/MySQL read checks separately. No claim of production readiness.",
+  "deployment_checks": 24,
+  "public_checkout_python_passed": 1076,
+  "public_checkout_browser_flows_passed": 3,
+  "public_checkout_without_private_env": true
+}

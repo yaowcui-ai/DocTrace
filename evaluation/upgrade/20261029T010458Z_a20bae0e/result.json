@@ -1,0 +1,17 @@
+{
+  "label": "host-selector-61-equivalence",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "app.ablation_replay",
+    "--host-snapshot",
+    "--source",
+    "evaluation/upgrade/new_retrieval/20261028T074830Z_2d0d3d18/assembled_20261028T122615Z_3a61fe.json",
+    "--output",
+    "evaluation/upgrade/reports/retrieval_internal_61_host.json"
+  ],
+  "started_at": "2026-10-29T01:04:58.779176+00:00",
+  "exit_code": 0,
+  "seconds": 21.599,
+  "finished_at": "2026-10-29T01:05:20.372456+00:00"
+}

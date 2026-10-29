@@ -1,0 +1,11 @@
+{
+  "label": "source-audit",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/audit_upgrade_sources.py"
+  ],
+  "started_at": "2026-10-28T02:37:38.638006+00:00",
+  "exit_code": 0,
+  "seconds": 3.132,
+  "finished_at": "2026-10-28T02:37:41.772483+00:00"
+}

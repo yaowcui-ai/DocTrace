@@ -1,0 +1,135 @@
+HR-U001 reuse existing attempt: completed
+HR-U002 reuse existing attempt: completed
+HR-U003 reuse existing attempt: completed
+HR-U004 reuse existing attempt: completed
+HR-U005 reuse existing attempt: completed
+HR-U006 reuse existing attempt: completed
+HR-U007 reuse existing attempt: completed
+HR-U008 reuse existing attempt: completed
+HR-U009 reuse existing attempt: completed
+HR-U010 reuse existing attempt: completed
+HR-U011 reuse existing attempt: completed
+HR-U012 reuse existing attempt: completed
+HR-U013 reuse existing attempt: completed
+HR-U014 reuse existing attempt: completed
+HR-U015 reuse existing attempt: completed
+HR-U016 reuse existing attempt: completed
+HR-U017 reuse existing attempt: completed
+HR-U018 reuse existing attempt: completed
+HR-U019 reuse existing attempt: completed
+HR-U020 reuse existing attempt: completed
+HR-U021 reuse existing attempt: completed
+HR-U022 reuse existing attempt: completed
+HR-U023 reuse existing attempt: completed
+HR-U024 reuse existing attempt: completed
+HR-U026 reuse existing attempt: completed
+HR-U027 reuse existing attempt: completed
+HR-U028 reuse existing attempt: completed
+HR-U029 reuse existing attempt: completed
+HR-U030 reuse existing attempt: completed
+HR-U031 reuse existing attempt: rerank_failed
+HR-U032 reuse existing attempt: rerank_failed
+HR-U033 reuse existing attempt: completed
+HR-U034 reuse existing attempt: rerank_failed
+HR-U035 reuse existing attempt: rerank_failed
+HR-U036 reuse existing attempt: completed
+HR-U037 reuse existing attempt: completed
+HR-U038 reuse existing attempt: rerank_failed
+HR-U039 reuse existing attempt: rerank_failed
+HR-U040 reuse existing attempt: completed
+HR-U041 reuse existing attempt: rerank_failed
+HR-U042 reuse existing attempt: completed
+HR-U043 reuse existing attempt: completed
+HR-U044 reuse existing attempt: rerank_failed
+HR-U045 reuse existing attempt: completed
+HR-U046 reuse existing attempt: rerank_failed
+HR-U047 reuse existing attempt: completed
+HR-U048 reuse existing attempt: rerank_failed
+HR-U049 reuse existing attempt: rerank_failed
+HR-U050 reuse existing attempt: rerank_failed
+HR-U051 reuse existing attempt: completed
+HR-U052 reuse existing attempt: rerank_failed
+HR-U053 reuse existing attempt: completed
+HR-U054 reuse existing attempt: rerank_failed
+HR-U055 reuse existing attempt: rerank_failed
+HR-U056 reuse existing attempt: completed
+HR-U057 reuse existing attempt: completed
+HR-U058 reuse existing attempt: rerank_failed
+HR-U059 reuse existing attempt: completed
+HR-U060 reuse existing attempt: rerank_failed
+HR-U061 reuse existing attempt: completed
+HR-U062 reuse existing attempt: rerank_failed
+HR-U063 reuse existing attempt: rerank_failed
+HR-U064 reuse existing attempt: completed
+HR-U065 reuse existing attempt: rerank_failed
+HR-U066 reuse existing attempt: rerank_failed
+HR-U067 reuse existing attempt: completed
+HR-U068 reuse existing attempt: rerank_failed
+HR-U069 reuse existing attempt: completed
+HR-U070 reuse existing attempt: completed
+HR-U071 reuse existing attempt: rerank_failed
+HR-U072 reuse existing attempt: completed
+HR-U073 reuse existing attempt: rerank_failed
+HR-U074 reuse existing attempt: completed
+HR-U075 reuse existing attempt: rerank_failed
+HR-U076 reuse existing attempt: completed
+HR-U077 reuse existing attempt: rerank_failed
+HR-U078 reuse existing attempt: rerank_failed
+HR-U079 reuse existing attempt: completed
+HR-U080 reuse existing attempt: rerank_failed
+HR-U081 reuse existing attempt: rerank_failed
+HR-U082 reuse existing attempt: rerank_failed
+HR-U083 reuse existing attempt: completed
+HR-U084 reuse existing attempt: rerank_failed
+HR-U085 reuse existing attempt: completed
+HR-U086 reuse existing attempt: rerank_failed
+HR-U087 reuse existing attempt: rerank_failed
+HR-U088 reuse existing attempt: rerank_failed
+HR-U089 reuse existing attempt: completed
+HR-U090 reuse existing attempt: rerank_failed
+HR-U091 reuse existing attempt: retrieval_submission_started
+HR-U092 completed candidates 136 retrieval_s 5.418
+Pacing rerank request for 32.5 seconds
+HR-U093 completed candidates 114 retrieval_s 5.029
+Pacing rerank request for 31.1 seconds
+HR-U094 completed candidates 64 retrieval_s 5.582
+Pacing rerank request for 33.3 seconds
+HR-U095 completed candidates 86 retrieval_s 5.016
+Pacing rerank request for 34.2 seconds
+HR-U096 completed candidates 90 retrieval_s 5.347
+Pacing rerank request for 34.4 seconds
+HR-U097 completed candidates 187 retrieval_s 5.33
+Pacing rerank request for 27.5 seconds
+HR-U098 completed candidates 104 retrieval_s 9.445
+Pacing rerank request for 33.9 seconds
+HR-U099 completed candidates 125 retrieval_s 4.405
+Pacing rerank request for 34.5 seconds
+HR-U100 completed candidates 110 retrieval_s 4.355
+Pacing rerank request for 34.8 seconds
+HR-U101 completed candidates 85 retrieval_s 4.644
+Pacing rerank request for 35.6 seconds
+HR-U102 completed candidates 143 retrieval_s 4.35
+Pacing rerank request for 33.8 seconds
+HR-U103 completed candidates 126 retrieval_s 4.534
+Pacing rerank request for 23.7 seconds
+HR-U104 completed candidates 188 retrieval_s 14.123
+Pacing rerank request for 30.0 seconds
+HR-U105 completed candidates 111 retrieval_s 6.114
+Pacing rerank request for 32.3 seconds
+HR-U106 completed candidates 127 retrieval_s 6.685
+Pacing rerank request for 30.1 seconds
+HR-U107 completed candidates 99 retrieval_s 5.15
+Pacing rerank request for 35.7 seconds
+HR-U108 completed candidates 127 retrieval_s 3.916
+Pacing rerank request for 33.1 seconds
+HR-U109 rerank_failed candidates 81 retrieval_s 4.426
+Pacing rerank request for 35.6 seconds
+HR-U110 completed candidates 114 retrieval_s 4.289
+Pacing rerank request for 34.2 seconds
+HR-U111 completed candidates 108 retrieval_s 4.81
+Pacing rerank request for 34.1 seconds
+HR-U112 completed candidates 134 retrieval_s 5.0
+Pacing rerank request for 32.5 seconds
+HR-U113 completed candidates 88 retrieval_s 6.25
+Batch: C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\evaluation\upgrade\new_retrieval\20261028T074830Z_2d0d3d18\batch_20261028T123704Z_b7b414.json
+Successful: 75 failed: 37 new rerank requests: 22

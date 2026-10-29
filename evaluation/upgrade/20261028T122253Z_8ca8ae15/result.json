@@ -1,0 +1,17 @@
+{
+  "label": "docker-upgrade-build-final",
+  "command": [
+    "docker",
+    "compose",
+    "--env-file",
+    "runtime/upgrade/.env",
+    "-f",
+    "deploy/compose.upgrade.yml",
+    "build",
+    "app"
+  ],
+  "started_at": "2026-10-28T12:22:53.658487+00:00",
+  "exit_code": 0,
+  "seconds": 119.758,
+  "finished_at": "2026-10-28T12:24:53.419548+00:00"
+}

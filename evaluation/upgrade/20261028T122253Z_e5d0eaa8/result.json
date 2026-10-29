@@ -1,0 +1,14 @@
+{
+  "label": "full-backend-final",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--junitxml=evaluation/upgrade_final_backend.xml"
+  ],
+  "started_at": "2026-10-28T12:22:53.647423+00:00",
+  "exit_code": 0,
+  "seconds": 68.465,
+  "finished_at": "2026-10-28T12:24:02.116791+00:00"
+}

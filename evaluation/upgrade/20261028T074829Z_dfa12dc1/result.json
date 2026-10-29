@@ -1,0 +1,16 @@
+{
+  "label": "new-test-pilot-3",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/run_upgrade_retrieval.py",
+    "--execute",
+    "--limit",
+    "3",
+    "--max-rerank-requests",
+    "3"
+  ],
+  "started_at": "2026-10-28T07:48:29.617204+00:00",
+  "exit_code": 0,
+  "seconds": 31.883,
+  "finished_at": "2026-10-28T07:49:01.508387+00:00"
+}

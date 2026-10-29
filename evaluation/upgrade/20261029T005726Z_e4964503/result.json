@@ -1,0 +1,16 @@
+{
+  "label": "internal-test-109-ablation",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "app.ablation_replay",
+    "--source",
+    "evaluation/upgrade/new_retrieval/20261028T074830Z_2d0d3d18/assembled_20261029T005711Z_136e89.json",
+    "--output",
+    "evaluation/upgrade/reports/retrieval_internal_109.json"
+  ],
+  "started_at": "2026-10-29T00:57:26.195188+00:00",
+  "exit_code": 1,
+  "seconds": 3.197,
+  "finished_at": "2026-10-29T00:57:29.393646+00:00"
+}

@@ -1,0 +1,4080 @@
+{
+  "dataset_id": "hr_upgrade_internal_test_v1",
+  "corpus_id": "gitlab_hr_v3",
+  "split": "test",
+  "external_blind_test": false,
+  "cases": [
+    {
+      "id": "HR-U001",
+      "question": "手册里的 time off 与 leave 是按什么区别组织的？",
+      "expected_answer": "主要按时长和目的区分：日常短期休假与针对特定生活事件的较长批准休假。",
+      "evidence_ids": [
+        "doc-3e9bcae5517d88a9e0031549492c4091-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_time_away_overview.md",
+          "quote": "the distinction is about duration and purpose: regular time away versus extended, circumstance-specific absences.",
+          "sha256": "84c7a6241e0fa19dad0c9a561877416313be6fe4be2ab004ec5836e77bb2eab0",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/"
+        }
+      ],
+      "question_type": "confusable_policies",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "absence",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U001-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_time_away_overview.md",
+              "quote": "the distinction is about duration and purpose: regular time away versus extended, circumstance-specific absences."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U002",
+      "question": "为什么休假也有助于降低团队对某个员工的单点依赖？",
+      "expected_answer": "长期不休假会让工作知识集中在一个人身上，增加单点依赖。",
+      "evidence_ids": [
+        "doc-cf5fae93cbfaf015a56ba41c4421929d-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_time_away_philosophy.md",
+          "quote": "When team members don’t take time away, they become the only ones who understand their work.",
+          "sha256": "aa561bb07b07797658e9029b0d34bd3d9477c986c0e5fc35bcf50e74c500ba66",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-away-philosophy/"
+        }
+      ],
+      "question_type": "simple_fact",
+      "answerable": true,
+      "difficulty": "easy",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "absence",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U002-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_time_away_philosophy.md",
+              "quote": "When team members don’t take time away, they become the only ones who understand their work."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U003",
+      "question": "我录错了40天前的休假记录，还能自己在 Workday 改吗？",
+      "expected_answer": "自行修改仅覆盖未来记录和过去30天内的记录；40天前的记录需通过Compass向People Connect提交请求。",
+      "evidence_ids": [
+        "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_time_off_types.md",
+          "quote": "Team members can edit future-dated time off entries and any entries made up to 30 days in the past. Older entries will require a submission to the People Connect team via Compass.",
+          "sha256": "7b83ede2a904763770fdb4c9862094e40ecdf50c24aa9f1cece6b6704a371d29",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "absence",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U003-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "quote": "Team members can edit future-dated time off entries and any entries made up to 30 days in the past. Older entries will require a submission to the People Connect team via Compass."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U004",
+      "question": "经理要求改动我的PTO计划时，应多久内反馈，协商不成找谁？",
+      "expected_answer": "应在48小时内提出并说明受影响目标或结果；无法达成妥协时升级给经理的经理。",
+      "evidence_ids": [
+        "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_time_off_types.md",
+          "quote": "If a manager needs to request changes to your PTO plans, they will do so within 48 hours and specify which goal or result may be impacted.\n  - If no compromise can be reached, escalate to your manager’s manager.",
+          "sha256": "7b83ede2a904763770fdb4c9862094e40ecdf50c24aa9f1cece6b6704a371d29",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/"
+        }
+      ],
+      "question_type": "composite",
+      "answerable": true,
+      "difficulty": "hard",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "absence",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U004-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "quote": "If a manager needs to request changes to your PTO plans, they will do so within 48 hours and specify which goal or result may be impacted.\n  - If no compromise can be reached, escalate to your manager’s manager."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U005",
+      "question": "孩子在我入职GitLab之前出生，我能仅凭第一天即可享福利这一条申请这次公司育儿假吗？",
+      "expected_answer": "不能据此直接认定符合：该福利从第一天可用，但要求孩子在GitLab任职期间出生或新收养。",
+      "evidence_ids": [
+        "doc-b961901b0a285c4896066cde60fa927d-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_leave_types.md",
+          "quote": "This benefit is available from your first day of employment, provided your child was born or newly adopted during your employment at GitLab.",
+          "sha256": "633d6a2864fd04b62329f30ca3a0f808f509dff69695b64a3f1a6b5ed50d4985",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/leave-types/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "absence",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U005-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_leave_types.md",
+              "quote": "This benefit is available from your first day of employment, provided your child was born or newly adopted during your employment at GitLab."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U006",
+      "question": "育儿假开始后，出生或收养关系证明通常要在多少天内提供？",
+      "expected_answer": "应准备在假期开始后15个自然日内提供出生、亲属关系或收养证明。",
+      "evidence_ids": [
+        "doc-b961901b0a285c4896066cde60fa927d-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_leave_types.md",
+          "quote": "please be prepared to share proof of birth/relationship and/or adoption within 15 calendar days from the start of your leave.",
+          "sha256": "633d6a2864fd04b62329f30ca3a0f808f509dff69695b64a3f1a6b5ed50d4985",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/leave-types/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "absence",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U006-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_leave_types.md",
+              "quote": "please be prepared to share proof of birth/relationship and/or adoption within 15 calendar days from the start of your leave."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U007",
+      "question": "Company-Wide Benefits和Entity-Specific Benefits的适用范围有什么区别？",
+      "expected_answer": "前者原则上适用于全球成员，除非另有说明；后者是设有实体或使用PEO的国家成员可获得的额外福利。",
+      "evidence_ids": [
+        "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_general_entity_benefits.md",
+          "quote": "**Company-Wide Benefits** are available to all GitLab team members worldwide, regardless of location (unless otherwise stated).",
+          "sha256": "bc3fc73122458b325766fc1d2dcbb5ff0b3daff448e9ca05a0e4b7c52428a27d",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/"
+        },
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_general_entity_benefits.md",
+          "quote": "**Entity-Specific Benefits** are additional benefits available to team members in countries where GitLab has established entities or uses Professional Employer Organizations (PEOs).",
+          "sha256": "bc3fc73122458b325766fc1d2dcbb5ff0b3daff448e9ca05a0e4b7c52428a27d",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/"
+        }
+      ],
+      "question_type": "confusable_policies",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U007-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_general_entity_benefits.md",
+              "quote": "**Company-Wide Benefits** are available to all GitLab team members worldwide, regardless of location (unless otherwise stated)."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-U007-E2",
+          "alternatives": [
+            {
+              "file_path": "hr_general_entity_benefits.md",
+              "quote": "**Entity-Specific Benefits** are additional benefits available to team members in countries where GitLab has established entities or uses Professional Employer Organizations (PEOs)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U008",
+      "question": "获批的学习费用一般由谁先行支付？是否所有机会类型都一样？",
+      "expected_answer": "一般由提出请求的成员支付，但某些具体机会采用不同账单模式，不能一概而论。",
+      "evidence_ids": [
+        "doc-3aae0be99d59ad4e5951466f70096abb-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_growth_development.md",
+          "quote": "In most cases, individual G&D requests should be paid for by the team member who submitted the request unless the specific opportunity type follows a different billing model.",
+          "sha256": "0412dd420b4bae04c4d2f188475d43a61d00d4e78fee9082150907193e55e358",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/growth-and-development/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U008-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "quote": "In most cases, individual G&D requests should be paid for by the team member who submitted the request unless the specific opportunity type follows a different billing model."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U009",
+      "question": "我因公务出差取消留下未用机票，能把剩余票额转成个人旅行福利吗？",
+      "expected_answer": "不能个人受益，应尽可能用于后续公务；确认无法使用时通过Compass的旅行费用入口请求处理。",
+      "evidence_ids": [
+        "doc-c375d1c29d77648fddd9374367e78059-chunk-002"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_travel_expenses.md",
+          "quote": "Unused tickets must be used for future business travel whenever possible. If the Team Member knows they won’t be able to use the ticket, please submit a request under the `Expenses -> Travel Related Expenses` page of [Compass]",
+          "sha256": "2e1562522a893e1df650dcfb3e2a8a8b45ce3fbccd35e1ccb9c86b3febc3e5ed",
+          "source_url": "https://handbook.gitlab.com/handbook/finance/expenses/"
+        },
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_travel_expenses.md",
+          "quote": "Team Members may not personally benefit from any unused airline tickets.",
+          "sha256": "2e1562522a893e1df650dcfb3e2a8a8b45ce3fbccd35e1ccb9c86b3febc3e5ed",
+          "source_url": "https://handbook.gitlab.com/handbook/finance/expenses/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "travel_expenses",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U009-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "quote": "Unused tickets must be used for future business travel whenever possible. If the Team Member knows they won’t be able to use the ticket, please submit a request under the `Expenses -> Travel Related Expenses` page of [Compass]"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-U009-E2",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "quote": "Team Members may not personally benefit from any unused airline tickets."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U010",
+      "question": "差旅机票触发超标提醒后，经理24小时既没批准也没拒绝，会怎样？",
+      "expected_answer": "按该政策，24小时没有人工批准或拒绝时，预订会自动被接受。",
+      "evidence_ids": [
+        "doc-c375d1c29d77648fddd9374367e78059-chunk-003"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_travel_expenses.md",
+          "quote": "After 24 hours without any manual action (approved/denied) the booking will automatically be accepted.",
+          "sha256": "2e1562522a893e1df650dcfb3e2a8a8b45ce3fbccd35e1ccb9c86b3febc3e5ed",
+          "source_url": "https://handbook.gitlab.com/handbook/finance/expenses/"
+        }
+      ],
+      "question_type": "simple_fact",
+      "answerable": true,
+      "difficulty": "easy",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "travel_expenses",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U010-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "quote": "After 24 hours without any manual action (approved/denied) the booking will automatically be accepted."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U011",
+      "question": "公务出行想用个人里程升舱，里程相关费用能向公司报销吗？",
+      "expected_answer": "可以使用个人里程或积分升舱，但有关费用不予报销。",
+      "evidence_ids": [
+        "doc-c375d1c29d77648fddd9374367e78059-chunk-002"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_travel_expenses.md",
+          "quote": "Team Members may use personal frequent flyer miles or points for upgrades on business travel, however, Team Members will not be reimbursed for any respective charges.",
+          "sha256": "2e1562522a893e1df650dcfb3e2a8a8b45ce3fbccd35e1ccb9c86b3febc3e5ed",
+          "source_url": "https://handbook.gitlab.com/handbook/finance/expenses/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "travel_expenses",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U011-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "quote": "Team Members may use personal frequent flyer miles or points for upgrades on business travel, however, Team Members will not be reimbursed for any respective charges."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U012",
+      "question": "加拿大福利里，家属保障能覆盖domestic partner吗，入职多久开始？",
+      "expected_answer": "该计划列明配偶、受抚养人和domestic partners符合条件，保障从入职日起生效。",
+      "evidence_ids": [
+        "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_canada_benefits.md",
+          "quote": "- Coverage effective from hire date\n- Spouses, dependents, and domestic partners eligible",
+          "sha256": "f5c263e8fda50a1c3f0893cd5cc2ca31a82693bf279f0914f9801bbd7d41b2d1",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits/"
+        }
+      ],
+      "question_type": "composite",
+      "answerable": true,
+      "difficulty": "hard",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U012-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_canada_benefits.md",
+              "quote": "- Coverage effective from hire date\n- Spouses, dependents, and domestic partners eligible"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U013",
+      "question": "我和配偶都是GitLab美国员工，能在公司医疗计划中互为家属而重复获得两份覆盖吗？",
+      "expected_answer": "不能；本人和符合条件家属均在GitLab任职时，在公司计划下只能被覆盖一次。",
+      "evidence_ids": [
+        "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_us_benefits.md",
+          "quote": "If you and an eligible family member both work at GitLab, you can only be covered once under our plans",
+          "sha256": "7b0657ee58bde95be3469c99fe6b5f39e2bb68caa128c3376e0cf06662a904e3",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U013-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_us_benefits.md",
+              "quote": "If you and an eligible family member both work at GitLab, you can only be covered once under our plans"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U014",
+      "question": "已通过别处获得团体医疗保险的美国成员，主动放弃公司医疗险后每月补贴多少？还能参加牙科和视力计划吗？",
+      "expected_answer": "每月150美元，需要在PlanSource主动放弃医疗险；仍可参加牙科、视力及其他福利。",
+      "evidence_ids": [
+        "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_us_benefits.md",
+          "quote": "You can opt out and receive a **$150** monthly benefit allowance while still enrolling in dental, vision, and other benefits. You must actively waive medical coverage in PlanSource to receive this allowance.",
+          "sha256": "7b0657ee58bde95be3469c99fe6b5f39e2bb68caa128c3376e0cf06662a904e3",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U014-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_us_benefits.md",
+              "quote": "You can opt out and receive a **$150** monthly benefit allowance while still enrolling in dental, vision, and other benefits. You must actively waive medical coverage in PlanSource to receive this allowance."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U015",
+      "question": "荷兰屏幕工作眼镜的250欧元额度，是眼检和眼镜各250，还是二者合计？",
+      "expected_answer": "合计250欧元，覆盖与屏幕使用有关的眼检及电脑眼镜。",
+      "evidence_ids": [
+        "doc-f33f26865055ca2f25022b6c01fa2210-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_netherlands_benefits.md",
+          "quote": "The EUR 250 benefit amount is a combined cap covering both the eye test and computer glasses together.",
+          "sha256": "d8adbe6ff93ff89df9ec843100b95f189565511c858f30ca1267b275f9769bd0",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands/"
+        }
+      ],
+      "question_type": "confusable_policies",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U015-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_netherlands_benefits.md",
+              "quote": "The EUR 250 benefit amount is a combined cap covering both the eye test and computer glasses together."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U016",
+      "question": "荷兰养老金固定5%的缴费中，员工和GitLab各承担多少？",
+      "expected_answer": "员工2%，GitLab 3%。",
+      "evidence_ids": [
+        "doc-f33f26865055ca2f25022b6c01fa2210-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_netherlands_benefits.md",
+          "quote": "- Defined Contribution Agreement with 5% flat rate of pension base\n- You contribute 2%, GitLab contributes 3%",
+          "sha256": "d8adbe6ff93ff89df9ec843100b95f189565511c858f30ca1267b275f9769bd0",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands/"
+        }
+      ],
+      "question_type": "simple_fact",
+      "answerable": true,
+      "difficulty": "easy",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U016-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_netherlands_benefits.md",
+              "quote": "- Defined Contribution Agreement with 5% flat rate of pension base\n- You contribute 2%, GitLab contributes 3%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U017",
+      "question": "德国Support Fund与Direct Insurance相比，哪一种要求员工自己缴费才能获得匹配？",
+      "expected_answer": "Support Fund不要求员工缴费；Direct Insurance按员工缴费匹配，最高为可计养老金收入的1%。",
+      "evidence_ids": [
+        "doc-b19a268f9318b0a3010beca02fc989df-chunk-000",
+        "doc-b19a268f9318b0a3010beca02fc989df-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_germany_benefits.md",
+          "quote": "No employee contribution required",
+          "sha256": "727038bf92f6e0a9e1709a797d51f48c8e3fc523935d6c61a2bbe5b24885e760",
+          "source_url": "https://handbook.gitlab.com/handbook/entity/gmbh-germany/"
+        },
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_germany_benefits.md",
+          "quote": "GitLab matches your contributions up to 1% of pensionable income",
+          "sha256": "727038bf92f6e0a9e1709a797d51f48c8e3fc523935d6c61a2bbe5b24885e760",
+          "source_url": "https://handbook.gitlab.com/handbook/entity/gmbh-germany/"
+        }
+      ],
+      "question_type": "confusable_policies",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U017-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_germany_benefits.md",
+              "quote": "No employee contribution required"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-U017-E2",
+          "alternatives": [
+            {
+              "file_path": "hr_germany_benefits.md",
+              "quote": "GitLab matches your contributions up to 1% of pensionable income"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U018",
+      "question": "德国致命工伤或导致超过3天无法工作的事故，应在多久内向VBG报告？",
+      "expected_answer": "事故发生后三天内报告。",
+      "evidence_ids": [
+        "doc-b19a268f9318b0a3010beca02fc989df-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_germany_benefits.md",
+          "quote": "Accidents at work that are fatal or lead to an inability to work for more than 3 days must be reported within three days of the accident to our Berufsgenossenschaft VBG.",
+          "sha256": "727038bf92f6e0a9e1709a797d51f48c8e3fc523935d6c61a2bbe5b24885e760",
+          "source_url": "https://handbook.gitlab.com/handbook/entity/gmbh-germany/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U018-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_germany_benefits.md",
+              "quote": "Accidents at work that are fatal or lead to an inability to work for more than 3 days must be reported within three days of the accident to our Berufsgenossenschaft VBG."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U019",
+      "question": "法国居家远程工作场所如接受公司合规检查，员工应提前多久收到检查日期和时间？",
+      "expected_answer": "至少提前5个工作日。",
+      "evidence_ids": [
+        "doc-b344a586bcf3329526036b0689f6a13a-chunk-003"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_france_remote_work.md",
+          "quote": "The team member will be notified of the dates and times of the inspection at least 5 working days in advance.",
+          "sha256": "f907ebeb37b4a0ffbe924fec8aef4d776de220a8b8460b77ee86d1fe657bc2f1",
+          "source_url": "https://handbook.gitlab.com/handbook/people-policies/france-sas/remote-work-charter/"
+        }
+      ],
+      "question_type": "simple_fact",
+      "answerable": true,
+      "difficulty": "easy",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "workplace_safety",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U019-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_france_remote_work.md",
+              "quote": "The team member will be notified of the dates and times of the inspection at least 5 working days in advance."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U020",
+      "question": "法国远程工作安排是劳动合同的重要部分，公司可以单方面改成别的安排吗？",
+      "expected_answer": "该章程说安排的更改或终止需劳动合同双方批准。",
+      "evidence_ids": [
+        "doc-b344a586bcf3329526036b0689f6a13a-chunk-002",
+        "doc-b344a586bcf3329526036b0689f6a13a-chunk-003"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_france_remote_work.md",
+          "quote": "Considering that this remote work organisation is an essential part of the employment contract, it can only be changed or terminated upon approval of both parties to the employment contract.",
+          "sha256": "f907ebeb37b4a0ffbe924fec8aef4d776de220a8b8460b77ee86d1fe657bc2f1",
+          "source_url": "https://handbook.gitlab.com/handbook/people-policies/france-sas/remote-work-charter/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "workplace_safety",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U020-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_france_remote_work.md",
+              "quote": "Considering that this remote work organisation is an essential part of the employment contract, it can only be changed or terminated upon approval of both parties to the employment contract."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U021",
+      "question": "出于个人决定短居海外，能把旅费报销并使用Business Accident Travel Policy吗？",
+      "expected_answer": "不能；此类非岗位要求的短期停留不具备该商务事故保险及旅费报销资格。",
+      "evidence_ids": [
+        "doc-b17afeccd41e731df56fb176d8fd711d-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_relocation.md",
+          "quote": "Since any short-term stay is your decision and not required by GitLab as part of your role, you will not be eligible to use the [Business Accident Travel Policy](https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/#business-travel-emergency-assistance--accident-policy) or submit any expenses related to your travel.",
+          "sha256": "37852f65e0f94d8911cf38897c606fd20e23f599a98bf19daeece19de1f9d576",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/relocation/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "mobility",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U021-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_relocation.md",
+              "quote": "Since any short-term stay is your decision and not required by GitLab as part of your role, you will not be eligible to use the [Business Accident Travel Policy](https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/#business-travel-emergency-assistance--accident-policy) or submit any expenses related to your travel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U022",
+      "question": "长期搬迁申请可以填过去的搬家日期，追溯更新薪酬吗？",
+      "expected_answer": "不能追溯处理，应在申请搬迁时使用未来日期。",
+      "evidence_ids": [
+        "doc-b17afeccd41e731df56fb176d8fd711d-chunk-003"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_relocation.md",
+          "quote": "We will not be able to process retroactive dated relocations. Please only use future dates when applying for your relocation.",
+          "sha256": "37852f65e0f94d8911cf38897c606fd20e23f599a98bf19daeece19de1f9d576",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/relocation/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "mobility",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U022-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_relocation.md",
+              "quote": "We will not be able to process retroactive dated relocations. Please only use future dates when applying for your relocation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U023",
+      "question": "客户支持工单已经解决，下载到本地的客户数据还能留作以后参考吗？",
+      "expected_answer": "不能；数据须在工单解决后立即删除，并按要求记录数据处理活动。",
+      "evidence_ids": [
+        "doc-91f35df2b2275e3c5b2812ca77da55ec-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_acceptable_use_policy.md",
+          "quote": "Customer data must be promptly deleted immediately upon resolution of the support case",
+          "sha256": "85dbd949742a9a0958ee4326f1731586c61ca6261e5373080a920151e08f354b",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/acceptable-use-policy/"
+        },
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_acceptable_use_policy.md",
+          "quote": "All data handling activities must be logged and documented within the ZenDesk ticket",
+          "sha256": "85dbd949742a9a0958ee4326f1731586c61ca6261e5373080a920151e08f354b",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/acceptable-use-policy/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "acceptable_use",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U023-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_acceptable_use_policy.md",
+              "quote": "Customer data must be promptly deleted immediately upon resolution of the support case"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-U023-E2",
+          "alternatives": [
+            {
+              "file_path": "hr_acceptable_use_policy.md",
+              "quote": "All data handling activities must be logged and documented within the ZenDesk ticket"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U024",
+      "question": "有业务需要时，能直接用U盘拷贝公司电脑上的文件吗？",
+      "expected_answer": "默认禁止并被阻止；有业务需要应提出例外申请，由Corporate Security协调加密及密码保护设备。",
+      "evidence_ids": [
+        "doc-91f35df2b2275e3c5b2812ca77da55ec-chunk-003"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_acceptable_use_policy.md",
+          "quote": "The use of removable and external storage devices such as USB flash drives and external backup drives on company-managed devices is not allowed and is blocked by default. An exception request may be opened [here](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=usb_exception) if there is a business need for the use of an external storage device. Corporate Security will coordinate with requestors to determine the most suitable encryption-enabled device and configure encryption and password protection.",
+          "sha256": "85dbd949742a9a0958ee4326f1731586c61ca6261e5373080a920151e08f354b",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/acceptable-use-policy/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "acceptable_use",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U024-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_acceptable_use_policy.md",
+              "quote": "The use of removable and external storage devices such as USB flash drives and external backup drives on company-managed devices is not allowed and is blocked by default. An exception request may be opened [here](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=usb_exception) if there is a business need for the use of an external storage device. Corporate Security will coordinate with requestors to determine the most suitable encryption-enabled device and configure encryption and password protection."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U026",
+      "question": "无偿的副业项目是否可以不向经理申报？",
+      "expected_answer": "不可以；包括有偿及无偿的外部活动，开始前都应以书面形式向经理披露。",
+      "evidence_ids": [
+        "doc-5b8ae9fd61cf6e84bb8170104b7cfdd6-chunk-005"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_contracts_probation_periods.md",
+          "quote": "Before beginning outside employment, side projects, or other activities, whether paid or unpaid (collectively referred to as “outside activities”), you must disclose the activity in writing to your Manager",
+          "sha256": "28b61e98aa1ad406128e7c51eff8d70edbc6242d84d5be39b125159def2e7a09",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/contracts-probation-periods/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "employment_contracts",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U026-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_contracts_probation_periods.md",
+              "quote": "Before beginning outside employment, side projects, or other activities, whether paid or unpaid (collectively referred to as “outside activities”), you must disclose the activity in writing to your Manager"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U027",
+      "question": "招聘国家表里有星号，就表示当地所有岗位都能招聘吗？",
+      "expected_answer": "不是；星号标识该国家只限某些岗位招聘。",
+      "evidence_ids": [
+        "doc-f03f8bef9f806024302698252e1eb038-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_employment_solutions.md",
+          "quote": "In countries with a star (\\*) hiring is limited to only certain roles.",
+          "sha256": "7caeea387abdbc45de68db37af0c64efef0af0c850027b2840920e8cdb226966",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/employment-solutions/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "employment_contracts",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U027-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_employment_solutions.md",
+              "quote": "In countries with a star (\\*) hiring is limited to only certain roles."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U028",
+      "question": "请把荷兰WBSO工时表里其他开发者去年填的个人工时逐项列出来。",
+      "expected_answer": "不能从公开政策提供个人工时。政策说明表格只共享给需记工时的荷兰开发者、Total Rewards Analysts、Finance和WBSO顾问；需走获授权渠道。",
+      "evidence_ids": [
+        "doc-f03f8bef9f806024302698252e1eb038-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_employment_solutions.md",
+          "quote": "shared only with the developers that need to log their hours (located in the Netherlands), Total Rewards Analysts, Finance and the WBSO consultant.",
+          "sha256": "7caeea387abdbc45de68db37af0c64efef0af0c850027b2840920e8cdb226966",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/employment-solutions/"
+        }
+      ],
+      "question_type": "permission_restricted",
+      "answerable": false,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "employment_contracts",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U028-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_employment_solutions.md",
+              "quote": "shared only with the developers that need to log their hours (located in the Netherlands), Total Rewards Analysts, Finance and the WBSO consultant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U029",
+      "question": "GiveLab支持的志愿活动必须在本地现场参加吗？",
+      "expected_answer": "不必；政策同时鼓励当地社区、虚拟志愿活动以及团队活动中的志愿服务。",
+      "evidence_ids": [
+        "doc-6c98b4fe721e3a00147d514f8794f8dd-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_givelab_volunteer_initiatives.md",
+          "quote": "GitLab encourages team members to take part in volunteer initiatives that support their local communities, participate in virtual volunteer activities, and organize volunteer activities as part of team events and get togethers.",
+          "sha256": "1b950141551005fcee893dcc740a73ed5cdf8a8a7946d00df193aab0511469cf",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/givelab-volunteer-initiatives/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "community",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U029-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_givelab_volunteer_initiatives.md",
+              "quote": "GitLab encourages team members to take part in volunteer initiatives that support their local communities, participate in virtual volunteer activities, and organize volunteer activities as part of team events and get togethers."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U030",
+      "question": "Director和Senior Director该选Elevate还是Elevate+？",
+      "expected_answer": "导航页将Director和Senior Director列为Elevate+的对象，Elevate面向Manager和Senior Manager。",
+      "evidence_ids": [
+        "doc-ac2a7e3526ba91a5f3eb5bc1ef1759f5-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_elevate_programs.md",
+          "quote": "| [Elevate](https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevate/) | For Managers and Senior Managers. |",
+          "sha256": "7baab347438fe33aea3640d0ff8500ad1290d4275bc36e7cff090febae556e27",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/"
+        },
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_elevate_programs.md",
+          "quote": "| [Elevate+](https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevateplus/) | For Directors and Senior Directors |",
+          "sha256": "7baab347438fe33aea3640d0ff8500ad1290d4275bc36e7cff090febae556e27",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/"
+        }
+      ],
+      "question_type": "confusable_policies",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U030-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_elevate_programs.md",
+              "quote": "| [Elevate](https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevate/) | For Managers and Senior Managers. |"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-U030-E2",
+          "alternatives": [
+            {
+              "file_path": "hr_elevate_programs.md",
+              "quote": "| [Elevate+](https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevateplus/) | For Directors and Senior Directors |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U031",
+      "question": "Engineering分配的O’Reilly许可会永久保留吗？多久会回收，之后还可重申请吗？",
+      "expected_answer": "不是永久；访问三个月后回收以重分配，之后可重新申请。",
+      "evidence_ids": [
+        "doc-72ca97dea20ca10bf17ea0f861cae5e2-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_self_paced_learning.md",
+          "quote": "access will be removed after 3 months to reallocate seats/licenses to other users. If you would like access again in the future, you can re-request it.",
+          "sha256": "c1b59f8bd2a2fc33460c70ce8ea15c964fc3d9579cf2d74674bcaaacf42ff1d7",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/self-paced-learning/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U031-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_self_paced_learning.md",
+              "quote": "access will be removed after 3 months to reallocate seats/licenses to other users. If you would like access again in the future, you can re-request it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U032",
+      "question": "Google Cloud Skills Boost学习席位应从哪个系统申请？",
+      "expected_answer": "通过Lumos申请。",
+      "evidence_ids": [
+        "doc-72ca97dea20ca10bf17ea0f861cae5e2-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_self_paced_learning.md",
+          "quote": "If you would like a seat for Google Cloud Skills Boost, please request it via [Lumos]",
+          "sha256": "c1b59f8bd2a2fc33460c70ce8ea15c964fc3d9579cf2d74674bcaaacf42ff1d7",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/self-paced-learning/"
+        }
+      ],
+      "question_type": "simple_fact",
+      "answerable": true,
+      "difficulty": "easy",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U032-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_self_paced_learning.md",
+              "quote": "If you would like a seat for Google Cloud Skills Boost, please request it via [Lumos]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U033",
+      "question": "全部由IC组成的团队，可以申请Team Workshops吗？",
+      "expected_answer": "可以；该项目面向GitLab所有团队，包括IC和people leaders团队。",
+      "evidence_ids": [
+        "doc-325010f12f53e6b9c1ef3b6b61681256-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_team_workshops.md",
+          "quote": "The program is available to all teams at GitLab, including teams of individual contributors and people leaders.",
+          "sha256": "764b9b458391c5afd96dbe1113c897b67e92f656642b6f781f7dfed81681791b",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/team-workshops/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U033-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_team_workshops.md",
+              "quote": "The program is available to all teams at GitLab, including teams of individual contributors and people leaders."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U034",
+      "question": "请仅根据这份公开快照告诉我，我所在小组现在具体对应哪位PBP。",
+      "expected_answer": "无法确定具体当前对接人；这份公开页已迁移到Loop的People Business Partner Team页面，应查获授权的内部最新页面。",
+      "evidence_ids": [
+        "doc-1832ac44d3c372d24142b74e30b8646e-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_people_business_partners.md",
+          "quote": "This page has been moved to the Loop People Business Partner Team landing page.",
+          "sha256": "279f6bd99dd87a3f66f9b4666b44d3b48ab781b6033c9518e6ff475b1fda8c14",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/people-business-partners/"
+        }
+      ],
+      "question_type": "permission_restricted",
+      "answerable": false,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "organization_support",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U034-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_people_business_partners.md",
+              "quote": "This page has been moved to the Loop People Business Partner Team landing page."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U035",
+      "question": "年度薪酬review的merit与equity refresh入职日期门槛相同吗？",
+      "expected_answer": "不同：merit要求1月31日或之前入职，equity refresh要求10月5日或之前入职。",
+      "evidence_ids": [
+        "doc-7ce173cf24eedd8046c214eb4a30be74-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_compensation_review_cycle.md",
+          "quote": "- January 31st to be eligible to participate in the merit review program\n- October 5th to be eligible to participate in the equity refresh program",
+          "sha256": "be8e8bf90018324432e029d6d1b4644d55cfd4b0004050471f60e6332d3d9127",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/compensation/compensation-review-cycle/"
+        }
+      ],
+      "question_type": "confusable_policies",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "rewards_career",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U035-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_compensation_review_cycle.md",
+              "quote": "- January 31st to be eligible to participate in the merit review program\n- October 5th to be eligible to participate in the equity refresh program"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U036",
+      "question": "参加年度薪酬review是否等于保证加薪？",
+      "expected_answer": "不保证；符合review资格不代表一定获得增加，奖励与贡献及绩效付薪原则相关。",
+      "evidence_ids": [
+        "doc-7ce173cf24eedd8046c214eb4a30be74-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_compensation_review_cycle.md",
+          "quote": "Eligibility for review does not guarantee an increase will be awarded.",
+          "sha256": "be8e8bf90018324432e029d6d1b4644d55cfd4b0004050471f60e6332d3d9127",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/compensation/compensation-review-cycle/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "rewards_career",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U036-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_compensation_review_cycle.md",
+              "quote": "Eligibility for review does not guarantee an increase will be awarded."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U037",
+      "question": "参加Hone公开工作坊、分享工作情境时，应遵循GitLab哪个信息分享框架？",
+      "expected_answer": "应遵循GitLab SAFE框架。",
+      "evidence_ids": [
+        "doc-f33d721bc424ba16540b64d502fadb37-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_hone.md",
+          "quote": "When participating in public workshops through the Hone platform, it’s crucial to follow GitLab’s [SAFE]",
+          "sha256": "60a04e340808307914a00ae4246756901924874acc907534c268c3e582612574",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/hone/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U037-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_hone.md",
+              "quote": "When participating in public workshops through the Hone platform, it’s crucial to follow GitLab’s [SAFE]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U038",
+      "question": "报名Hone后临时无法参加，应该怎样处理课程安排？",
+      "expected_answer": "按照Hone平台的排课政策，在平台取消或重新安排课程。",
+      "evidence_ids": [
+        "doc-f33d721bc424ba16540b64d502fadb37-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_hone.md",
+          "quote": "You can cancel or reschedule sessions through the Hone platform according to their scheduling policies.",
+          "sha256": "60a04e340808307914a00ae4246756901924874acc907534c268c3e582612574",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/hone/"
+        }
+      ],
+      "question_type": "simple_fact",
+      "answerable": true,
+      "difficulty": "easy",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U038-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_hone.md",
+              "quote": "You can cancel or reschedule sessions through the Hone platform according to their scheduling policies."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U039",
+      "question": "想让L&D审阅自己贡献的学习内容，现有页面建议先怎么联系？",
+      "expected_answer": "在lxp-contributions项目开issue，标记L&D成员审阅；也可在#learninganddevelopment咨询。",
+      "evidence_ids": [
+        "doc-52feb05058cbc46f9c773ae0c592b496-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_learning_and_development.md",
+          "quote": "please get started by opening an issue the [lxp-contributions project](https://gitlab.com/gitlab-com/people-group/learning-development/lxp-contributions) and tagging a member of the L&D team to review. If you have any questions, you can always reach out to us in Slack via `#learninganddevelopment`.",
+          "sha256": "a39473f1c6b98c141eb0b9fd4600268a06ec9a9372e060ba79e9c735641c4aaa",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/"
+        }
+      ],
+      "question_type": "simple_fact",
+      "answerable": true,
+      "difficulty": "easy",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U039-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_learning_and_development.md",
+              "quote": "please get started by opening an issue the [lxp-contributions project](https://gitlab.com/gitlab-com/people-group/learning-development/lxp-contributions) and tagging a member of the L&D team to review. If you have any questions, you can always reach out to us in Slack via `#learninganddevelopment`."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U040",
+      "question": "Accomplishment Tracker建议只在年终填一次吗？",
+      "expected_answer": "不是，建议每周或每月设置日历提醒持续更新。",
+      "evidence_ids": [
+        "doc-643d6e5092967836c9b676a4af257070-chunk-001",
+        "doc-643d6e5092967836c9b676a4af257070-chunk-002"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_career_development.md",
+          "quote": "Set a weekly or monthly calendar reminder to continuously add to your tracker",
+          "sha256": "4008f9a225385668112e378e64c532179aa5dc32c48e5589d54c1d649e02fbc4",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/career-development/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U040-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_career_development.md",
+              "quote": "Set a weekly or monthly calendar reminder to continuously add to your tracker"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U041",
+      "question": "团队能否同时安排多个Internship for Learning学员？一人上限是硬性规定吗？",
+      "expected_answer": "通常建议同一时间每团队一个以保证指导效率，但可按团队规模调整并考虑导师容量影响。",
+      "evidence_ids": [
+        "doc-7c2e0c9d75698180eb550842322bc5e2-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_internship_for_learning.md",
+          "quote": "We recommend that, at any given time, each [team](https://handbook.gitlab.com/handbook/company/structure/) is handling only one intern. This is to allow for an efficient and focused mentorship without impacting the capacity of the team. You can, of course, adjust this depending on the size of the team but please consider the impact of mentoring when scheduling internships.",
+          "sha256": "45c93c6f36f0c8cea657a2bc1ae2f2786a27c00c43e98a4f1cd1d88500332bfe",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/internship-for-learning/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U041-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_internship_for_learning.md",
+              "quote": "We recommend that, at any given time, each [team](https://handbook.gitlab.com/handbook/company/structure/) is handling only one intern. This is to allow for an efficient and focused mentorship without impacting the capacity of the team. You can, of course, adjust this depending on the size of the team but please consider the impact of mentoring when scheduling internships."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U042",
+      "question": "LevelUp课程进度一直是0%，就意味着我的学习记录丢失了吗？",
+      "expected_answer": "不一定；有些课程只报告完成状态，完成整门课程前可能显示0%，完成后transcript会反映结果。",
+      "evidence_ids": [
+        "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-002"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_level_up.md",
+          "quote": "- Some courses only report completion, not ongoing progress\n- Your progress bar may show 0% until you complete the entire course\n- This is normal behavior for certain content types - your progress isn’t lost\n- Once you finish the course, your transcript will reflect completion",
+          "sha256": "637b1bbec9262319feb0fa3f108d15346dfb76901c38952dd7a7d784cbfa92f1",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/level-up/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U042-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_level_up.md",
+              "quote": "- Some courses only report completion, not ongoing progress\n- Your progress bar may show 0% until you complete the entire course\n- This is normal behavior for certain content types - your progress isn’t lost\n- Once you finish the course, your transcript will reflect completion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U043",
+      "question": "LevelUp合规培训逾期多久会通知经理？",
+      "expected_answer": "逾期14天会通知经理。",
+      "evidence_ids": [
+        "doc-65a46f29b56842cd3aa1ccc587d5929b-chunk-002"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_level_up.md",
+          "quote": "Manager notification at 14 days overdue",
+          "sha256": "637b1bbec9262319feb0fa3f108d15346dfb76901c38952dd7a7d784cbfa92f1",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/level-up/"
+        }
+      ],
+      "question_type": "simple_fact",
+      "answerable": true,
+      "difficulty": "easy",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U043-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_level_up.md",
+              "quote": "Manager notification at 14 days overdue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U044",
+      "question": "刚转任经理的前几周，手册建议先快速推动大决策还是先做一些小决策？",
+      "expected_answer": "先做少量可快速决定的小事；较大的决策应等更了解角色并收集各方意见之后。",
+      "evidence_ids": [
+        "doc-c7a7423eaaa060dff882092372fac62c-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_manager_development.md",
+          "quote": "During your first few weeks as a new manager, try to identify a few small decisions you can make fairly quickly, but defer bigger ones until you’ve been in the role longer and have time to gather input from everyone.",
+          "sha256": "f1b9b2732b2bb0d92c83bbadf720f06454326ab4b4278056ed19f9a43644ea58",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/manager-development/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U044-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_manager_development.md",
+              "quote": "During your first few weeks as a new manager, try to identify a few small decisions you can make fairly quickly, but defer bigger ones until you’ve been in the role longer and have time to gather input from everyone."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U045",
+      "question": "日本成员主动辞职，要在当月几号前把辞职表交给薪资团队？",
+      "expected_answer": "每月10号前，通过Compass发送给payroll。",
+      "evidence_ids": [
+        "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_offboarding.md",
+          "quote": "send it to payroll via [Compass](https://app.serval.com/new-request) by the 10th of the month",
+          "sha256": "37b8a41e8c265b7d51d50e9c7d693317cf1e6e6d524aebdeae0a5e2460a4ffec",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/offboarding/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "offboarding",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U045-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_offboarding.md",
+              "quote": "send it to payroll via [Compass](https://app.serval.com/new-request) by the 10th of the month"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U046",
+      "question": "所有离职员工都能加入#gitlab-alumni吗？",
+      "expected_answer": "通常自愿离职有资格；非自愿离职通常没有，除非TMR另行说明。",
+      "evidence_ids": [
+        "doc-86116b9ef5c865ae7ebf8c40133d20cc-chunk-005"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_offboarding.md",
+          "quote": "All voluntary exits are eligible to be added to the Slack channel `#gitlab-alumni`, unless otherwise noted. Involuntary exits are not eligible for the alumni channel, unless otherwise noted by Team Member Relations.",
+          "sha256": "37b8a41e8c265b7d51d50e9c7d693317cf1e6e6d524aebdeae0a5e2460a4ffec",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/offboarding/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "offboarding",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U046-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_offboarding.md",
+              "quote": "All voluntary exits are eligible to be added to the Slack channel `#gitlab-alumni`, unless otherwise noted. Involuntary exits are not eligible for the alumni channel, unless otherwise noted by Team Member Relations."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U047",
+      "question": "在Slack发起offboarding issue的命令，用员工编号还是GitLab用户名作为参数？",
+      "expected_answer": "使用员工编号EMPLOYEE_NUMBER，命令为/pops run offboarding <EMPLOYEE_NUMBER>。",
+      "evidence_ids": [
+        "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-000",
+        "doc-9519f367cdbb3dfdc07e4d2c8dab346d-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_offboarding_standards.md",
+          "quote": "Type the command `/pops run offboarding <EMPLOYEE_NUMBER>`.",
+          "sha256": "c949aa362269db62364893b5a453f4181503322b5cea8ba777fc892176a4045d",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/offboarding/offboarding_standards/"
+        }
+      ],
+      "question_type": "simple_fact",
+      "answerable": true,
+      "difficulty": "easy",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "offboarding",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U047-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_offboarding_standards.md",
+              "quote": "Type the command `/pops run offboarding <EMPLOYEE_NUMBER>`."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U048",
+      "question": "IC转入管理岗位可以不公开职位、直接内部指定吗？",
+      "expected_answer": "不可以；职位须发布并遵循正常招聘流程，保证其他有意候选人也有机会申请。",
+      "evidence_ids": [
+        "doc-1172522a75d174d9c2e383506b25406b-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_promotions_transfers.md",
+          "quote": "If a team member wishes to move from an Individual Contributor to a Management position, the position must be posted and follow the normal hiring process steps to ensure all interested candidates have the chance to apply.",
+          "sha256": "38768fc35187ad2f2ff064e9653edee04f8566e25f5bd80b89d8fd2bda0db307",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/promotions-transfers/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "rewards_career",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U048-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_promotions_transfers.md",
+              "quote": "If a team member wishes to move from an Individual Contributor to a Management position, the position must be posted and follow the normal hiring process steps to ensure all interested candidates have the chance to apply."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U049",
+      "question": "内部岗位招聘至少开放几天，能只面试一次就发offer吗？",
+      "expected_answer": "至少开放5个自然日，内部或外部候选人在offer前均至少完成2次面试。",
+      "evidence_ids": [
+        "doc-1172522a75d174d9c2e383506b25406b-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_promotions_transfers.md",
+          "quote": "- All positions must be open for a minimum of 5 calendar days.\n  - At least 2 interviews must be completed before moving to an offer for a candidate internal or external.",
+          "sha256": "38768fc35187ad2f2ff064e9653edee04f8566e25f5bd80b89d8fd2bda0db307",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/promotions-transfers/"
+        }
+      ],
+      "question_type": "composite",
+      "answerable": true,
+      "difficulty": "hard",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "rewards_career",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U049-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_promotions_transfers.md",
+              "quote": "- All positions must be open for a minimum of 5 calendar days.\n  - At least 2 interviews must be completed before moving to an offer for a candidate internal or external."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U050",
+      "question": "第一次签证申请被拒后，我自行重申的费用GitLab还会继续承担吗？",
+      "expected_answer": "公司只承担一次签证尝试，之后可以自行再次申请，但新增费用由成员承担。",
+      "evidence_ids": [
+        "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_visas.md",
+          "quote": "GitLab is only able to cover the costs of one VISA attempt. If your VISA request is rejected, team members are free to re-submit at their discretion and any additional costs will be need to be covered by the team member.",
+          "sha256": "cabd0af669fb675be3c3fcc9c154040ea2c8ee5a62010a47c2e320adff78b0c7",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/visas/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "mobility",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U050-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_visas.md",
+              "quote": "GitLab is only able to cover the costs of one VISA attempt. If your VISA request is rejected, team members are free to re-submit at their discretion and any additional costs will be need to be covered by the team member."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U051",
+      "question": "从上一份工作转移荷兰30% ruling到GitLab，前后任职中间最多允许间隔多久？",
+      "expected_answer": "从上一份工作到GitLab BV的间隔最多为三个月。",
+      "evidence_ids": [
+        "doc-de1e3304f2c6f76115d174d76ea9fa51-chunk-002"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_visas.md",
+          "quote": "you are only allowed to transfer the 30% ruling when there is a gap of maximum three months between your previous employment and your employment at GitLab BV.",
+          "sha256": "cabd0af669fb675be3c3fcc9c154040ea2c8ee5a62010a47c2e320adff78b0c7",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/visas/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "mobility",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U051-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_visas.md",
+              "quote": "you are only allowed to transfer the 30% ruling when there is a gap of maximum three months between your previous employment and your employment at GitLab BV."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U052",
+      "question": "法国员工度假时，是否有义务阅读和回复工作邮件及电话？",
+      "expected_answer": "无须在工作时间外阅读或回复邮件；休息或假期收到的工作电话和消息也一样。",
+      "evidence_ids": [
+        "doc-5051d29cb421e6e6cfb5c6d4707c78f7-chunk-004"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_right_to_disconnect_charter.md",
+          "quote": "Team members are not required to read or respond to e-mails addressed to them outside of their working time. The same applies to business calls or messages received during rest periods or vacations.",
+          "sha256": "fd28428afc262c925aad17316acb24c81006b5650e42772c98284be296281f39",
+          "source_url": "https://handbook.gitlab.com/handbook/people-policies/france-sas/right-to-disconnect-charter/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "workplace_safety",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U052-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_right_to_disconnect_charter.md",
+              "quote": "Team members are not required to read or respond to e-mails addressed to them outside of their working time. The same applies to business calls or messages received during rest periods or vacations."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U053",
+      "question": "美国员工申请医疗相关工作调整时，经理能看到Compass工单的全部医疗内容吗？",
+      "expected_answer": "工单只由TMR查看，仅在需要时向经理或PBP分享所请求的调整事项。",
+      "evidence_ids": [
+        "doc-60a83fa22c192a1194af0e5f2850f294-chunk-001",
+        "doc-60a83fa22c192a1194af0e5f2850f294-chunk-002"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_inc_usa.md",
+          "quote": "Your ticket will only be viewed by the Team Member Relations Team, and only the requested accommodation(s) will be shared with your Manager/PBP as needed.",
+          "sha256": "607c0a1d1e9b1b49938e2cfb6c226b58ac68935421dc9977580efa4d8fb03889",
+          "source_url": "https://handbook.gitlab.com/handbook/people-policies/inc-usa/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "workplace_safety",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U053-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_inc_usa.md",
+              "quote": "Your ticket will only be viewed by the Team Member Relations Team, and only the requested accommodation(s) will be shared with your Manager/PBP as needed."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U054",
+      "question": "GitLab公司专属leave与符合资格的实体当地leave，原则上是叠加顺延还是同时运行？",
+      "expected_answer": "在法律允许时，公司专属leave会与符合资格的实体leave协调并同时运行。",
+      "evidence_ids": [
+        "doc-a08f330ff1122100e533d53f2adabd32-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_leave_of_absence.md",
+          "quote": "Whenever allowed by law these leave programs are coordinated and run concurrently any entity specific leaves a team member may be eligible for.",
+          "sha256": "f89257de227fc963880ed5339a7e2b284d45671e6304fafcf1d98e9ef482967a",
+          "source_url": "https://handbook.gitlab.com/handbook/people-policies/leave-of-absence/"
+        }
+      ],
+      "question_type": "confusable_policies",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "absence",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U054-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_leave_of_absence.md",
+              "quote": "Whenever allowed by law these leave programs are coordinated and run concurrently any entity specific leaves a team member may be eligible for."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U055",
+      "question": "美国同一病情造成不连续、合计超过5天的医疗相关缺勤，也需要报告Tilt吗？",
+      "expected_answer": "需要；超过5天的本人或家属医疗相关缺勤，不论连续还是同一病情造成的不连续缺勤，都须报Tilt。",
+      "evidence_ids": [
+        "doc-3243e61a20d0b80aa50e81fb05f5e313-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_us.md",
+          "quote": "Any medical related absence (for yourself or a family member) requiring you to be away from work for more than 5 days (either continuously or non-continuous but related to the same condition) must be reported to Tilt.",
+          "sha256": "6f8215ff70d16902558cdd1acbd97acd84d58469af5e50787d9561e466aefcd4",
+          "source_url": "https://handbook.gitlab.com/handbook/people-policies/leave-of-absence/us/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "absence",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U055-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_us.md",
+              "quote": "Any medical related absence (for yourself or a family member) requiring you to be away from work for more than 5 days (either continuously or non-continuous but related to the same condition) must be reported to Tilt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U056",
+      "question": "福利里只是免赔额或缴费金额的小幅调整，Total Rewards一定会给每个成员开反馈issue吗？",
+      "expected_answer": "不一定；小调整或法律及业务要求的变更可能不创建issue。",
+      "evidence_ids": [
+        "doc-03839a80b94ece99bd6035b576996882-chunk-000",
+        "doc-03839a80b94ece99bd6035b576996882-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_benefits.md",
+          "quote": "The Total Rewards team may not create an issue for minor adjustments (such as deductible amounts or contribution increases) or legal/required changes for the business.",
+          "sha256": "1d19118806d08da24fe130578c48e65a7eb0b95516e6e3b7d2e6b78b7b4a0f3f",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U056-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_benefits.md",
+              "quote": "The Total Rewards team may not create an issue for minor adjustments (such as deductible amounts or contribution increases) or legal/required changes for the business."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U057",
+      "question": "比利时每月70欧元医疗补贴需要提交证明吗，属于净额吗？",
+      "expected_answer": "不需材料证明，70欧元是每月税前补贴，通过payroll自动发放并纳税。",
+      "evidence_ids": [
+        "doc-76d5ccec0577fa18de21059ba2d4c0ad-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_bv_benefits_belgium.md",
+          "quote": "- €70 monthly gross allowance\n- Paid automatically via payroll (subject to taxation)\n- No documentation required",
+          "sha256": "024a34336d6394a6d0010c1725eaee1d9dd752c11025ca338036f99446cd0e23",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium/"
+        }
+      ],
+      "question_type": "composite",
+      "answerable": true,
+      "difficulty": "hard",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U057-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_bv_benefits_belgium.md",
+              "quote": "- €70 monthly gross allowance\n- Paid automatically via payroll (subject to taxation)\n- No documentation required"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U058",
+      "question": "请给出SageView已经为我本人制定的具体买卖基金清单，能从政策页查到吗？",
+      "expected_answer": "不能从公开政策查个人咨询或交易清单；该服务提供教育指导且咨询保密，不应编造个人投资记录。",
+      "evidence_ids": [
+        "doc-42e5cf098e1231ba6d89b3c46fdee0e5-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_financial_wellness.md",
+          "quote": "SageView provides educational guidance",
+          "sha256": "1e69485e2926b84e386e5a834d0819508d1aafaaabe90ba47fde88fe01bfc79d",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/financial-wellness/"
+        },
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_financial_wellness.md",
+          "quote": "All consultations are confidential.",
+          "sha256": "1e69485e2926b84e386e5a834d0819508d1aafaaabe90ba47fde88fe01bfc79d",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/financial-wellness/"
+        }
+      ],
+      "question_type": "no_answer_personal_records",
+      "answerable": false,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U058-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_financial_wellness.md",
+              "quote": "SageView provides educational guidance"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-U058-E2",
+          "alternatives": [
+            {
+              "file_path": "hr_financial_wellness.md",
+              "quote": "All consultations are confidential."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U059",
+      "question": "法国医疗保险对员工本人和家属的保费，雇主承担比例一样吗？",
+      "expected_answer": "不同，员工本人100%由雇主承担，家属保费雇主承担66%。",
+      "evidence_ids": [
+        "doc-b241a0d96ef61ec4460bedd675630573-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_france_sas.md",
+          "quote": "- 100% employer-paid coverage for team members\n- 66% employer contribution for dependent premiums",
+          "sha256": "38b361562dc83747f43b433b0d280aba935eeebe098a8b0e9b9b93de2225a23b",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/france-sas/"
+        }
+      ],
+      "question_type": "confusable_policies",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U059-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_france_sas.md",
+              "quote": "- 100% employer-paid coverage for team members\n- 66% employer contribution for dependent premiums"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U060",
+      "question": "日本年度体检报销上限多少，向Navan提交时需要附完整医疗数据吗？",
+      "expected_answer": "每年最多15000日元；提交发票即可，不应提交医疗数据。",
+      "evidence_ids": [
+        "doc-d42f675239f807b67bca8ebd7668e19c-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_gitlab_gk.md",
+          "quote": "GitLab reimburses up to ¥15,000 annually.",
+          "sha256": "7018b029c0062e62c394a2a643d97aecef5cff42e595a8e84a3f74ef5bd660a1",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-gk/"
+        },
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_gitlab_gk.md",
+          "quote": "Expense through Navan (invoice only, no medical data)",
+          "sha256": "7018b029c0062e62c394a2a643d97aecef5cff42e595a8e84a3f74ef5bd660a1",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-gk/"
+        }
+      ],
+      "question_type": "composite",
+      "answerable": true,
+      "difficulty": "hard",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U060-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_gitlab_gk.md",
+              "quote": "GitLab reimburses up to ¥15,000 annually."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-U060-E2",
+          "alternatives": [
+            {
+              "file_path": "hr_gitlab_gk.md",
+              "quote": "Expense through Navan (invoice only, no medical data)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U061",
+      "question": "快照中爱尔兰Vhi牙科计划何时开始，不参加Vhi医疗险也可参加吗？",
+      "expected_answer": "从2026年11月1日起提供；无需先参加Vhi医疗计划即可加入牙科计划。",
+      "evidence_ids": [
+        "doc-8d107ffb4e629e0ba3136de55388980f-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_gitlab_ireland_ltd.md",
+          "quote": "From 1 November 2026, GitLab offers dental cover through Vhi (Vhi Dental Corporate 1) for team members and their dependents. GitLab covers 100% of the premium. You do not need to be enrolled in the Vhi medical plan to join the dental plan.",
+          "sha256": "aa3769d7a777f9e66dfea4a4df6e5a874a672717718f6e6d0d379d4ef1e7f19b",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U061-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_gitlab_ireland_ltd.md",
+              "quote": "From 1 November 2026, GitLab offers dental cover through Vhi (Vhi Dental Corporate 1) for team members and their dependents. GitLab covers 100% of the premium. You do not need to be enrolled in the Vhi medical plan to join the dental plan."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U062",
+      "question": "Global Expansion奥地利自行车租赁还没结束就辞职，有哪些处理选择？",
+      "expected_answer": "可付清余额、买下自行车，或转移到新雇主；不应假设辞职就免除剩余责任。",
+      "evidence_ids": [
+        "doc-85dbba125c84e424d8fdd839d19a6963-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_global_expansion.md",
+          "quote": "If you resign before the end of the leasing period, options include paying remaining balance, purchasing bike, or transferring to new employer",
+          "sha256": "8cc03cc221b83a70c359921af03effb5a96b20c8d0545b420708614a366e66f2",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U062-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_global_expansion.md",
+              "quote": "If you resign before the end of the leasing period, options include paying remaining balance, purchasing bike, or transferring to new employer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U063",
+      "question": "韩国团体保险中，员工家属也能获得意外身故和伤残保障吗？",
+      "expected_answer": "家属仅有医疗覆盖；意外身故、意外伤残和疾病身故风险保障仅限团队成员本人。",
+      "evidence_ids": [
+        "doc-a607946668a902c69c39a005f31b5ca7-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_korea_ltd_benefits.md",
+          "quote": "**Dependents**: Legal spouses and dependent children - for medical coverage only.",
+          "sha256": "0e6095b21aee530d1600918d5a4add83c912464aaa04472dfe658e8736fc8194",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits/"
+        },
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_korea_ltd_benefits.md",
+          "quote": "Protection for accidental death, accidental disability, and disease death - for team members only.",
+          "sha256": "0e6095b21aee530d1600918d5a4add83c912464aaa04472dfe658e8736fc8194",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U063-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_korea_ltd_benefits.md",
+              "quote": "**Dependents**: Legal spouses and dependent children - for medical coverage only."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-U063-E2",
+          "alternatives": [
+            {
+              "file_path": "hr_korea_ltd_benefits.md",
+              "quote": "Protection for accidental death, accidental disability, and disease death - for team members only."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U064",
+      "question": "英国AXA的每年100英镑excess同样适用于牙科和视力索赔吗？",
+      "expected_answer": "不适用；每成员每计划年度100英镑的门诊excess排除牙科和视力索赔。",
+      "evidence_ids": [
+        "doc-4f0b90773329531012701ff1d7e05984-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_ltd_benefits_uk.md",
+          "quote": "Full outpatient cover with £100 excess per member per plan year. The excess doesn’t apply to Dental and Vision claims",
+          "sha256": "eefe1e1d8e03d110246bc698667960c5da0a44c6225bb247c93f46bda4f76224",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U064-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_ltd_benefits_uk.md",
+              "quote": "Full outpatient cover with £100 excess per member per plan year. The excess doesn’t apply to Dental and Vision claims"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U065",
+      "question": "英国加入AXA后，以前已有的病症还要再等两年或连续12个月无症状才覆盖吗？",
+      "expected_answer": "该快照说新成员和现有参保成员均覆盖既有病症，不再适用两年或12个月无症状的moratorium条件。",
+      "evidence_ids": [
+        "doc-4f0b90773329531012701ff1d7e05984-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_ltd_benefits_uk.md",
+          "quote": "pre-existing conditions are covered. Current team members enrolled and new joiners to the AXA plan will have cover for treatment of pre-existing medical issues they may have had before joining, without being a member for two years or being required to have 12 consecutive months of “trouble-free” from when the condition began",
+          "sha256": "eefe1e1d8e03d110246bc698667960c5da0a44c6225bb247c93f46bda4f76224",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U065-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_ltd_benefits_uk.md",
+              "quote": "pre-existing conditions are covered. Current team members enrolled and new joiners to the AXA plan will have cover for treatment of pre-existing medical issues they may have had before joining, without being a member for two years or being required to have 12 consecutive months of “trouble-free” from when the condition began"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U066",
+      "question": "Papaya意大利Dirigente的permessi/ex-festività按小时还是按天累计，每年多少？",
+      "expected_answer": "按天计算，每月0.333天、全年4天。",
+      "evidence_ids": [
+        "doc-6baaa52b9d8df91bf5f1f00ef3c64283-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_papaya_global_benefits.md",
+          "quote": "for the Dirigente position, permessi/ex-festività are calculated in days. Dirigenti accrue 0.333 days per month, for a total of 4 days per year.",
+          "sha256": "adc87fcef996f0718d464b994b4766007420db7ce133a2c9851641cef291e9a7",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/papaya-global-benefits/"
+        }
+      ],
+      "question_type": "simple_fact",
+      "answerable": true,
+      "difficulty": "easy",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U066-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_papaya_global_benefits.md",
+              "quote": "for the Dirigente position, permessi/ex-festività are calculated in days. Dirigenti accrue 0.333 days per month, for a total of 4 days per year."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U067",
+      "question": "澳大利亚保险每月最高补助多少，保费超过该额度时差额由谁付？",
+      "expected_answer": "每月最高500澳元，超出月补助的保费由成员支付。",
+      "evidence_ids": [
+        "doc-3601db810deaaf3f1b86d7518394b3f0-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_pty_benefits_australia.md",
+          "quote": "**Monthly premium support:** Up to $500 AUD per month",
+          "sha256": "b2eda95a39795d33f9138efd4544d7260a347094a30cf64f0d46074d23b611df",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia/"
+        },
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_pty_benefits_australia.md",
+          "quote": "Pay any premiums exceeding the monthly subsidy",
+          "sha256": "b2eda95a39795d33f9138efd4544d7260a347094a30cf64f0d46074d23b611df",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U067-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_pty_benefits_australia.md",
+              "quote": "**Monthly premium support:** Up to $500 AUD per month"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-U067-E2",
+          "alternatives": [
+            {
+              "file_path": "hr_pty_benefits_australia.md",
+              "quote": "Pay any premiums exceeding the monthly subsidy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U068",
+      "question": "新西兰Southern Cross可随时加入，那么随时加入都能立即覆盖既往病症吗？",
+      "expected_answer": "不能；可以随时申请，但立即覆盖既往病症限入职后90天内加入。",
+      "evidence_ids": [
+        "doc-e848379782c5617af8a5db636b120df0-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_pty_benefits_new_zealand.md",
+          "quote": "- Can join anytime through Southern Cross portal\n- Immediate pre-existing condition cover only within 90 days of your start date",
+          "sha256": "2bd61c0c18917614a2e5ce9f0c3280e22f302d55777599fd02725df652b4be8d",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U068-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_pty_benefits_new_zealand.md",
+              "quote": "- Can join anytime through Southern Cross portal\n- Immediate pre-existing condition cover only within 90 days of your start date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U069",
+      "question": "新西兰新生儿要在出生后多久内加入，才适用特别的既往病症覆盖？",
+      "expected_answer": "出生后三个月内加入。",
+      "evidence_ids": [
+        "doc-e848379782c5617af8a5db636b120df0-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_pty_benefits_new_zealand.md",
+          "quote": "Special pre-existing condition coverage extended to newborn children if added within three months of birth.",
+          "sha256": "2bd61c0c18917614a2e5ce9f0c3280e22f302d55777599fd02725df652b4be8d",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U069-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_pty_benefits_new_zealand.md",
+              "quote": "Special pre-existing condition coverage extended to newborn children if added within three months of birth."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U070",
+      "question": "新加坡集团寿险超过300000的Free Cover Limit就一定自动承保吗？",
+      "expected_answer": "不一定，超过FCL的部分需要核保及接受。",
+      "evidence_ids": [
+        "doc-abe8ced754bc8f1d585c290b645ae259-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_singapore_pte_ltd.md",
+          "quote": "**Free Cover Limit (FCL)**: $300,000 (coverage above FCL is subject to underwriting and acceptance).",
+          "sha256": "a1fa77f8ec48e78a3b5a116dfabd6d0a2e159d14158ee46313585d8857212054",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U070-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_singapore_pte_ltd.md",
+              "quote": "**Free Cover Limit (FCL)**: $300,000 (coverage above FCL is subject to underwriting and acceptance)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U071",
+      "question": "Modern Health列出的子女和伴侣子女的年龄范围到多少？",
+      "expected_answer": "包括27岁以内的子女及伴侣子女，具体按该快照资格规则。",
+      "evidence_ids": [
+        "doc-90532fdb2c8ac6878c2d9bb8fec4b6f0-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_modern_health.md",
+          "quote": "- Children up to age 27\n  - Partner’s children up to age 27",
+          "sha256": "58f642f41b3c45271aca925e9b067496e11ffd7a63cc4537c009d541fd91e955",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/modern-health/"
+        }
+      ],
+      "question_type": "simple_fact",
+      "answerable": true,
+      "difficulty": "easy",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U071-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_modern_health.md",
+              "quote": "- Children up to age 27\n  - Partner’s children up to age 27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U072",
+      "question": "美国G&D教育福利全年获付6000美元，按快照一般应就哪一部分纳税？",
+      "expected_answer": "一般就超过5250美元的750美元部分纳税；不据此代替个人税务判断。",
+      "evidence_ids": [
+        "doc-64c7598653aa695fd5c3ddf1750e33d6-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_development_tax.md",
+          "quote": "| United States | Academic Study | If GitLab pays over $5,250 for educational benefits for you during the year, you must generally pay tax on the amount over $5,250 |",
+          "sha256": "6d6e8fb3e8b46468791f4395cc3d93d1f1c79441d0e0949c4726c96bcd415871",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/growth-and-development/tax/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U072-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_development_tax.md",
+              "quote": "| United States | Academic Study | If GitLab pays over $5,250 for educational benefits for you during the year, you must generally pay tax on the amount over $5,250 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U073",
+      "question": "TTC和销售岗位说的OTE包含什么，什么条件下才能拿到这个目标额？",
+      "expected_answer": "基本工资加可变薪酬目标；在达到100%目标时可获得该现金目标总额。",
+      "evidence_ids": [
+        "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_compensation.md",
+          "quote": "Base salary plus variable pay target equals Total Target Cash (TTC). For sales roles, this is often called On-Target Earnings (OTE). TTC and OTE is the compensation a team member would receive if 100% of targets are met.",
+          "sha256": "e460e208bfd630dd60d0b6d18245c8b550e9bdc7ff96fe0aad2f4bf44102ade9",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/compensation/"
+        }
+      ],
+      "question_type": "simple_fact",
+      "answerable": true,
+      "difficulty": "easy",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "rewards_career",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U073-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_compensation.md",
+              "quote": "Base salary plus variable pay target equals Total Target Cash (TTC). For sales roles, this is often called On-Target Earnings (OTE). TTC and OTE is the compensation a team member would receive if 100% of targets are met."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U074",
+      "question": "Interim role期间做了一半就离职，可以按工作天数领取部分临时岗位奖金吗？",
+      "expected_answer": "不可以；须在临时任期结束时仍是活跃成员，中途离职不符合按比例领取资格。",
+      "evidence_ids": [
+        "doc-4a24ea0482e82d3d1a7ebb0b37e2c20f-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_incentives.md",
+          "quote": "The team member must be an active team member of GitLab at the end of the interim role period to be eligible to receive a bonus payment. If a team member leaves GitLab during the interim role period, they will not be eligible for a prorated payment.",
+          "sha256": "10d849eadd2b3b10a06c5800c6976907bb94af76e30e9c19e78dcaed7ef63021",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/incentives/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "rewards_career",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U074-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_incentives.md",
+              "quote": "The team member must be an active team member of GitLab at the end of the interim role period to be eligible to receive a bonus payment. If a team member leaves GitLab during the interim role period, they will not be eligible for a prorated payment."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U075",
+      "question": "股权页中ISO和NQ分别对应哪些成员？",
+      "expected_answer": "ISO发给美国员工，NQ发给承包商及非美国员工。",
+      "evidence_ids": [
+        "doc-55c644c451493a7e5b0e5debbaee8616-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_stock_options.md",
+          "quote": "- ISOs are issued to US employees and carry a special form of tax treatment recognized by the US Internal Revenue Service (IRS).\n- NQs are granted to contractors and non-US employees.",
+          "sha256": "6f94ee95013d41f9cfda785bdc632001edd91a0f63c241109844b55cd6083cfc",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/stock-options/"
+        }
+      ],
+      "question_type": "confusable_policies",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "rewards_career",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U075-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_stock_options.md",
+              "quote": "- ISOs are issued to US employees and carry a special form of tax treatment recognized by the US Internal Revenue Service (IRS).\n- NQs are granted to contractors and non-US employees."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U076",
+      "question": "收到反馈后必须当场问清所有问题吗，还是可以先反思再追问？",
+      "expected_answer": "可以留时间反思，之后再带问题回来讨论。",
+      "evidence_ids": [
+        "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_guidance_on_feedback.md",
+          "quote": "It’s okay to take time to reflect on it and then come back with questions at a later time",
+          "sha256": "b8f5797cf75e365e36bf134550e51c8717f05c0f17f0f113a41ad46859cbade7",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/guidance-on-feedback/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U076-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_guidance_on_feedback.md",
+              "quote": "It’s okay to take time to reflect on it and then come back with questions at a later time"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U077",
+      "question": "Remote Work Competencies知识测验至少多少分才能拿证书？",
+      "expected_answer": "至少80%。",
+      "evidence_ids": [
+        "doc-e958a8064982ad983e8550462f58a832-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_competencies.md",
+          "quote": "Earn at least an 80% to receive a certificate!",
+          "sha256": "43b08d1b251662324ca9cf521d18352c2d6b0b1305c3932b4853436df321c5c7",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/competencies/"
+        }
+      ],
+      "question_type": "simple_fact",
+      "answerable": true,
+      "difficulty": "easy",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U077-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_competencies.md",
+              "quote": "Earn at least an 80% to receive a certificate!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U078",
+      "question": "遭受骚扰的人不愿直接当面找对方，是否必须先面对面沟通才允许举报？",
+      "expected_answer": "不必；不愿直接面对或行为未停止时，可向Chief People Officer报告。",
+      "evidence_ids": [
+        "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-001",
+        "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-002"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_anti_harassment.md",
+          "quote": "If they do not wish to address the harasser directly or the behavior doesn’t cease, they should report the misconduct to the Chief People Officer",
+          "sha256": "2c1034f14e6efaca93c3b77048e2af8f5806cefba6027e3f80de5cb2e81873c7",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/anti-harassment/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "workplace_safety",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U078-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_anti_harassment.md",
+              "quote": "If they do not wish to address the harasser directly or the behavior doesn’t cease, they should report the misconduct to the Chief People Officer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U079",
+      "question": "灾害发生后员工乘Uber撤到安全地点，地面交通能报销吗，通过什么系统？",
+      "expected_answer": "可以，公司报销撤离到安全地点的地面交通，使用Navan Expense。",
+      "evidence_ids": [
+        "doc-7196522801d5149926cf74191a16505e-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_incident_response.md",
+          "quote": "GitLab reimburses ground transport to all team members to get out of the location they are in, via a vendor of choice e.g.: Uber/ Taxify/ Lyft/ Via etc. to a safe location. Team members should use Navan Expense for all reimbursements.",
+          "sha256": "b6e20c62b874e3f722681bbc37e63c4e0cc654b7ddb8a5c16ed50c21c9bf9396",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/incident-response/"
+        }
+      ],
+      "question_type": "composite",
+      "answerable": true,
+      "difficulty": "hard",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "workplace_safety",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U079-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_incident_response.md",
+              "quote": "GitLab reimburses ground transport to all team members to get out of the location they are in, via a vendor of choice e.g.: Uber/ Taxify/ Lyft/ Via etc. to a safe location. Team members should use Navan Expense for all reimbursements."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U080",
+      "question": "IGP的70-20-10发展模型是否认为正式培训占主要部分？",
+      "expected_answer": "不是；70%来自挑战性经历和任务，20%来自关系、网络和反馈，正式培训教育为10%。",
+      "evidence_ids": [
+        "doc-54ec6e5a02f2786b9d42fe50d04faed3-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_igp_guide.md",
+          "quote": "- 70% from challenging experiences and assignments\n- 20% from relationships, networks, and feedback\n- 10% from formal training and education",
+          "sha256": "384dd9b34959d2bbd034514b8b4839b4ad25cc8005b8134fdafeced103be0878",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/career-development/igp-guide/"
+        }
+      ],
+      "question_type": "confusable_policies",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U080-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_igp_guide.md",
+              "quote": "- 70% from challenging experiences and assignments\n- 20% from relationships, networks, and feedback\n- 10% from formal training and education"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U081",
+      "question": "导师关系结束时没达到100%的目标，就一定违反导师计划要求吗？",
+      "expected_answer": "不一定；页面要求设具体目标，也明确说导师关系中未完成100%目标是可以接受的。",
+      "evidence_ids": [
+        "doc-b951957165e6cb04a882727e0ccd6100-chunk-004"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_mentor.md",
+          "quote": "Set a specific goal for your mentorship. It’s OK if you don’t reach 100% of your goal during the mentorship.",
+          "sha256": "1d473d75a7b619acb4fff7ac85306e6807fd556ae17bb827be7f8d1facb96ce6",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/mentor/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U081-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_mentor.md",
+              "quote": "Set a specific goal for your mentorship. It’s OK if you don’t reach 100% of your goal during the mentorship."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U082",
+      "question": "人才评估分布比例是必须强制凑足的配额吗？",
+      "expected_answer": "不是强制分布，而是预期的分布基线。",
+      "evidence_ids": [
+        "doc-8d32d5db6588b656db6b1fa04cde3bcf-chunk-003"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_talent_assessment.md",
+          "quote": "this is an expected distribution, not a forced distribution.",
+          "sha256": "90b3182f77736247cecbff44e6c5e9e40dc859b251552a6072011140d1fd762c",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/talent-assessment/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "rewards_career",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U082-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_talent_assessment.md",
+              "quote": "this is an expected distribution, not a forced distribution."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U083",
+      "question": "晋升文档里大量链接能代替写明个人贡献吗？",
+      "expected_answer": "不能，编号链接用来列举示例；应描述贡献并在有关文本上链接，不能让读者逐个链接推断贡献。",
+      "evidence_ids": [
+        "doc-995228c5488096c19529241fe972248a-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_promotion_document_style_guide.md",
+          "quote": "Only use numbered links to list examples, not to describe how the person did something. Instead describe the contribution and link parts of the text.",
+          "sha256": "9344364bc1b07184ee17944ac8386e84cdae97d7cdd73112def28167c2ae1499",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/promotion-document-style-guide/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "rewards_career",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U083-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_promotion_document_style_guide.md",
+              "quote": "Only use numbered links to list examples, not to describe how the person did something. Instead describe the contribution and link parts of the text."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U084",
+      "question": "Elevate Applied的1:1 coaching也像普通G&D那样必须自己先付全款再报销吗？",
+      "expected_answer": "该机会采用例外账单模式：直接向GitLab收费并计入个人G&D额度，不需参与者先垫付。",
+      "evidence_ids": [
+        "doc-ef4a4b472540950304cd4e7b14c87ecb-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_elevate_applied.md",
+          "quote": "Unlike other G&D submissions, participants will not cover costs up front; this will be directly billed to GitLab and covered by the G&D allocation for each participant.",
+          "sha256": "d22ae8d76584ca02da73768e9a4a5b88e84a2e89b4d143fd3da43083837de649",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevate-applied/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U084-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_elevate_applied.md",
+              "quote": "Unlike other G&D submissions, participants will not cover costs up front; this will be directly billed to GitLab and covered by the G&D allocation for each participant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U085",
+      "question": "Remote巴西VR meal voucher在休假或缺勤期间也按天照常发吗？",
+      "expected_answer": "不，按实际工作日提供，不涵盖缺勤、leave或vacation期间。",
+      "evidence_ids": [
+        "doc-d7885064ceccbd6cbcd23a3248057ad7-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_remote_com.md",
+          "quote": "Available only for days worked (not during absences, leaves, or vacation)",
+          "sha256": "7e84559c8795e3a8d190b5f857493ed9a4e28ba9cc036c8d76663312f1cb61a6",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U085-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_remote_com.md",
+              "quote": "Available only for days worked (not during absences, leaves, or vacation)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U086",
+      "question": "IC在ElevatePrep开放报名期间，可以不跟经理确认支持就加入吗？",
+      "expected_answer": "按页面要求，应与经理沟通确认支持，以便充分参与；经理和PBP也能提名。",
+      "evidence_ids": [
+        "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_elevate_prep.md",
+          "quote": "During our Open enrollment sessions, team members must meet with their managers to confirm support in joining the next ElevatePrep cohort.",
+          "sha256": "37814763d2d78aa972e6191ffedeaaa22e5057dbce993bd4933853b1d0c0e58a",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevate-prep/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U086-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_elevate_prep.md",
+              "quote": "During our Open enrollment sessions, team members must meet with their managers to confirm support in joining the next ElevatePrep cohort."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U087",
+      "question": "育儿leave超过一年需要安排backfill时，应考虑员工回来后的什么岗位保障？",
+      "expected_answer": "应考虑backfill，同时确保成员返回时有类似级别、职责范围等的岗位。",
+      "evidence_ids": [
+        "doc-32c70003603b4186a5afe0f7ba677753-chunk-002"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_parental_leave_toolkit.md",
+          "quote": "Leave longer than 1 year: Consider a backfill ensuring there will be a similar (level, scope, etc) role for the person when they return.",
+          "sha256": "c682476544da71ee9bd44af158216b006feda186765afc7450707761264b0451",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/parental-leave-toolkit/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "absence",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U087-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_parental_leave_toolkit.md",
+              "quote": "Leave longer than 1 year: Consider a backfill ensuring there will be a similar (level, scope, etc) role for the person when they return."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U088",
+      "question": "Elevate总共几个模块，每次多长、间隔多久？",
+      "expected_answer": "6个模块，包括2个practice labs，每模块60分钟，间隔两周。",
+      "evidence_ids": [
+        "doc-0420e31705cf1010cf2dd56cec9083b5-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_elevate.md",
+          "quote": "Elevate is organized into 6 learning modules, including 2 practice labs.",
+          "sha256": "26689a4939f8476a2d21c96780f0e6b7d42ab3b30ccd2e53220b12971c954f80",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevate/"
+        },
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_elevate.md",
+          "quote": "Each module is 60 minutes long, and they take place at 2 week intervals.",
+          "sha256": "26689a4939f8476a2d21c96780f0e6b7d42ab3b30ccd2e53220b12971c954f80",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevate/"
+        }
+      ],
+      "question_type": "composite",
+      "answerable": true,
+      "difficulty": "hard",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U088-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_elevate.md",
+              "quote": "Elevate is organized into 6 learning modules, including 2 practice labs."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-U088-E2",
+          "alternatives": [
+            {
+              "file_path": "hr_elevate.md",
+              "quote": "Each module is 60 minutes long, and they take place at 2 week intervals."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U089",
+      "question": "Elevate+只完成live session就达到认证所需全部学习要求了吗？",
+      "expected_answer": "不够，还须完成全部异步课间学习；认证也包括所要求的高管coaching参与。",
+      "evidence_ids": [
+        "doc-7f7fe6295ecb3876843a8d2419b3a1b1-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_elevateplus.md",
+          "quote": "including attendance to all required live sessions, asynchronous learning participation, and Executive coaching sessions",
+          "sha256": "317f69fa173655c91c202cfbea1d68717b2d05a19160a765963a6cfc71f9b6cc",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevateplus/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U089-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_elevateplus.md",
+              "quote": "including attendance to all required live sessions, asynchronous learning participation, and Executive coaching sessions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U090",
+      "question": "非销售提成计划的Director及以上人员，奖金目标通常按什么计算、多久支付一次？",
+      "expected_answer": "按基本工资的一定百分比设置，基于公司绩效，每年支付两次。",
+      "evidence_ids": [
+        "doc-217cb7f2b33c0afdc28313f02d2aa1d2-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_compensation.md",
+          "quote": "Directors and above (excluding those on a sales commission plan) have a bonus target that’s a percentage of base salary and paid twice per year (semi-annually) based on company performance.",
+          "sha256": "e460e208bfd630dd60d0b6d18245c8b550e9bdc7ff96fe0aad2f4bf44102ade9",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/compensation/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "rewards_career",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U090-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_compensation.md",
+              "quote": "Directors and above (excluding those on a sales commission plan) have a bonus target that’s a percentage of base salary and paid twice per year (semi-annually) based on company performance."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U091",
+      "question": "RSU归属100股、适用税率30%的示例中，为什么只有70股存入账户？",
+      "expected_answer": "示例中自动卖出30股以支付归属相关税额，剩余70股进入E*TRADE账户；不代表个人实际税率。",
+      "evidence_ids": [
+        "doc-55c644c451493a7e5b0e5debbaee8616-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_stock_options.md",
+          "quote": "if 100 shares vest, and your tax rate is 30%, then 30 shares will be sold to cover the tax and the remaining shares will be placed in your E\\*TRADE account.",
+          "sha256": "6f94ee95013d41f9cfda785bdc632001edd91a0f63c241109844b55cd6083cfc",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/stock-options/"
+        }
+      ],
+      "question_type": "simple_fact",
+      "answerable": true,
+      "difficulty": "easy",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "rewards_career",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U091-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_stock_options.md",
+              "quote": "if 100 shares vest, and your tax rate is 30%, then 30 shares will be sold to cover the tax and the remaining shares will be placed in your E\\*TRADE account."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U092",
+      "question": "频繁记录并交流反馈，对绩效谈话中突如其来的问题有什么作用？",
+      "expected_answer": "可降低反馈焦虑，减少意外或surprises。",
+      "evidence_ids": [
+        "doc-a844f362f3af0b9481e9481d8c503e4b-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_guidance_on_feedback.md",
+          "quote": "When we engage in and document feedback more frequently, we **reduce the anxiety** of feedback and **reduce the potential for “surprises**”",
+          "sha256": "b8f5797cf75e365e36bf134550e51c8717f05c0f17f0f113a41ad46859cbade7",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/guidance-on-feedback/"
+        }
+      ],
+      "question_type": "simple_fact",
+      "answerable": true,
+      "difficulty": "easy",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U092-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_guidance_on_feedback.md",
+              "quote": "When we engage in and document feedback more frequently, we **reduce the anxiety** of feedback and **reduce the potential for “surprises**”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U093",
+      "question": "Competencies框架中，Senior和Staff/Manager的影响范围相同吗？",
+      "expected_answer": "不同，Senior是跨职能工作，Staff/Manager是跨团队。",
+      "evidence_ids": [
+        "doc-e958a8064982ad983e8550462f58a832-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_competencies.md",
+          "quote": "| Senior | Cross functional work | Models |\n| Staff/Manager | Across Teams | Implements |",
+          "sha256": "43b08d1b251662324ca9cf521d18352c2d6b0b1305c3932b4853436df321c5c7",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/competencies/"
+        }
+      ],
+      "question_type": "confusable_policies",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U093-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_competencies.md",
+              "quote": "| Senior | Cross functional work | Models |\n| Staff/Manager | Across Teams | Implements |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U094",
+      "question": "员工因提出骚扰投诉受到报复，政策允许这样做吗，应找谁启动调查？",
+      "expected_answer": "不容忍因提出骚扰投诉而遭到报复；可联系Chief People Officer。",
+      "evidence_ids": [
+        "doc-baf025795d595d13d1bb266bc4bd7ac5-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_anti_harassment.md",
+          "quote": "Retaliation of any sort for filing a claim of harassment will not be tolerated. If you believe you have been retaliated against, please contact the Chief People Officer",
+          "sha256": "2c1034f14e6efaca93c3b77048e2af8f5806cefba6027e3f80de5cb2e81873c7",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/anti-harassment/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "workplace_safety",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U094-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_anti_harassment.md",
+              "quote": "Retaliation of any sort for filing a claim of harassment will not be tolerated. If you believe you have been retaliated against, please contact the Chief People Officer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U095",
+      "question": "晋升材料模板要两个例子，额外再堆五六个例子是否更符合写作建议？",
+      "expected_answer": "不符合，建议遵照模板，要求两个就给最好的两个。",
+      "evidence_ids": [
+        "doc-995228c5488096c19529241fe972248a-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_promotion_document_style_guide.md",
+          "quote": "Stick to the template. If it asks for two examples, give the two best examples.",
+          "sha256": "9344364bc1b07184ee17944ac8386e84cdae97d7cdd73112def28167c2ae1499",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/promotion-document-style-guide/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "rewards_career",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U095-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_promotion_document_style_guide.md",
+              "quote": "Stick to the template. If it asks for two examples, give the two best examples."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U096",
+      "question": "这份快照是否已给出Elevate Applied下一版coaching的最终固定安排？",
+      "expected_answer": "没有，页面明确说下一版coaching仍在开发，细节之后发布。",
+      "evidence_ids": [
+        "doc-ef4a4b472540950304cd4e7b14c87ecb-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_elevate_applied.md",
+          "quote": "The next iteration of our Elevate Applied Coaching offering is under development, more details will be released soon.",
+          "sha256": "d22ae8d76584ca02da73768e9a4a5b88e84a2e89b4d143fd3da43083837de649",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevate-applied/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U096-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_elevate_applied.md",
+              "quote": "The next iteration of our Elevate Applied Coaching offering is under development, more details will be released soon."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U097",
+      "question": "Remote巴西十三薪是不是全年工资之外又一笔13个月工资？",
+      "expected_answer": "不是，金额是一月工资即年基本工资约8.33%，分11月和12月两部分支付。",
+      "evidence_ids": [
+        "doc-d7885064ceccbd6cbcd23a3248057ad7-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_remote_com.md",
+          "quote": "- **Amount:** Equal to one month’s salary (8.33% of base annual salary)\n- **Payment:** Two parts - November (by 20th) and December",
+          "sha256": "7e84559c8795e3a8d190b5f857493ed9a4e28ba9cc036c8d76663312f1cb61a6",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com/"
+        }
+      ],
+      "question_type": "confusable_policies",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U097-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_remote_com.md",
+              "quote": "- **Amount:** Equal to one month’s salary (8.33% of base annual salary)\n- **Payment:** Two parts - November (by 20th) and December"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U098",
+      "question": "ElevatePrep缺课之后补课有截止时间吗？",
+      "expected_answer": "要求在最后一次live session结束后一个月内完成课程及缺课补学。",
+      "evidence_ids": [
+        "doc-384af2b85b1c21e23f915697a7fa5e88-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_elevate_prep.md",
+          "quote": "All participants are expected to complete the program and make up any missed sessions within one month of the final live session taking place.",
+          "sha256": "37814763d2d78aa972e6191ffedeaaa22e5057dbce993bd4933853b1d0c0e58a",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/elevate-programs/elevate-prep/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U098-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_elevate_prep.md",
+              "quote": "All participants are expected to complete the program and make up any missed sessions within one month of the final live session taking place."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U099",
+      "question": "荷兰和比利时的月度医疗补贴一样都是70欧元吗？",
+      "expected_answer": "不同，荷兰全职成员每月150欧元税前补贴，比利时每月70欧元税前补贴。",
+      "evidence_ids": [
+        "doc-76d5ccec0577fa18de21059ba2d4c0ad-chunk-000",
+        "doc-f33f26865055ca2f25022b6c01fa2210-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_netherlands_benefits.md",
+          "quote": "Full-time Netherlands team members receive a EUR 150 gross monthly allowance to help cover healthcare costs.",
+          "sha256": "d8adbe6ff93ff89df9ec843100b95f189565511c858f30ca1267b275f9769bd0",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands/"
+        },
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_bv_benefits_belgium.md",
+          "quote": "€70 monthly gross allowance",
+          "sha256": "024a34336d6394a6d0010c1725eaee1d9dd752c11025ca338036f99446cd0e23",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium/"
+        }
+      ],
+      "question_type": "multi_document_comparison",
+      "answerable": true,
+      "difficulty": "hard",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U099-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_netherlands_benefits.md",
+              "quote": "Full-time Netherlands team members receive a EUR 150 gross monthly allowance to help cover healthcare costs."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-U099-E2",
+          "alternatives": [
+            {
+              "file_path": "hr_bv_benefits_belgium.md",
+              "quote": "€70 monthly gross allowance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U100",
+      "question": "法国与爱尔兰医疗计划对家属保费的公司承担比例是否相同？",
+      "expected_answer": "不同，法国雇主承担家属保费66%，爱尔兰VHI医疗险为符合资格家属承担100%。",
+      "evidence_ids": [
+        "doc-8d107ffb4e629e0ba3136de55388980f-chunk-000",
+        "doc-b241a0d96ef61ec4460bedd675630573-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_france_sas.md",
+          "quote": "66% employer contribution for dependent premiums",
+          "sha256": "38b361562dc83747f43b433b0d280aba935eeebe098a8b0e9b9b93de2225a23b",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/france-sas/"
+        },
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_gitlab_ireland_ltd.md",
+          "quote": "We cover 100% of the premiums for you and your eligible dependents.",
+          "sha256": "aa3769d7a777f9e66dfea4a4df6e5a874a672717718f6e6d0d379d4ef1e7f19b",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd/"
+        }
+      ],
+      "question_type": "multi_document_comparison",
+      "answerable": true,
+      "difficulty": "hard",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U100-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_france_sas.md",
+              "quote": "66% employer contribution for dependent premiums"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-U100-E2",
+          "alternatives": [
+            {
+              "file_path": "hr_gitlab_ireland_ltd.md",
+              "quote": "We cover 100% of the premiums for you and your eligible dependents."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U101",
+      "question": "英国AXA与新西兰Southern Cross对既往病症的立即覆盖，是否都有入职90天的申请限制？",
+      "expected_answer": "不能混用：新西兰立即覆盖要求90天内加入；英国快照说明现有和新参保者已有病症覆盖，无需过去的moratorium等待条件。",
+      "evidence_ids": [
+        "doc-4f0b90773329531012701ff1d7e05984-chunk-000",
+        "doc-e848379782c5617af8a5db636b120df0-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_pty_benefits_new_zealand.md",
+          "quote": "Immediate pre-existing condition cover only within 90 days of your start date",
+          "sha256": "2bd61c0c18917614a2e5ce9f0c3280e22f302d55777599fd02725df652b4be8d",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand/"
+        },
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_ltd_benefits_uk.md",
+          "quote": "pre-existing conditions are covered. Current team members enrolled and new joiners to the AXA plan will have cover for treatment of pre-existing medical issues they may have had before joining",
+          "sha256": "eefe1e1d8e03d110246bc698667960c5da0a44c6225bb247c93f46bda4f76224",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk/"
+        }
+      ],
+      "question_type": "multi_document_comparison",
+      "answerable": true,
+      "difficulty": "hard",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U101-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_pty_benefits_new_zealand.md",
+              "quote": "Immediate pre-existing condition cover only within 90 days of your start date"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-U101-E2",
+          "alternatives": [
+            {
+              "file_path": "hr_ltd_benefits_uk.md",
+              "quote": "pre-existing conditions are covered. Current team members enrolled and new joiners to the AXA plan will have cover for treatment of pre-existing medical issues they may have had before joining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U102",
+      "question": "荷兰固定养老金计划和德国Support Fund，是否都要求员工自己出2%？",
+      "expected_answer": "不是，荷兰方案列明员工2%、GitLab 3%；德国Support Fund不要求员工缴费。",
+      "evidence_ids": [
+        "doc-b19a268f9318b0a3010beca02fc989df-chunk-000",
+        "doc-f33f26865055ca2f25022b6c01fa2210-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_netherlands_benefits.md",
+          "quote": "You contribute 2%, GitLab contributes 3%",
+          "sha256": "d8adbe6ff93ff89df9ec843100b95f189565511c858f30ca1267b275f9769bd0",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands/"
+        },
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_germany_benefits.md",
+          "quote": "No employee contribution required",
+          "sha256": "727038bf92f6e0a9e1709a797d51f48c8e3fc523935d6c61a2bbe5b24885e760",
+          "source_url": "https://handbook.gitlab.com/handbook/entity/gmbh-germany/"
+        }
+      ],
+      "question_type": "multi_document_comparison",
+      "answerable": true,
+      "difficulty": "hard",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U102-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_netherlands_benefits.md",
+              "quote": "You contribute 2%, GitLab contributes 3%"
+            }
+          ]
+        },
+        {
+          "group_id": "HR-U102-E2",
+          "alternatives": [
+            {
+              "file_path": "hr_germany_benefits.md",
+              "quote": "No employee contribution required"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U103",
+      "question": "Engineering的O’Reilly许可和Hone经理许可，都可以同样无限期保留吗？",
+      "expected_answer": "不能混同：O’Reilly三个月后会回收重分配；Hone所有people managers获当年无限访问。",
+      "evidence_ids": [
+        "doc-72ca97dea20ca10bf17ea0f861cae5e2-chunk-000",
+        "doc-f33d721bc424ba16540b64d502fadb37-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_self_paced_learning.md",
+          "quote": "access will be removed after 3 months to reallocate seats/licenses to other users.",
+          "sha256": "c1b59f8bd2a2fc33460c70ce8ea15c964fc3d9579cf2d74674bcaaacf42ff1d7",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/self-paced-learning/"
+        },
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_hone.md",
+          "quote": "All GitLab people managers receive unlimited access to the Hone platform for the year.",
+          "sha256": "60a04e340808307914a00ae4246756901924874acc907534c268c3e582612574",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/hone/"
+        }
+      ],
+      "question_type": "multi_document_comparison",
+      "answerable": true,
+      "difficulty": "hard",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U103-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_self_paced_learning.md",
+              "quote": "access will be removed after 3 months to reallocate seats/licenses to other users."
+            }
+          ]
+        },
+        {
+          "group_id": "HR-U103-E2",
+          "alternatives": [
+            {
+              "file_path": "hr_hone.md",
+              "quote": "All GitLab people managers receive unlimited access to the Hone platform for the year."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U104",
+      "question": "我的医疗、眼镜福利额度是多少？我没有说明工作国家或签约实体。",
+      "expected_answer": "先确认工作国家及雇佣实体，再查对应当地福利；不能随便采用某个国家的金额作为全球统一标准。",
+      "evidence_ids": [
+        "doc-12ccc1f1e30011a8f71ef221af5eb04c-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_general_entity_benefits.md",
+          "quote": "Entity-Specific Benefits** are additional benefits available to team members in countries where GitLab has established entities or uses Professional Employer Organizations (PEOs).",
+          "sha256": "bc3fc73122458b325766fc1d2dcbb5ff0b3daff448e9ca05a0e4b7c52428a27d",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/"
+        }
+      ],
+      "question_type": "missing_region_clarification",
+      "answerable": false,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U104-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_general_entity_benefits.md",
+              "quote": "Entity-Specific Benefits** are additional benefits available to team members in countries where GitLab has established entities or uses Professional Employer Organizations (PEOs)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U105",
+      "question": "今年没休完的法定年假能保留到明年几月？我还没说在哪个地区工作。",
+      "expected_answer": "需要先确认所在地及当地实体政策，法定最低额度、累计与结转规则因地区不同，不能给出统一截止月。",
+      "evidence_ids": [
+        "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-000",
+        "doc-b5bd5863cfb0cfd117f121dc492f87d9-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_time_off_types.md",
+          "quote": "specific entitlements and obligations vary by location.",
+          "sha256": "7b83ede2a904763770fdb4c9862094e40ecdf50c24aa9f1cece6b6704a371d29",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/"
+        }
+      ],
+      "question_type": "missing_region_clarification",
+      "answerable": false,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "absence",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U105-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_time_off_types.md",
+              "quote": "specific entitlements and obligations vary by location."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U106",
+      "question": "帮我查一下我今年G&D预算还剩多少钱，公开政策能直接查到我的余额吗？",
+      "expected_answer": "不能从公开政策得出个人实际余额；政策介绍Compass的跟踪能力，实际金额须在授权账户或向相关团队核实。",
+      "evidence_ids": [
+        "doc-3aae0be99d59ad4e5951466f70096abb-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_growth_development.md",
+          "quote": "Compass gives team members clearer tracking and gives leaders better visibility into how G&D funds are being used across their teams.",
+          "sha256": "0412dd420b4bae04c4d2f188475d43a61d00d4e78fee9082150907193e55e358",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/growth-and-development/"
+        }
+      ],
+      "question_type": "no_answer_personal_records",
+      "answerable": false,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "learning",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U106-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_growth_development.md",
+              "quote": "Compass gives team members clearer tracking and gives leaders better visibility into how G&D funds are being used across their teams."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U107",
+      "question": "请告诉我自己E*TRADE账户里现在已归属但还没卖出的GitLab股票数量。",
+      "expected_answer": "公开股权政策不包含个人当前账户数量，不能据一般示例推断，应查看本人获授权的证券账户。",
+      "evidence_ids": [
+        "doc-55c644c451493a7e5b0e5debbaee8616-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_stock_options.md",
+          "quote": "The remaining shares from your RSU grants are fully owned by you and deposited in your E\\*Trade Securities stock plan account.",
+          "sha256": "6f94ee95013d41f9cfda785bdc632001edd91a0f63c241109844b55cd6083cfc",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/stock-options/"
+        }
+      ],
+      "question_type": "no_answer_personal_records",
+      "answerable": false,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "rewards_career",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U107-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_stock_options.md",
+              "quote": "The remaining shares from your RSU grants are fully owned by you and deposited in your E\\*Trade Securities stock plan account."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U108",
+      "question": "这份公开页面能直接证明我今年年度review一定获准加薪多少美元吗？",
+      "expected_answer": "不能，页面仅给一般政策且资格不保证加薪；个人获批结果需从获授权的薪酬沟通或系统核实。",
+      "evidence_ids": [
+        "doc-7ce173cf24eedd8046c214eb4a30be74-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_compensation_review_cycle.md",
+          "quote": "Awards are recommended in alignment with team members’ contributions to the organization",
+          "sha256": "be8e8bf90018324432e029d6d1b4644d55cfd4b0004050471f60e6332d3d9127",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/compensation/compensation-review-cycle/"
+        }
+      ],
+      "question_type": "no_answer_personal_records",
+      "answerable": false,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "rewards_career",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U108-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_compensation_review_cycle.md",
+              "quote": "Awards are recommended in alignment with team members’ contributions to the organization"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U109",
+      "question": "请从公开晋升页读取Engineering同事提交的具体评审回答。",
+      "expected_answer": "不能把公开流程说明当成个人评审数据；页面说明回答只对Engineering Leadership和Engineering PBP可见。",
+      "evidence_ids": [
+        "doc-1172522a75d174d9c2e383506b25406b-chunk-002"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_promotions_transfers.md",
+          "quote": "Responses are visible only to the Engineering Leadership team (CTO direct reports) and Engineering People Business Partners.",
+          "sha256": "38768fc35187ad2f2ff064e9653edee04f8566e25f5bd80b89d8fd2bda0db307",
+          "source_url": "https://handbook.gitlab.com/handbook/people-group/promotions-transfers/"
+        }
+      ],
+      "question_type": "permission_restricted",
+      "answerable": false,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "rewards_career",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U109-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_promotions_transfers.md",
+              "quote": "Responses are visible only to the Engineering Leadership team (CTO direct reports) and Engineering People Business Partners."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U110",
+      "question": "美国成员每周只工作20小时，能仅凭自己是GitLab成员就按这页默认符合全职医疗福利资格吗？",
+      "expected_answer": "不能直接认定；该页规定全职成员每周至少工作30小时才符合所述资格。",
+      "evidence_ids": [
+        "doc-fdd198dc3f37f0758eb43ad8e5d793b5-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_us_benefits.md",
+          "quote": "You’re eligible if you’re a full-time GitLab team member working at least 30 hours per week.",
+          "sha256": "7b0657ee58bde95be3469c99fe6b5f39e2bb68caa128c3376e0cf06662a904e3",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U110-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_us_benefits.md",
+              "quote": "You’re eligible if you’re a full-time GitLab team member working at least 30 hours per week."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U111",
+      "question": "出差酒店账单里迷你吧和付费电影能作为普通住宿费用一起报销吗？",
+      "expected_answer": "不能，政策明确不允许报销电影和迷你吧。",
+      "evidence_ids": [
+        "doc-c375d1c29d77648fddd9374367e78059-chunk-004"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_travel_expenses.md",
+          "quote": "Movies, mini bars are not allowed as a claim.",
+          "sha256": "2e1562522a893e1df650dcfb3e2a8a8b45ce3fbccd35e1ccb9c86b3febc3e5ed",
+          "source_url": "https://handbook.gitlab.com/handbook/finance/expenses/"
+        }
+      ],
+      "question_type": "exceptions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "travel_expenses",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U111-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_travel_expenses.md",
+              "quote": "Movies, mini bars are not allowed as a claim."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U112",
+      "question": "加拿大ManuLife保障是否所有省都用完全相同的计划？",
+      "expected_answer": "不是，魁北克有Plan B，其他省份为Plan A。",
+      "evidence_ids": [
+        "doc-0a9b14d4273124c53732f5b5f0b081d8-chunk-000"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_canada_benefits.md",
+          "quote": "Separate plans for Quebec ([Plan B- English](https://drive.google.com/file/d/1QwJSkcQ6XoBrXz6llCxd_g_yOSNWZZJF/view?usp=sharing) & [Plan B- French](https://drive.google.com/file/d/1t9o7_PrQLNyWdZ4Wvq-H0SviVfQfPJqC/view?usp=sharing)) and other provinces ([Plan A- English](https://drive.google.com/file/d/1l6qjUZLU3qIKhs5XkJXDe24JjQsNp247/view?usp=sharing) & [Plan A- French](https://drive.google.com/file/d/1gyDNDftIMfXK2Tg7s_juhYb_lI_MgCdH/view?usp=sharing))",
+          "sha256": "f5c263e8fda50a1c3f0893cd5cc2ca31a82693bf279f0914f9801bbd7d41b2d1",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U112-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_canada_benefits.md",
+              "quote": "Separate plans for Quebec ([Plan B- English](https://drive.google.com/file/d/1QwJSkcQ6XoBrXz6llCxd_g_yOSNWZZJF/view?usp=sharing) & [Plan B- French](https://drive.google.com/file/d/1t9o7_PrQLNyWdZ4Wvq-H0SviVfQfPJqC/view?usp=sharing)) and other provinces ([Plan A- English](https://drive.google.com/file/d/1l6qjUZLU3qIKhs5XkJXDe24JjQsNp247/view?usp=sharing) & [Plan A- French](https://drive.google.com/file/d/1gyDNDftIMfXK2Tg7s_juhYb_lI_MgCdH/view?usp=sharing))"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-U113",
+      "question": "新加坡成员生育前仅入职一个月，可以不看任职期限就按这页判断产假资格吗？",
+      "expected_answer": "不能；页面所列产假可能符合资格的前提包括出生前已任职至少三个月。",
+      "evidence_ids": [
+        "doc-abe8ced754bc8f1d585c290b645ae259-chunk-001"
+      ],
+      "evidence": [
+        {
+          "path": "data/gitlab_hr/v3/cleaned/hr_singapore_pte_ltd.md",
+          "quote": "Team members employed for at least 3 months before birth may be eligible for the maternity leaves listed below.",
+          "sha256": "a1fa77f8ec48e78a3b5a116dfabd6d0a2e159d14158ee46313585d8857212054",
+          "source_url": "https://handbook.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd/"
+        }
+      ],
+      "question_type": "conditions",
+      "answerable": true,
+      "difficulty": "medium",
+      "source_version": "gitlab_hr_v3",
+      "source_cluster": "benefits",
+      "split": "test",
+      "quality_status": "source_and_question_answer_constraints_checked",
+      "evidence_groups": [
+        {
+          "group_id": "HR-U113-E1",
+          "alternatives": [
+            {
+              "file_path": "hr_singapore_pte_ltd.md",
+              "quote": "Team members employed for at least 3 months before birth may be eligible for the maternity leaves listed below."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_version": "318beea980e6c4ce3a395c8e70f2244a6c4c12001eb2cce9ef23d15e14a7b57c",
+  "protocol": {
+    "development": "evaluation/hr_medium_dev_v2.json",
+    "validation": "evaluation/hr_medium_holdout_v1.json",
+    "test_must_not_be_used_for_parameter_or_prompt_selection": true,
+    "review": "Exact source hash/quote/chunk checks for every item; question-answer constraint review; nine overextended draft expectations narrowed.",
+    "excluded_observed_question_ids": [
+      "HR-U025"
+    ],
+    "code_sha256_before_outputs": {
+      "app/facet_policy.py": "e2064c9e8ecf9e846a20448abcc2346296e000a768b516034defd0c256bf651e",
+      "app/prelimit_adapter.py": "dcee551a911b1db27e1476da2f248c53722e0eedf0abb2e37dbabeb1e3d6869e",
+      "app/answer_prompt.py": "258bdaf13aef0c7af4f1c30413523c23a62597f0b33be6497dd015a167da3af5",
+      "app/context_builder.py": "9d48b22016e04f23e062834ba02b2369322faf34db170abf6fb365b2c3caa333",
+      "app/qa_pipeline.py": "091a06073c219a36a3ab11b65a960a35b4a7fab1c43a0a0a0e96d363a9ba9efd",
+      "app/retrieval_client.py": "bc15132b0b1662b627e060ddc8568833abc3e0093e0135d0f604e0e6e30eadcd",
+      "app/rerank.py": "33b36ee32a2dfeba635aabea69b5df0729bcb53936110e140b2300ae85775551"
+    },
+    "original_candidate_sha256": "2f1bb7ead7d52181009d363ec9569e90553de54b91761208315c7047e80f67aa"
+  },
+  "limitations": [
+    "Internal curated questions on the same public corpus, not an external blinded benchmark.",
+    "Gold annotations cover explicit required evidence, not exhaustive relevance judgements for every retrieved chunk.",
+    "Permission questions test refusal on public policies; real authorization is tested separately at the API boundary.",
+    "After any tuning based on these results, this set must become regression and a new test set must be authored."
+  ]
+}

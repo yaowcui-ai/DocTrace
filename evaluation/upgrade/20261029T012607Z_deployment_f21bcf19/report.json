@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "health_liveness",
+      "passed": true
+    },
+    {
+      "name": "react_bundle_entry",
+      "passed": true
+    },
+    {
+      "name": "legacy_entry_retained",
+      "passed": true
+    },
+    {
+      "name": "unauthenticated_product_denied",
+      "passed": true
+    },
+    {
+      "name": "unauthenticated_admin_denied",
+      "passed": true
+    },
+    {
+      "name": "actual_cookie_login",
+      "passed": true
+    },
+    {
+      "name": "http_only_cookie",
+      "passed": true
+    },
+    {
+      "name": "isolated_cookie_name",
+      "passed": true
+    },
+    {
+      "name": "actual_admin_role",
+      "passed": true
+    },
+    {
+      "name": "real_reports_list",
+      "passed": true
+    },
+    {
+      "name": "report_baseline",
+      "passed": true
+    },
+    {
+      "name": "report_retrieval",
+      "passed": true
+    },
+    {
+      "name": "report_engineering",
+      "passed": true
+    },
+    {
+      "name": "report_performance",
+      "passed": true
+    },
+    {
+      "name": "report_business",
+      "passed": true
+    },
+    {
+      "name": "report_retrieval-internal",
+      "passed": true
+    },
+    {
+      "name": "report_generation",
+      "passed": true
+    },
+    {
+      "name": "admin_stats",
+      "passed": true
+    },
+    {
+      "name": "admin_documents",
+      "passed": true
+    },
+    {
+      "name": "admin_tasks",
+      "passed": true
+    },
+    {
+      "name": "personal_conversations",
+      "passed": true
+    },
+    {
+      "name": "report_traversal_denied",
+      "passed": true
+    },
+    {
+      "name": "logout",
+      "passed": true
+    },
+    {
+      "name": "revoked_cookie_denied",
+      "passed": true
+    }
+  ],
+  "provider_calls": 0,
+  "database": "doctrace_upgrade",
+  "port": 8005,
+  "scope": "Actual deployed HTTP, Cookie, MySQL and read-only reports; no new question generated."
+}

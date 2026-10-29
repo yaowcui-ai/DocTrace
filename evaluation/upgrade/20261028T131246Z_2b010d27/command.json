@@ -1,0 +1,14 @@
+{
+  "label": "review-source-and-import-red",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_product_api.py",
+    "-k",
+    "raw_frozen_operation or import_does_not_take",
+    "-q"
+  ],
+  "started_at": "2026-10-28T13:12:46.331651+00:00",
+  "exit_code": null
+}

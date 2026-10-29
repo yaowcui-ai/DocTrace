@@ -1,0 +1,61 @@
+{
+  "case_count": 113,
+  "source_document_count": 68,
+  "selected_document_count": 68,
+  "question_types": {
+    "composite": 7,
+    "conditions": 39,
+    "confusable_policies": 12,
+    "exceptions": 26,
+    "missing_region_clarification": 2,
+    "multi_document_comparison": 5,
+    "no_answer_personal_records": 4,
+    "permission_restricted": 3,
+    "simple_fact": 15
+  },
+  "splits": {
+    "development_candidate": 53,
+    "validation_candidate": 60
+  },
+  "source_clusters": {
+    "absence": 10,
+    "acceptable_use": 2,
+    "benefits": 34,
+    "community": 1,
+    "employment_contracts": 4,
+    "learning": 28,
+    "mobility": 4,
+    "offboarding": 3,
+    "organization_support": 1,
+    "rewards_career": 15,
+    "travel_expenses": 4,
+    "workplace_safety": 7
+  },
+  "human_review_pending": 113,
+  "independent_external_test": false,
+  "quote_exact_match": true,
+  "source_hashes_verified": true,
+  "chunk_ids_verified": true,
+  "old_question_and_exact_quote_overlap": 0,
+  "provider_calls": 0,
+  "missing_sources": [],
+  "regression_files": {
+    "evaluation/hr_dev_v1.json": "db6354bb687ea772fe0bc87c68fb577c233591a069f40bc28bceae279a6cf05f",
+    "evaluation/hr_dev_v2.json": "5bedf91a5f3be6269d9945fe49df6f35a8f66573aaf5336198dba665cea33d54",
+    "evaluation/hr_dev_v3.json": "3ba54585a5850a1a9ad1c9d7e5c109f619320ed07fa27ccfe976a796cd989caa",
+    "evaluation/hr_dev_v4.json": "5c97022e4f4d748c1aa40998489c33301b5407a8196a35518c5345d3b905f4b5",
+    "evaluation/hr_dev_v5.json": "381751568fbec52ce9e903ea7e243e858d601fec0772e2cebfab93348c871c1a",
+    "evaluation/hr_holdout_v1.json": "3534118eb418e0159e3f3407c97856ce4d98d17b61b4fa552e461aa2d98d1c5d",
+    "evaluation/hr_medium_dev_v1.json": "1c624c09e9eb8257de81771253587601dde44209c5856fdbae8c8a767d185bed",
+    "evaluation/hr_medium_dev_v2.json": "5643126b983610d4a07dc1645110144299fbc3b823befc53a7503e922e3f91ec",
+    "evaluation/hr_medium_e2e_v1.json": "967161fd2dee46c52ab8b2f10bf1c480e5a71e7a28c700562e0e966f831ab97d",
+    "evaluation/hr_medium_holdout_v1.json": "3b28f077e71554c01572bbf11e7565c7233c98172681769406f6773370e7d7ba",
+    "evaluation/hr_medium_replay_v1.json": "e2831f2f6886dd8883d053ecfec537d6cd29c327d916ffeed197e76e36e25463",
+    "evaluation/hr_medium_replay_v2.json": "ca7dfaf6abd747d89c308c0efd3e24ebf62ed36c70ba350bd5d3aa430ed82429",
+    "evaluation/hr_regional_dev_v1.json": "5d5ba53aa88d654d525022c3115aa68e763972917fbca5f300802aae4dc59e1e",
+    "evaluation/hr_regional_dev_v2.json": "92691d59b86ee4b83f12e1bf4290243a1c1e4f33b3e0d88621d52d30e578df80",
+    "evaluation/hr_regression_v1.json": "7f984303050224fa6deba08e177c678b425dfcb78e1f988c0c309fec512a1c4a"
+  },
+  "curation_sha256": "71acbacbfe64a204dfa030cfe58dbfdf7c729bec166dd4cb2916e729ac48db60",
+  "policy_assignment_sha256": "070142fc13f77babfd88abe18084a7302f47c9d1f9ab290916b52943282b52db"
+}

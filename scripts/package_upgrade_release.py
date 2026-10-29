@@ -43,7 +43,10 @@ def main():
         add(name)
     for folder in (ROOT/'evaluation/upgrade').glob('20*'):
         if folder.is_dir():
-            for name in ('command.json', 'result.json', 'output.log', 'audit.json', 'operate.patch'):
+            names = ('command.json', 'result.json', 'output.log', 'audit.json', 'operate.patch')
+            if '_deployment_' in folder.name:
+                names += ('report.json',)
+            for name in names:
                 path = folder/name
                 if path.is_file():
                     paths.add(path)
@@ -80,7 +83,9 @@ def main():
             '      - run: python -c "import tiktoken; tiktoken.encoding_for_model(\'gpt-4o-mini\')"\n      - run: python -m pytest tests -q')
         workflow.write_text(text, encoding='utf-8')
     (target/'verification/upgrade-source-manifest.json').write_text(json.dumps({
-        'branch': branch, 'files_sha256': manifest, 'actual_secret_scan': 'passed',
+        'branch': branch, 'files_sha256': manifest,
+        'hash_scope': 'Copied working-tree bytes before Git text normalization; frozen algorithm Git bytes are checked separately.',
+        'actual_secret_scan': 'passed',
         'excluded': ['private configuration', 'runtime indexes', 'personal history', 'raw candidate batches', 'database backups'],
         'pages_assets_preserved': True}, indent=2), encoding='utf-8')
     print('Packaged reviewed files:', len(paths), 'Actual credential scan: passed; Pages assets retained.')

@@ -1,0 +1,38 @@
+...F.......F                                                             [100%]
+================================== FAILURES ===================================
+__ test_annotated_gold_outside_candidate_pool_still_counts_as_a_recall_miss ___
+
+    def test_annotated_gold_outside_candidate_pool_still_counts_as_a_recall_miss():
+        from app.ablation_replay import gold_labels
+        from app.benchmark import ranking_metrics
+        case = {'evidence_ids': ['missing'], 'evidence_groups': [{'alternatives': [{'file_path': 'gold.md', 'quote': 'must approve'}]}]}
+        labels, groups = gold_labels(case, [{'chunk_id': 'noise', 'file_path': 'other.md', 'content': 'No direct evidence'}])
+>       measured = ranking_metrics(['noise'], labels, groups, k=10)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_ablation_replay.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ranked_ids = ['noise'], relevance = {}, groups = [[]], k = 10
+
+    def ranking_metrics(ranked_ids: list[str], relevance: dict[str, int], groups: list[list[str]], *, k: int) -> dict:
+        if type(k) is not int or k < 1 or len(set(ranked_ids)) != len(ranked_ids):
+            raise ValueError('Positive k and unique ranked IDs are required')
+        if any(type(grade) is not int or grade not in (0, 1, 2, 3) for grade in relevance.values()):
+            raise ValueError('Relevance grades must be integers from 0 to 3')
+        if any(not group or any(not isinstance(item, str) for item in group) for group in groups):
+>           raise ValueError('Evidence groups must contain alternative chunk IDs')
+E           ValueError: Evidence groups must contain alternative chunk IDs
+
+app\benchmark.py:13: ValueError
+_____ test_explicit_gold_proxy_does_not_claim_semantic_noise_is_measured ______
+
+    def test_explicit_gold_proxy_does_not_claim_semantic_noise_is_measured():
+>       from app.benchmark import strict_gold_proxy
+E       ImportError: cannot import name 'strict_gold_proxy' from 'app.benchmark' (C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\app\benchmark.py)
+
+tests\test_benchmark_metrics.py:69: ImportError
+=========================== short test summary info ===========================
+FAILED tests/test_ablation_replay.py::test_annotated_gold_outside_candidate_pool_still_counts_as_a_recall_miss
+FAILED tests/test_benchmark_metrics.py::test_explicit_gold_proxy_does_not_claim_semantic_noise_is_measured
+2 failed, 10 passed in 2.73s

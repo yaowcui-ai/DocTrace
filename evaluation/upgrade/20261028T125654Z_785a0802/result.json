@@ -1,0 +1,16 @@
+{
+  "label": "legacy-provenance-red",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_product_api.py",
+    "-k",
+    "imported_history",
+    "-q"
+  ],
+  "started_at": "2026-10-28T12:56:54.331182+00:00",
+  "exit_code": 1,
+  "seconds": 5.173,
+  "finished_at": "2026-10-28T12:56:59.511269+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "label": "dataset-validator-fixed",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_upgrade_dataset.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T07:21:12.507077+00:00",
+  "exit_code": 0,
+  "seconds": 3.726,
+  "finished_at": "2026-10-28T07:21:16.232315+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "label": "generation-controlled-sample",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/run_upgrade_generation.py",
+    "--source",
+    "evaluation/upgrade/new_retrieval/20261028T074830Z_2d0d3d18/assembled_20261028T122615Z_3a61fe.json",
+    "--selection",
+    "evaluation/upgrade/reports/retrieval_internal_partial_61.json",
+    "--execute",
+    "--max-cases",
+    "9",
+    "--max-calls",
+    "18"
+  ],
+  "started_at": "2026-10-28T12:31:36.143280+00:00",
+  "exit_code": 0,
+  "seconds": 61.616,
+  "finished_at": "2026-10-28T12:32:37.751592+00:00"
+}

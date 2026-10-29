@@ -1,0 +1,14 @@
+{
+  "label": "frontend-review-red",
+  "command": [
+    "npm.cmd",
+    "--prefix",
+    "frontend",
+    "run",
+    "test:e2e"
+  ],
+  "started_at": "2026-10-29T00:57:34.114688+00:00",
+  "exit_code": 1,
+  "seconds": 27.467,
+  "finished_at": "2026-10-29T00:58:01.586966+00:00"
+}

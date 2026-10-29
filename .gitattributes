@@ -3,5 +3,7 @@
 *.jpg binary
 *.pdf binary
 *.docx binary
-evaluation/diagnostics/* -text whitespace=-blank-at-eol
-*.patch -text whitespace=-blank-at-eol
+evaluation/diagnostics/* -text whitespace=-blank-at-eol,-blank-at-eof
+*.patch -text whitespace=-blank-at-eol,-blank-at-eof
+evaluation/upgrade/**/output.log -text whitespace=-blank-at-eol,-blank-at-eof
+evaluation/*.xml -text whitespace=-blank-at-eol,-blank-at-eof

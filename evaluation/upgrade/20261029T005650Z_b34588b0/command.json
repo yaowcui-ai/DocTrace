@@ -1,0 +1,13 @@
+{
+  "label": "history-pagination-green",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_product_api.py",
+    "tests/test_product_contract.py",
+    "-q"
+  ],
+  "started_at": "2026-10-29T00:56:50.601918+00:00",
+  "exit_code": null
+}

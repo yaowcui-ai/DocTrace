@@ -1,0 +1,131 @@
+{
+  "kind": "synthetic_provider_real_http_mysql",
+  "created_at": "2026-10-28T07:20:53.424074+00:00",
+  "provider_calls": 0,
+  "database": "doctrace_upgrade",
+  "database_port": 3310,
+  "hardware": {
+    "system": "Windows-10-10.0.26100-SP0",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "logical_cpus": 12
+  },
+  "protocol": {
+    "levels": [
+      1,
+      5,
+      10,
+      20
+    ],
+    "requests_per_level": 20,
+    "mock_provider_seconds": 0.1,
+    "max_paid_work_concurrency": 2,
+    "per_account_concurrency": 1
+  },
+  "database_resource_snapshot_end": "{\"BlockIO\":\"63MB / 48MB\",\"CPUPerc\":\"0.56%\",\"Container\":\"doctrace-upgrade-mysql-1\",\"ID\":\"4e4c96bac1d7\",\"MemPerc\":\"5.32%\",\"MemUsage\":\"365.3MiB / 6.706GiB\",\"Name\":\"doctrace-upgrade-mysql-1\",\"NetIO\":\"1.12MB / 1.15MB\",\"PIDs\":\"47\"}\n",
+  "limitations": [
+    "Single account; application backpressure expected, 429 retained as failure.",
+    "Synthetic provider replaces retrieval/rerank/generation; not real RAG throughput or model latency.",
+    "One short batch per level; end resource snapshot is not peak resource measurement or production capacity."
+  ],
+  "levels": [
+    {
+      "concurrency": 1,
+      "wall_seconds": 4.215341999999509,
+      "summary": {
+        "attempted": 20,
+        "http_successes": 20,
+        "completed": 20,
+        "failures": 0,
+        "failure_rate": 0.0,
+        "http_status_counts": {
+          "200": 20
+        },
+        "attempted_requests_per_second": 4.744573512659786,
+        "completed_requests_per_second": 4.744573512659786,
+        "completed_latency_seconds": {
+          "p50": 0.20734,
+          "p95": 0.227021
+        },
+        "all_attempt_latency_seconds": {
+          "p50": 0.20734,
+          "p95": 0.227021
+        }
+      }
+    },
+    {
+      "concurrency": 5,
+      "wall_seconds": 0.8915510000006179,
+      "summary": {
+        "attempted": 20,
+        "http_successes": 4,
+        "completed": 4,
+        "failures": 16,
+        "failure_rate": 0.8,
+        "http_status_counts": {
+          "200": 4,
+          "429": 16
+        },
+        "attempted_requests_per_second": 22.432816518613222,
+        "completed_requests_per_second": 4.486563303722645,
+        "completed_latency_seconds": {
+          "p50": 0.233163,
+          "p95": 0.40281
+        },
+        "all_attempt_latency_seconds": {
+          "p50": 0.147484,
+          "p95": 0.39591
+        }
+      }
+    },
+    {
+      "concurrency": 10,
+      "wall_seconds": 1.2084317999979248,
+      "summary": {
+        "attempted": 20,
+        "http_successes": 5,
+        "completed": 5,
+        "failures": 15,
+        "failure_rate": 0.75,
+        "http_status_counts": {
+          "200": 5,
+          "429": 15
+        },
+        "attempted_requests_per_second": 16.550375453570773,
+        "completed_requests_per_second": 4.137593863392693,
+        "completed_latency_seconds": {
+          "p50": 0.352315,
+          "p95": 0.940143
+        },
+        "all_attempt_latency_seconds": {
+          "p50": 0.498825,
+          "p95": 0.956717
+        }
+      }
+    },
+    {
+      "concurrency": 20,
+      "wall_seconds": 1.3527811999992991,
+      "summary": {
+        "attempted": 20,
+        "http_successes": 7,
+        "completed": 7,
+        "failures": 13,
+        "failure_rate": 0.65,
+        "http_status_counts": {
+          "200": 7,
+          "429": 13
+        },
+        "attempted_requests_per_second": 14.78435684943756,
+        "completed_requests_per_second": 5.174524897303146,
+        "completed_latency_seconds": {
+          "p50": 0.858954,
+          "p95": 1.233944
+        },
+        "all_attempt_latency_seconds": {
+          "p50": 0.933369,
+          "p95": 1.254317
+        }
+      }
+    }
+  ]
+}

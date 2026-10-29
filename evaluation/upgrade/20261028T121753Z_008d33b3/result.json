@@ -1,0 +1,14 @@
+{
+  "label": "provider-circuit-green",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_experiment_budget.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T12:17:53.270262+00:00",
+  "exit_code": 0,
+  "seconds": 8.748,
+  "finished_at": "2026-10-28T12:18:02.022397+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "label": "load-accounting-green",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_upgrade_load.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T07:20:02.685603+00:00",
+  "exit_code": 0,
+  "seconds": 3.741,
+  "finished_at": "2026-10-28T07:20:06.436111+00:00"
+}

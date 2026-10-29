@@ -1,0 +1,14 @@
+{
+  "label": "partial-independent-ablation",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "app.ablation_replay",
+    "--source",
+    "evaluation/upgrade/new_retrieval/20261028T074830Z_2d0d3d18/assembled_20261028T122615Z_3a61fe.json",
+    "--output",
+    "evaluation/upgrade/reports/retrieval_internal_partial_61.json"
+  ],
+  "started_at": "2026-10-28T12:26:41.547989+00:00",
+  "exit_code": null
+}

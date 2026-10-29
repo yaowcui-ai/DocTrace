@@ -1,0 +1,15 @@
+{
+  "label": "worker-service-green",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_worker_service.py",
+    "tests/test_knowledge_worker.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T07:54:05.903344+00:00",
+  "exit_code": 0,
+  "seconds": 5.2,
+  "finished_at": "2026-10-28T07:54:11.104730+00:00"
+}

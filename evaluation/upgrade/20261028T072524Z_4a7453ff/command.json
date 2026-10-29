@@ -1,0 +1,10 @@
+{
+  "label": "bounded-live-generation",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/upgrade_live_probe.py",
+    "--execute"
+  ],
+  "started_at": "2026-10-28T07:25:24.387937+00:00",
+  "exit_code": null
+}

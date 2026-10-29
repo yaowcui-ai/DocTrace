@@ -1,0 +1,14 @@
+{
+  "label": "historical-b0-b3-replay",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "app.ablation_replay",
+    "--source",
+    "evaluation/history/runs/20261016T062604Z_f77bc38a_facet_batch.json",
+    "--output",
+    "evaluation/upgrade/reports/retrieval.json"
+  ],
+  "started_at": "2026-10-28T02:48:46.946625+00:00",
+  "exit_code": null
+}

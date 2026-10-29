@@ -1,0 +1,3 @@
+{"B0": {"matched_groups": 39, "expected_groups": 45, "complete_cases": 15, "tokens": 460469}, "B1": {"matched_groups": 43, "expected_groups": 45, "complete_cases": 18, "tokens": 481192}, "B2": {"matched_groups": 43, "expected_groups": 45, "complete_cases": 18, "tokens": 481192}, "B3": {"matched_groups": 44, "expected_groups": 45, "complete_cases": 19, "tokens": 481758}}
+B1/B2 identical cases: 20 / 20
+Report: evaluation\upgrade\reports\retrieval.json

@@ -1,0 +1,20 @@
+FF                                                                       [100%]
+================================== FAILURES ===================================
+_______ test_paid_pipeline_admission_is_bounded_per_owner_and_released ________
+
+    def test_paid_pipeline_admission_is_bounded_per_owner_and_released():
+>       from app.security_limits import QAAdmission
+E       ImportError: cannot import name 'QAAdmission' from 'app.security_limits' (C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\app\security_limits.py)
+
+tests\test_qa_admission.py:5: ImportError
+_________________ test_admission_release_on_upstream_failure __________________
+
+    def test_admission_release_on_upstream_failure():
+>       from app.security_limits import QAAdmission
+E       ImportError: cannot import name 'QAAdmission' from 'app.security_limits' (C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\app\security_limits.py)
+
+tests\test_qa_admission.py:22: ImportError
+=========================== short test summary info ===========================
+FAILED tests/test_qa_admission.py::test_paid_pipeline_admission_is_bounded_per_owner_and_released
+FAILED tests/test_qa_admission.py::test_admission_release_on_upstream_failure
+2 failed in 3.00s

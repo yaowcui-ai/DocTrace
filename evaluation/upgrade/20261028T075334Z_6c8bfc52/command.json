@@ -1,0 +1,12 @@
+{
+  "label": "worker-service-red",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_worker_service.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T07:53:34.566073+00:00",
+  "exit_code": null
+}

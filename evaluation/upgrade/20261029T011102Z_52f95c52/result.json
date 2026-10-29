@@ -1,0 +1,14 @@
+{
+  "label": "upgrade-final-mysql",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/integration/test_mysql_upgrade.py",
+    "-q"
+  ],
+  "started_at": "2026-10-29T01:11:02.566618+00:00",
+  "exit_code": 0,
+  "seconds": 31.333,
+  "finished_at": "2026-10-29T01:11:33.903280+00:00"
+}

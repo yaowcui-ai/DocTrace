@@ -1,0 +1,12 @@
+{
+  "label": "public-checkout-backend",
+  "command": [
+    "..\\..\\doctrace\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--junitxml=evaluation/public_upgrade_final.xml"
+  ],
+  "started_at": "2026-10-29T01:22:41.683238+00:00",
+  "exit_code": null
+}

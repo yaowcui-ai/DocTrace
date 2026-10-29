@@ -14,7 +14,7 @@ Changes include extracting policy body content, converting HTML to Markdown and 
 
 LightRAG is developed by HKUDS and contributors: https://github.com/HKUDS/LightRAG
 
-DocTrace uses a pinned upstream container image. `deploy/build_hr_prelimit.py` extracts its source locally and generates a guarded integration hook for DocTrace's candidate-ranking policy. Upstream application source and container contents are not redistributed wholesale in this repository; their existing licenses and notices remain applicable.
+DocTrace uses a pinned upstream container image. `deploy/build_hr_prelimit.py` extracts its source locally and generates a guarded integration hook for DocTrace's candidate-ranking policy. The hash-verified pinned `utils.py` diagnostic snapshot is retained under `evaluation/diagnostics/` solely for reproducible native selector replay; its MIT license and copyright are in `evaluation/diagnostics/LightRAG.LICENSE`. Other upstream container contents are not redistributed wholesale. The snapshot is unmodified; the offline runner executes a whitelist of original definitions and replaces only asynchronous executor scheduling.
 
 ## Browser libraries
 

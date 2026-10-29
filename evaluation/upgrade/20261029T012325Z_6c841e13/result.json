@@ -1,0 +1,14 @@
+{
+  "label": "upgrade-start-script-fixed",
+  "command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "scripts/start_upgrade.ps1",
+    "-NoBuild"
+  ],
+  "started_at": "2026-10-29T01:23:25.492933+00:00",
+  "exit_code": 0,
+  "seconds": 4.647,
+  "finished_at": "2026-10-29T01:23:30.137652+00:00"
+}
