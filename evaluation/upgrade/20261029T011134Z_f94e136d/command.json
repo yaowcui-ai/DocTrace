@@ -1,0 +1,14 @@
+{
+  "label": "internal-test-109-native-container",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "app.ablation_replay",
+    "--source",
+    "evaluation/upgrade/new_retrieval/20261028T074830Z_2d0d3d18/assembled_20261029T005711Z_136e89.json",
+    "--output",
+    "evaluation/upgrade/reports/retrieval_internal_109_container.json"
+  ],
+  "started_at": "2026-10-29T01:11:34.608738+00:00",
+  "exit_code": null
+}

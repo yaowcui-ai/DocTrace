@@ -20,7 +20,7 @@ def test_password_boundaries(password):
 
 @pytest.mark.parametrize("payload", [
     {"username": "alice", "password": "12345"},
-    {"username": "alice", "password": "12345678901"},
+    {"username": "alice", "password": "x" * 129},
     {"username": "alice", "password": 123456},
     {"username": " alice", "password": "123456"},
     {"username": "alice", "password": "123456", "user_id": "injected"},

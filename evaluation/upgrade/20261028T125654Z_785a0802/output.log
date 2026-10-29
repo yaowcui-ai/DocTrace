@@ -1,0 +1,22 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+_ test_imported_history_preserves_original_corpus_and_does_not_invent_actual_mode _
+
+product = (<starlette.testclient.TestClient object at 0x0000021FF1690D90>, Engine(sqlite+pysqlite:///C:\Users\86139\AppData\Loca..._imported_history_preserve0\records.db), namespace(owner='00000000-0000-4000-8000-000000000001', calls=[], fail=False))
+
+    def test_imported_history_preserves_original_corpus_and_does_not_invent_actual_mode(product):
+        client, engine, state = product
+        rid = create_processing_record(engine, question='Legacy original corpus question', corpus_id='old_corpus_v1', owner_user_id=ALICE)
+        from app.qa_records import save_completed_record
+        save_completed_record(engine, rid, result=AskResponse(response='Old saved answer', references=[], llm_generated=False), duration_ms=1)
+        assert client.post('/api/v1/conversations/import-records', json={}).status_code == 200
+        cid = client.get('/api/v1/conversations').json()['data']['items'][0]['id']
+        message = client.get('/api/v1/conversations/'+cid).json()['data']['messages'][0]
+>       assert message['corpus_id'] == 'old_corpus_v1'
+               ^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'corpus_id'
+
+tests\test_product_api.py:107: KeyError
+=========================== short test summary info ===========================
+FAILED tests/test_product_api.py::test_imported_history_preserves_original_corpus_and_does_not_invent_actual_mode
+1 failed, 31 deselected in 2.92s

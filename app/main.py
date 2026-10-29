@@ -6,7 +6,7 @@ from .lightrag_client import LightRAGClient, UpstreamError
 from .medium_config import load_medium_settings
 from .qa_pipeline import run_medium_qa_pipeline
 from .schemas import AskRequest, AskResponse, MediumAskResponse
-from contextlib import asynccontextmanager
+from contextlib import asynccontextmanager, nullcontext
 from .database import create_db_engine
 from .database_config import load_database_settings
 from .recorded_qa import RecordedQAError, run_recorded_qa
@@ -38,6 +38,11 @@ from .schemas import OptimizedAskRequest
 from .qa_pipeline import run_selected_qa_pipeline
 from .pipeline_config import load_pipeline_settings
 from .rerank_config import load_rerank_settings
+from .security_limits import SlidingWindowLimiter, QAAdmission
+from .product.api import router as product_router
+from .knowledge.api import router as knowledge_router
+from .upgrade_reports import router as upgrade_report_router, stats_router
+from .request_limits import RequestSizeLimit
 # Uvicorn configures logging before importing this module, and emits startup
 # messages before FastAPI lifespan. Protect those console writes as well.
 protect_server_console()
@@ -45,6 +50,8 @@ protect_server_console()
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     configure_qa_logging()
+    app.state.login_limiter = SlidingWindowLimiter(limit=10, window_seconds=300)
+    app.state.qa_admission = QAAdmission(max_concurrent=2, max_per_owner=1)
     try:
         engine = create_db_engine(load_database_settings())
     except ConfigurationError:
@@ -65,15 +72,20 @@ app = FastAPI(
     version="0.1.0",
     lifespan=lifespan,
 )
+app.add_middleware(RequestSizeLimit)
 
 app.include_router(auth_router)
 app.include_router(public_example_router)
+app.include_router(product_router)
+app.include_router(knowledge_router)
+app.include_router(upgrade_report_router)
+app.include_router(stats_router)
 
 
 @app.middleware("http")
 async def protect_private_http(request: Request, call_next):
     path = request.url.path.rstrip("/")
-    private = path in {"/ask", "/ask/optimized", "/records"} or path.startswith("/records/")
+    private = path in {"/ask", "/ask/optimized", "/records"} or path.startswith(("/records/", "/api/v1/"))
     if private and request.method not in {"GET", "HEAD", "OPTIONS"}:
         try:
             auth_http.require_trusted_json(request)
@@ -90,7 +102,7 @@ async def protect_private_http(request: Request, call_next):
 @app.middleware("http")
 async def trace_qa_http(request: Request, call_next):
     path = request.url.path
-    if path not in ("/ask", "/ask/optimized", "/records", "/examples") and not path.startswith(("/records/", "/auth/", "/examples/")):
+    if path not in ("/ask", "/ask/optimized", "/records", "/examples") and not path.startswith(("/records/", "/auth/", "/examples/", "/api/v1/")):
         return await call_next(request)
 
     started = perf_counter()
@@ -112,6 +124,7 @@ async def trace_qa_http(request: Request, call_next):
 
 
 WEB_DIR = Path(__file__).resolve().parent / "web"
+FRONTEND_DIST = Path(__file__).resolve().parents[1] / 'frontend' / 'dist'
 
 # Windows may identify .mjs as plain text; browsers require a JavaScript MIME type.
 mimetypes.add_type("application/javascript", ".mjs")
@@ -121,6 +134,15 @@ app.mount(
     StaticFiles(directory=WEB_DIR),
     name="static",
 )
+app.mount('/workspace/assets', StaticFiles(directory=FRONTEND_DIST / 'assets', check_dir=False), name='react-assets')
+
+
+@app.get('/workspace/', response_class=FileResponse, include_in_schema=False)
+def workspace():
+    index = FRONTEND_DIST / 'index.html'
+    if not index.is_file():
+        raise HTTPException(503, 'React 页面尚未构建，请在 frontend 目录运行 npm ci 和 npm run build。')
+    return FileResponse(index, headers={'Cache-Control': 'no-cache'})
 
 @app.get("/health")
 def health():
@@ -184,7 +206,8 @@ def ask_optimized(
         )
 
     def answer_fn():
-        with make_qa_client() as client:
+        admission = getattr(http_request.app.state, 'qa_admission', None)
+        with (admission.slot(str(user.user_id)) if admission else nullcontext()), make_qa_client() as client:
             return run_selected_qa_pipeline(
                 request.question,
                 client,

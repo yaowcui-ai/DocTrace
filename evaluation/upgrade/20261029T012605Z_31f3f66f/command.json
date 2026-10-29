@@ -1,0 +1,9 @@
+{
+  "label": "all-seven-deployed-reports",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/verify_upgrade_delivery.py"
+  ],
+  "started_at": "2026-10-29T01:26:05.914847+00:00",
+  "exit_code": null
+}

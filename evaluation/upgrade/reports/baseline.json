@@ -1,0 +1,11 @@
+{
+  "historical_development_cases": 20,
+  "historical_evidence_groups": 45,
+  "B0": "39/45 groups, 15/20 complete",
+  "B1_native_equals_B2": "43/45 groups, 18/20 complete",
+  "B3": "44/45 groups, 19/20 complete",
+  "new_experiment": false,
+  "pinned_image_revision": "28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c",
+  "upstream_reranks_before_topk": true,
+  "original_files_preserved": true
+}

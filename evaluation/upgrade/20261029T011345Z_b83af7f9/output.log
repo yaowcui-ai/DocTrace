@@ -1,0 +1,19 @@
+
+> doctrace-workspace@0.1.0 test
+> node --experimental-strip-types --test tests/*.test.ts
+
+✔ account changes invalidate old requests, including switching back to the original account (1.0008ms)
+✔ pending operation restores the same key and mode only for its owner; old completion cannot delete newer work (4.7123ms)
+✔ tampered pending operation is discarded instead of replaying another owner or invalid mode (0.2303ms)
+✔ pending recovery retains its knowledge base instead of following the current UI selection (0.1673ms)
+✔ legacy pending operations default to frozen while malformed knowledge base is rejected (2.3161ms)
+✔ API sends same-origin credentials, owner and stable idempotency key (33.8563ms)
+✔ 401 is distinguished from network failure so the app can clear private state (1.6306ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 380.4784

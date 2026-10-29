@@ -1,0 +1,14 @@
+{
+  "label": "native-snapshot-red",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_native_snapshot.py",
+    "-q"
+  ],
+  "started_at": "2026-10-29T01:04:06.636931+00:00",
+  "exit_code": 1,
+  "seconds": 5.342,
+  "finished_at": "2026-10-29T01:04:11.980256+00:00"
+}

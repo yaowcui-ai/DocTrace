@@ -1,0 +1,20 @@
+FF                                                                       [100%]
+================================== FAILURES ===================================
+______ test_keyword_search_prefers_documents_containing_both_query_terms ______
+
+    def test_keyword_search_prefers_documents_containing_both_query_terms():
+>       from scripts.business_benchmark import keyword_rank
+E       ModuleNotFoundError: No module named 'scripts.business_benchmark'
+
+tests\test_business_benchmark.py:2: ModuleNotFoundError
+____________ test_inspection_step_proxy_never_invents_a_completion ____________
+
+    def test_inspection_step_proxy_never_invents_a_completion():
+>       from scripts.business_benchmark import inspection_steps
+E       ModuleNotFoundError: No module named 'scripts.business_benchmark'
+
+tests\test_business_benchmark.py:9: ModuleNotFoundError
+=========================== short test summary info ===========================
+FAILED tests/test_business_benchmark.py::test_keyword_search_prefers_documents_containing_both_query_terms
+FAILED tests/test_business_benchmark.py::test_inspection_step_proxy_never_invents_a_completion
+2 failed in 2.44s

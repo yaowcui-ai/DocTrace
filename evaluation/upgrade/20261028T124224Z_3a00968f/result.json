@@ -1,0 +1,14 @@
+{
+  "label": "admin-stats-red",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_admin_request_stats.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T12:42:24.823038+00:00",
+  "exit_code": 1,
+  "seconds": 5.155,
+  "finished_at": "2026-10-28T12:42:29.983960+00:00"
+}

@@ -1,0 +1,39 @@
+FFF                                                                      [100%]
+================================== FAILURES ===================================
+___________ test_product_routes_are_registered_in_real_application ____________
+
+    def test_product_routes_are_registered_in_real_application():
+        from app.main import app
+        paths = {route.path for route in app.routes if hasattr(route, 'path')}
+>       assert '/api/v1/conversations' in paths
+E       AssertionError: assert '/api/v1/conversations' in {'/', '/ask', '/ask/optimized', '/docs', '/docs/oauth2-redirect', '/health', ...}
+
+tests\test_upgrade_integration.py:9: AssertionError
+___________ test_react_entry_is_served_or_explicitly_requires_build ___________
+
+    def test_react_entry_is_served_or_explicitly_requires_build():
+        from app.main import app
+        with TestClient(app) as client:
+            response = client.get('/workspace/')
+        built = Path(__file__).resolve().parents[1]/'frontend/dist/index.html'
+>       assert response.status_code == (200 if built.exists() else 503)
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_upgrade_integration.py:18: AssertionError
+__________ test_versioned_api_remains_authenticated_and_noncacheable __________
+
+    def test_versioned_api_remains_authenticated_and_noncacheable():
+        from app.main import app
+        with TestClient(app) as client:
+            response = client.get('/api/v1/conversations')
+>       assert response.status_code == 401
+E       assert 404 == 401
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_upgrade_integration.py:27: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_upgrade_integration.py::test_product_routes_are_registered_in_real_application
+FAILED tests/test_upgrade_integration.py::test_react_entry_is_served_or_explicitly_requires_build
+FAILED tests/test_upgrade_integration.py::test_versioned_api_remains_authenticated_and_noncacheable
+3 failed in 4.29s

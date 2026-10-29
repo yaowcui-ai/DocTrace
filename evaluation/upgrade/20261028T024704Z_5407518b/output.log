@@ -1,0 +1,28 @@
+FFF                                                                      [100%]
+================================== FAILURES ===================================
+_________ test_cached_native_adapter_uses_original_candidate_indexes __________
+
+    def test_cached_native_adapter_uses_original_candidate_indexes():
+>       from app.ablation_replay import native_scores
+E       ModuleNotFoundError: No module named 'app.ablation_replay'
+
+tests\test_ablation_replay.py:5: ModuleNotFoundError
+_______ test_cached_native_adapter_refuses_changed_or_missing_candidate _______
+
+    def test_cached_native_adapter_refuses_changed_or_missing_candidate():
+>       from app.ablation_replay import native_scores
+E       ModuleNotFoundError: No module named 'app.ablation_replay'
+
+tests\test_ablation_replay.py:12: ModuleNotFoundError
+___ test_known_quotes_map_to_gold_groups_without_marking_others_irrelevant ____
+
+    def test_known_quotes_map_to_gold_groups_without_marking_others_irrelevant():
+>       from app.ablation_replay import gold_labels
+E       ModuleNotFoundError: No module named 'app.ablation_replay'
+
+tests\test_ablation_replay.py:18: ModuleNotFoundError
+=========================== short test summary info ===========================
+FAILED tests/test_ablation_replay.py::test_cached_native_adapter_uses_original_candidate_indexes
+FAILED tests/test_ablation_replay.py::test_cached_native_adapter_refuses_changed_or_missing_candidate
+FAILED tests/test_ablation_replay.py::test_known_quotes_map_to_gold_groups_without_marking_others_irrelevant
+3 failed in 3.31s

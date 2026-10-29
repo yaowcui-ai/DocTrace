@@ -1,0 +1,14 @@
+{
+  "label": "public-portable-config",
+  "command": [
+    "..\\..\\doctrace\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_config.py",
+    "-q"
+  ],
+  "started_at": "2026-10-29T01:25:10.514613+00:00",
+  "exit_code": 0,
+  "seconds": 9.67,
+  "finished_at": "2026-10-29T01:25:20.187016+00:00"
+}

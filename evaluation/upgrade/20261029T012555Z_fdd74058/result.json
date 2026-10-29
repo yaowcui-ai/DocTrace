@@ -1,0 +1,14 @@
+{
+  "label": "public-browser-final",
+  "command": [
+    "npm.cmd",
+    "--prefix",
+    "frontend",
+    "run",
+    "test:e2e"
+  ],
+  "started_at": "2026-10-29T01:25:55.087765+00:00",
+  "exit_code": 0,
+  "seconds": 26.019,
+  "finished_at": "2026-10-29T01:26:21.109583+00:00"
+}

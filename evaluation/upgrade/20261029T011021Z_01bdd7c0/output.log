@@ -1,0 +1,15 @@
+
+> doctrace-workspace@0.1.0 test:e2e
+> node tests/run-e2e.mjs
+
+Running actual API browser acceptance against http://127.0.0.1:62845; upstream is the offline fixture.
+
+Running 3 tests using 1 worker
+
+(node:5836) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\browser\actual-api.spec.ts:14:1 › real cookie auth, conversations, citations, feedback, lost-response retry and administrator routes (6.7s)
+  ok 2 tests\browser\actual-api.spec.ts:131:1 › late responses cannot cross accounts; an expired session clears rendered private data (2.2s)
+  ok 3 tests\browser\actual-api.spec.ts:174:1 › older than one hundred conversations remains reachable through real API pagination (4.2s)
+
+  3 passed (16.3s)

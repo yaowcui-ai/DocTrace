@@ -1,0 +1,58 @@
+F.FF                                                                     [100%]
+================================== FAILURES ===================================
+__________ test_managed_query_only_uses_active_approved_source_names __________
+
+record_engine = Engine(sqlite+pysqlite:///C:\Users\86139\AppData\Local\Temp\pytest-of-86139\pytest-581\test_managed_query_only_uses_a0\records.db)
+
+    def test_managed_query_only_uses_active_approved_source_names(record_engine):
+        from app.knowledge.repository import metadata, KnowledgeRepository, documents, versions
+>       from app.managed_query import active_sources, filter_active_chunks
+E       ModuleNotFoundError: No module named 'app.managed_query'
+
+tests\test_managed_query.py:6: ModuleNotFoundError
+________________ test_container_managed_target_has_exact_guard ________________
+
+    def test_container_managed_target_has_exact_guard():
+        from app.knowledge.upstream import ManagedSettings
+        from app.config import ConfigurationError
+>       assert ManagedSettings('http://host.docker.internal:9631', 'test-key').url.endswith(':9631')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_managed_query.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+<string>:5: in __init__
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = ManagedSettings(url='http://host.docker.internal:9631')
+
+    def __post_init__(self):
+        try:
+            parsed = urlsplit(self.url)
+            valid = (parsed.scheme == 'http' and parsed.hostname in {'127.0.0.1', 'localhost', '::1'}
+                and parsed.port == 9631 and parsed.path in {'', '/'} and not parsed.query
+                and not parsed.fragment and not parsed.username and not parsed.password
+                and not any(c.isspace() or ord(c) < 32 or ord(c) == 127 for c in self.url)
+                and not any(c in self.url for c in '\\?#'))
+        except ValueError:
+            valid = False
+        if not valid:
+>           raise ConfigurationError('MANAGED_LIGHTRAG_URL must be the dedicated loopback HTTP service on port 9631.')
+E           app.config.ConfigurationError: MANAGED_LIGHTRAG_URL must be the dedicated loopback HTTP service on port 9631.
+
+app\knowledge\upstream.py:31: ConfigurationError
+_________ test_empty_managed_corpus_does_not_call_retrieval_or_model __________
+
+record_engine = Engine(sqlite+pysqlite:///C:\Users\86139\AppData\Local\Temp\pytest-of-86139\pytest-581\test_empty_managed_corpus_does0\records.db)
+
+    def test_empty_managed_corpus_does_not_call_retrieval_or_model(record_engine):
+        from app.knowledge.repository import metadata
+>       from app.managed_query import run_managed_pipeline
+E       ModuleNotFoundError: No module named 'app.managed_query'
+
+tests\test_managed_query.py:40: ModuleNotFoundError
+=========================== short test summary info ===========================
+FAILED tests/test_managed_query.py::test_managed_query_only_uses_active_approved_source_names
+FAILED tests/test_managed_query.py::test_container_managed_target_has_exact_guard
+FAILED tests/test_managed_query.py::test_empty_managed_corpus_does_not_call_retrieval_or_model
+3 failed, 1 passed in 3.59s

@@ -1,0 +1,14 @@
+{
+  "label": "react-review-build",
+  "command": [
+    "npm.cmd",
+    "--prefix",
+    "frontend",
+    "run",
+    "build"
+  ],
+  "started_at": "2026-10-29T00:59:27.832893+00:00",
+  "exit_code": 0,
+  "seconds": 3.683,
+  "finished_at": "2026-10-29T00:59:31.517562+00:00"
+}

@@ -1,0 +1,34 @@
+FFF                                                                      [100%]
+================================== FAILURES ===================================
+______________ test_reports_need_admin_before_reading_any_files _______________
+
+    def test_reports_need_admin_before_reading_any_files():
+>       from app.upgrade_reports import router
+E       ModuleNotFoundError: No module named 'app.upgrade_reports'
+
+tests\test_upgrade_reports.py:7: ModuleNotFoundError
+________ test_report_registry_is_explicit_and_prevents_symlink_escape _________
+
+tmp_path = WindowsPath('C:/Users/86139/AppData/Local/Temp/pytest-of-86139/pytest-566/test_report_registry_is_explic0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000211BBA0FD50>
+
+    def test_report_registry_is_explicit_and_prevents_symlink_escape(tmp_path, monkeypatch):
+>       import app.upgrade_reports as reports
+E       ModuleNotFoundError: No module named 'app.upgrade_reports'
+
+tests\test_upgrade_reports.py:21: ModuleNotFoundError
+______________ test_missing_report_is_explicit_not_fake_success _______________
+
+tmp_path = WindowsPath('C:/Users/86139/AppData/Local/Temp/pytest-of-86139/pytest-566/test_missing_report_is_explici0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000211BBA0FED0>
+
+    def test_missing_report_is_explicit_not_fake_success(tmp_path, monkeypatch):
+>       import app.upgrade_reports as reports
+E       ModuleNotFoundError: No module named 'app.upgrade_reports'
+
+tests\test_upgrade_reports.py:41: ModuleNotFoundError
+=========================== short test summary info ===========================
+FAILED tests/test_upgrade_reports.py::test_reports_need_admin_before_reading_any_files
+FAILED tests/test_upgrade_reports.py::test_report_registry_is_explicit_and_prevents_symlink_escape
+FAILED tests/test_upgrade_reports.py::test_missing_report_is_explicit_not_fake_success
+3 failed in 3.10s

@@ -37,7 +37,7 @@ def test_only_json_is_accepted(client):
 
 
 def test_validation_errors_never_echo_input(client):
-    response = client.post("/auth/login", headers={"Origin": "http://127.0.0.1:8001"}, json={"username": "alice", "password": "SENSITIVE-LONG-PASSWORD"})
+    response = client.post("/auth/login", headers={"Origin": "http://127.0.0.1:8001"}, json={"username": "alice", "password": "SENSITIVE" * 20})
     assert response.status_code == 422
     assert "SENSITIVE" not in response.text
     assert "input" not in response.text

@@ -1,0 +1,9 @@
+Deployment checks: 22 Report: C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\evaluation\upgrade\20261029T011248Z_deployment_e28dd442\report.json
+Traceback (most recent call last):
+  File "C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\scripts\verify_upgrade_delivery.py", line 60, in <module>
+    main()
+  File "C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\scripts\verify_upgrade_delivery.py", line 46, in main
+    check('logout', logout.status_code == 200)
+  File "C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\scripts\verify_upgrade_delivery.py", line 19, in check
+    raise AssertionError('Acceptance failed: '+name)
+AssertionError: Acceptance failed: logout

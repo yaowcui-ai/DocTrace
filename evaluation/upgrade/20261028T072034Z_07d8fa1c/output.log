@@ -1,0 +1,90 @@
+[
+  {
+    "concurrency": 1,
+    "attempted": 20,
+    "http_successes": 20,
+    "completed": 20,
+    "failures": 0,
+    "failure_rate": 0.0,
+    "http_status_counts": {
+      "200": 20
+    },
+    "attempted_requests_per_second": 4.744573512659786,
+    "completed_requests_per_second": 4.744573512659786,
+    "completed_latency_seconds": {
+      "p50": 0.20734,
+      "p95": 0.227021
+    },
+    "all_attempt_latency_seconds": {
+      "p50": 0.20734,
+      "p95": 0.227021
+    }
+  },
+  {
+    "concurrency": 5,
+    "attempted": 20,
+    "http_successes": 4,
+    "completed": 4,
+    "failures": 16,
+    "failure_rate": 0.8,
+    "http_status_counts": {
+      "200": 4,
+      "429": 16
+    },
+    "attempted_requests_per_second": 22.432816518613222,
+    "completed_requests_per_second": 4.486563303722645,
+    "completed_latency_seconds": {
+      "p50": 0.233163,
+      "p95": 0.40281
+    },
+    "all_attempt_latency_seconds": {
+      "p50": 0.147484,
+      "p95": 0.39591
+    }
+  },
+  {
+    "concurrency": 10,
+    "attempted": 20,
+    "http_successes": 5,
+    "completed": 5,
+    "failures": 15,
+    "failure_rate": 0.75,
+    "http_status_counts": {
+      "200": 5,
+      "429": 15
+    },
+    "attempted_requests_per_second": 16.550375453570773,
+    "completed_requests_per_second": 4.137593863392693,
+    "completed_latency_seconds": {
+      "p50": 0.352315,
+      "p95": 0.940143
+    },
+    "all_attempt_latency_seconds": {
+      "p50": 0.498825,
+      "p95": 0.956717
+    }
+  },
+  {
+    "concurrency": 20,
+    "attempted": 20,
+    "http_successes": 7,
+    "completed": 7,
+    "failures": 13,
+    "failure_rate": 0.65,
+    "http_status_counts": {
+      "200": 7,
+      "429": 13
+    },
+    "attempted_requests_per_second": 14.78435684943756,
+    "completed_requests_per_second": 5.174524897303146,
+    "completed_latency_seconds": {
+      "p50": 0.858954,
+      "p95": 1.233944
+    },
+    "all_attempt_latency_seconds": {
+      "p50": 0.933369,
+      "p95": 1.254317
+    }
+  }
+]
+Report: C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\evaluation\upgrade\performance\20261028T072036Z_44502f68\report.json

@@ -1,6 +1,4 @@
 import pytest
-from pathlib import Path
-import app.config as config_module
 
 from app.config import ConfigurationError, DEFAULT_ENV_PATH, load_settings
 
@@ -12,7 +10,9 @@ def clear_configuration_environment(monkeypatch):
 
 
 def test_default_env_is_in_application_directory():
-    assert DEFAULT_ENV_PATH.parent == Path(config_module.__file__).resolve().parent.parent
+    from pathlib import Path
+    import app.config
+    assert DEFAULT_ENV_PATH.parent == Path(app.config.__file__).resolve().parents[1]
     assert DEFAULT_ENV_PATH.name == ".env"
 
 

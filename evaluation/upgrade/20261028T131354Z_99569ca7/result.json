@@ -1,0 +1,15 @@
+{
+  "label": "review-source-and-import-green",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_product_api.py",
+    "tests/test_managed_observability.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T13:13:54.641024+00:00",
+  "exit_code": 0,
+  "seconds": 9.106,
+  "finished_at": "2026-10-28T13:14:03.751577+00:00"
+}

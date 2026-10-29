@@ -1,0 +1,184 @@
+ Image doctrace-upgrade-app:local Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 593B 0.1s done
+#1 DONE 0.1s
+
+#2 [internal] load build definition from Dockerfile.upgrade
+#2 transferring dockerfile: 755B 0.1s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/python:3.12-slim-bookworm
+#3 DONE 4.1s
+
+#4 [internal] load metadata for docker.io/library/node:24-bookworm-slim
+#4 DONE 6.7s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 323B done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 DONE 0.0s
+
+#7 [frontend 1/6] FROM docker.io/library/node:24-bookworm-slim@sha256:c86ecead9e55a5210ac1727de38a4ca840bf03dcaf34dc9749addbf383b1920c
+#7 resolve docker.io/library/node:24-bookworm-slim@sha256:c86ecead9e55a5210ac1727de38a4ca840bf03dcaf34dc9749addbf383b1920c
+#7 resolve docker.io/library/node:24-bookworm-slim@sha256:c86ecead9e55a5210ac1727de38a4ca840bf03dcaf34dc9749addbf383b1920c 0.1s done
+#7 DONE 0.1s
+
+#8 [stage-1 1/8] FROM docker.io/library/python:3.12-slim-bookworm@sha256:e697c81897302a4c4333bade000d98038fbb21eb064f8ee1fd42d02ebcd9d337
+#8 resolve docker.io/library/python:3.12-slim-bookworm@sha256:e697c81897302a4c4333bade000d98038fbb21eb064f8ee1fd42d02ebcd9d337
+#8 resolve docker.io/library/python:3.12-slim-bookworm@sha256:e697c81897302a4c4333bade000d98038fbb21eb064f8ee1fd42d02ebcd9d337 0.1s done
+#8 DONE 0.1s
+
+#6 [internal] load build context
+#6 transferring context: 2.46MB 0.4s done
+#6 DONE 0.4s
+
+#7 [frontend 1/6] FROM docker.io/library/node:24-bookworm-slim@sha256:c86ecead9e55a5210ac1727de38a4ca840bf03dcaf34dc9749addbf383b1920c
+#7 ...
+
+#9 [stage-1 2/8] WORKDIR /workspace
+#9 CACHED
+
+#10 [stage-1 3/8] COPY requirements-lock.txt ./
+#10 CACHED
+
+#11 [stage-1 4/8] RUN pip install --no-cache-dir -r requirements-lock.txt
+#11 CACHED
+
+#7 [frontend 1/6] FROM docker.io/library/node:24-bookworm-slim@sha256:c86ecead9e55a5210ac1727de38a4ca840bf03dcaf34dc9749addbf383b1920c
+#7 sha256:e95aa4763e735fd31ba05431a12c6b7ec236a771aa6bda23f4be91af7c10b1c3 0B / 1.71MB 0.2s
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 0B / 51.08MB 0.2s
+#7 sha256:71cba37e8e979730332c9470b41e1d978d0fa9253c78769c62916bf084227639 0B / 3.31kB 0.2s
+#7 sha256:fc18cf7369573eeb5968534eb64b13d045bc5ca15d698ae3ef86d7e763138183 0B / 449B 0.2s
+#7 ...
+
+#12 [stage-1 5/8] COPY app/ ./app/
+#12 DONE 0.5s
+
+#7 [frontend 1/6] FROM docker.io/library/node:24-bookworm-slim@sha256:c86ecead9e55a5210ac1727de38a4ca840bf03dcaf34dc9749addbf383b1920c
+#7 ...
+
+#13 [stage-1 6/8] COPY evaluation/upgrade/reports/ ./evaluation/upgrade/reports/
+#13 DONE 0.2s
+
+#7 [frontend 1/6] FROM docker.io/library/node:24-bookworm-slim@sha256:c86ecead9e55a5210ac1727de38a4ca840bf03dcaf34dc9749addbf383b1920c
+#7 sha256:e95aa4763e735fd31ba05431a12c6b7ec236a771aa6bda23f4be91af7c10b1c3 1.71MB / 1.71MB 2.0s
+#7 sha256:e95aa4763e735fd31ba05431a12c6b7ec236a771aa6bda23f4be91af7c10b1c3 1.71MB / 1.71MB 2.0s done
+#7 sha256:71cba37e8e979730332c9470b41e1d978d0fa9253c78769c62916bf084227639 3.31kB / 3.31kB 2.0s done
+#7 extracting sha256:71cba37e8e979730332c9470b41e1d978d0fa9253c78769c62916bf084227639
+#7 sha256:fc18cf7369573eeb5968534eb64b13d045bc5ca15d698ae3ef86d7e763138183 449B / 449B 2.1s done
+#7 extracting sha256:71cba37e8e979730332c9470b41e1d978d0fa9253c78769c62916bf084227639 0.1s done
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 3.15MB / 51.08MB 3.1s
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 7.34MB / 51.08MB 3.6s
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 10.49MB / 51.08MB 3.7s
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 13.63MB / 51.08MB 4.2s
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 16.78MB / 51.08MB 4.5s
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 19.92MB / 51.08MB 4.8s
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 23.07MB / 51.08MB 5.1s
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 26.21MB / 51.08MB 5.4s
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 30.41MB / 51.08MB 6.0s
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 33.55MB / 51.08MB 6.3s
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 36.70MB / 51.08MB 6.7s
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 40.89MB / 51.08MB 7.2s
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 44.04MB / 51.08MB 7.5s
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 47.19MB / 51.08MB 7.9s
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 51.08MB / 51.08MB 8.2s
+#7 sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 51.08MB / 51.08MB 8.4s done
+#7 extracting sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486
+#7 extracting sha256:c82672318514ade64c9d9475b8887e67ae5ec0e018566b79795c23c22542e486 4.3s done
+#7 DONE 13.3s
+
+#7 [frontend 1/6] FROM docker.io/library/node:24-bookworm-slim@sha256:c86ecead9e55a5210ac1727de38a4ca840bf03dcaf34dc9749addbf383b1920c
+#7 extracting sha256:e95aa4763e735fd31ba05431a12c6b7ec236a771aa6bda23f4be91af7c10b1c3
+#7 extracting sha256:e95aa4763e735fd31ba05431a12c6b7ec236a771aa6bda23f4be91af7c10b1c3 0.2s done
+#7 DONE 13.5s
+
+#7 [frontend 1/6] FROM docker.io/library/node:24-bookworm-slim@sha256:c86ecead9e55a5210ac1727de38a4ca840bf03dcaf34dc9749addbf383b1920c
+#7 extracting sha256:fc18cf7369573eeb5968534eb64b13d045bc5ca15d698ae3ef86d7e763138183 0.1s done
+#7 DONE 13.6s
+
+#14 [frontend 2/6] WORKDIR /build/frontend
+#14 DONE 0.1s
+
+#15 [frontend 3/6] COPY frontend/package.json frontend/package-lock.json ./
+#15 DONE 0.2s
+
+#16 [frontend 4/6] RUN npm ci
+#16 10.82 
+#16 10.82 added 26 packages, and audited 27 packages in 9s
+#16 10.82 
+#16 10.82 8 packages are looking for funding
+#16 10.82   run `npm fund` for details
+#16 10.82 
+#16 10.82 found 0 vulnerabilities
+#16 10.83 npm notice
+#16 10.83 npm notice New major version of npm available! 11.19.1 -> 12.2.1
+#16 10.83 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+#16 10.83 npm notice To update run: npm install -g npm@12.2.1
+#16 10.83 npm notice
+#16 DONE 11.2s
+
+#17 [frontend 5/6] COPY frontend/ ./
+#17 DONE 0.4s
+
+#18 [frontend 6/6] RUN npm run build
+#18 0.935 
+#18 0.935 > doctrace-workspace@0.1.0 build
+#18 0.935 > npm run typecheck && vite build
+#18 0.935 
+#18 1.105 
+#18 1.105 > doctrace-workspace@0.1.0 typecheck
+#18 1.105 > tsc --noEmit
+#18 1.105 
+#18 2.017 vite v8.3.5 building client environment for production...
+#18 2.132 transforming...
+#18 2.324 ✓ 20 modules transformed.
+#18 2.424 rendering chunks...
+#18 2.517 computing gzip size...
+#18 2.532 dist/index.html                   0.52 kB │ gzip:  0.37 kB
+#18 2.532 dist/assets/index-BUIbDVHX.css   11.24 kB │ gzip:  3.22 kB
+#18 2.532 dist/assets/index-_TmzX80G.js   248.74 kB │ gzip: 78.23 kB
+#18 2.532 
+#18 2.533 ✓ built in 512ms
+#18 DONE 2.7s
+
+#19 [stage-1 7/8] COPY --from=frontend /build/frontend/dist/ ./frontend/dist/
+#19 DONE 2.5s
+
+#20 [stage-1 8/8] RUN useradd --create-home --uid 10001 doctrace && mkdir -p /workspace/logs && chown doctrace:doctrace /workspace/logs
+#20 DONE 1.2s
+
+#21 exporting to image
+#21 exporting layers
+#21 exporting layers 1.9s done
+#21 exporting manifest sha256:8b339d909c863340acd7649d4881a74bdc614e44654b8f943388e95958361111 0.1s done
+#21 exporting config sha256:7bdecd57df3816c9810ad678dab2a1ab4c6a2a3d47ba2c79209014bf0e8dc73b 0.1s done
+#21 exporting attestation manifest sha256:334651fae4f0ddbdab159fe01617e0a37eeebe732f140484169503ec2d2fe2c7
+#21 exporting attestation manifest sha256:334651fae4f0ddbdab159fe01617e0a37eeebe732f140484169503ec2d2fe2c7 0.2s done
+#21 exporting manifest list sha256:dacb6cd382d4445caa1842c6ff9cd750f3cd33129d0337c036fe802bfea79299
+#21 exporting manifest list sha256:dacb6cd382d4445caa1842c6ff9cd750f3cd33129d0337c036fe802bfea79299 0.2s done
+#21 naming to docker.io/library/doctrace-upgrade-app:local
+#21 naming to docker.io/library/doctrace-upgrade-app:local 0.0s done
+#21 unpacking to docker.io/library/doctrace-upgrade-app:local
+#21 unpacking to docker.io/library/doctrace-upgrade-app:local 0.5s done
+#21 DONE 3.1s
+
+#22 resolving provenance for metadata file
+#22 DONE 0.1s
+ Image doctrace-upgrade-app:local Built 
+ Container doctrace-upgrade-mysql-1 Running 
+ Container doctrace-upgrade-app-1 Recreate 
+ Container doctrace-upgrade-app-1 Recreated 
+ Container doctrace-upgrade-worker-1 Recreate 
+ Container doctrace-upgrade-worker-1 Recreated 
+ Container doctrace-upgrade-mysql-1 Waiting 
+ Container doctrace-upgrade-mysql-1 Healthy 
+ Container doctrace-upgrade-app-1 Starting 
+ Container doctrace-upgrade-app-1 Started 
+ Container doctrace-upgrade-mysql-1 Waiting 
+ Container doctrace-upgrade-app-1 Waiting 
+ Container doctrace-upgrade-mysql-1 Healthy 
+ Container doctrace-upgrade-app-1 Healthy 
+ Container doctrace-upgrade-worker-1 Starting 
+ Container doctrace-upgrade-worker-1 Started 

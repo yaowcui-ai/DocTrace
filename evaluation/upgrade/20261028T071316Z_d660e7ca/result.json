@@ -1,0 +1,17 @@
+{
+  "label": "admission-history-regression",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_qa_admission.py",
+    "tests/test_product_api.py",
+    "tests/test_managed_query.py",
+    "tests/test_upgrade_setup.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T07:13:16.603944+00:00",
+  "exit_code": 0,
+  "seconds": 12.405,
+  "finished_at": "2026-10-28T07:13:29.011990+00:00"
+}

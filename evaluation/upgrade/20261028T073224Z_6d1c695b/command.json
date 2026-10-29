@@ -1,0 +1,12 @@
+{
+  "label": "business-proxy-red",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_business_benchmark.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T07:32:24.082060+00:00",
+  "exit_code": null
+}

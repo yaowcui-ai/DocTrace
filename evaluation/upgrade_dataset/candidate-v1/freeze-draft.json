@@ -1,0 +1,9 @@
+{
+  "status": "draft_pending_human_review",
+  "candidate_sha256": "2f1bb7ead7d52181009d363ec9569e90553de54b91761208315c7047e80f67aa",
+  "candidate_bytes": 138269,
+  "case_count": 113,
+  "independent_external_test": false,
+  "human_review_status": "pending",
+  "promotion_gate": "Independent human source review and protocol sign-off are required before final freeze or test claims."
+}

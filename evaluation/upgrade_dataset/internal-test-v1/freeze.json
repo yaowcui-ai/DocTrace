@@ -1,0 +1,96 @@
+{
+  "dataset_sha256": "34b45e2a380011efae919a0d9d09e2a0ae541a816593a5ad0fb22b6fd9345ba2",
+  "case_count": 112,
+  "source_checks": {
+    "case_count": 113,
+    "source_document_count": 68,
+    "selected_document_count": 68,
+    "question_types": {
+      "composite": 7,
+      "conditions": 39,
+      "confusable_policies": 12,
+      "exceptions": 26,
+      "missing_region_clarification": 2,
+      "multi_document_comparison": 5,
+      "no_answer_personal_records": 4,
+      "permission_restricted": 3,
+      "simple_fact": 15
+    },
+    "splits": {
+      "development_candidate": 53,
+      "validation_candidate": 60
+    },
+    "source_clusters": {
+      "absence": 10,
+      "acceptable_use": 2,
+      "benefits": 34,
+      "community": 1,
+      "employment_contracts": 4,
+      "learning": 28,
+      "mobility": 4,
+      "offboarding": 3,
+      "organization_support": 1,
+      "rewards_career": 15,
+      "travel_expenses": 4,
+      "workplace_safety": 7
+    },
+    "human_review_pending": 113,
+    "independent_external_test": false,
+    "quote_exact_match": true,
+    "source_hashes_verified": true,
+    "chunk_ids_verified": true,
+    "old_question_and_exact_quote_overlap": 0,
+    "provider_calls": 0,
+    "missing_sources": []
+  },
+  "code_sha256": {
+    "app/facet_policy.py": "e2064c9e8ecf9e846a20448abcc2346296e000a768b516034defd0c256bf651e",
+    "app/prelimit_adapter.py": "dcee551a911b1db27e1476da2f248c53722e0eedf0abb2e37dbabeb1e3d6869e",
+    "app/answer_prompt.py": "258bdaf13aef0c7af4f1c30413523c23a62597f0b33be6497dd015a167da3af5",
+    "app/context_builder.py": "9d48b22016e04f23e062834ba02b2369322faf34db170abf6fb365b2c3caa333",
+    "app/qa_pipeline.py": "091a06073c219a36a3ab11b65a960a35b4a7fab1c43a0a0a0e96d363a9ba9efd",
+    "app/retrieval_client.py": "bc15132b0b1662b627e060ddc8568833abc3e0093e0135d0f604e0e6e30eadcd",
+    "app/rerank.py": "33b36ee32a2dfeba635aabea69b5df0729bcb53936110e140b2300ae85775551"
+  },
+  "changes_from_draft": {
+    "HR-U002": [
+      "expected_answer",
+      "长期不休假会让工作知识集中在一个人身上，增加单点依赖。"
+    ],
+    "HR-U006": [
+      "expected_answer",
+      "应准备在假期开始后15个自然日内提供出生、亲属关系或收养证明。"
+    ],
+    "HR-U022": [
+      "expected_answer",
+      "不能追溯处理，应在申请搬迁时使用未来日期。"
+    ],
+    "HR-U037": [
+      "question",
+      "参加Hone公开工作坊、分享工作情境时，应遵循GitLab哪个信息分享框架？"
+    ],
+    "HR-U051": [
+      "expected_answer",
+      "从上一份工作到GitLab BV的间隔最多为三个月。"
+    ],
+    "HR-U078": [
+      "expected_answer",
+      "不必；不愿直接面对或行为未停止时，可向Chief People Officer报告。"
+    ],
+    "HR-U082": [
+      "expected_answer",
+      "不是强制分布，而是预期的分布基线。"
+    ],
+    "HR-U094": [
+      "expected_answer",
+      "不容忍因提出骚扰投诉而遭到报复；可联系Chief People Officer。"
+    ],
+    "HR-U098": [
+      "expected_answer",
+      "要求在最后一次live session结束后一个月内完成课程及缺课补学。"
+    ]
+  },
+  "excluded_observed_cases": [
+    "HR-U025"
+  ]
+}

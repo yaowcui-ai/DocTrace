@@ -1,0 +1,12 @@
+{
+  "label": "managed-real-lifecycle",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/upgrade_managed_probe.py",
+    "--execute"
+  ],
+  "started_at": "2026-10-28T07:28:47.909423+00:00",
+  "exit_code": 1,
+  "seconds": 29.77,
+  "finished_at": "2026-10-28T07:29:17.682361+00:00"
+}

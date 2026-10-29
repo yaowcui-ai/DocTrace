@@ -1,0 +1,9 @@
+{
+  "label": "simulated-business-scenarios",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/business_benchmark.py"
+  ],
+  "started_at": "2026-10-28T07:33:58.399157+00:00",
+  "exit_code": null
+}

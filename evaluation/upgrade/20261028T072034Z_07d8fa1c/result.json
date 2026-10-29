@@ -1,0 +1,12 @@
+{
+  "label": "http-mysql-concurrency",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/upgrade_load.py",
+    "--execute"
+  ],
+  "started_at": "2026-10-28T07:20:34.760062+00:00",
+  "exit_code": 0,
+  "seconds": 18.768,
+  "finished_at": "2026-10-28T07:20:53.530607+00:00"
+}

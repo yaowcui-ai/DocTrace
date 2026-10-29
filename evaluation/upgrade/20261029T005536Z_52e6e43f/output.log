@@ -1,0 +1,43 @@
+....FF                                                                   [100%]
+================================== FAILURES ===================================
+_________ test_managed_snapshot_changed_before_retrieval_fails_closed _________
+
+record_engine = Engine(sqlite+pysqlite:///C:\Users\86139\AppData\Local\Temp\pytest-of-86139\pytest-637\test_managed_snapshot_changed_0\records.db)
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000016EB7F206D0>
+
+    def test_managed_snapshot_changed_before_retrieval_fails_closed(record_engine, monkeypatch):
+        import app.managed_query as module
+        from app.lightrag_client import UpstreamError
+        monkeypatch.setattr(module, 'active_sources', lambda engine: ({'new.md': {}}, 'managed-new'))
+        with pytest.raises(UpstreamError) as caught:
+>           module.run_managed_pipeline(record_engine, 'rule?', 'naive', None, None, None, None,
+                                        expected_fingerprint='managed-old')
+E           TypeError: run_managed_pipeline() got an unexpected keyword argument 'expected_fingerprint'
+
+tests\test_managed_query.py:54: TypeError
+_______ test_managed_snapshot_changed_during_generation_is_not_returned _______
+
+record_engine = Engine(sqlite+pysqlite:///C:\Users\86139\AppData\Local\Temp\pytest-of-86139\pytest-637\test_managed_snapshot_changed_1\records.db)
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000016EB7F21C50>
+
+    def test_managed_snapshot_changed_during_generation_is_not_returned(record_engine, monkeypatch):
+        import app.managed_query as module
+        from app.lightrag_client import UpstreamError
+        from types import SimpleNamespace
+        snapshots = iter([({'policy.md': {}}, 'same'), ({'policy.md': {}}, 'same'), ({}, 'changed')])
+        monkeypatch.setattr(module, 'active_sources', lambda engine: next(snapshots))
+        monkeypatch.setattr(module, 'collect_retrieval', lambda *a, **kw: {'chunks': [{'file_path': 'policy.md'}]})
+        monkeypatch.setattr(module, 'require_stage_success', lambda *a: None)
+        monkeypatch.setattr(module, 'collect_rerank', lambda *a: {'error_kind': None, 'ranked_chunks': []})
+        monkeypatch.setattr(module, 'select_context', lambda *a, **kw: {'selected_chunks': [{'content': 'policy'}]})
+        monkeypatch.setattr(module, 'build_evidence_context', lambda *a: 'policy')
+        monkeypatch.setattr(module, 'collect_answer', lambda *a: {'result': {
+            'response': 'Answer from withdrawn policy', 'references': [], 'llm_generated': True, 'response_time': 1}})
+>       with pytest.raises(UpstreamError):
+E       Failed: DID NOT RAISE UpstreamError
+
+tests\test_managed_query.py:72: Failed
+=========================== short test summary info ===========================
+FAILED tests/test_managed_query.py::test_managed_snapshot_changed_before_retrieval_fails_closed
+FAILED tests/test_managed_query.py::test_managed_snapshot_changed_during_generation_is_not_returned
+2 failed, 4 passed in 3.12s

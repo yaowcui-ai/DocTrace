@@ -1,0 +1,17 @@
+{
+  "label": "internal-test-109-host",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "app.ablation_replay",
+    "--host-snapshot",
+    "--source",
+    "evaluation/upgrade/new_retrieval/20261028T074830Z_2d0d3d18/assembled_20261029T005711Z_136e89.json",
+    "--output",
+    "evaluation/upgrade/reports/retrieval_internal_109.json"
+  ],
+  "started_at": "2026-10-29T01:05:43.286873+00:00",
+  "exit_code": 0,
+  "seconds": 36.836,
+  "finished_at": "2026-10-29T01:06:20.124136+00:00"
+}

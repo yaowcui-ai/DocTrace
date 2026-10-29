@@ -1,0 +1,61 @@
+FFFFF                                                                    [100%]
+================================== FAILURES ===================================
+____________ test_percentile_documents_small_sample_interpolation _____________
+
+    def test_percentile_documents_small_sample_interpolation():
+        assert percentile([], 95) is None
+>       assert percentile([0.4], 95) == 0.4
+E       assert None == 0.4
+E        +  where None = percentile([0.4], 95)
+
+tests\test_upgrade_load.py:9: AssertionError
+_____ test_summary_keeps_rejections_transport_errors_and_unconfirmed_200 ______
+
+    def test_summary_keeps_rejections_transport_errors_and_unconfirmed_200():
+        rows = [
+            {'status_code': 200, 'completed': True, 'elapsed_seconds': .2},
+            {'status_code': 429, 'completed': False, 'elapsed_seconds': .02},
+            {'status_code': None, 'completed': False, 'elapsed_seconds': .5},
+            {'status_code': 200, 'completed': False, 'elapsed_seconds': .1},
+        ]
+        result = summarize(rows, wall_seconds=2)
+>       assert result['attempted'] == 4
+               ^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'attempted'
+
+tests\test_upgrade_load.py:22: KeyError
+___________ test_all_failed_latency_is_unavailable_instead_of_zero ____________
+
+    def test_all_failed_latency_is_unavailable_instead_of_zero():
+        result = summarize([{'status_code': 503, 'completed': False, 'elapsed_seconds': .1}], wall_seconds=1)
+>       assert result['completed_latency_seconds']['p50'] is None
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'completed_latency_seconds'
+
+tests\test_upgrade_load.py:35: KeyError
+_________ test_request_plan_is_bounded_and_requires_explicit_execute __________
+
+    def test_request_plan_is_bounded_and_requires_explicit_execute():
+        args = parse_args([])
+        assert args.execute is False
+>       assert args.requests_per_level == 20
+E       assert 0 == 20
+E        +  where 0 = Namespace(execute=False, requests_per_level=0).requests_per_level
+
+tests\test_upgrade_load.py:42: AssertionError
+___ test_each_concurrent_operation_has_its_own_conversation_and_unique_key ____
+
+    def test_each_concurrent_operation_has_its_own_conversation_and_unique_key():
+        rows = request_inputs(['conversation-a', 'conversation-b'], concurrency=5, run_id='synthetic-run')
+>       assert len(rows) == 2
+E       assert 0 == 2
+E        +  where 0 = len([])
+
+tests\test_upgrade_load.py:50: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_upgrade_load.py::test_percentile_documents_small_sample_interpolation
+FAILED tests/test_upgrade_load.py::test_summary_keeps_rejections_transport_errors_and_unconfirmed_200
+FAILED tests/test_upgrade_load.py::test_all_failed_latency_is_unavailable_instead_of_zero
+FAILED tests/test_upgrade_load.py::test_request_plan_is_bounded_and_requires_explicit_execute
+FAILED tests/test_upgrade_load.py::test_each_concurrent_operation_has_its_own_conversation_and_unique_key
+5 failed in 2.62s

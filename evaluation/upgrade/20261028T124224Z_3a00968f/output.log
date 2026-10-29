@@ -1,0 +1,14 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+__________ test_admin_stats_are_aggregated_without_private_questions __________
+
+record_engine = Engine(sqlite+pysqlite:///C:\Users\86139\AppData\Local\Temp\pytest-of-86139\pytest-629\test_admin_stats_are_aggregate0\records.db)
+
+    def test_admin_stats_are_aggregated_without_private_questions(record_engine):
+>       from app.upgrade_reports import stats_router
+E       ImportError: cannot import name 'stats_router' from 'app.upgrade_reports' (C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\app\upgrade_reports.py)
+
+tests\test_admin_request_stats.py:6: ImportError
+=========================== short test summary info ===========================
+FAILED tests/test_admin_request_stats.py::test_admin_stats_are_aggregated_without_private_questions
+1 failed in 2.71s

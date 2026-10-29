@@ -1,0 +1,13 @@
+{
+  "label": "report-api-green",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_upgrade_reports.py",
+    "tests/test_upgrade_integration.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T02:43:49.267099+00:00",
+  "exit_code": null
+}

@@ -1,0 +1,14 @@
+{
+  "label": "selected-corpus-red",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_product_api.py",
+    "-k",
+    "knowledge_base",
+    "-q"
+  ],
+  "started_at": "2026-10-28T02:52:01.579616+00:00",
+  "exit_code": null
+}

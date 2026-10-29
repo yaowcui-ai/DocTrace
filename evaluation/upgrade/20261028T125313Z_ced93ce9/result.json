@@ -1,0 +1,14 @@
+{
+  "label": "real-mysql-isolation-idempotency",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/integration/test_mysql_upgrade.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T12:53:13.784647+00:00",
+  "exit_code": 0,
+  "seconds": 9.759,
+  "finished_at": "2026-10-28T12:53:23.546790+00:00"
+}

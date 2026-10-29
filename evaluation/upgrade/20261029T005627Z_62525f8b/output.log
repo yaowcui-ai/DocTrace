@@ -1,0 +1,42 @@
+FF..................................                                     [100%]
+================================== FAILURES ===================================
+____ test_history_search_includes_message_questions_and_pages_are_disjoint ____
+
+product = (<starlette.testclient.TestClient object at 0x000002480606A690>, Engine(sqlite+pysqlite:///C:\Users\86139\AppData\Loca...b), namespace(owner='00000000-0000-4000-8000-000000000001', calls=['Unique searchable relocation policy'], fail=False))
+
+    def test_history_search_includes_message_questions_and_pages_are_disjoint(product):
+        client, _, _ = product
+        ids = [conversation(client, 'Same title') for _ in range(3)]
+        send(client, ids[0], question='Unique searchable relocation policy')
+        found = client.get('/api/v1/conversations?q=relocation').json()['data']['items']
+>       assert [item['id'] for item in found] == [ids[0]]
+E       AssertionError: assert [] == ['1e5e16b1-35...b8ec223153fc']
+E         
+E         Right contains one more item: '1e5e16b1-359e-45d8-ab5a-b8ec223153fc'
+E         Use -v to get more diff
+
+tests\test_product_api.py:70: AssertionError
+_______ test_earlier_message_pages_can_be_loaded_without_losing_history _______
+
+product = (<starlette.testclient.TestClient object at 0x000002480607EE10>, Engine(sqlite+pysqlite:///C:\Users\86139\AppData\Loca...tructions.\n["First question", "Second question"]\nCurrent user question (answer this):\nThird question'], fail=False))
+
+    def test_earlier_message_pages_can_be_loaded_without_losing_history(product):
+        client, _, _ = product
+        cid = conversation(client)
+        for question in ['First question', 'Second question', 'Third question']:
+            assert send(client, cid, question=question).status_code == 200
+        latest = client.get(f'/api/v1/conversations/{cid}?limit=2').json()['data']
+        earlier = client.get(f'/api/v1/conversations/{cid}?limit=2&offset=2').json()['data']
+        assert len(latest['messages']) == 2 and latest['has_more']
+>       assert [item['question'] for item in earlier['messages']] == ['First question']
+E       AssertionError: assert ['Second ques...ird question'] == ['First question']
+E         
+E         At index 0 diff: 'Second question' != 'First question'
+E         Left contains one more item: 'Third question'
+E         Use -v to get more diff
+
+tests\test_product_api.py:85: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_product_api.py::test_history_search_includes_message_questions_and_pages_are_disjoint
+FAILED tests/test_product_api.py::test_earlier_message_pages_can_be_loaded_without_losing_history
+2 failed, 34 passed in 6.93s

@@ -1,0 +1,15 @@
+failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\app\ablation_replay.py", line 153, in <module>
+    main()
+  File "C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\app\ablation_replay.py", line 94, in main
+    utils_hash = subprocess.check_output(['docker', 'exec', 'doctrace-hr-v3-lightrag_hr_v3-1', 'sha256sum', '/app/lightrag/utils.py'], text=True).split()[0]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86139\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86139\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['docker', 'exec', 'doctrace-hr-v3-lightrag_hr_v3-1', 'sha256sum', '/app/lightrag/utils.py']' returned non-zero exit status 1.

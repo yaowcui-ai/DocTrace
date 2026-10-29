@@ -1,0 +1,13 @@
+{
+  "label": "body-limit-green",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_request_size_limit.py",
+    "tests/test_auth_http.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T07:58:25.616648+00:00",
+  "exit_code": null
+}

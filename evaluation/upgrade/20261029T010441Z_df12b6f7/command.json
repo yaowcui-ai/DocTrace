@@ -1,0 +1,13 @@
+{
+  "label": "native-snapshot-green",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_native_snapshot.py",
+    "tests/test_ablation_replay.py",
+    "-q"
+  ],
+  "started_at": "2026-10-29T01:04:41.584018+00:00",
+  "exit_code": null
+}

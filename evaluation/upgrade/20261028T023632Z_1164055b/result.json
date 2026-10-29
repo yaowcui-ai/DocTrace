@@ -1,0 +1,14 @@
+{
+  "label": "security-red",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_upgrade_security.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T02:36:32.150468+00:00",
+  "exit_code": 1,
+  "seconds": 5.964,
+  "finished_at": "2026-10-28T02:36:38.119326+00:00"
+}

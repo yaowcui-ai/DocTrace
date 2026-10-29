@@ -1,0 +1,14 @@
+{
+  "label": "frontend-review-green-built",
+  "command": [
+    "npm.cmd",
+    "--prefix",
+    "frontend",
+    "run",
+    "test:e2e"
+  ],
+  "started_at": "2026-10-29T00:59:40.599228+00:00",
+  "exit_code": 0,
+  "seconds": 13.128,
+  "finished_at": "2026-10-29T00:59:53.727917+00:00"
+}

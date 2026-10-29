@@ -1,0 +1,23 @@
+F.                                                                       [100%]
+================================== FAILURES ===================================
+_____________ test_idempotency_key_binds_selected_knowledge_base ______________
+
+product = (<starlette.testclient.TestClient object at 0x000001DF0C9C67D0>, Engine(sqlite+pysqlite:///C:\Users\86139\AppData\Loca...inds_sel0\records.db), namespace(owner='00000000-0000-4000-8000-000000000001', calls=['Current question'], fail=False))
+
+    def test_idempotency_key_binds_selected_knowledge_base(product):
+        client, engine, state = product
+        cid = conversation(client)
+        key = str(uuid4())
+        first = send(client, cid, key=key)
+        assert first.status_code == 200
+        changed = client.post(f'/api/v1/conversations/{cid}/messages', json={
+            'question': 'Current question', 'mode': 'naive', 'knowledge_base': 'managed'},
+            headers={'Idempotency-Key': key})
+>       assert changed.status_code == 409
+E       assert 422 == 409
+E        +  where 422 = <Response [422 Unprocessable Content]>.status_code
+
+tests\test_product_api.py:86: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_product_api.py::test_idempotency_key_binds_selected_knowledge_base
+1 failed, 1 passed, 29 deselected in 3.03s

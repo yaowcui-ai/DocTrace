@@ -1,0 +1,16 @@
+{
+  "label": "internal-test-retrieval-112",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/run_upgrade_retrieval.py",
+    "--execute",
+    "--limit",
+    "112",
+    "--max-rerank-requests",
+    "140",
+    "--resume",
+    "evaluation/upgrade/new_retrieval/20261028T074830Z_2d0d3d18"
+  ],
+  "started_at": "2026-10-28T07:52:02.049721+00:00",
+  "exit_code": null
+}

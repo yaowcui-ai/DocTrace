@@ -1,0 +1,23 @@
+Collecting tiktoken==0.12.0
+  Downloading tiktoken-0.12.0-cp311-cp311-win_amd64.whl.metadata (6.9 kB)
+Collecting regex>=2022.1.18 (from tiktoken==0.12.0)
+  Using cached regex-2026.9.29-cp311-cp311-win_amd64.whl.metadata (41 kB)
+Collecting requests>=2.26.0 (from tiktoken==0.12.0)
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.26.0->tiktoken==0.12.0)
+  Using cached charset_normalizer-3.5.2-cp311-cp311-win_amd64.whl.metadata (47 kB)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\86139\documents\chatgpt\实习项目\doctrace\.venv\lib\site-packages (from requests>=2.26.0->tiktoken==0.12.0) (3.20)
+Collecting urllib3<3,>=1.26 (from requests>=2.26.0->tiktoken==0.12.0)
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Requirement already satisfied: certifi>=2023.5.7 in c:\users\86139\documents\chatgpt\实习项目\doctrace\.venv\lib\site-packages (from requests>=2.26.0->tiktoken==0.12.0) (2026.7.22)
+Downloading tiktoken-0.12.0-cp311-cp311-win_amd64.whl (879 kB)
+   -------------------------------------- 879.4/879.4 kB 818.4 kB/s eta 0:00:00
+Using cached regex-2026.9.29-cp311-cp311-win_amd64.whl (280 kB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached charset_normalizer-3.5.2-cp311-cp311-win_amd64.whl (214 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Installing collected packages: urllib3, regex, charset_normalizer, requests, tiktoken
+Successfully installed charset_normalizer-3.5.2 regex-2026.9.29 requests-2.34.2 tiktoken-0.12.0 urllib3-2.8.0
+
+[notice] A new release of pip is available: 24.0 -> 26.2.2
+[notice] To update, run: C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\.venv\Scripts\python.exe -m pip install --upgrade pip

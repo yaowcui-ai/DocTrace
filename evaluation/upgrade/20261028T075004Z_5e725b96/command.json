@@ -1,0 +1,12 @@
+{
+  "label": "response-contract-red",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_product_contract.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T07:50:04.444305+00:00",
+  "exit_code": null
+}

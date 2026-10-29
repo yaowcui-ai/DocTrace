@@ -1,0 +1,52 @@
+
+> doctrace-workspace@0.1.0 test:e2e
+> node tests/run-e2e.mjs
+
+Running actual API browser acceptance against http://127.0.0.1:63757; upstream is the offline fixture.
+
+Running 3 tests using 1 worker
+
+(node:3740) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\browser\actual-api.spec.ts:14:1 › older than one hundred conversations remains reachable through real API pagination (4.1s)
+  x  2 tests\browser\actual-api.spec.ts:34:1 › real cookie auth, conversations, citations, feedback, lost-response retry and administrator routes (11.0s)
+(node:22048) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 3 tests\browser\actual-api.spec.ts:151:1 › late responses cannot cross accounts; an expired session clears rendered private data (3.2s)
+
+
+  1) tests\browser\actual-api.spec.ts:34:1 › real cookie auth, conversations, citations, feedback, lost-response retry and administrator routes 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.history-list')
+    Expected substring: "alice legacy policy question"
+    Received string:    "Pagination fixture 1012026/10/29 09:09:06Pagination fixture 1002026/10/29 09:09:06Pagination fixture 992026/10/29 09:09:06Pagination fixture 982026/10/29 09:09:06Pagination fixture 972026/10/29 09:09:06Pagination fixture 962026/10/29 09:09:06Pagination fixture 952026/10/29 09:09:06Pagination fixture 942026/10/29 09:09:06Pagination fixture 932026/10/29 09:09:06Pagination fixture 922026/10/29 09:09:06Pagination fixture 912026/10/29 09:09:06Pagination fixture 902026/10/29 09:09:05Pagination fixture 892026/10/29 09:09:05Pagination fixture 882026/10/29 09:09:05Pagination fixture 872026/10/29 09:09:05Pagination fixture 862026/10/29 09:09:05Pagination fixture 852026/10/29 09:09:05Pagination fixture 842026/10/29 09:09:05Pagination fixture 832026/10/29 09:09:05Pagination fixture 822026/10/29 09:09:05Pagination fixture 812026/10/29 09:09:05Pagination fixture 802026/10/29 09:09:05Pagination fixture 792026/10/29 09:09:05Pagination fixture 782026/10/29 09:09:05Pagination fixture 772026/10/29 09:09:05Pagination fixture 762026/10/29 09:09:05Pagination fixture 752026/10/29 09:09:05Pagination fixture 742026/10/29 09:09:05Pagination fixture 732026/10/29 09:09:05Pagination fixture 722026/10/29 09:09:05"
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toContainText" locator('.history-list') with timeout 10000ms
+      - waiting for locator('.history-list')
+        23 × locator resolved to <ul class="history-list">…</ul>
+           - unexpected value "Pagination fixture 1012026/10/29 09:09:06Pagination fixture 1002026/10/29 09:09:06Pagination fixture 992026/10/29 09:09:06Pagination fixture 982026/10/29 09:09:06Pagination fixture 972026/10/29 09:09:06Pagination fixture 962026/10/29 09:09:06Pagination fixture 952026/10/29 09:09:06Pagination fixture 942026/10/29 09:09:06Pagination fixture 932026/10/29 09:09:06Pagination fixture 922026/10/29 09:09:06Pagination fixture 912026/10/29 09:09:06Pagination fixture 902026/10/29 09:09:05Pagination fixture 892026/10/29 09:09:05Pagination fixture 882026/10/29 09:09:05Pagination fixture 872026/10/29 09:09:05Pagination fixture 862026/10/29 09:09:05Pagination fixture 852026/10/29 09:09:05Pagination fixture 842026/10/29 09:09:05Pagination fixture 832026/10/29 09:09:05Pagination fixture 822026/10/29 09:09:05Pagination fixture 812026/10/29 09:09:05Pagination fixture 802026/10/29 09:09:05Pagination fixture 792026/10/29 09:09:05Pagination fixture 782026/10/29 09:09:05Pagination fixture 772026/10/29 09:09:05Pagination fixture 762026/10/29 09:09:05Pagination fixture 752026/10/29 09:09:05Pagination fixture 742026/10/29 09:09:05Pagination fixture 732026/10/29 09:09:05Pagination fixture 722026/10/29 09:09:05"
+
+
+      42 |   await page.getByRole('button', {name: '导入旧问答', exact: true}).click();
+      43 |   await expect(page.getByText('旧问答已导入。重复导入不会创建重复会话。', {exact: true})).toBeVisible();
+    > 44 |   await expect(page.locator('.history-list')).toContainText('alice legacy policy question');
+         |                                               ^
+      45 |   await page.getByLabel('搜索个人会话', {exact: true}).fill('no-such-fixture-conversation');
+      46 |   await expect(page.getByText('还没有匹配的会话。', {exact: true})).toBeVisible();
+      47 |   await page.getByLabel('搜索个人会话', {exact: true}).fill('');
+        at C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\frontend\tests\browser\actual-api.spec.ts:44:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\actual-api-real-cookie-aut-b85f3-ry-and-administrator-routes\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\actual-api-real-cookie-aut-b85f3-ry-and-administrator-routes\error-context.md
+
+  1 failed
+    tests\browser\actual-api.spec.ts:34:1 › real cookie auth, conversations, citations, feedback, lost-response retry and administrator routes 
+  2 passed (23.4s)
+

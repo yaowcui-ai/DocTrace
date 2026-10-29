@@ -1,0 +1,24 @@
+name: doctrace-upgrade-probe
+services:
+  probe:
+    image: ghcr.io/hkuds/lightrag@sha256:5bdbd524931b011df246fe20888d110cef691e6804c12cde636a2b746d7de27e
+    env_file: ../runtime/upgrade/probe/lightrag.env
+    ports: ["127.0.0.1:9632:9621"]
+    environment:
+      HOST: "0.0.0.0"
+      PORT: "9621"
+      WORKSPACE: gitlab_hr_v3
+      WORKING_DIR: /app/data/rag_storage
+      INPUT_DIR: /app/data/inputs
+      PROMPT_DIR: /app/data/prompts
+      TIKTOKEN_MODEL_NAME: gpt-4o-mini
+      MAX_TOTAL_TOKENS: "40000"
+      RERANK_BY_DEFAULT: "false"
+      WEBUI_TITLE: DocTrace Evaluation Probe
+    volumes:
+      - ../runtime/upgrade/probe/lightrag.env:/app/.env:ro
+      - ../runtime/upgrade/probe/operate.py:/app/lightrag/operate.py:ro
+      - ../runtime/upgrade/probe/rag_storage:/app/data/rag_storage
+      - ../runtime/upgrade/probe/inputs:/app/data/inputs
+      - ../runtime/upgrade/probe/prompts:/app/data/prompts
+    restart: "no"

@@ -1,0 +1,14 @@
+...F..                                                                   [100%]
+================================== FAILURES ===================================
+___________ test_product_routes_are_registered_in_real_application ____________
+
+    def test_product_routes_are_registered_in_real_application():
+        from app.main import app
+        paths = {route.path for route in app.routes if hasattr(route, 'path')}
+>       assert '/api/v1/conversations' in paths
+E       AssertionError: assert '/api/v1/conversations' in {'/', '/ask', '/ask/optimized', '/docs', '/docs/oauth2-redirect', '/health', ...}
+
+tests\test_upgrade_integration.py:9: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_upgrade_integration.py::test_product_routes_are_registered_in_real_application
+1 failed, 5 passed in 5.35s

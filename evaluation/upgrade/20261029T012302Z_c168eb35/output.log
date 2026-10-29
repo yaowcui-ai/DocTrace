@@ -1,0 +1,8 @@
+29.8.2
+ Container doctrace-managed-v1-lightrag_managed-1 Running 
+no such service: -
+Exception: C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\scripts\start_upgrade.ps1:14
+Line |
+  14 |  … ($LASTEXITCODE -ne 0) { throw 'Upgrade application startup failed.' }
+     |                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Upgrade application startup failed.

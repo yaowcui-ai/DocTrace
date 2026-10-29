@@ -1,0 +1,16 @@
+.........F..                                                             [100%]
+================================== FAILURES ===================================
+_________ test_quotes_in_old_nested_evidence_groups_are_also_excluded _________
+
+sample = (WindowsPath('C:/Users/86139/AppData/Local/Temp/pytest-of-86139/pytest-601/test_quotes_in_old_nested_evid0'), {'corpus...'question_type': 'simple_fact', ...}, {'chunk-1': {'file_path': 'policy.md', 'content': 'The annual cap is 300 USD.'}})
+
+    def test_quotes_in_old_nested_evidence_groups_are_also_excluded(sample):
+        old = {'question': 'old question', 'evidence_groups': [{'alternatives': [
+            {'quote': sample[2]['evidence'][0]['quote']}]}]}
+>       with pytest.raises(ValueError):
+E       Failed: DID NOT RAISE ValueError
+
+tests\test_upgrade_dataset.py:63: Failed
+=========================== short test summary info ===========================
+FAILED tests/test_upgrade_dataset.py::test_quotes_in_old_nested_evidence_groups_are_also_excluded
+1 failed, 11 passed in 2.59s

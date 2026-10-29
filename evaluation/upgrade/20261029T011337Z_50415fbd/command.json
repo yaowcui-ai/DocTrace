@@ -1,0 +1,9 @@
+{
+  "label": "final-source-preservation",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/audit_upgrade_sources.py"
+  ],
+  "started_at": "2026-10-29T01:13:37.364714+00:00",
+  "exit_code": null
+}

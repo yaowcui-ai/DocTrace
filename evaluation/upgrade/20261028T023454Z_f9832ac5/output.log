@@ -1,0 +1,62 @@
+FFFFFFF                                                                  [100%]
+================================== FAILURES ===================================
+_________________ test_ranked_metrics_match_hand_calculation __________________
+
+    def test_ranked_metrics_match_hand_calculation():
+>       from app.benchmark import ranking_metrics
+E       ModuleNotFoundError: No module named 'app.benchmark'
+
+tests\test_benchmark_metrics.py:7: ModuleNotFoundError
+________ test_unknown_labels_do_not_become_irrelevant_or_produce_ndcg _________
+
+    def test_unknown_labels_do_not_become_irrelevant_or_produce_ndcg():
+>       from app.benchmark import ranking_metrics
+E       ModuleNotFoundError: No module named 'app.benchmark'
+
+tests\test_benchmark_metrics.py:17: ModuleNotFoundError
+___________________ test_duplicate_ranked_ids_are_rejected ____________________
+
+    def test_duplicate_ranked_ids_are_rejected():
+>       from app.benchmark import ranking_metrics
+E       ModuleNotFoundError: No module named 'app.benchmark'
+
+tests\test_benchmark_metrics.py:27: ModuleNotFoundError
+______________ test_group_alternatives_and_unanswerable_metrics _______________
+
+    def test_group_alternatives_and_unanswerable_metrics():
+>       from app.benchmark import ranking_metrics
+E       ModuleNotFoundError: No module named 'app.benchmark'
+
+tests\test_benchmark_metrics.py:33: ModuleNotFoundError
+______________ test_quantiles_small_samples_and_invalid_numbers _______________
+
+    def test_quantiles_small_samples_and_invalid_numbers():
+>       from app.benchmark import latency_summary
+E       ModuleNotFoundError: No module named 'app.benchmark'
+
+tests\test_benchmark_metrics.py:40: ModuleNotFoundError
+_______ test_frozen_evidence_requires_exact_text_hash_and_no_traversal ________
+
+tmp_path = WindowsPath('C:/Users/86139/AppData/Local/Temp/pytest-of-86139/pytest-532/test_frozen_evidence_requires_0')
+
+    def test_frozen_evidence_requires_exact_text_hash_and_no_traversal(tmp_path):
+>       from app.benchmark import validate_evidence
+E       ModuleNotFoundError: No module named 'app.benchmark'
+
+tests\test_benchmark_metrics.py:48: ModuleNotFoundError
+_____________ test_split_assignment_never_splits_a_source_cluster _____________
+
+    def test_split_assignment_never_splits_a_source_cluster():
+>       from app.benchmark import assign_split
+E       ModuleNotFoundError: No module named 'app.benchmark'
+
+tests\test_benchmark_metrics.py:62: ModuleNotFoundError
+=========================== short test summary info ===========================
+FAILED tests/test_benchmark_metrics.py::test_ranked_metrics_match_hand_calculation
+FAILED tests/test_benchmark_metrics.py::test_unknown_labels_do_not_become_irrelevant_or_produce_ndcg
+FAILED tests/test_benchmark_metrics.py::test_duplicate_ranked_ids_are_rejected
+FAILED tests/test_benchmark_metrics.py::test_group_alternatives_and_unanswerable_metrics
+FAILED tests/test_benchmark_metrics.py::test_quantiles_small_samples_and_invalid_numbers
+FAILED tests/test_benchmark_metrics.py::test_frozen_evidence_requires_exact_text_hash_and_no_traversal
+FAILED tests/test_benchmark_metrics.py::test_split_assignment_never_splits_a_source_cluster
+7 failed in 4.19s

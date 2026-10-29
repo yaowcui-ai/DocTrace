@@ -1,0 +1,14 @@
+{
+  "label": "managed-query-red",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_managed_query.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T02:49:50.751750+00:00",
+  "exit_code": 1,
+  "seconds": 6.399,
+  "finished_at": "2026-10-28T02:49:57.156176+00:00"
+}

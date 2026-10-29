@@ -1,0 +1,11 @@
+{
+  "label": "freeze-internal-test",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/freeze_upgrade_test.py"
+  ],
+  "started_at": "2026-10-28T07:45:49.674147+00:00",
+  "exit_code": 0,
+  "seconds": 0.6,
+  "finished_at": "2026-10-28T07:45:50.276266+00:00"
+}

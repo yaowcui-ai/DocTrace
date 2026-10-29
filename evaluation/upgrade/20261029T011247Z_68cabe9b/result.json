@@ -1,0 +1,11 @@
+{
+  "label": "real-deployment-readonly",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/verify_upgrade_delivery.py"
+  ],
+  "started_at": "2026-10-29T01:12:47.313176+00:00",
+  "exit_code": 1,
+  "seconds": 2.603,
+  "finished_at": "2026-10-29T01:12:49.917915+00:00"
+}

@@ -1,0 +1,51 @@
+
+> doctrace-workspace@0.1.0 test:e2e
+> node tests/run-e2e.mjs
+
+Running actual API browser acceptance against http://127.0.0.1:50325; upstream is the offline fixture.
+
+Running 2 tests using 1 worker
+
+(node:12980) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 tests\browser\actual-api.spec.ts:14:1 › real cookie auth, conversations, citations, feedback, lost-response retry and administrator routes (12.2s)
+(node:8376) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 tests\browser\actual-api.spec.ts:131:1 › late responses cannot cross accounts; an expired session clears rendered private data (1.4s)
+
+
+  1) tests\browser\actual-api.spec.ts:14:1 › real cookie auth, conversations, citations, feedback, lost-response retry and administrator routes 
+
+    Error: expect(locator).toHaveValue(expected) failed
+
+    Locator:  getByLabel('补充意见（可选）')
+    Expected: "Evidence was useful."
+    Received: ""
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveValue" getByLabel('补充意见（可选）') with timeout 10000ms
+      - waiting for getByLabel('补充意见（可选）')
+        24 × locator resolved to <textarea rows="2" maxlength="1000" id="feedback-b4a1af53-9c17-4e63-ae9c-c8d70174cc89"></textarea>
+           - unexpected value ""
+
+
+      55 |   await expect(page.getByText('Offline policy answer [1]', {exact: true})).toBeVisible();
+      56 |   await page.getByText('这条回答有帮助吗？', {exact: true}).click();
+    > 57 |   await expect(page.getByLabel('补充意见（可选）')).toHaveValue('Evidence was useful.');
+         |                                             ^
+      58 |   await expect(page.getByRole('button', {name: '有帮助', exact: true})).toHaveAttribute('aria-pressed', 'true');
+      59 |   await page.getByLabel('想了解哪项政策？').fill('Unsent private draft');
+      60 |   await page.evaluate(() => document.dispatchEvent(new Event('visibilitychange')));
+        at C:\Users\86139\Documents\ChatGPT\实习项目\doctrace\frontend\tests\browser\actual-api.spec.ts:57:45
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\actual-api-real-cookie-aut-b85f3-ry-and-administrator-routes\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\actual-api-real-cookie-aut-b85f3-ry-and-administrator-routes\error-context.md
+
+  1 failed
+    tests\browser\actual-api.spec.ts:14:1 › real cookie auth, conversations, citations, feedback, lost-response retry and administrator routes 
+  1 passed (16.5s)
+

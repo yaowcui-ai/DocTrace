@@ -1,0 +1,39 @@
+FF                                                                       [100%]
+================================== FAILURES ===================================
+___________ test_raw_frozen_operation_cannot_be_adopted_as_managed ____________
+
+product = (<starlette.testclient.TestClient object at 0x000001C507575F10>, Engine(sqlite+pysqlite:///C:\Users\86139\AppData\Loca..._raw_frozen_operation_cann0\records.db), namespace(owner='00000000-0000-4000-8000-000000000001', calls=[], fail=False))
+
+    def test_raw_frozen_operation_cannot_be_adopted_as_managed(product):
+        client, engine, state = product
+        key = str(uuid4())
+        run_recorded_qa(engine, question='Same question', corpus_id='offline', answer_fn=lambda: AskResponse(
+            response='Frozen answer', references=[], llm_generated=False), owner_user_id=ALICE, idempotency_key=key, request_mode='naive')
+        cid = conversation(client)
+        response = client.post(f'/api/v1/conversations/{cid}/messages', json={
+            'question': 'Same question', 'mode': 'naive', 'knowledge_base': 'managed'}, headers={'Idempotency-Key': key})
+>       assert response.status_code == 409
+E       assert 200 == 409
+E        +  where 200 = <Response [200 OK]>.status_code
+
+tests\test_product_api.py:119: AssertionError
+__ test_import_does_not_take_a_processing_record_reserved_by_a_conversation ___
+
+product = (<starlette.testclient.TestClient object at 0x000001C5075CC250>, Engine(sqlite+pysqlite:///C:\Users\86139\AppData\Loca..._import_does_not_take_a_pr0\records.db), namespace(owner='00000000-0000-4000-8000-000000000001', calls=[], fail=False))
+
+    def test_import_does_not_take_a_processing_record_reserved_by_a_conversation(product):
+        client, engine, state = product
+        from app.product import repository as repo
+        cid, key = conversation(client), str(uuid4())
+        repo.reserve_message(engine, ALICE, cid, 'In flight', 'naive', key, 'In flight', 'current_question_only')
+        create_processing_record(engine, question='In flight', corpus_id='offline', owner_user_id=ALICE, idempotency_key=key, request_mode='naive')
+        response = client.post('/api/v1/conversations/import-records', json={})
+        assert response.status_code == 200
+>       assert response.json()['data']['imported'] == 0
+E       assert 1 == 0
+
+tests\test_product_api.py:130: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_product_api.py::test_raw_frozen_operation_cannot_be_adopted_as_managed
+FAILED tests/test_product_api.py::test_import_does_not_take_a_processing_record_reserved_by_a_conversation
+2 failed, 32 deselected in 3.11s

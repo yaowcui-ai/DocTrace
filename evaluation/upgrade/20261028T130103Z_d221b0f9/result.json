@@ -1,0 +1,15 @@
+{
+  "label": "metric-denominator-red",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_ablation_replay.py",
+    "tests/test_benchmark_metrics.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T13:01:03.879101+00:00",
+  "exit_code": 1,
+  "seconds": 5.095,
+  "finished_at": "2026-10-28T13:01:08.976681+00:00"
+}

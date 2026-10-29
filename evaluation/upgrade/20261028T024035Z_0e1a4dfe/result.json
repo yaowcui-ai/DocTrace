@@ -1,0 +1,14 @@
+{
+  "label": "product-integration-red",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_upgrade_integration.py",
+    "-q"
+  ],
+  "started_at": "2026-10-28T02:40:35.973756+00:00",
+  "exit_code": 1,
+  "seconds": 8.631,
+  "finished_at": "2026-10-28T02:40:44.608165+00:00"
+}

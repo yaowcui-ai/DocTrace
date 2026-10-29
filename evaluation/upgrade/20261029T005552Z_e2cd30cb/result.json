@@ -1,0 +1,15 @@
+{
+  "label": "managed-snapshot-green",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_managed_query.py",
+    "tests/test_managed_observability.py",
+    "-q"
+  ],
+  "started_at": "2026-10-29T00:55:52.773680+00:00",
+  "exit_code": 0,
+  "seconds": 3.66,
+  "finished_at": "2026-10-29T00:55:56.435446+00:00"
+}

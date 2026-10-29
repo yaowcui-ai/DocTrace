@@ -1,0 +1,15 @@
+{
+  "label": "offline-recovery-tests",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_experiment_recovery_guard.py",
+    "tests/test_benchmark_metrics.py",
+    "-q"
+  ],
+  "started_at": "2026-10-29T01:06:12.737248+00:00",
+  "exit_code": 0,
+  "seconds": 3.99,
+  "finished_at": "2026-10-29T01:06:16.728153+00:00"
+}

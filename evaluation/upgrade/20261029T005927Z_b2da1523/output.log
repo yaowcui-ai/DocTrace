@@ -1,0 +1,18 @@
+
+> doctrace-workspace@0.1.0 build
+> npm run typecheck && vite build
+
+
+> doctrace-workspace@0.1.0 typecheck
+> tsc --noEmit
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 20 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.52 kB │ gzip:  0.37 kB
+dist/assets/index-BUIbDVHX.css   11.24 kB │ gzip:  3.22 kB
+dist/assets/index-_TmzX80G.js   248.74 kB │ gzip: 78.23 kB
+
+✓ built in 522ms

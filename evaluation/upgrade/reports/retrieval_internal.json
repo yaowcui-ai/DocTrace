@@ -1,0 +1,146 @@
+{
+  "created_at": "2026-10-29T01:08:20.228817+00:00",
+  "dataset_id": "hr_upgrade_internal_test_v1",
+  "dataset_sha256": "34b45e2a380011efae919a0d9d09e2a0ae541a816593a5ad0fb22b6fd9345ba2",
+  "requested_cases": 112,
+  "scorable_cases": 109,
+  "unresolved_cases": [
+    {
+      "case_id": "HR-U090",
+      "status": "recovery_failed"
+    },
+    {
+      "case_id": "HR-U091",
+      "status": "retrieval_submission_started"
+    },
+    {
+      "case_id": "HR-U109",
+      "status": "recovery_failed"
+    }
+  ],
+  "metrics": {
+    "B0": {
+      "matched_groups": 109,
+      "expected_groups": 124,
+      "complete_cases": 94,
+      "tokens": 2528942,
+      "macro_recall_at_5": 0.642202,
+      "macro_recall_at_10": 0.738532,
+      "macro_mrr_at_10": 0.585667,
+      "strict_gold_ndcg_at_10_proxy": 0.60928,
+      "strict_non_gold_fraction_at_10_proxy": 0.918349,
+      "semantic_ndcg_at_10": null,
+      "semantic_irrelevant_ratio": null
+    },
+    "B1": {
+      "matched_groups": 122,
+      "expected_groups": 124,
+      "complete_cases": 107,
+      "tokens": 2646202,
+      "macro_recall_at_5": 0.940367,
+      "macro_recall_at_10": 0.958716,
+      "macro_mrr_at_10": 0.854827,
+      "strict_gold_ndcg_at_10_proxy": 0.877554,
+      "strict_non_gold_fraction_at_10_proxy": 0.892661,
+      "semantic_ndcg_at_10": null,
+      "semantic_irrelevant_ratio": null
+    },
+    "B2": {
+      "matched_groups": 122,
+      "expected_groups": 124,
+      "complete_cases": 107,
+      "tokens": 2646202,
+      "macro_recall_at_5": 0.940367,
+      "macro_recall_at_10": 0.958716,
+      "macro_mrr_at_10": 0.854827,
+      "strict_gold_ndcg_at_10_proxy": 0.877554,
+      "strict_non_gold_fraction_at_10_proxy": 0.892661,
+      "semantic_ndcg_at_10": null,
+      "semantic_irrelevant_ratio": null
+    },
+    "B3": {
+      "matched_groups": 122,
+      "expected_groups": 124,
+      "complete_cases": 107,
+      "tokens": 2646202,
+      "macro_recall_at_5": 0.940367,
+      "macro_recall_at_10": 0.958716,
+      "macro_mrr_at_10": 0.854827,
+      "strict_gold_ndcg_at_10_proxy": 0.877554,
+      "strict_non_gold_fraction_at_10_proxy": 0.892661,
+      "semantic_ndcg_at_10": null,
+      "semantic_irrelevant_ratio": null
+    }
+  },
+  "by_question_type": {
+    "confusable_policies": {
+      "cases": 12,
+      "B0_complete": 12,
+      "B3_complete": 12
+    },
+    "simple_fact": {
+      "cases": 14,
+      "B0_complete": 14,
+      "B3_complete": 14
+    },
+    "conditions": {
+      "cases": 37,
+      "B0_complete": 32,
+      "B3_complete": 36
+    },
+    "composite": {
+      "cases": 7,
+      "B0_complete": 6,
+      "B3_complete": 7
+    },
+    "exceptions": {
+      "cases": 26,
+      "B0_complete": 21,
+      "B3_complete": 26
+    },
+    "permission_restricted": {
+      "cases": 2,
+      "B0_complete": 2,
+      "B3_complete": 1
+    },
+    "no_answer_personal_records": {
+      "cases": 4,
+      "B0_complete": 4,
+      "B3_complete": 4
+    },
+    "multi_document_comparison": {
+      "cases": 5,
+      "B0_complete": 3,
+      "B3_complete": 5
+    },
+    "missing_region_clarification": {
+      "cases": 2,
+      "B0_complete": 0,
+      "B3_complete": 2
+    }
+  },
+  "original_attempt_count": 112,
+  "explicit_capture_recovery_attempts": 36,
+  "successful_capture_recoveries": 34,
+  "B1_B2_identical_cases": 109,
+  "B2_B3_identical_cases": 109,
+  "measured_original_retrieval_seconds": {
+    "count": 109,
+    "p50": 4.994,
+    "p95": 9.6262
+  },
+  "whole_rerank_seconds_successful_attempts": {
+    "count": 109,
+    "p50": 5.393,
+    "p95": 16.2124
+  },
+  "selector_execution": "hash_checked_upstream_definitions_sequential_host",
+  "limits": [
+    "109/112 scorable subset; unresolved failures are not treated as correct or silently dropped.",
+    "Same saved complete candidate pool and supplier scores; these are selector ablations, not four independent production requests.",
+    "Exact-source gold covers required evidence, not exhaustive semantic relevance.",
+    "Token totals are rendered chunk tokens; they exclude graph and generation output.",
+    "Provider aliases are mutable. Recorded latency includes cache effects and explicit retries; not a controlled cold comparison.",
+    "Source/output review is automated-assisted, not an external human blind trial."
+  ]
+}

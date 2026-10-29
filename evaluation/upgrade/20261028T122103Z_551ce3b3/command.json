@@ -1,0 +1,18 @@
+{
+  "label": "remaining-test-paced",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/run_upgrade_retrieval.py",
+    "--execute",
+    "--limit",
+    "112",
+    "--max-rerank-requests",
+    "24",
+    "--min-interval-seconds",
+    "45",
+    "--resume",
+    "evaluation/upgrade/new_retrieval/20261028T074830Z_2d0d3d18"
+  ],
+  "started_at": "2026-10-28T12:21:03.477706+00:00",
+  "exit_code": null
+}

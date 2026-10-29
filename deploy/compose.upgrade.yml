@@ -1,0 +1,80 @@
+name: doctrace-upgrade
+
+services:
+  mysql:
+    image: mysql:8.0
+    ports:
+      - "127.0.0.1:3310:3306"
+    environment:
+      MYSQL_DATABASE: doctrace_upgrade
+      MYSQL_USER: ${MYSQL_USER:?Use --env-file runtime/upgrade/.env}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Private upgrade database password required}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Private root password required}
+    command: ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_0900_ai_ci"]
+    volumes:
+      - upgrade_mysql:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "MYSQL_PWD=\"$${MYSQL_PASSWORD}\" mysql -h 127.0.0.1 -u \"$${MYSQL_USER}\" -D doctrace_upgrade -Nse 'SELECT 1' >/dev/null 2>&1"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 25s
+    restart: unless-stopped
+
+  app:
+    image: doctrace-upgrade-app:local
+    build:
+      context: ..
+      dockerfile: Dockerfile.upgrade
+    env_file:
+      - ../runtime/upgrade/.env
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_PORT: "3306"
+      MYSQL_DATABASE: doctrace_upgrade
+      MYSQL_ROOT_PASSWORD: ""
+    ports:
+      - "127.0.0.1:8005:8005"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    command: ["sh", "-c", "python -m app.upgrade_setup --initialize --admin \"$${UPGRADE_ADMIN_USERNAME:-upgrade_admin}\" && exec uvicorn app.main:app --host 0.0.0.0 --port 8005"]
+    volumes:
+      - upgrade_logs:/workspace/logs
+      - ../evaluation/upgrade/reports:/workspace/evaluation/upgrade/reports:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8005/health', timeout=4).read()"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+
+  worker:
+    image: doctrace-upgrade-app:local
+    profiles: ["manual-worker", "managed-worker"]
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_PORT: "3306"
+      MYSQL_DATABASE: doctrace_upgrade
+      MYSQL_USER: ${MYSQL_USER:?Private upgrade user required}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Private upgrade password required}
+      MANAGED_LIGHTRAG_URL: http://host.docker.internal:9631
+      MANAGED_LIGHTRAG_API_KEY: ${MANAGED_LIGHTRAG_API_KEY:?Private managed service key required}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      mysql:
+        condition: service_healthy
+      app:
+        condition: service_healthy
+    entrypoint: ["python", "-m", "app.knowledge.worker"]
+    command: ["--serve", "--poll-seconds", "5"]
+    stop_grace_period: 90s
+    restart: unless-stopped
+
+volumes:
+  upgrade_mysql:
+  upgrade_logs:
