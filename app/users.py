@@ -6,7 +6,7 @@ from uuid import uuid4
 from .passwords import hash_password
 
 MIN_PASSWORD_LENGTH = 6
-MAX_PASSWORD_LENGTH = 10
+MAX_PASSWORD_LENGTH = 128
 
 def get_user_by_username(
     engine: Engine,

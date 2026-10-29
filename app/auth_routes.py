@@ -14,6 +14,15 @@ router = APIRouter(prefix="/auth", tags=["authentication"], route_class=AuthRout
 
 @router.post("/login", response_model=CurrentUserResponse)
 def login(payload: LoginRequest, request: Request, response: Response):
+    limiter = getattr(request.app.state, 'login_limiter', None)
+    if limiter is not None:
+        import hashlib
+        host = request.client.host if request.client else 'unknown'
+        # Both account and client limits apply; raw credentials are never retained.
+        for key in ('host:' + host, 'user:' + hashlib.sha256(payload.username.encode()).hexdigest()):
+            retry = limiter.check(key)
+            if retry is not None:
+                raise HTTPException(429, '登录尝试过于频繁，请稍后再试。', headers={'Retry-After': str(retry)})
     engine = getattr(request.app.state, "db_engine", None)
     if engine is None:
         raise HTTPException(

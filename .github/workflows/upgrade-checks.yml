@@ -1,0 +1,41 @@
+name: Upgrade offline acceptance
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: python -m pip install -r requirements-lock.txt -r requirements-dev.txt
+      # Public tokenizer vocabulary download during setup; tests do not use paid models.
+      - run: python -c "import tiktoken; tiktoken.encoding_for_model('gpt-4o-mini')"
+      - run: python -m pytest -q --junitxml=evaluation/ci-upgrade.xml
+      - run: npm ci && npm run test:frontend
+      - run: npm --prefix frontend ci
+      - run: npm --prefix frontend test && npm --prefix frontend run build
+      - run: cd frontend && npx playwright install --with-deps chromium
+      - run: npm --prefix frontend run test:e2e
+        env:
+          DOCTRACE_E2E_PYTHON: ${{ env.pythonLocation }}/bin/python
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: upgrade-test-evidence
+          path: |
+            evaluation/ci-upgrade.xml
+            frontend/test-results/
+          retention-days: 14

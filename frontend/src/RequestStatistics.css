@@ -1,0 +1,7 @@
+.request-statistics {padding: 22px; margin: 18px 0; border: 1px solid #dce7df; border-radius: 10px; background: #fff;}
+.request-statistics h2 {font-size: 17px; color: #234c40;}
+.stats-row {display: grid; grid-template-columns: repeat(3, 1fr) 2fr; gap: 12px; margin: 18px 0;}
+.stats-row div {padding: 12px; background: #f4f8f5; border-radius: 7px;}
+.stats-row dt {font-size: 11px; color: #62746c;}
+.stats-row dd {margin: 8px 0 0; font-size: 19px; color: #214d3c; overflow-wrap: anywhere;}
+@media (max-width: 700px) {.stats-row {grid-template-columns: repeat(2, 1fr);}.stats-row dd {font-size: 16px;}}

@@ -10,7 +10,9 @@ from dotenv import dotenv_values
 
 from .config import ConfigurationError, DEFAULT_ENV_PATH
 
-SESSION_COOKIE_NAME = "doctrace_session"
+SESSION_COOKIE_NAME = os.environ.get('DOCTRACE_SESSION_COOKIE', 'doctrace_session')
+if re.fullmatch(r'[A-Za-z0-9_-]{1,64}', SESSION_COOKIE_NAME) is None:
+    raise ConfigurationError('DOCTRACE_SESSION_COOKIE must be a valid cookie name.')
 
 
 @dataclass(frozen=True)

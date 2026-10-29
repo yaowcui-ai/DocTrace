@@ -64,7 +64,7 @@ def test_invalid_username_is_rejected_before_hashing(user_engine, users, monkeyp
     assert rows(user_engine) == []
 
 
-@pytest.mark.parametrize('password', ['x'*5, 'x'*11])
+@pytest.mark.parametrize('password', ['x'*5, 'x'*129])
 def test_invalid_password_length_does_not_echo_or_store_password(user_engine, users, password):
     with pytest.raises(ValueError) as caught:
         users.create_user(user_engine, username='alice', password=password)

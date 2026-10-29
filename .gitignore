@@ -19,3 +19,12 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 evaluation/runs/
+
+# Upgrade generated/private runtime
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+evaluation/upgrade/new_retrieval/
+evaluation/upgrade/live/
+evaluation/upgrade/generation/
+evaluation/upgrade/performance/
